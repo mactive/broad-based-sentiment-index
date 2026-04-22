@@ -1,0 +1,202 @@
+{
+  "report_date": "2026-04-21",
+  "strategy": "别人恐惧我贪婪，别人贪婪我恐惧",
+  "generated_at": "2026-04-21T19:00:00+08:00",
+  "data_sources": [
+    "CNN Money", "CBOE", "AAII", "NAAIM", "SentimenTrader",
+    "Fidelity", "FINRA", "iShares", "ContrarianSignals",
+    "FearGreedTracker", "AltIndex", "MacroMicro", "KimiFinance"
+  ],
+  "indicators": {
+    "aaii": {
+      "name": "AAII散户情绪调查",
+      "frequency": "weekly",
+      "last_update": "2026-04-16",
+      "bullish_pct": 31.7,
+      "neutral_pct": 25.5,
+      "bearish_pct": 42.8,
+      "bull_bear_spread": -11.06,
+      "historical_avg_spread": 6.28,
+      "z_score": -0.82,
+      "four_week_trend": [-17.70, -17.86, -7.24, -11.06],
+      "signal": "恐惧偏空(逆向买入)",
+      "strength": "中等",
+      "extreme_fear_threshold": -20.0,
+      "extreme_greed_threshold": 20.0
+    },
+    "naaim": {
+      "name": "NAAIM主动基金经理仓位",
+      "frequency": "weekly",
+      "last_update": "2026-04-15",
+      "avg_exposure": 79.49,
+      "wow_change_pct": 14.57,
+      "four_week_trend": [68.52, 68.36, 69.38, 79.49],
+      "signal": "贪婪加仓(趋势确认)",
+      "strength": "强"
+    },
+    "smart_dumb_money": {
+      "name": "SentimenTrader Smart/Dumb Money",
+      "frequency": "daily",
+      "last_update": "2026-04-20",
+      "dumb_money_confidence": "extremely_optimistic",
+      "smart_money_confidence": "neutral",
+      "signal": "散户行为极度乐观，聪明钱观望",
+      "strength": "强"
+    },
+    "cnn_fear_greed": {
+      "name": "CNN恐惧贪婪指数",
+      "frequency": "daily",
+      "current": 70,
+      "category": "Greed",
+      "one_week_ago": 38,
+      "historical_avg": 48.75,
+      "historical_median": 50.00,
+      "historical_std": 21.04,
+      "extreme_fear_threshold": 25,
+      "extreme_greed_threshold": 75,
+      "signal": "贪婪区间，距极端贪婪仅差5点",
+      "strength": "中等"
+    },
+    "vix": {
+      "name": "VIX波动率指数",
+      "frequency": "daily",
+      "current": 18.87,
+      "values": {"2026-04-20": 18.87, "2026-04-17": 17.48, "2026-04-16": 17.94, "2026-04-15": 18.17},
+      "late_march_peak": 31.0,
+      "signal": "恐慌消退，正常区间",
+      "strength": "弱"
+    },
+    "pcr": {
+      "name": "CBOE期权Put/Call Ratio",
+      "frequency": "daily",
+      "current": 0.54,
+      "ten_day_ma": 0.84,
+      "signal": "低PCR，看涨期权活跃",
+      "strength": "中等"
+    },
+    "nyse_ad": {
+      "name": "NYSE涨跌线",
+      "frequency": "daily",
+      "last_update": "2026-04-17",
+      "advancing": 2313,
+      "declining": 278,
+      "unchanged": 12,
+      "new_highs": 668,
+      "new_lows": 59,
+      "signal": "广度健康，普涨格局",
+      "strength": "强"
+    },
+    "margin_debt": {
+      "name": "融资保证金债务",
+      "frequency": "monthly_lagged",
+      "last_update": "2026-03-26",
+      "current_billion": 793.5,
+      "vs_jan_low_pct": 9.7,
+      "trend": "连续2月下降",
+      "signal": "杠杆受控",
+      "strength": "中性"
+    },
+    "hyg_oas": {
+      "name": "高收益债利差",
+      "frequency": "daily",
+      "last_update": "2026-04-17",
+      "oas_bps": 263.76,
+      "credit_quality": "BB/B, avg B+",
+      "yield_curve_10y2y": "+0.5~0.6%",
+      "signal": "利差紧，缓冲空间小",
+      "strength": "警示"
+    },
+    "advisor_sentiment": {
+      "name": "投资顾问多空比",
+      "frequency": "weekly",
+      "status": "滞后，待补充"
+    },
+    "major_indices": {
+      "name": "主要指数概览",
+      "frequency": "daily",
+      "last_update": "2026-04-21T14:00:00",
+      "spy": {"price": 705.80, "change_pct": -0.41},
+      "qqq": {"price": 645.73, "change_pct": -0.16},
+      "dia": {"price": 492.94, "change_pct": -0.28},
+      "iwm": {"price": 275.49, "change_pct": -0.67},
+      "signal": "大盘微跌，小盘领跌",
+      "strength": "中性"
+    },
+    "contrarian_signals": {
+      "name": "ContrarianSignals聚类分析",
+      "frequency": "monthly",
+      "last_update": "2026-03",
+      "recommended_allocation_pct": 55.7,
+      "allocation_zones": {
+        "bearish": "<50%",
+        "neutral": "50-55%",
+        "bullish": "55-60%",
+        "extreme_bullish": ">60%"
+      },
+      "current_zone": "Bullish区间下沿",
+      "signal": "未触发聚类极端信号",
+      "strength": "中性"
+    },
+    "feargreed_tracker": {
+      "name": "FearGreedTracker历史极端点",
+      "current_fear_greed": 68,
+      "distance_to_extreme_fear": 59,
+      "distance_to_extreme_greed": 29,
+      "2026_extreme_fear_event": {
+        "fear_greed": 9,
+        "vix": 31.05,
+        "sp500": 6343.75,
+        "date": "2026-03-30",
+        "sync_window_days": 5
+      },
+      "2026_extreme_greed_event": {
+        "fear_greed": 68,
+        "vix": 15.64,
+        "sp500": 7125.12,
+        "date": "2026-04-17",
+        "sync_window_days": 85
+      }
+    },
+    "altindex": {
+      "name": "AltIndex另类情绪指数",
+      "current": 67,
+      "category": "Greed",
+      "underlying_signals_count": 11,
+      "signal": "另类数据确认贪婪状态",
+      "strength": "中等"
+    },
+    "macromicro_zscore": {
+      "name": "MacroMicro Z分数",
+      "aaii_zscore": -0.82,
+      "extreme_threshold": 2.0,
+      "distance_to_extreme": 1.18,
+      "signal": "未达统计显著极端"
+    }
+  },
+  "contradictions": [
+    "AAII散户'说'恐惧 vs Dumb Money'做'极度乐观 — 行为指标更可靠",
+    "NAAIM经理大幅加仓 vs Smart Money保持中性 — 聪明钱尚未全力跟进",
+    "情绪指标多显示贪婪 vs ContrarianSignals仅建议55.7%中等配置"
+  ],
+  "strategy_conclusion": {
+    "verdict": "不追高，控制仓位",
+    "is_extreme_fear": false,
+    "is_extreme_greed": false,
+    "buy_triggers": [
+      "VIX > 25",
+      "AAII Spread < -20%",
+      "Fear & Greed < 25",
+      "Dumb Money回落"
+    ],
+    "sell_triggers": [
+      "AAII Spread > +20%",
+      "Fear & Greed > 75",
+      "Dumb Money极度乐观 + 多指标背离"
+    ],
+    "professional_system_cross_check": {
+      "contrarian_signals": "未触发聚类买入信号",
+      "feargreed_tracker": "距3月极端恐惧已反弹59点，非底部区域",
+      "altindex": "另类数据也确认贪婪状态"
+    }
+  }
+}

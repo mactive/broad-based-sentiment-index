@@ -1,0 +1,27 @@
+{
+  "report_date": "2026-04-22",
+  "time_slot": "morning",
+  "strategy": "别人恐惧我贪婪，别人贪婪我恐惧",
+  "generated_at": "2026-04-22T07:38:00+08:00",
+  "data_sources": ["CNN Money", "CBOE", "AAII", "NAAIM", "SentimenTrader", "ContrarianSignals", "FearGreedTracker", "AltIndex", "MacroMicro"],
+  "note": "AAII/NAAIM周度数据尚未更新",
+  "indicators": {
+    "aaii": {"name": "AAII散户情绪", "last_update": "2026-04-16", "bullish_pct": 31.7, "neutral_pct": 25.5, "bearish_pct": 42.8, "spread": -11.06, "signal": "恐惧偏空(逆向买入)", "strength": "中等"},
+    "naaim": {"name": "NAAIM经理仓位", "last_update": "2026-04-15", "avg_exposure": 79.49, "signal": "贪婪加仓", "strength": "强"},
+    "smart_dumb_money": {"name": "Smart/Dumb Money", "last_update": "2026-04-21", "dumb": "extremely_optimistic", "smart": "neutral", "signal": "散户行为极度乐观，聪明钱观望", "strength": "强"},
+    "cnn_fear_greed": {"name": "CNN恐惧贪婪", "current": 70, "category": "Greed", "signal": "贪婪区间", "strength": "中等"},
+    "vix": {"name": "VIX", "current": 19.85, "prev": 18.87, "change": 0.98, "signal": "小幅回升", "strength": "弱"},
+    "pcr": {"name": "PCR", "current": 0.54, "signal": "低PCR偏乐观", "strength": "中等"},
+    "major_indices": {"spy": 705, "qqq": 646, "dia": 493, "iwm": 275, "spy_change": -0.41},
+    "contrarian_signals": {"allocation_pct": 55.7, "signal": "未触发聚类买入", "strength": "中性"},
+    "altindex": {"current": 67, "category": "Greed", "signal": "另类数据确认贪婪", "strength": "中等"},
+    "macromicro_zscore": {"aaii_zscore": -0.82, "distance_to_extreme": 1.18}
+  },
+  "strategy_conclusion": {
+    "verdict": "不追高，控制仓位",
+    "is_extreme_fear": false,
+    "is_extreme_greed": false,
+    "buy_triggers": ["VIX > 25", "AAII Spread < -20%", "F&G < 25", "Dumb Money回落"],
+    "key_contradiction": "散户调查偏空 vs 行为极度乐观 — 行为指标更可靠"
+  }
+}

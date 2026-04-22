@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:title" content="美股市场情绪追踪 - 2026-04-22 早盘">
+<meta property="og:description" content="15项指标 | F&G=70贪婪 | VIX=19.85 | 策略: 不追高">
+<meta property="og:type" content="website">
+<title>美股市场情绪追踪日报 - 2026-04-22 早盘</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; background: #0a0e27; color: #e0e4f0; min-height: 100vh; }
+  .container { max-width: 800px; margin: 0 auto; }
+  .header { text-align: center; padding: 36px 24px 24px; background: linear-gradient(180deg, #0d1330 0%, #0a0e27 100%); border-bottom: 1px solid #1e2748; }
+  .header h1 { font-size: 26px; font-weight: 700; color: #fff; letter-spacing: 1px; }
+  .header .date { font-size: 14px; color: #6b7a99; margin-top: 6px; }
+  .header .strategy { font-size: 13px; color: #ff6b6b; margin-top: 4px; font-style: italic; }
+  .badge-row { display: flex; gap: 8px; justify-content: center; margin-top: 12px; }
+  .badge { padding: 4px 12px; border-radius: 20px; font-size: 11px; font-weight: 500; }
+  .badge-greed { background: #ffd16622; color: #ffd166; }
+  .badge-hold { background: #6b7a9922; color: #6b7a99; }
+  .section { padding: 20px 24px; border-bottom: 1px solid #1e2748; }
+  .section-title { font-size: 13px; font-weight: 600; color: #6b7a99; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px; }
+  .fg-section { background: #111835; border-radius: 16px; padding: 20px; margin: 0 24px 16px; border: 1px solid #1e2748; }
+  .fg-bar-bg { height: 36px; border-radius: 18px; background: linear-gradient(to right, #ef476f 0%, #ffd166 50%, #06d6a0 100%); position: relative; margin-bottom: 10px; }
+  .fg-marker { position: absolute; top: -6px; width: 4px; height: 48px; background: #fff; border-radius: 2px; box-shadow: 0 0 10px rgba(255,255,255,0.5); }
+  .fg-labels { display: flex; justify-content: space-between; font-size: 11px; color: #4a5568; }
+  .fg-value { text-align: center; margin-top: 12px; font-size: 28px; font-weight: 700; color: #ffd166; }
+  .fg-sub { text-align: center; font-size: 12px; color: #6b7a99; margin-top: 4px; }
+  .card-row { display: flex; gap: 12px; margin-bottom: 12px; }
+  .card { flex: 1; background: #111835; border-radius: 14px; padding: 16px; text-align: center; border: 1px solid #1e2748; }
+  .card .label { font-size: 11px; color: #6b7a99; margin-bottom: 6px; }
+  .card .value { font-size: 26px; font-weight: 700; }
+  .card .sub { font-size: 11px; color: #4a5568; margin-top: 4px; }
+  .card.greed .value { color: #ffd166; }
+  .card.neutral .value { color: #118ab2; }
+  .card.buy .value { color: #06d6a0; }
+  .triad-row { display: flex; gap: 10px; }
+  .triad-card { flex: 1; background: #111835; border-radius: 14px; padding: 16px; border: 1px solid #1e2748; }
+  .triad-card .name { font-size: 11px; color: #6b7a99; margin-bottom: 6px; }
+  .triad-card .big-val { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+  .triad-card .detail { font-size: 11px; color: #8b9bb4; line-height: 1.5; }
+  .triad-card.warn { border-color: #ffd16633; }
+  .triad-card.warn .big-val { color: #ffd166; }
+  .triad-card.buy { border-color: #06d6a033; }
+  .triad-card.buy .big-val { color: #06d6a0; }
+  .triad-card.danger { border-color: #ef476f33; }
+  .triad-card.danger .big-val { color: #ef476f; }
+  table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  th { text-align: left; color: #6b7a99; font-weight: 500; padding: 10px 0; border-bottom: 1px solid #1e2748; }
+  td { padding: 10px 0; border-bottom: 1px solid #1e2748; }
+  .sig-buy { color: #06d6a0; }
+  .sig-sell { color: #ef476f; }
+  .sig-warn { color: #ffd166; }
+  .sig-neutral { color: #8b9bb4; }
+  .contradiction-box { background: #111835; border-radius: 14px; padding: 18px 20px; border: 1px solid #ffd16633; }
+  .contradiction-box .title { font-size: 13px; color: #ffd166; margin-bottom: 10px; font-weight: 600; }
+  .contradiction-box .item { font-size: 12px; color: #8b9bb4; line-height: 1.7; margin-bottom: 6px; padding-left: 16px; position: relative; }
+  .contradiction-box .item::before { content: '›'; position: absolute; left: 0; color: #ffd166; }
+  .conclusion-box { background: #111835; border-radius: 14px; padding: 20px; border: 1px solid #1e2748; }
+  .conclusion-box .verdict { font-size: 22px; font-weight: 700; color: #ffd166; margin-bottom: 12px; }
+  .conclusion-box .text { font-size: 12px; color: #8b9bb4; line-height: 1.8; }
+  .conclusion-box .text b { color: #e0e4f0; }
+  .footer { text-align: center; padding: 24px; font-size: 11px; color: #4a5568; }
+  .footer a { color: #6b7a99; text-decoration: none; }
+  .share-badge { position: fixed; bottom: 20px; right: 20px; background: #ffd166; color: #0a0e27; padding: 10px 18px; border-radius: 24px; font-size: 13px; font-weight: 600; cursor: pointer; box-shadow: 0 4px 16px rgba(255,209,102,0.3); border: none; }
+  .update-note { background: #1e2748; border-radius: 8px; padding: 10px 14px; margin: 0 24px 16px; font-size: 12px; color: #8b9bb4; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>美股市场情绪追踪日报</h1>
+    <div class="date">2026-04-22 · 北京时间 07:38 (早盘)</div>
+    <div class="strategy">策略: 别人恐惧我贪婪，别人贪婪我恐惧</div>
+    <div class="badge-row">
+      <span class="badge badge-greed">贪婪区间</span>
+      <span class="badge badge-hold">不追高</span>
+    </div>
+  </div>
+
+  <div class="update-note">
+    📋 AAII/NAAIM 周度数据尚未更新(下次周三/周四)，其余指标为最新隔夜收盘数据
+  </div>
+
+  <div class="fg-section">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+      <span style="font-size:13px;color:#6b7a99;font-weight:600;">CNN 恐惧贪婪指数</span>
+      <span style="font-size:11px;color:#4a5568;">0 = 极度恐惧 · 100 = 极度贪婪</span>
+    </div>
+    <div class="fg-bar-bg">
+      <div class="fg-marker" style="left: 70%;"></div>
+    </div>
+    <div class="fg-labels">
+      <span>极度恐惧</span>
+      <span>恐惧</span>
+      <span>中性</span>
+      <span>贪婪</span>
+      <span>极度贪婪</span>
+    </div>
+    <div class="fg-value">70</div>
+    <div class="fg-sub">贪婪区间 · 距极端贪婪(75)仅差5点</div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">综合情绪指数</div>
+    <div class="card-row">
+      <div class="card greed">
+        <div class="label">AltIndex</div>
+        <div class="value">67</div>
+        <div class="sub">贪婪 · 11信号综合</div>
+      </div>
+      <div class="card neutral">
+        <div class="label">VIX</div>
+        <div class="value">19.85</div>
+        <div class="sub">小幅回升 +0.98</div>
+      </div>
+      <div class="card buy">
+        <div class="label">ContrarianSignals</div>
+        <div class="value">55.7%</div>
+        <div class="sub">中等配置</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">逆向信号三角</div>
+    <div class="triad-row">
+      <div class="triad-card buy">
+        <div class="name">AAII 散户情绪</div>
+        <div class="big-val">-11.06%</div>
+        <div class="detail">连续四周偏空<br>待周四更新</div>
+      </div>
+      <div class="triad-card warn">
+        <div class="name">NAAIM 经理仓位</div>
+        <div class="big-val">79.49</div>
+        <div class="detail">大幅加仓<br>待周三更新</div>
+      </div>
+      <div class="triad-card danger">
+        <div class="name">Dumb Money</div>
+        <div class="big-val">极度乐观</div>
+        <div class="detail">Smart Money: 中性<br>背离持续</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">核心指标矩阵</div>
+    <table>
+      <tr><th>指标</th><th>数值</th><th>信号</th><th>强度</th></tr>
+      <tr><td>AAII Spread</td><td>-11.06%</td><td class="sig-buy">恐惧偏空(逆向买入)</td><td class="sig-neutral">中等</td></tr>
+      <tr><td>NAAIM</td><td>79.49</td><td class="sig-warn">贪婪加仓</td><td class="sig-warn">强</td></tr>
+      <tr><td>Dumb Money</td><td>极度乐观</td><td class="sig-sell">警示</td><td class="sig-warn">强</td></tr>
+      <tr><td>CNN F&G</td><td>70</td><td class="sig-warn">贪婪区间</td><td class="sig-neutral">中等</td></tr>
+      <tr><td>VIX</td><td>19.85</td><td class="sig-neutral">小幅回升</td><td class="sig-neutral">弱</td></tr>
+      <tr><td>PCR</td><td>0.54</td><td class="sig-warn">低PCR偏乐观</td><td class="sig-neutral">中等</td></tr>
+      <tr><td>距极端恐惧</td><td>F&G差61点</td><td class="sig-neutral">非极端区域</td><td class="sig-neutral">-</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">今日关注点</div>
+    <div class="contradiction-box">
+      <div class="item">VIX小幅回升至19.85，盘中触及20.70 — 关注是否突破20心理关口</div>
+      <div class="item">CNN F&G维持在70贪婪区间，多个子指标=极度贪婪</div>
+      <div class="item">周三NAAIM更新 — 确认经理是否继续加仓</div>
+      <div class="item">周四AAII更新 — 散户情绪是否进一步恶化或修复</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">策略结论</div>
+    <div class="conclusion-box">
+      <div class="verdict">不追高，控制仓位</div>
+      <div class="text">
+        当前结构未变。核心矛盾: 散户调查偏空 vs 行为极度乐观 = <b>行为指标更可靠，真实情绪是贪婪</b>。<br><br>
+        三系统交叉验证均未触发买入:<br>
+        · ContrarianSignals: 55.7%中等配置，未触发聚类买入<br>
+        · FearGreedTracker: 距极端恐惧已反弹61点<br>
+        · AltIndex: 另类数据确认贪婪<br><br>
+        <b>买入触发条件:</b> VIX > 25 | AAII Spread < -20% | F&G < 25 | Dumb Money回落<br><br>
+        <b>数据来源:</b> CNN, CBOE, AAII, NAAIM, SentimenTrader, ContrarianSignals, AltIndex
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <a href="index.html">← 查看历史报告</a> · 美股市场情绪追踪系统 v1.0 · 每日 06:56 & 18:49 自动更新
+  </div>
+</div>
+
+<button class="share-badge" onclick="alert('复制当前页面链接即可分享')">分享此报告</button>
+</body>
+</html>
