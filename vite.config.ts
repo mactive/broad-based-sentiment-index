@@ -1,5 +1,5 @@
 import { createReadStream, existsSync } from "node:fs";
-import { copyFile, mkdir, readdir, readFile } from "node:fs/promises";
+import { readdir, readFile } from "node:fs/promises";
 import type { ServerResponse } from "node:http";
 import path from "node:path";
 import { defineConfig, type Plugin } from "vite";
@@ -149,13 +149,6 @@ function sentimentDataPlugin(): Plugin {
           });
         })
       );
-    },
-    async writeBundle(options) {
-      if (!options.dir) return;
-      const targetDir = path.join(options.dir, "data");
-      await mkdir(targetDir, { recursive: true });
-      const manifest = await scanManifest();
-      await Promise.all(manifest.map((item) => copyFile(path.join(dataDir, item.file), path.join(targetDir, item.file))));
     }
   };
 }
