@@ -34,12 +34,21 @@ export type StrategyConclusion = {
 
 export type SentimentReport = {
   report_date?: string;
+  report_time?: string;
   time_slot?: string;
   strategy?: string;
   generated_at?: string;
+  data_timestamp?: string;
   data_sources?: string[];
   note?: string;
   indicators?: Record<string, Indicator>;
+  sentiment_indicators?: Record<string, Indicator>;
+  market_summary?: Record<string, Indicator>;
+  contrarian_analysis?: {
+    summary?: string;
+    key_signals?: string[];
+    strategy_note?: string;
+  };
   contradictions?: string[];
   strategy_conclusion?: StrategyConclusion;
 };

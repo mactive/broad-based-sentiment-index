@@ -8,11 +8,19 @@ const dataDir = path.resolve(process.cwd(), "data");
 
 type RawReport = {
   report_date?: string;
+  report_time?: string;
   time_slot?: string;
   generated_at?: string;
+  data_timestamp?: string;
   strategy?: string;
   note?: string;
   indicators?: Record<string, unknown>;
+  sentiment_indicators?: Record<string, unknown>;
+  contrarian_analysis?: {
+    summary?: string;
+    key_signals?: string[];
+    strategy_note?: string;
+  };
   strategy_conclusion?: {
     verdict?: string;
     is_extreme_fear?: boolean;
@@ -37,7 +45,12 @@ function asRecord(value: unknown): Record<string, unknown> {
 }
 
 function asNumber(value: unknown): number | null {
-  return typeof value === "number" && Number.isFinite(value) ? value : null;
+  if (typeof value === "number" && Number.isFinite(value)) return value;
+  if (typeof value !== "string") return null;
+  const range = value.match(/(-?\d+(?:\.\d+)?)\s*[-~]\s*(-?\d+(?:\.\d+)?)/);
+  if (range) return (Number(range[1]) + Number(range[2])) / 2;
+  const match = value.match(/-?\d+(?:\.\d+)?/);
+  return match ? Number(match[0]) : null;
 }
 
 function asString(value: unknown, fallback = ""): string {
@@ -46,28 +59,57 @@ function asString(value: unknown, fallback = ""): string {
 
 function inferTimeSlot(report: RawReport): string {
   if (report.time_slot) return report.time_slot;
-  if (!report.generated_at) return "";
-  const hour = new Date(report.generated_at).getHours();
+  const generatedAt = inferGeneratedAt(report);
+  if (!generatedAt) return "";
+  const hour = new Date(generatedAt).getHours();
   if (Number.isNaN(hour)) return "";
   return hour < 12 ? "morning" : "evening";
 }
 
 function buildManifestItem(file: string, report: RawReport): ManifestItem {
   const indicators = asRecord(report.indicators);
+  const sentiment = asRecord(report.sentiment_indicators);
   const fearGreed = asRecord(indicators.cnn_fear_greed);
-  const generatedAt = report.generated_at ?? `${report.report_date ?? ""}T00:00:00+08:00`;
+  const altindex = asRecord(indicators.altindex);
+  const newFearGreed = asRecord(sentiment.fear_greed_index);
+  const newAltindex = asRecord(sentiment.altindex);
+  const generatedAt = inferGeneratedAt(report) ?? `${report.report_date ?? ""}T00:00:00+08:00`;
+  const analysis = report.contrarian_analysis;
 
   return {
     file,
     reportDate: report.report_date ?? file.replace(/^market_sentiment_/, "").replace(/\.json$/, ""),
     generatedAt,
     timeSlot: inferTimeSlot(report),
-    fearGreed: asNumber(fearGreed.current),
-    fearGreedCategory: asString(fearGreed.category),
-    verdict: report.strategy_conclusion?.verdict ?? "",
+    fearGreed: firstNumber(fearGreed.current, newFearGreed.current, newFearGreed.current_estimate, altindex.current, newAltindex.current),
+    fearGreedCategory: asString(fearGreed.category, asString(newFearGreed.category, asString(newFearGreed.current_estimate, asString(newAltindex.zone)))),
+    verdict: report.strategy_conclusion?.verdict ?? inferVerdict(analysis?.strategy_note ?? analysis?.summary ?? ""),
     note: report.note ?? "",
-    strategy: report.strategy ?? ""
+    strategy: report.strategy ?? "别人恐惧我贪婪，别人贪婪我恐惧"
   };
+}
+
+function firstNumber(...values: unknown[]): number | null {
+  for (const value of values) {
+    const number = asNumber(value);
+    if (number !== null) return number;
+  }
+  return null;
+}
+
+function inferGeneratedAt(report: RawReport): string | undefined {
+  if (report.generated_at) return report.generated_at;
+  if (!report.report_date) return report.data_timestamp;
+  const match = report.report_time?.match(/(\d{1,2}):(\d{2})/);
+  if (!match) return report.data_timestamp ?? `${report.report_date}T00:00:00+08:00`;
+  return `${report.report_date}T${match[1].padStart(2, "0")}:${match[2]}:00+08:00`;
+}
+
+function inferVerdict(text: string): string {
+  if (/买入|反弹|恐惧/.test(text)) return "逆向买入观察";
+  if (/卖出|过热|极端贪婪/.test(text)) return "控制风险";
+  if (/观望|等待/.test(text)) return "等待极端信号";
+  return "";
 }
 
 async function scanManifest(): Promise<ManifestItem[]> {

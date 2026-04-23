@@ -1,0 +1,102 @@
+{
+  "report_date": "2026-04-23",
+  "report_time": "06:56 CST",
+  "data_timestamp": "2026-04-22T16:00:00Z",
+  "market_summary": {
+    "SPY": {"price": 711.21, "change_pct": 1.01, "note": "S&P 500 ETF"},
+    "QQQ": {"price": 655.11, "change_pct": 1.67, "note": "Nasdaq 100 ETF"},
+    "DIA": {"price": 494.76, "change_pct": 0.69, "note": "Dow 30 ETF"},
+    "IWM": {"price": 276.48, "change_pct": 0.72, "note": "Russell 2000 ETF"}
+  },
+  "sentiment_indicators": {
+    "fear_greed_index": {
+      "source": "CNN / AltIndex / ContrarianSignals综合",
+      "current_estimate": "恐惧区域(25-45)",
+      "trend": "从1月高点持续回落",
+      "detail": "AltIndex 3月底读数45(恐惧); ContrarianSignals 3月55.7%(中等); 市场受关税和中东冲突冲击"
+    },
+    "vix": {
+      "source": "CBOE",
+      "status": "高位运行",
+      "trend": "飙升至一年多来最高水平",
+      "detail": "VIX作为恐慌指标，近期因中东局势和关税政策大幅攀升"
+    },
+    "pcr": {
+      "source": "CBOE Equity Put/Call Ratio",
+      "status": "极端高位",
+      "trend": "飙升至一年多来最高水平",
+      "detail": "极端看跌期权需求，Contrarian买入信号"
+    },
+    "aaii": {
+      "source": "AAII Investor Sentiment Survey",
+      "bullish_pct": 33.1,
+      "neutral_pct": 31.4,
+      "bearish_pct": 35.5,
+      "date": "2026-03-04",
+      "trend": "看跌情绪高于历史均值31.0%",
+      "detail": "散户情绪偏悲观，但未达极端"
+    },
+    "naaim": {
+      "source": "NAAIM Exposure Index",
+      "current": 55.7,
+      "prev_month": 56.0,
+      "two_months_ago": 56.0,
+      "date": "2026-03",
+      "trend": "平稳略降",
+      "detail": "主动基金经理股票暴露比例维持中等水平，未现极端减仓"
+    },
+    "nyse_ad": {
+      "source": "NYSE Advance/Decline Line",
+      "status": "下行",
+      "trend": "falling",
+      "detail": "市场广度指标走弱，上涨股票数量少于下跌"
+    },
+    "margin_debt": {
+      "source": "FINRA",
+      "current_usd_billion": 1220.922,
+      "prev_month": 1253.192,
+      "change_mom_pct": -2.6,
+      "date": "2026-03",
+      "trend": "连续第二个月下降",
+      "detail": "较1月峰值下降4.5%，杠杆水平收缩但未崩溃"
+    },
+    "hy_spread": {
+      "source": "HYG / JNK proxy",
+      "spread_bps_estimate": 320,
+      "trend": "走阔",
+      "detail": "高收益债利差约320bps，信用风险溢价上升，资金连续8周流出"
+    },
+    "contrarian_signals": {
+      "source": "ContrarianSignals.com",
+      "allocation_pct": 55.7,
+      "date": "2026-03",
+      "trend": "中性偏谨慎",
+      "detail": "中等分配，建议等待极端读数再行动"
+    },
+    "altindex": {
+      "source": "AltIndex Fear & Greed",
+      "current": 45,
+      "date": "2026-03-31",
+      "zone": "恐惧",
+      "trend": "数周持续下滑",
+      "detail": "能源价格、消费者信心崩溃、就业疲软共同推动"
+    },
+    "feargreedtracker": {
+      "source": "FearGreedTracker.com",
+      "coverage": "50000+ stocks & crypto",
+      "update_freq": "per-minute",
+      "detail": "16-indicator AI算法，整合RSI/ADX/SMA/EMA/波动率/社交情绪"
+    }
+  },
+  "contrarian_analysis": {
+    "summary": "多数情绪指标指向恐惧或中性偏谨慎区域。VIX和PCR处于极端高位，AAII看跌情绪高于均值，AltIndex进入恐惧区。但NAAIM未现极端减仓(55.7%)，Margin Debt仅温和下降。整体呈现'恐慌但非崩溃'格局。",
+    "key_signals": [
+      "VIX + PCR双高 = 极端恐惧的期权市场",
+      "AAII看跌35.5% > 均值31% = 散户悲观",
+      "NAAIM 55.7% = 机构未恐慌性清仓",
+      "Margin Debt -2.6% MoM = 杠杆收缩但未踩踏",
+      "HY Spreads 320bps+ = 信用风险溢价上升"
+    ],
+    "strategy_note": "当前情绪面支持逆向买入逻辑：市场恐惧但未崩溃，机构持仓仍维持中等水平。若地缘风险缓解，存在反弹空间。"
+  }
+}
