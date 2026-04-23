@@ -1,0 +1,250 @@
+{
+  "meta": {
+    "report_type": "market_sentiment",
+    "version": "1.0",
+    "generated_at": "2026-04-23T18:49:00+08:00",
+    "data_cutoff": "2026-04-23 US Market Close",
+    "strategy": "别人恐惧我贪婪，别人贪婪我恐惧"
+  },
+  "overview": {
+    "sentiment_state": "Cautiously Optimistic",
+    "key_theme": "美股收复伊朗冲突失地并创新高，但散户仍偏谨慎，专业资金快速加仓，情绪处于谨慎乐观区间",
+    "market_breadth": "NYSE A/D Line同步新高，广度改善",
+    "credit_risk": "HYG利差264bps仍偏高，信用风险未完全消退"
+  },
+  "indicators": {
+    "aaii_sentiment": {
+      "report_date": "2026-04-15",
+      "bullish_pct": 31.7,
+      "bullish_change_pct": -5.4,
+      "neutral_pct": 25.5,
+      "neutral_change_pct": 1.5,
+      "bearish_pct": 42.8,
+      "bearish_change_pct": 3.9,
+      "bull_bear_spread_pct": -11.1,
+      "spread_change_pct": -9.3,
+      "historical_avg_bullish": 37.5,
+      "historical_avg_bearish": 31.0,
+      "status": "Net Bearish",
+      "contrarian_signal": "Moderate Buy",
+      "notes": "连续三周净看空，但未达极端(<-20%)"
+    },
+    "naaim_exposure": {
+      "report_date": "2026-04-15",
+      "avg_exposure_pct": 79.49,
+      "avg_change_pct": 14.57,
+      "median_exposure_pct": 82.50,
+      "median_change_pct": 25.0,
+      "bearish_response_pct": 0,
+      "bullish_response_pct": 200.0,
+      "quartile_1_pct": 50.0,
+      "quartile_2_pct": 90.0,
+      "quartile_3_pct": 100.0,
+      "status": "Aggressive Bullish",
+      "notes": "经理人持仓一周跳升14.6%，中位数飙升25%"
+    },
+    "smart_dumb_money": {
+      "report_date": "2026-04-21",
+      "spy_price": 704.08,
+      "spy_4w_high_pct": 33.60,
+      "spy_4w_low_pct": 7.36,
+      "status": "Dumb Money recovering from extreme pessimism",
+      "notes": "SPY强劲反弹后处于高位区间"
+    },
+    "fear_greed_index": {
+      "value": 69,
+      "status": "Greed",
+      "week_ago": 50,
+      "change": 19,
+      "extreme_greed_threshold": 75,
+      "extreme_fear_threshold": 25,
+      "notes": "接近贪婪但未极端，结合AAII偏空形成矛盾"
+    },
+    "vix": {
+      "value": 19.42,
+      "week_ago": 22,
+      "march_high": 31,
+      "historical_avg": 19.5,
+      "status": "Normalized",
+      "notes": "从伊朗冲突高点31大幅回落，恐慌情绪消退"
+    },
+    "put_call_ratio": {
+      "equity_pcr": 0.48,
+      "equity_date": "2026-04-22",
+      "total_pcr_10dma": 0.83,
+      "total_date": "2026-04-21",
+      "index_pcr": 1.09,
+      "index_date": "2026-04-22",
+      "etp_pcr": 1.25,
+      "status": "Mixed",
+      "notes": "Equity PCR偏低(乐观) vs Index PCR偏高(对冲)"
+    }
+  },
+  "market_breadth": {
+    "nyse_ad_line": {
+      "advances": 1508,
+      "declines": 1254,
+      "difference": 254,
+      "date": "2026-04-22",
+      "status": "Positive",
+      "sp500_sync": true,
+      "notes": "NYSE A/D Line 4/17同步新高"
+    },
+    "mcclellan_oscillator": {
+      "value": 85.56,
+      "date": "2026-04-22",
+      "status": "Strong Positive",
+      "notes": "短期动能强劲"
+    },
+    "nyse_new_highs_lows": {
+      "new_highs": 86,
+      "new_lows": 36,
+      "date": "2026-04-13",
+      "status": "More highs than lows"
+    },
+    "nasdaq_new_highs_lows": {
+      "new_highs": 196,
+      "new_lows": 118,
+      "date": "2026-04-13",
+      "status": "More highs than lows"
+    }
+  },
+  "credit_risk": {
+    "hyg": {
+      "nav": 80.39,
+      "nav_date": "2026-04-22",
+      "closing_price": 80.50,
+      "ytd_return_pct": 1.20,
+      "option_adjusted_spread_bps": 264.50,
+      "effective_duration_years": 2.95,
+      "dividend_yield_pct": 5.81,
+      "sec_yield_30d_pct": 6.52,
+      "status": "Elevated Risk",
+      "key_event": "3/6 historic put buying: 1.73M contracts, 95% puts, open interest 11.25M (2x 30-day avg)",
+      "notes": "价格回升但利差仍偏高，信用风险未完全消退"
+    }
+  },
+  "indices": {
+    "spy": {
+      "price": 704.08,
+      "date": "2026-04-21",
+      "4w_recovery_pct": 33.60,
+      "status": "New Highs",
+      "notes": "收复伊朗冲突全部失地"
+    },
+    "dia": {
+      "price": 49490.03,
+      "date": "2026-04-22",
+      "daily_change": 340.65,
+      "status": "Rising"
+    },
+    "qqq": {
+      "status": "Data pending",
+      "notes": "需补充"
+    },
+    "iwm": {
+      "status": "Data pending",
+      "notes": "需补充"
+    }
+  },
+  "contrarian_signals": {
+    "buy_signals": {
+      "aaii_extreme": false,
+      "aaii_spread": -11.1,
+      "aaii_threshold": -20,
+      "vix_extreme": false,
+      "vix_value": 19.42,
+      "vix_threshold": 25,
+      "fear_greed_extreme": false,
+      "fear_greed_value": 69,
+      "fear_greed_threshold": 25,
+      "naaim_aggressive": true,
+      "naaim_value": 79.49
+    },
+    "sell_signals": {
+      "fear_greed_extreme": false,
+      "fear_greed_value": 69,
+      "fear_greed_threshold": 75,
+      "pcr_extreme": false,
+      "pcr_value": 0.48,
+      "credit_risk_elevated": true,
+      "hyg_spread_bps": 264
+    }
+  },
+  "policy_cross_impact": {
+    "iran_war": {
+      "status": "Ongoing",
+      "oil_price_brent": 93.32,
+      "strait_of_hormuz": "Unstable",
+      "energy_sector_ytd_pct": 35.4,
+      "inflation_pressure": "Rising"
+    },
+    "tariffs": {
+      "pharma_100_pct": "Effective Apr 2",
+      "steel_aluminum_adjustment": "Effective Apr 6",
+      "china_comprehensive_rate": "~35%"
+    },
+    "fed_policy": {
+      "waller_warning": "Stagflation risk Apr 17",
+      "market_pricing": "Soft landing",
+      "fed_concern": "Persistent energy shock may force hold"
+    }
+  },
+  "dashboard": {
+    "fear_greed": {
+      "value": 69,
+      "label": "Greed",
+      "bar": "██████████░░"
+    },
+    "vix": {
+      "value": 19.42,
+      "label": "Normalized",
+      "bar": "███████░░░░░"
+    },
+    "aaii": {
+      "value": -11.1,
+      "label": "Bearish",
+      "bar": "████░░░░░░░░"
+    },
+    "naaim": {
+      "value": 79.49,
+      "label": "Bullish",
+      "bar": "███████████░"
+    },
+    "market_breadth": {
+      "value": "Sync High",
+      "label": "Bullish",
+      "bar": "███████████░"
+    },
+    "credit_spread": {
+      "value": 264,
+      "label": "Elevated",
+      "bar": "███████░░░░░"
+    },
+    "pcr_equity": {
+      "value": 0.48,
+      "label": "Low",
+      "bar": "█████░░░░░░░"
+    }
+  },
+  "tomorrow_watch": [
+    "AAII新一周数据 (周四发布)",
+    "Trade deficit官方数据 (验证Trump 78% Claim)",
+    "NAAIM新数据 (周五发布)",
+    "VIX是否跌破15或回升至25+",
+    "Fear & Greed是否突破75",
+    "HYG信用利差是否收窄至220bps以下",
+    "A/D Line是否维持同步"
+  ],
+  "strategy_recommendation": {
+    "current_state": "谨慎乐观",
+    "action": "不追高，可持有现有仓位",
+    "rationale": "AAII散户偏空+NAAIM经理人加仓=专业与散户分歧，趋势可能延续。F&G逼近75需警惕。HYG利差偏高暗示信用风险未完全消退。",
+    "risk_factors": [
+      "美伊战争持续，油价维持高位",
+      "Fed官员警告滞胀风险",
+      "关税政策不确定性",
+      "信用利差偏高"
+    ]
+  }
+}
