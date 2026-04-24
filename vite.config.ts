@@ -112,6 +112,13 @@ function inferVerdict(text: string): string {
   return "";
 }
 
+function fileSortKey(file: string): number {
+  const match = file.match(/market_sentiment_(\d{4})-(\d{2})-(\d{2})(?:_(\d{2})(\d{2}))?\.json$/);
+  if (!match) return 0;
+  const [, year, month, day, hour = "00", minute = "00"] = match;
+  return Number(`${year}${month}${day}${hour}${minute}`);
+}
+
 async function scanManifest(): Promise<ManifestItem[]> {
   if (!existsSync(dataDir)) return [];
 
@@ -127,7 +134,7 @@ async function scanManifest(): Promise<ManifestItem[]> {
     })
   );
 
-  return items.sort((a, b) => Date.parse(b.generatedAt) - Date.parse(a.generatedAt));
+  return items.sort((a, b) => fileSortKey(b.file) - fileSortKey(a.file));
 }
 
 function sendJson(res: ServerResponse, value: unknown): void {

@@ -3,7 +3,7 @@ import type { Indicator, ManifestItem, SentimentReport } from "./types";
 export async function fetchManifest(): Promise<ManifestItem[]> {
   const response = await fetch("/data/index.json", { cache: "no-cache" });
   if (!response.ok) throw new Error(`无法读取 data/index.json (${response.status})`);
-  return (await response.json()) as ManifestItem[];
+  return sortManifestByFile((await response.json()) as ManifestItem[]);
 }
 
 export async function fetchReport(file: string): Promise<SentimentReport> {
@@ -187,6 +187,10 @@ export function normalizeReportTitle(item: ManifestItem): string {
   return `${item.reportDate}${slot ? ` ${slot}` : ""}`;
 }
 
+export function sortManifestByFile(items: ManifestItem[]): ManifestItem[] {
+  return items.slice().sort((a, b) => fileSortKey(b.file) - fileSortKey(a.file));
+}
+
 function normalizeMarketSummary(summary: Record<string, Indicator>): Indicator {
   const result: Indicator = { name: "主要指数概览" };
   for (const symbol of ["SPY", "QQQ", "DIA", "IWM"]) {
@@ -227,4 +231,11 @@ function inferVerdict(text: string): string {
   if (/卖出|过热|极端贪婪/.test(text)) return "控制风险";
   if (/观望|等待/.test(text)) return "等待极端信号";
   return "待判断";
+}
+
+function fileSortKey(file: string): number {
+  const match = file.match(/market_sentiment_(\d{4})-(\d{2})-(\d{2})(?:_(\d{2})(\d{2}))?\.json$/);
+  if (!match) return 0;
+  const [, year, month, day, hour = "00", minute = "00"] = match;
+  return Number(`${year}${month}${day}${hour}${minute}`);
 }
