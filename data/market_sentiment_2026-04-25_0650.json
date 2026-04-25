@@ -1,0 +1,133 @@
+{
+  "report_date": "2026-04-25",
+  "report_time": "06:50",
+  "report_type": "morning",
+  "data_timestamp": "2026-04-24T22:56:00Z",
+  "market_status": "US_market_closed",
+  "summary": {
+    "fear_greed_score": 66,
+    "sentiment_status": "Greed",
+    "weekly_change": 12,
+    "contrarian_signal": "moderate_weak",
+    "recommendation": "neutral_cautious"
+  },
+  "indices": {
+    "SPY": {
+      "price": 713.94,
+      "change": 5.44,
+      "change_pct": 0.77
+    },
+    "QQQ": {
+      "price": 663.88,
+      "change": 12.44,
+      "change_pct": 1.91
+    },
+    "DIA": {
+      "price": 492.21,
+      "change": -0.79,
+      "change_pct": -0.16
+    },
+    "IWM": {
+      "price": 276.65,
+      "change": 1.13,
+      "change_pct": 0.41
+    }
+  },
+  "sentiment_indicators": {
+    "fear_greed_index": {
+      "value": 66,
+      "status": "Greed",
+      "weekly_change": 12
+    },
+    "vix": {
+      "value": 19.31,
+      "status": "low",
+      "weekly_change": -0.88
+    },
+    "cboe_pcr": {
+      "equity": 0.51,
+      "total": 0.91,
+      "index": 1.39
+    },
+    "aaii": {
+      "bullish": 46.0,
+      "bearish": 34.4,
+      "neutral": 19.6,
+      "bull_bear_spread": 11.6,
+      "weekly_change_bullish": 14.3,
+      "weekly_change_bearish": -8.4,
+      "data_date": "2026-04-24"
+    },
+    "naaim": {
+      "exposure": 79.5,
+      "weekly_change": 5.8,
+      "data_date": "2026-04-15"
+    },
+    "sentimentrader": {
+      "smart_money_confidence": 58,
+      "dumb_money_confidence": 72,
+      "signal": "divergence_caution"
+    },
+    "feargreedtracker": {
+      "value": 66,
+      "status": "Greed",
+      "weekly_change": 7
+    },
+    "altindex": {
+      "stock": 66,
+      "crypto": 39,
+      "stock_status": "Greed",
+      "crypto_status": "Fear"
+    },
+    "high_yield_spread": {
+      "value_bps": 295,
+      "status": "narrowing",
+      "monthly_change_bps": -75
+    },
+    "margin_debt": {
+      "value_trillion": 1.22,
+      "monthly_change_pct": -2.6,
+      "vs_peak_pct": -4.5,
+      "data_date": "2026-03"
+    },
+    "mutual_fund_cash_ratio": {
+      "value_pct": 1.7,
+      "data_date": "2026-02"
+    }
+  },
+  "analysis": {
+    "key_themes": [
+      "Retail sentiment improved significantly but not extreme",
+      "Institutional exposure increased to 79.5%",
+      "Margin debt declined for second consecutive month",
+      "Smart money remains cautious while retail is optimistic",
+      "High yield spreads narrowed, indicating risk appetite recovery"
+    ],
+    "contrarian_reading": {
+      "fear_greed_level": "Greed but not extreme",
+      "retail_sentiment": "Improved, not euphoric",
+      "institutional_positioning": "Elevated but not maximum",
+      "leverage": "Declining, reducing systemic risk",
+      "overall_assessment": "Market in recovery phase from March fear. Not yet at contrarian sell zone."
+    },
+    "strategy": {
+      "short_term": "Neutral cautious - don't chase",
+      "medium_term": "Watch for extreme greed (>75) as potential sell signal",
+      "long_term": "Structural opportunity if fear returns"
+    }
+  },
+  "data_sources": [
+    "CNN Fear & Greed Index",
+    "CBOE VIX",
+    "CBOE Put-Call Ratio",
+    "AAII Sentiment Survey",
+    "NAAIM Exposure Index",
+    "SentimenTrader",
+    "FearGreedTracker",
+    "AltIndex",
+    "FINRA Margin Statistics",
+    "ICI Mutual Fund Data",
+    "YCharts"
+  ],
+  "disclaimer": "This report is for informational purposes only. Not investment advice."
+}

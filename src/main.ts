@@ -1,3 +1,4 @@
+import type { User } from "@supabase/supabase-js";
 import {
   fetchManifest,
   fetchReport,
@@ -8,21 +9,46 @@ import {
   normalizeReportTitle,
   valueAt
 } from "./data";
+import { getSupabaseClient, getSupabaseSetup } from "./supabase";
 import type { Indicator, ManifestItem, SentimentReport } from "./types";
 import "./styles.css";
 
 const app = document.querySelector<HTMLDivElement>("#app");
+const supabase = getSupabaseClient();
+const supabaseSetup = getSupabaseSetup();
 
 type AppState = {
   manifest: ManifestItem[];
   selectedFile: string;
   report: SentimentReport | null;
+  auth: AuthState;
+  authBusy: AuthBusyState;
+  authMessage: string | null;
 };
+
+type AuthState = {
+  enabled: boolean;
+  user: User | null;
+  statusLabel: string;
+  statusTone: "ready" | "pending" | "muted";
+  membershipLabel: string;
+  membershipHint: string;
+  setupHint: string | null;
+  error: string | null;
+};
+
+type AuthBusyState = "google" | "signout" | null;
 
 const slotLabel: Record<string, string> = {
   morning: "早盘",
   evening: "晚盘"
 };
+
+let currentState: AppState | null = null;
+let authBusy: AuthBusyState = null;
+let authMessage: string | null = null;
+let authState = buildAuthState(null, null);
+let authListenerBound = false;
 
 function escapeHtml(value: unknown): string {
   return String(value ?? "")
@@ -148,6 +174,181 @@ function metricCard(label: string, value: string, sub: string, tone = "neutral")
       <div class="metric-value">${escapeHtml(value)}</div>
       <div class="metric-sub">${escapeHtml(sub)}</div>
     </article>
+  `;
+}
+
+function buildAuthState(user: User | null, error: string | null): AuthState {
+  if (!supabase) {
+    return {
+      enabled: false,
+      user: null,
+      statusLabel: "未配置",
+      statusTone: "muted",
+      membershipLabel: "基础版",
+      membershipHint: "先完成 Supabase 配置，再接会员档位与付费权益。",
+      setupHint: supabaseSetup.missingEnv.length
+        ? `缺少环境变量: ${supabaseSetup.missingEnv.join(", ")}`
+        : "Supabase 尚未配置。",
+      error
+    };
+  }
+
+  const membership = resolveMembership(user);
+
+  return {
+    enabled: true,
+    user,
+    statusLabel: user ? "已登录" : "未登录",
+    statusTone: user ? "ready" : "pending",
+    membershipLabel: membership.label,
+    membershipHint: membership.hint,
+    setupHint: null,
+    error
+  };
+}
+
+function resolveMembership(user: User | null): { label: string; hint: string } {
+  if (!user) {
+    return {
+      label: "游客",
+      hint: "登录后可用 app_metadata.plan / subscription_status 承接会员能力。"
+    };
+  }
+
+  const plan = firstString(user.app_metadata?.plan, user.app_metadata?.membership_tier, user.app_metadata?.subscription_tier);
+  const status = firstString(user.app_metadata?.subscription_status, user.app_metadata?.billing_status);
+
+  if (!plan) {
+    return {
+      label: "免费版",
+      hint: "后续可把付费状态写入 app_metadata，再由前端展示与路由守卫消费。"
+    };
+  }
+
+  return {
+    label: normalizePlanLabel(plan),
+    hint: status ? `订阅状态: ${normalizeStatusLabel(status)}` : "会员档位来自 Supabase app_metadata。"
+  };
+}
+
+function normalizePlanLabel(value: string): string {
+  const map: Record<string, string> = {
+    free: "免费版",
+    pro: "Pro 会员",
+    plus: "Plus 会员",
+    premium: "Premium 会员",
+    vip: "VIP 会员",
+    enterprise: "企业版"
+  };
+
+  return map[value.toLowerCase()] ?? value;
+}
+
+function normalizeStatusLabel(value: string): string {
+  const map: Record<string, string> = {
+    active: "有效",
+    trialing: "试用中",
+    past_due: "待续费",
+    canceled: "已取消",
+    unpaid: "未支付",
+    incomplete: "未完成"
+  };
+
+  return map[value.toLowerCase()] ?? value;
+}
+
+function formatUserName(user: User | null): string {
+  if (!user) return "游客";
+  return firstString(user.user_metadata?.full_name, user.user_metadata?.name, user.email?.split("@")[0], "Google 用户");
+}
+
+function formatUserEmail(user: User | null): string {
+  return firstString(user?.email, "尚未读取邮箱");
+}
+
+function userInitial(user: User | null): string {
+  const value = formatUserName(user).trim();
+  return value.slice(0, 1).toUpperCase() || "G";
+}
+
+function renderAuthPanel(auth: AuthState, busy: AuthBusyState, message: string | null): string {
+  const actionBusy = busy === "google" ? "正在跳转..." : "Google 登录";
+  const signOutBusy = busy === "signout" ? "退出中..." : "退出登录";
+
+  if (!auth.enabled) {
+    return `
+      <section class="auth-card">
+        <div class="auth-head">
+          <div>
+            <p class="eyebrow">Access</p>
+            <h3>登录与会员</h3>
+          </div>
+          <span class="status-chip status-muted">${escapeHtml(auth.statusLabel)}</span>
+        </div>
+        <p class="auth-copy">页面可以继续匿名访问，但 Google 登录和会员状态还未启用。</p>
+        <div class="membership-strip">
+          <strong>${escapeHtml(auth.membershipLabel)}</strong>
+          <span>${escapeHtml(auth.membershipHint)}</span>
+        </div>
+        <div class="auth-config">
+          <strong>需要配置</strong>
+          <code>VITE_SUPABASE_URL</code>
+          <code>VITE_SUPABASE_PUBLISHABLE_KEY</code>
+          <small>${escapeHtml(auth.setupHint || "请补齐 Supabase 环境变量。")}</small>
+        </div>
+      </section>
+    `;
+  }
+
+  return `
+    <section class="auth-card">
+      <div class="auth-head">
+        <div>
+          <p class="eyebrow">Access</p>
+          <h3>登录与会员</h3>
+        </div>
+        <span class="status-chip status-${auth.statusTone}">${escapeHtml(auth.statusLabel)}</span>
+      </div>
+      <p class="auth-copy">Google 登录已接好，可继续把订阅与会员权益挂到 Supabase Auth 与数据库策略上。</p>
+
+      ${
+        auth.user
+          ? `
+            <div class="auth-identity">
+              <div class="auth-avatar">${escapeHtml(userInitial(auth.user))}</div>
+              <div class="auth-meta">
+                <strong>${escapeHtml(formatUserName(auth.user))}</strong>
+                <span>${escapeHtml(formatUserEmail(auth.user))}</span>
+              </div>
+            </div>
+          `
+          : `
+            <div class="auth-identity auth-guest">
+              <div class="auth-avatar">G</div>
+              <div class="auth-meta">
+                <strong>Google 账号登录</strong>
+                <span>登录后可识别用户身份，并为付费会员体系做准备。</span>
+              </div>
+            </div>
+          `
+      }
+
+      <div class="membership-strip">
+        <strong>${escapeHtml(auth.membershipLabel)}</strong>
+        <span>${escapeHtml(auth.membershipHint)}</span>
+      </div>
+
+      <div class="auth-actions">
+        ${
+          auth.user
+            ? `<button class="auth-button auth-button-secondary" type="button" data-auth-action="signout"${busy ? " disabled" : ""}>${escapeHtml(signOutBusy)}</button>`
+            : `<button class="auth-button" type="button" data-auth-action="google"${busy ? " disabled" : ""}>${escapeHtml(actionBusy)}</button>`
+        }
+      </div>
+
+      ${auth.error ? `<p class="auth-note auth-note-error">${escapeHtml(auth.error)}</p>` : ""}
+      ${message ? `<p class="auth-note">${escapeHtml(message)}</p>` : ""}
+    </section>
   `;
 }
 
@@ -349,6 +550,7 @@ function renderTriggers(label: string, triggers?: string[]): string {
 
 function renderApp(state: AppState): void {
   if (!app) return;
+  currentState = state;
   const latest = state.manifest[0];
   const current = state.manifest.find((item) => item.file === state.selectedFile) ?? latest;
   const fg = current?.fearGreed ?? null;
@@ -362,6 +564,8 @@ function renderApp(state: AppState): void {
           <h2>美股市场情绪追踪</h2>
           <p>${escapeHtml(current?.strategy || "别人恐惧我贪婪，别人贪婪我恐惧")}</p>
         </div>
+
+        ${renderAuthPanel(state.auth, state.authBusy, state.authMessage)}
 
         <div class="stats-grid">
           <div><strong>${state.manifest.length}</strong><span>历史报告</span></div>
@@ -397,6 +601,14 @@ function renderApp(state: AppState): void {
       }, 1200);
     }
   });
+
+  app.querySelector<HTMLButtonElement>("[data-auth-action='google']")?.addEventListener("click", () => {
+    void handleGoogleSignIn();
+  });
+
+  app.querySelector<HTMLButtonElement>("[data-auth-action='signout']")?.addEventListener("click", () => {
+    void handleSignOut();
+  });
 }
 
 function renderLoading(): string {
@@ -425,13 +637,83 @@ async function selectReport(file: string, manifest: ManifestItem[], pushHistory 
     window.history.pushState({}, "", `${window.location.pathname}?${params.toString()}`);
   }
 
-  const shellState: AppState = { manifest, selectedFile: file, report: null };
+  const shellState: AppState = { manifest, selectedFile: file, report: null, auth: authState, authBusy, authMessage };
   renderApp(shellState);
   const report = await fetchReport(file);
   renderApp({ ...shellState, report });
 }
 
+function rerenderAuthState(error: string | null = null): void {
+  authState = buildAuthState(authState.user, error);
+  if (!currentState) return;
+  renderApp({ ...currentState, auth: authState, authBusy, authMessage });
+}
+
+async function loadAuthState(): Promise<void> {
+  if (!supabase) {
+    authState = buildAuthState(null, null);
+    return;
+  }
+
+  const { data, error } = await supabase.auth.getSession();
+  authState = buildAuthState(data.session?.user ?? null, error?.message ?? null);
+}
+
+function bindAuthListener(): void {
+  if (!supabase || authListenerBound) return;
+
+  supabase.auth.onAuthStateChange((event, session) => {
+    authBusy = null;
+    authState = buildAuthState(session?.user ?? null, null);
+
+    if (event === "SIGNED_IN") authMessage = "Google 账号已连接。";
+    if (event === "SIGNED_OUT") authMessage = "已退出登录。";
+
+    if (currentState) {
+      renderApp({ ...currentState, auth: authState, authBusy, authMessage });
+    }
+  });
+
+  authListenerBound = true;
+}
+
+async function handleGoogleSignIn(): Promise<void> {
+  if (!supabase) return;
+  authBusy = "google";
+  authMessage = "正在跳转到 Google 登录...";
+  rerenderAuthState();
+
+  const { error } = await supabase.auth.signInWithOAuth({
+    provider: "google",
+    options: {
+      redirectTo: supabaseSetup.redirectTo
+    }
+  });
+
+  if (error) {
+    authBusy = null;
+    authMessage = null;
+    rerenderAuthState(error.message);
+  }
+}
+
+async function handleSignOut(): Promise<void> {
+  if (!supabase) return;
+  authBusy = "signout";
+  authMessage = null;
+  rerenderAuthState();
+
+  const { error } = await supabase.auth.signOut();
+  if (error) {
+    authBusy = null;
+    rerenderAuthState(error.message);
+  }
+}
+
 async function boot(): Promise<void> {
+  await loadAuthState();
+  bindAuthListener();
+
   const manifest = await fetchManifest();
   if (!manifest.length) {
     renderError("没有找到任何报告 JSON。");
@@ -445,7 +727,15 @@ async function boot(): Promise<void> {
 }
 
 window.addEventListener("popstate", () => {
-  void boot();
+  if (!currentState) {
+    void boot();
+    return;
+  }
+
+  const params = new URLSearchParams(window.location.search);
+  const requested = params.get("report");
+  const selectedFile = currentState.manifest.some((item) => item.file === requested) ? requested! : currentState.manifest[0].file;
+  void selectReport(selectedFile, currentState.manifest, false);
 });
 
 void boot().catch((error: unknown) => {
