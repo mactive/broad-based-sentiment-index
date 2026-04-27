@@ -1,0 +1,176 @@
+{
+  "report_date": "2026-04-26",
+  "data_date": "2026-04-24",
+  "report_type": "morning",
+  "generation_time": "2026-04-26T06:50:00+08:00",
+  "summary": {
+    "overall_score": 66,
+    "sentiment_label": "Greed",
+    "direction": "caution",
+    "key_theme": "情绪从极端恐惧快速切换至贪婪，短期回调风险累积"
+  },
+  "indicators": {
+    "cnn_fear_greed": {
+      "value": 66,
+      "label": "Greed",
+      "week_ago": 67,
+      "month_ago": 18,
+      "source": "CNN Business"
+    },
+    "vix": {
+      "value": 16.21,
+      "status": "low",
+      "week_ago": 16.35,
+      "month_high": 31.05,
+      "source": "CBOE"
+    },
+    "cboe_pcr": {
+      "value": 0.62,
+      "status": "bullish_skewed",
+      "week_ago": 0.63,
+      "source": "CBOE"
+    },
+    "aaii": {
+      "bullish_pct": 46.0,
+      "neutral_pct": 19.5,
+      "bearish_pct": 34.4,
+      "bull_bear_spread": 11.6,
+      "historical_avg_bullish": 37.5,
+      "special": "45.6%认为其他投资者过于看涨",
+      "data_date": "2026-04-23",
+      "source": "AAII"
+    },
+    "naaim": {
+      "average_exposure": 94.15,
+      "median": 100.0,
+      "q1": 80.0,
+      "q3": 100.0,
+      "std_dev": 51.90,
+      "most_bearish": 0.0,
+      "most_bullish": 200.0,
+      "data_date": "2026-04-22",
+      "source": "NAAIM"
+    },
+    "nyse_breadth": {
+      "advance_decline": "rising_2nd_week",
+      "new_highs_lows": "normal",
+      "momentum": "strong",
+      "data_date": "2026-04-24",
+      "source": "NYSE"
+    },
+    "margin_debt": {
+      "value_trillion": 1.220,
+      "trend": "declining",
+      "months_declining": 2,
+      "from_peak_pct": -4.5,
+      "data_date": "2026-03-31",
+      "source": "FINRA"
+    },
+    "high_yield_spread": {
+      "value_bps": 406,
+      "status": "elevated",
+      "proxy": "HYG",
+      "source": "Market"
+    },
+    "sentimentrader": {
+      "dumb_money": "very_optimistic",
+      "smart_money": "neutral",
+      "data_date": "2026-04-24",
+      "source": "SentimenTrader"
+    },
+    "feargreedtracker": {
+      "value": 66,
+      "label": "Greed",
+      "data_date": "2026-04-24",
+      "source": "FearGreedTracker"
+    },
+    "altindex": {
+      "value": 45,
+      "label": "Fear",
+      "data_date": "2026-03-31",
+      "note": "lagged_data",
+      "source": "AltIndex"
+    }
+  },
+  "market_data": {
+    "spy": {
+      "close": 714.47,
+      "daily_change_pct": 0.80,
+      "weekly_change_pct": 5.5,
+      "from_march_low_pct": 12.5
+    },
+    "qqq": {
+      "close": 663.88,
+      "daily_change_pct": 1.63,
+      "weekly_change_pct": 7.2,
+      "from_march_low_pct": 18.5
+    },
+    "dia": {
+      "close": 491.84,
+      "daily_change_pct": 0.16,
+      "weekly_change_pct": 3.8,
+      "from_march_low_pct": 8.2
+    },
+    "iwm": {
+      "close": 276.65,
+      "daily_change_pct": 0.41,
+      "weekly_change_pct": 5.6,
+      "from_march_low_pct": 15.5
+    },
+    "sp500_pe": 28
+  },
+  "contrarian_signals": {
+    "aaii_spread": {
+      "direction": "bullish",
+      "contrarian_reading": "bearish_warning",
+      "strength": "medium_high"
+    },
+    "naaim": {
+      "direction": "extremely_bullish",
+      "contrarian_reading": "bearish_warning",
+      "strength": "high"
+    },
+    "vix": {
+      "direction": "low",
+      "contrarian_reading": "caution",
+      "strength": "medium"
+    },
+    "pcr": {
+      "direction": "bullish_skewed",
+      "contrarian_reading": "caution",
+      "strength": "medium"
+    },
+    "margin_debt": {
+      "direction": "declining",
+      "contrarian_reading": "bullish",
+      "strength": "medium"
+    },
+    "breadth": {
+      "direction": "strong",
+      "contrarian_reading": "bullish",
+      "strength": "medium"
+    },
+    "fear_greed": {
+      "direction": "greedy",
+      "contrarian_reading": "caution",
+      "strength": "medium_high"
+    },
+    "smart_dumb": {
+      "direction": "dumb_optimistic",
+      "contrarian_reading": "bearish_warning",
+      "strength": "medium"
+    }
+  },
+  "strategy": {
+    "short_term": "回调风险上升，不宜追涨",
+    "medium_term": "F&G回落至45-55区间是加仓窗口",
+    "positioning": "考虑部分获利了结或保护性put",
+    "key_watch": ["伊朗局势", "美联储利率预期", "Q1财报收尾"]
+  },
+  "meta": {
+    "version": "1.0",
+    "generator": "market-sentiment-morning",
+    "data_completeness": "high",
+    "missing_indicators": []
+  }
+}

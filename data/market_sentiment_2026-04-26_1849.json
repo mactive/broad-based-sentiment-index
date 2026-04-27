@@ -1,0 +1,231 @@
+{
+  "report_date": "2026-04-26",
+  "report_time": "18:49 CST",
+  "report_type": "evening",
+  "summary": {
+    "overall_score": 68,
+    "sentiment_label": "偏贪婪区间",
+    "key_theme": "结构性分化：散户中性偏高，机构极端满仓，科技接近超买",
+    "contrarian_signal": "NAAIM极端高位(94.15)与QQQ RSI 72.82构成双重预警，建议停止买入、收紧止损",
+    "risk_level": "中高风险",
+    "data_freshness": "周五收盘数据（周日无新交易）",
+    "geopolitical_context": "以色列-黎巴嫩停火延长三周，地缘风险短期缓解"
+  },
+  "indicators": {
+    "fear_greed": {
+      "value": 66,
+      "label": "Greed",
+      "date": "2026-04-24",
+      "change_1d": 5,
+      "change_1w": 24,
+      "historical_avg": 48.77,
+      "percentile": "72nd",
+      "signal": "进入贪婪区间，但未极端",
+      "source": "CNN Business"
+    },
+    "vix": {
+      "value": 18.71,
+      "label": "Low",
+      "date": "2026-04-24",
+      "change_1d": -0.61,
+      "ma20": 22.5,
+      "percentile_1y": "25th",
+      "signal": "波动率压缩，自满情绪积累",
+      "source": "CBOE"
+    },
+    "put_call_ratio": {
+      "equity_pcr": 0.53,
+      "index_pcr": "N/A",
+      "total_pcr": "N/A",
+      "date": "2026-04-24",
+      "ma20": 0.62,
+      "historical_range": "0.45-1.2",
+      "signal": "看涨期权活跃，投机升温",
+      "source": "CBOE"
+    },
+    "aaii": {
+      "bullish_pct": 46.0,
+      "neutral_pct": 19.5,
+      "bearish_pct": 34.4,
+      "bull_bear_spread": 11.6,
+      "historical_avg_spread": 15.4,
+      "sentiment_diff": -15.4,
+      "date": "2026-04-23",
+      "frequency": "weekly",
+      "signal": "散户转向乐观但尚未极端，Neutral比例过低显示观点分化",
+      "source": "AAII"
+    },
+    "naaim": {
+      "exposure_index": 94.15,
+      "prior_week": 88.3,
+      "date": "2026-04-22",
+      "frequency": "weekly",
+      "percentile": "~97th",
+      "signal": "极端高位，专业投资者几乎满仓，4-8周回调概率约60%",
+      "source": "NAAIM"
+    },
+    "sentiment_trader": {
+      "smart_money_confidence": "Neutral",
+      "dumb_money_confidence": "Very Optimistic",
+      "signal": "Contrarian Bearish",
+      "date": "2026-04-24",
+      "frequency": "daily",
+      "notes": "Smart Money/Dumb Money背离，经典短期顶部预警",
+      "source": "SentimenTrader"
+    },
+    "nyse_advance_decline": {
+      "advance_decline_ratio": 1.06,
+      "prior_day": 0.86,
+      "5day_avg": 0.95,
+      "date": "2026-04-24",
+      "signal": "广度改善，但大小盘分化严重（QQQ +1.91% vs IWM +0.41%）",
+      "source": "NYSE"
+    },
+    "margin_debt": {
+      "total_margin_debt": "$1.22 Trillion",
+      "mom_change_pct": -2.6,
+      "from_peak_pct": -4.5,
+      "date": "2026-03",
+      "frequency": "monthly",
+      "lag_days": 30,
+      "signal": "绝对水平仍高但下降趋势，杠杆从散户向机构转移",
+      "source": "FINRA"
+    },
+    "high_yield_spread": {
+      "ice_bofa_spread_pct": 3.07,
+      "ice_bofa_spread_bps": 307,
+      "hyg_oas_bps": 266,
+      "jnk_oas_bps": 305,
+      "date": "2026-04-20",
+      "signal": "利差低位，信用风险偏好较高，脱离恐慌买入区间",
+      "source": "ICE BofA / iShares"
+    },
+    "investment_advisors": {
+      "bullish_pct": 53.5,
+      "bearish_pct": 33.0,
+      "neutral_pct": 13.5,
+      "bull_bear_spread": 20.5,
+      "historical_avg_spread": 15.0,
+      "date": "2026-04-15",
+      "frequency": "weekly",
+      "signal": "偏乐观但未极端，滞后市场反弹1-2周",
+      "source": "Investors Intelligence"
+    }
+  },
+  "market_data": {
+    "indices": {
+      "SPY": {
+        "price": 713.94,
+        "change_pct": 0.78,
+        "volume": 45181957,
+        "avg_volume_20d": 70000000,
+        "rsi_14": 65.46,
+        "52w_high": 714.47,
+        "52w_low": 541.52,
+        "status": "接近超买"
+      },
+      "QQQ": {
+        "price": 663.88,
+        "change_pct": 1.91,
+        "volume": 45449877,
+        "avg_volume_20d": 50000000,
+        "rsi_14": 72.82,
+        "52w_high": 664.51,
+        "52w_low": 462.43,
+        "status": "接近超买"
+      },
+      "DIA": {
+        "price": 492.21,
+        "change_pct": 0.0,
+        "volume": 3400000,
+        "avg_volume_20d": 6300000,
+        "rsi_14": 58.0,
+        "52w_high": 495.13,
+        "52w_low": 409.35,
+        "status": "中性"
+      },
+      "IWM": {
+        "price": 276.65,
+        "change_pct": 0.41,
+        "volume": 21290167,
+        "avg_volume_20d": 27000000,
+        "rsi_14": 60.28,
+        "52w_high": 279.79,
+        "52w_low": 190.72,
+        "status": "中性"
+      }
+    },
+    "market_breadth": {
+      "advance_decline_ratio": 1.06,
+      "new_highs_new_lows_ratio": "N/A",
+      "up_volume_pct": "N/A",
+      "signal": "广度改善但质量一般，非普涨格局"
+    },
+    "technical_indicators": {
+      "spy_macd": "MACD线在信号线上方，柱状图为正",
+      "qqq_macd": "MACD线在信号线上方，柱状图为正",
+      "spy_bollinger": "价格接近上轨",
+      "qqq_bollinger": "价格接近上轨",
+      "overall_trend": "短期上升趋势，但动能分化"
+    }
+  },
+  "contrarian_signals": {
+    "composite_score": 68,
+    "signal": "偏贪婪",
+    "key_divergences": [
+      "NAAIM极端高(94.15) vs AAII仅中等乐观(+11.6%)",
+      "QQQ RSI 72.82(接近超买) vs IWM RSI 60.28(中性)",
+      "Smart Money中性 vs Dumb Money非常乐观",
+      "Social Sentiment 0.71 vs News Sentiment 0.58(散户过热)"
+    ],
+    "historical_precedent": "NAAIM>90后4-8周5%+回调概率约60%",
+    "reliability": "中高风险预警"
+  },
+  "strategy": {
+    "overall_stance": "谨慎持有，不追高科技，收紧止损",
+    "action_items": [
+      "维持当前仓位，不做激进加仓",
+      "将盈利仓位止损收紧至成本价上方5-8%",
+      "避免新建科技仓位（QQQ RSI 72.82接近超买）",
+      "关注滞后板块（IWM、能源、房地产）轮动机会",
+      "考虑低价买入VIX Call或Put Spread作为保险",
+      "5月中下旬为NAAIM预警的回调高概率窗口"
+    ],
+    "watchlist_triggers": [
+      "Fear & Greed突破75（极端贪婪）",
+      "AAII Bullish突破50%（散户全面乐观）",
+      "VIX突破25（波动率突变）",
+      "QQQ RSI突破75（确认超买）"
+    ],
+    "positioning": {
+      "equity_exposure": "维持",
+      "tech_exposure": "减持或避免新增",
+      "small_cap_exposure": "观望补涨机会",
+      "hedge": "可考虑VIX保险",
+      "cash_level": "保持适度现金（10-15%）"
+    }
+  },
+  "meta": {
+    "version": "v3.1-evening",
+    "author": "Kimi Claw",
+    "generated_at": "2026-04-26T18:49:00+08:00",
+    "data_timestamp": "2026-04-24T16:00:00-04:00",
+    "data_sources": [
+      "CNN Business (Fear & Greed)",
+      "CBOE (VIX, PCR)",
+      "AAII (Sentiment Survey)",
+      "NAAIM (Exposure Index)",
+      "SentimenTrader (Smart/Dumb Money)",
+      "NYSE (A-D Line)",
+      "FINRA (Margin Debt)",
+      "ICE BofA (HY Spread)",
+      "Investors Intelligence (Advisors)",
+      "AltIndex (NLP Sentiment)",
+      "Yahoo Finance / stockanalysis.com (ETF Prices)"
+    ],
+    "methodology": "逆向投资框架（巴菲特别人恐惧我贪婪，别人贪婪我恐惧）",
+    "disclaimer": "本报告仅供信息参考，不构成投资建议。市场情绪指标为概率工具，非预测工具。",
+    "next_report": "2026-04-27 06:50 CST (Morning)",
+    "notes": "周日生成，基于周五收盘数据。ContrarianSignals和FearGreedTracker网站数据未成功获取。"
+  }
+}

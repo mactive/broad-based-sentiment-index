@@ -1,0 +1,149 @@
+{
+  "report_date": "2026-04-27",
+  "report_time": "06:50",
+  "report_time_utc": "2026-04-26T22:50:00Z",
+  "data_timestamp": "2026-04-26",
+  "report_type": "morning",
+  "indicators": {
+    "fear_greed_index": {
+      "name": "CNN Fear & Greed Index",
+      "value": 66,
+      "status": "Greed",
+      "range": "50-74",
+      "signal": "moderate_greed",
+      "previous_week": 64,
+      "previous_month": 56,
+      "interpretation": "市场情绪偏向贪婪，但未达极端"
+    },
+    "vix": {
+      "name": "VIX Volatility Index",
+      "value": 18.71,
+      "change_percent": -3.11,
+      "status": "low",
+      "signal": "fear_receding",
+      "interpretation": "恐慌情绪持续消退，市场平静"
+    },
+    "cboe_pcr": {
+      "name": "CBOE Put/Call Ratio",
+      "equity_pcr": 0.53,
+      "total_pcr": 1.02,
+      "ma50": 0.65,
+      "status": "below_average",
+      "signal": "bullish_sentiment",
+      "interpretation": "看涨期权活跃，情绪偏多"
+    },
+    "aaii_sentiment": {
+      "name": "AAII Investor Sentiment Survey",
+      "survey_date": "2026-04-23",
+      "bullish": 46.0,
+      "neutral": 19.5,
+      "bearish": 34.4,
+      "bull_bear_spread": 11.6,
+      "spread_change": 22.7,
+      "historical_avg_bullish": 37.5,
+      "historical_avg_neutral": 31.5,
+      "historical_avg_bearish": 31.0,
+      "signal": "optimism_surge",
+      "interpretation": "看涨情绪10周来首次超均值，Bull-Bear Spread转正"
+    },
+    "naaim": {
+      "name": "NAAIM Exposure Index",
+      "value_estimate": 65,
+      "trend": "rising",
+      "signal": "risk_appetite_improving",
+      "note": "周度滞后数据，基于综合推断"
+    },
+    "market_indices": {
+      "spy": {
+        "symbol": "SPY",
+        "name": "SPDR S&P 500 ETF",
+        "price": 713.94,
+        "4w_high": 10.74,
+        "4w_low": 7.16,
+        "trend": "consolidating_near_highs"
+      },
+      "qqq": {
+        "symbol": "QQQ",
+        "name": "Invesco QQQ Trust",
+        "price_estimate": 660,
+        "trend": "rebound_then_consolidation"
+      },
+      "dia": {
+        "symbol": "DIA",
+        "name": "SPDR Dow Jones Industrial Average ETF",
+        "price_estimate": 490,
+        "trend": "relative_weakness"
+      },
+      "iwm": {
+        "symbol": "IWM",
+        "name": "iShares Russell 2000 ETF",
+        "price_estimate": 195,
+        "trend": "small_cap_rotation"
+      }
+    },
+    "nyse_breadth": {
+      "name": "NYSE Advance/Decline Line",
+      "status": "sync_with_price",
+      "participation": "moderate",
+      "signal": "breadth_adequate_not_strong",
+      "interpretation": "上涨由大盘股主导，广度一般"
+    },
+    "margin_debt": {
+      "name": "NYSE Margin Debt",
+      "status": "high_then_stabilizing",
+      "trend": "cautious",
+      "signal": "moderate_leverage",
+      "note": "FINRA数据滞后约6周"
+    },
+    "high_yield_spread": {
+      "name": "High Yield Bond Spread",
+      "hyg_nav": 80.27,
+      "spread_estimate_bp": 375,
+      "trend": "narrowing",
+      "signal": "credit_risk_mild",
+      "interpretation": "信用风险温和，风险偏好改善"
+    },
+    "contrarian_signals": {
+      "name": "ContrarianSignals Composite",
+      "value": 57,
+      "prev_month": 56.0,
+      "prev_2month": 55.7,
+      "signal": "neutral_bullish"
+    },
+    "smart_dumb_money": {
+      "name": "SentimenTrader Smart/Dumb Money Confidence",
+      "smart_money": "moderate_high",
+      "dumb_money": "moderate_high",
+      "spread": "narrow",
+      "signal": "no_extreme_divergence",
+      "interpretation": "两者均处中等区间，无强烈反向信号"
+    }
+  },
+  "composite_analysis": {
+    "overall_sentiment": "moderately_bullish",
+    "extreme_reading": false,
+    "contrarian_trigger": false,
+    "key_observations": [
+      "AAII Bull-Bear Spread转正，10周来首次",
+      "Fear & Greed 66处于贪婪区间但未极端",
+      "VIX 18.71反映市场平静",
+      "PCR 0.53接近警戒线但未极端",
+      "市场广度一般，上涨集中度较高"
+    ],
+    "strategy_implication": "情绪偏向乐观但未达逆向操作极端标准。建议维持中性仓位，等待F&G>75、AAII Spread>+20%、PCR<0.45等更极端读数。"
+  },
+  "data_sources": [
+    "CNN Money",
+    "CBOE",
+    "AAII",
+    "SentimenTrader",
+    "Yahoo Finance",
+    "ContrarianSignals",
+    "MarketCrunch AI"
+  ],
+  "metadata": {
+    "version": "1.0",
+    "generator": "market-sentiment-morning-cron",
+    "schedule": "daily_0650_cst"
+  }
+}
