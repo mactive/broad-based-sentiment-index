@@ -1,0 +1,163 @@
+{
+  "report_date": "2026-04-27",
+  "report_type": "evening",
+  "beijing_time": "2026-04-27T18:49:00+08:00",
+  "ny_time": "2026-04-27T06:49:00-04:00",
+  "market_status": "pre-market",
+  "indicators": {
+    "fear_greed": {
+      "source": "CNN",
+      "value": 66,
+      "label": "Greed",
+      "range": "0-100",
+      "threshold_extreme_greed": 75,
+      "threshold_extreme_fear": 25,
+      "status": "greed_zone"
+    },
+    "vix": {
+      "premarket": 19.22,
+      "previous_close": 18.71,
+      "change": 0.51,
+      "change_pct": 2.7,
+      "range_52w_low": 12.55,
+      "range_52w_high": 30.36,
+      "status": "low_to_moderate"
+    },
+    "pcr": {
+      "source": "CBOE",
+      "value": 0.53,
+      "date": "2026-04-24",
+      "range_52w_low": 0.50,
+      "range_52w_high": 1.10,
+      "previous": 0.52,
+      "status": "low_bullish"
+    },
+    "aaii": {
+      "date": "2026-04-23",
+      "bullish_pct": 46.0,
+      "bullish_change_pp": 14.3,
+      "neutral_pct": 19.5,
+      "neutral_change_pp": -5.9,
+      "bearish_pct": 34.4,
+      "bearish_change_pp": -8.4,
+      "bull_bear_spread": 11.6,
+      "bull_bear_spread_change_pp": 22.7,
+      "historical_avg_bullish": 37.5,
+      "others_too_optimistic_pct": 45.6,
+      "status": "bullish_turn"
+    },
+    "naaim": {
+      "date": "2026-04-22",
+      "mean": 94.15,
+      "median": 100.0,
+      "q1": 80.0,
+      "wow_change_pct": 18.44,
+      "yoy_change_pct": 167.8,
+      "status": "extreme_bullish"
+    },
+    "sentimentrader": {
+      "date": "2026-04-24",
+      "dumb_money": "extremely_optimistic",
+      "dumb_money_value": 70,
+      "smart_money": "neutral",
+      "smart_money_value": 50,
+      "spread": -20,
+      "status": "warning_top"
+    },
+    "advance_decline_line": {
+      "status": "bullish",
+      "detail": "S&P 500 AD line hit new high on Apr 16, rising since late March low",
+      "breadth": "healthy"
+    },
+    "margin_debt": {
+      "mar_2026": 1221000000000,
+      "feb_2026": 1253000000000,
+      "change_mom": -33500000000,
+      "trend": "decreasing",
+      "status": "deleveraging"
+    },
+    "hy_spread": {
+      "value_bps": 286,
+      "value_pct": 2.86,
+      "source": "ICE BofA US High Yield OAS",
+      "date": "2026-04-23",
+      "status": "tight"
+    },
+    "crypto_fear_greed": {
+      "source": "Alternative.me",
+      "value": 31.77,
+      "label": "Fear",
+      "status": "fear_zone"
+    },
+    "feargreedtracker": {
+      "value": 66,
+      "label": "Greed",
+      "status": "greed_zone"
+    }
+  },
+  "etfs": {
+    "spy": {
+      "close": 713.40,
+      "date": "2026-04-24"
+    },
+    "qqq": {
+      "close": 664.00,
+      "date": "2026-04-24"
+    },
+    "dia": {
+      "close": 491.54,
+      "date": "2026-04-24"
+    },
+    "iwm": {
+      "close": 276.65,
+      "premarket": 276.43,
+      "date": "2026-04-24",
+      "ytd_pct": 12.59
+    }
+  },
+  "index_details": {
+    "spx": {
+      "close": 7165.08,
+      "change": 56.68,
+      "change_pct": 0.80,
+      "open": 7136.48,
+      "high": 7168.59,
+      "low": 7112.82,
+      "range_52w_low": 5433.24,
+      "range_52w_high": 7168.59,
+      "ytd_1m_pct": -12.50,
+      "ytd_3m_pct": -3.61,
+      "ytd_pct": -4.67,
+      "yoy_pct": 29.68
+    }
+  },
+  "contrarian_score": {
+    "retail_sentiment": 75,
+    "institutional_sentiment": 85,
+    "smart_money": 40,
+    "credit_environment": 55,
+    "leverage_level": 35,
+    "market_breadth": 60,
+    "composite": 58
+  },
+  "key_signals": [
+    "AAII bullish surged 14.3pp to 46%, first above historical average in 10 weeks",
+    "NAAIM mean 94.15 with median 100%, active managers fully invested",
+    "SentimenTrader Dumb Money extremely optimistic vs Smart Money neutral: classic top warning",
+    "VIX 19.22 premarket, moderate uncertainty",
+    "Margin debt declined $33.5B to $1.221T in March",
+    "Crypto fear (31.77) vs US equity greed (66): significant divergence",
+    "NYSE AD line hit new high Apr 16, healthy breadth"
+  ],
+  "recommendation": {
+    "long_term": "Hold existing positions but avoid chasing highs",
+    "risk_alert": "Dumb Money extremely optimistic + Smart Money neutral implies 1-3 month pullback probability rising. Consider profit-taking or protective puts.",
+    "watchlist": [
+      "VIX sustained above 22",
+      "HY spread above 300bps",
+      "Smart Money Confidence below 40%",
+      "Dumb Money Confidence above 80%",
+      "AAII Bullish above 50%"
+    ]
+  }
+}

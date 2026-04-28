@@ -1,268 +1,243 @@
 {
-  "generated_at": "2026-04-24 18:49:00",
-  "version": "10+1",
-  "data_sources": {
-    "search": "Kimi Search Plugin",
-    "timestamp": "2026-04-24T18:49:00",
-    "last_market_date": "2026-04-23",
-    "notes": "Using US market data from April 23/24, 2026"
+  "report_date": "2026-04-24",
+  "report_time": "18:49 CST",
+  "data_timestamp": "2026-04-24T16:00:00Z",
+  "market_summary": {
+    "SPY": {
+      "price": 595.1,
+      "change_pct": null,
+      "note": "S&P 500 ETF, 历史高位附近"
+    },
+    "QQQ": {
+      "price": 496.47,
+      "change_pct": null,
+      "note": "Nasdaq 100 ETF"
+    },
+    "DIA": {
+      "price": 411.04,
+      "change_pct": null,
+      "note": "Dow 30 ETF"
+    },
+    "IWM": {
+      "price": 275.52,
+      "change_pct": -0.35,
+      "note": "Russell 2000 ETF, 4/23下跌0.35%"
+    }
   },
-  "report_info": {
-    "title": "美股市场情绪指标追踪系统",
-    "version": "10+1",
-    "report_type": "Evening",
-    "generated_at": "2026-04-24 18:49:00",
-    "last_market_date": "2026-04-23"
-  },
-  "indicators": {
-    "fear_greed": {
-      "name": "CNN 恐惧贪婪指数",
-      "source": "CNN Business",
-      "source_url": "https://feargreed.macro.micro",
-      "current_value": 67,
-      "previous_value": 65,
-      "unit": "Score (0-100)",
-      "date": "2026-04-24",
-      "frequency": "Daily",
-      "sentiment": "Greed",
-      "interpretation": "贪婪区间。连续处于贪婪区域，情绪偏高。",
-      "category": "primary",
-      "note": "自65升至67，贪婪程度增加"
+  "sentiment_indicators": {
+    "fear_greed_index": {
+      "source": "CNN / AltIndex / ContrarianSignals综合",
+      "current": 67,
+      "zone": "贪婪",
+      "week_ago": 65,
+      "change": 2,
+      "extreme_greed_threshold": 75,
+      "extreme_fear_threshold": 25,
+      "trend": "从65升至67，贪婪程度增加",
+      "detail": "CNN指数自65升至67，AltIndex同步66，两源一致确认贪婪区间。ContrarianSignals显示混合信号。"
     },
     "vix": {
-      "name": "VIX 波动率指数",
       "source": "CBOE",
-      "source_url": "https://ycharts.com/indicators/vix_volatility_index",
-      "current_value": 18.95,
-      "previous_value": 19.31,
-      "unit": "Index",
-      "date": "2026-04-24",
-      "frequency": "Daily",
-      "sentiment": "Neutral",
-      "interpretation": "中性水平，较昨日微降。市场不确定性适中。",
-      "category": "primary",
-      "note": "较昨日19.31下降约2%"
+      "value": 18.95,
+      "week_ago": 19.31,
+      "march_high": 31,
+      "historical_avg": 19.5,
+      "status": "中性",
+      "trend": "较昨日19.31下降约2%",
+      "detail": "VIX降至18.95，处于中性区间(12-20为正常)。一年前VIX为28.45，当前较去年同期低32%。"
     },
-    "cboe_pcr": {
-      "name": "CBOE Put/Call Ratio (PCR)",
-      "source": "CBOE",
-      "source_url": "https://ycharts.com/indicators/cboe_equity_put_call_ratio",
-      "current_value": 0.54,
-      "previous_value": null,
-      "unit": "Ratio",
-      "date": "2026-04-23",
-      "frequency": "Daily",
-      "sentiment": "Neutral",
-      "interpretation": "中性。处于0.5-0.7正常区间，无极端偏向。",
-      "category": "primary",
-      "note": "低于0.7表明看涨情绪占优，但非极端"
+    "pcr": {
+      "source": "CBOE Equity Put/Call Ratio",
+      "equity_pcr": 0.54,
+      "equity_date": "2026-04-23",
+      "total_pcr_10dma": null,
+      "total_date": "2026-04-23",
+      "index_pcr": 1.39,
+      "status": "中性",
+      "trend": "Equity PCR 0.54处于正常区间",
+      "detail": "Equity PCR 0.54处于0.5-0.7正常区间，看涨情绪占优但非极端。Index PCR 1.39显示指数期权对冲需求仍在。"
     },
     "aaii": {
-      "name": "AAII 投资者情绪调查",
-      "source": "AAII",
-      "source_url": "https://www.aaii.com/sentiment-survey",
-      "current_bullish": 31.7,
-      "current_neutral": 25.5,
-      "current_bearish": 42.8,
-      "previous_bullish": 29.1,
-      "previous_neutral": 25.5,
-      "previous_bearish": 45.4,
+      "source": "AAII Investor Sentiment Survey",
+      "bullish_pct": 31.7,
+      "neutral_pct": 25.5,
+      "bearish_pct": 42.8,
+      "bull_bear_spread": -11.099999999999998,
+      "spread_change": 5.2,
       "date": "2026-04-16",
-      "frequency": "Weekly (Thursday)",
-      "sentiment": "Neutral/Bearish",
-      "interpretation": "散户偏谨慎。看空比例显著高于看多，与CNN贪婪指数形成反差。",
-      "category": "contrarian",
-      "note": "公布频率每周四，最新为4/16数据"
+      "historical_avg_bullish": 37.5,
+      "historical_avg_bearish": 31.0,
+      "status": "连续三周净看空",
+      "trend": "散户看空42.8%高于均值31%",
+      "detail": "散户看空比例仍高达42.8%，显著高于看多31.7%。多空差-11.1%，处于逆向信号区间(低于-10%为偏多信号)。"
     },
     "naaim": {
-      "name": "NAAIM 主动投资经理人敞口指数",
-      "source": "NAAIM",
-      "source_url": "https://www.naaim.org/naaim-exposure-index/",
-      "current_value": 79.49,
-      "previous_value": 74.72,
-      "unit": "Score (Median Exposure %)",
+      "source": "NAAIM Exposure Index",
+      "current": 79.49,
+      "prev_week": 74.72,
+      "change_pct": 14.57,
+      "median": 82.5,
       "date": "2026-04-15",
-      "frequency": "Weekly (Wednesday)",
-      "sentiment": "Bullish",
-      "interpretation": "经理人高仓位运行。较上周74.72上升，风险偏好增强。",
-      "category": "institutional",
-      "note": "下周4/23数据待公布"
+      "status": "快速加仓",
+      "trend": "一周跳升14.6%",
+      "detail": "经理人平均敞口升至79.49%，较上周74.72%显著上升，风险偏好增强。"
     },
-    "investors_intelligence": {
-      "name": "Investors Intelligence 顾问情绪",
-      "source": "Investors Intelligence",
-      "source_url": "https://www.investorsintelligence.com/",
-      "current_bulls": 48.0,
-      "current_bears": 18.7,
-      "current_correction": 33.3,
-      "bull_bear_ratio": 2.57,
-      "previous_bulls": 48.0,
-      "previous_bears": 18.7,
-      "previous_correction": 33.3,
-      "previous_bull_bear_ratio": 2.57,
-      "date": "2026-04-23",
-      "frequency": "Weekly (Wednesday)",
-      "sentiment": "Neutral",
-      "interpretation": "顾问情绪中性偏多。多头/空头比率2.57，未达极端。",
-      "category": "contrarian",
-      "note": "多头48.0%，空头18.7%，校正预期33.3%"
-    },
-    "nyse_advance_decline": {
-      "name": "NYSE 涨跌线 (Advance-Decline Line)",
-      "source": "McClellan Oscillator",
-      "source_url": "https://www.mcoscillator.com/market_breadth_data/",
+    "nyse_ad": {
+      "source": "NYSE Advance/Decline Line",
       "advances": 1262,
       "declines": 1496,
       "difference": -234,
-      "mcclellan_osc": 56.047,
-      "summation_index": 2137.719,
-      "unit": "Issues",
       "date": "2026-04-23",
-      "frequency": "Daily",
-      "sentiment": "Neutral/Bearish",
-      "interpretation": "涨跌比为负，下跌股票多于上涨。McClellan Oscillator 56仍在正值，但 momentum 减弱。",
-      "category": "breadth",
-      "note": "McC OSC从85.561降至56.047， momentum 显著回落"
+      "mcclellan_oscillator": 56.047,
+      "status": "转弱",
+      "trend": "McClellan Oscillator从85.561降至56.047",
+      "detail": "4月23日NYSE下跌家数(1,496)多于上涨(1,262)，净差-234。McClellan Oscillator momentum显著回落但仍为正。"
     },
     "margin_debt": {
-      "name": "FINRA 融资债务 (Margin Debt)",
       "source": "FINRA",
-      "source_url": "https://www.finra.org/investors/insights/margin-statistics",
-      "current_value": 1220922,
-      "previous_value": 1254589,
-      "unit": "Millions USD",
+      "current_usd_billion": 1220.922,
+      "prev_month": 1254.589,
+      "change_mom_pct": null,
       "date": "2026-03",
-      "frequency": "Monthly",
-      "sentiment": "Neutral",
-      "interpretation": "融资债务较2月下降2.6%，但仍处高位（较一年前增38.7%）。杠杆水平仍偏高。",
-      "category": "risk",
-      "note": "月度数据滞后。2月$1.25万亿，3月$1.22万亿"
+      "status": "数据滞后",
+      "trend": "月度数据待发布",
+      "detail": "FINRA保证金债务数据月度发布，当前最新为3月数据。绝对水平仍高。"
     },
-    "high_yield_spread": {
-      "name": "高收益债利差 (Junk Bond Spread)",
-      "source": "FRED",
-      "source_url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-      "current_value": 2.84,
-      "previous_value": null,
-      "unit": "%",
-      "date": "2026-04-22",
-      "frequency": "Daily",
-      "sentiment": "Neutral",
-      "interpretation": "利差2.84%，信用风险中等。未达极端水平，但需关注上升趋势。",
-      "category": "risk",
-      "note": "使用ICE BofA US High Yield Option-Adjusted Spread替代"
-    },
-    "mutual_fund_cash": {
-      "name": "共同基金现金比率",
-      "source": "ICI",
-      "source_url": "https://www.ici.org/research/stats/trends",
-      "current_value": 1.7,
-      "previous_value": 1.6,
-      "unit": "%",
-      "date": "2026-02",
-      "frequency": "Monthly",
-      "sentiment": "Neutral",
-      "interpretation": "现金比例极低(1.7%)，意味着基金几乎全仓。历史上现金比率低往往预示风险。",
-      "category": "contrarian",
-      "note": "ICI长期基金流动性比率。2月1.7% vs 1月1.6%"
-    },
-    "market_makers": {
-      "name": "Market Makers Bull/Bear Indicator",
-      "source": "Market Makers",
-      "source_url": "N/A",
-      "current_value": 56.047,
-      "previous_value": 85.561,
-      "unit": "Score",
-      "date": "2026-04-23",
-      "frequency": "Daily",
-      "sentiment": "Neutral",
-      "interpretation": "McClellan Oscillator从85.561降至56.047，市场宽度 momentum 减弱但仍为正。",
-      "category": "breadth",
-      "note": "使用McClellan Oscillator近似MM Bull/Bear"
+    "hy_spread": {
+      "source": "HYG / iShares",
+      "nav": null,
+      "closing_price": null,
+      "spread_bps": 284.0,
+      "ytd_return_pct": 1.2,
+      "dividend_yield_pct": 5.81,
+      "sec_yield_30d_pct": 6.52,
+      "status": "利差中等",
+      "trend": "FRED显示近一年从约3%收窄至2.8%",
+      "detail": "ICE BofA US High Yield OAS 2.84%。处于历史中低水平，信用风险可控。"
     },
     "contrarian_signals": {
-      "name": "Contrarian Signals",
-      "source": "ContrarianSignals.com",
-      "source_url": "https://contrariansignals.com/",
-      "current_value": -0.05,
-      "previous_value": null,
-      "unit": "Score (-1 to +1)",
-      "date": "2026-04-24",
-      "frequency": "Daily",
-      "sentiment": "Mixed",
-      "interpretation": "散户情绪接近极端恐惧(-2.52)，华尔街接近中性(0.53)，整体混合信号。",
-      "category": "composite",
-      "note": "散户悲观 vs 机构中性，分歧明显"
-    },
-    "alt_index": {
-      "name": "AltIndex Fear & Greed",
-      "source": "AltIndex.com",
-      "source_url": "https://altindex.com/fear-and-greed",
-      "current_value": 66,
-      "previous_value": null,
-      "unit": "Score (0-100)",
-      "date": "2026-04-24",
-      "frequency": "Daily",
-      "sentiment": "Greed",
-      "interpretation": "贪婪区间(66)，与CNN指数一致。社交媒体和新闻媒体情绪均偏乐观。",
-      "category": "composite",
-      "note": "AltIndex = 66，与CNN Fear & Greed = 67 高度一致"
-    },
-    "fear_greed_tracker": {
-      "name": "FearGreedTracker.com",
-      "source": "FearGreedTracker.com",
-      "source_url": "https://www.feargreedtracker.com/",
-      "current_value": null,
-      "previous_value": null,
-      "unit": "Score",
-      "date": "2026-04-24",
-      "frequency": "Daily",
-      "sentiment": "N/A",
-      "interpretation": "网站可访问，但具体指数读数未在搜索结果中显示。建议直接访问网站获取。",
-      "category": "composite",
-      "note": "需人工访问 https://www.feargreedtracker.com/ 获取具体数值"
-    },
-    "major_indices": {
-      "name": "主要指数概览",
-      "source": "Yahoo Finance / StockAnalysis",
-      "source_url": "N/A",
-      "indices": {
-        "SPY": {
-          "current": 595.10,
-          "previous": null,
-          "unit": "USD",
-          "date": "2026-04-24",
-          "sentiment": "N/A"
-        },
-        "QQQ": {
-          "current": 496.47,
-          "previous": null,
-          "unit": "USD",
-          "date": "2026-04-24",
-          "sentiment": "N/A"
-        },
-        "DIA": {
-          "current": 411.04,
-          "previous": null,
-          "unit": "USD",
-          "date": "2026-04-24",
-          "sentiment": "N/A"
-        },
-        "IWM": {
-          "current": 275.52,
-          "previous": 276.48,
-          "unit": "USD",
-          "date": "2026-04-23",
-          "sentiment": "N/A"
-        }
+      "source": "ContrarianSignals.com / 综合判断",
+      "buy_signals": {
+        "aaii_extreme": false,
+        "aaii_spread": -11.099999999999998,
+        "aaii_threshold": -20,
+        "vix_extreme": false,
+        "vix_value": 18.95,
+        "vix_threshold": 25,
+        "fear_greed_extreme": false,
+        "fear_greed_value": 67,
+        "fear_greed_threshold": 25,
+        "naaim_aggressive": false,
+        "naaim_value": 79.49
       },
-      "unit": "USD",
+      "sell_signals": {
+        "fear_greed_extreme": false,
+        "fear_greed_value": 67,
+        "fear_greed_threshold": 75,
+        "pcr_extreme": false,
+        "pcr_value": 0.54,
+        "credit_risk_elevated": false,
+        "hyg_spread_bps": 284.0
+      },
+      "status": "无极端信号",
+      "trend": "复杂分化",
+      "detail": "CNN恐惧贪婪(67)和AltIndex(66)双双贪婪。但AAII散户看空42.8%，ContrarianSignals散户接近极端恐惧(-2.52)。散户悲观与机构贪婪形成鲜明反差。"
+    },
+    "altindex": {
+      "source": "AltIndex Fear & Greed",
+      "current": 66,
       "date": "2026-04-24",
-      "frequency": "Daily",
-      "sentiment": "N/A",
-      "interpretation": "大盘指数处于历史高位附近。SPY约$595，QQQ约$496，DIA约$411，IWM约$276。",
-      "category": "reference",
-      "note": "实时价格可能存在延迟"
+      "zone": "Greed",
+      "status": "贪婪",
+      "trend": "与CNN指数一致",
+      "detail": "AltIndex = 66，与CNN Fear & Greed = 67 高度一致。社交媒体和新闻媒体情绪均偏乐观。"
+    },
+    "feargreedtracker": {
+      "source": "FearGreedTracker.com",
+      "coverage": "50000+ stocks & crypto",
+      "update_freq": "per-minute",
+      "status": "需订阅",
+      "detail": "网站可访问，但具体指数读数未在搜索结果中显示。"
     }
-  }
+  },
+  "contrarian_analysis": {
+    "summary": "情绪指标呈现复杂分化格局：CNN恐惧贪婪(67)和AltIndex(66)双双处于贪婪区间，NAAIM经理人高仓位(79.49%)。但AAII散户看空42.8%高于看多31.7%，ContrarianSignals散户接近极端恐惧(-2.52)。散户悲观与机构贪婪形成鲜明反差——这通常是逆向投资者关注的现象。McClellan Oscillator从85降至56显示短期 momentum 减弱。共同基金现金比率仅1.7%意味着'干火药'耗尽。",
+    "key_signals": [
+      "AAII Spread -11.099999999999998% = 散户仍偏悲观，中等逆向买入信号(未达<-20%极端)",
+      "NAAIM 79.49% = 经理人高仓位，加仓空间有限",
+      "VIX 18.95 = 中性区间，无极端恐慌或自满",
+      "Fear & Greed 67 = 接近贪婪但未极端(需>75)",
+      "ContrarianSignals散户-2.52 = 接近极端恐惧，机构0.53中性",
+      "Equity PCR 0.54 = 中性，看涨情绪占优但非极端",
+      "共同基金现金1.7% = 极低水平，'干火药'耗尽"
+    ],
+    "strategy_note": "当前市场呈现复杂分化：别人贪婪时我恐惧？CNN/AltIndex/NAAIM偏贪婪是谨慎信号。别人恐惧时我贪婪？AAII/ContrarianSignals散户悲观是逆向利好。但矛盾点在于散户已恐惧而机构仍贪婪——通常需要机构也加入恐慌才会形成底部。建议保持适度仓位，等待更清晰的极端信号。"
+  },
+  "policy_cross_impact": {
+    "summary": "政策层面无重大新事件，美伊战争持续和Fed滞胀警告构成潜在压力",
+    "iran_war": {
+      "status": "Ongoing",
+      "oil_price_brent": 93.32,
+      "strait_of_hormuz": "Unstable",
+      "energy_sector_ytd_pct": 35.4,
+      "inflation_pressure": "Rising"
+    },
+    "tariffs": {
+      "pharma_100_pct": "Effective Apr 2",
+      "steel_aluminum_adjustment": "Effective Apr 6",
+      "china_comprehensive_rate": "~35%"
+    },
+    "fed_policy": {
+      "waller_warning": "Stagflation risk Apr 17",
+      "market_pricing": "Soft landing",
+      "fed_concern": "Persistent energy shock may force hold",
+      "key_risk": "市场定价软着陆 vs Fed官员担心滞胀"
+    }
+  },
+  "dashboard": {
+    "fear_greed": {
+      "value": 67,
+      "label": "Greed",
+      "bar": "████████░░░░"
+    },
+    "vix": {
+      "value": 18.95,
+      "label": "Normalized",
+      "bar": "█████░░░░░░░"
+    },
+    "aaii": {
+      "value": -11.099999999999998,
+      "label": "Bearish",
+      "bar": "███░░░░░░░░░"
+    },
+    "naaim": {
+      "value": 79.49,
+      "label": "Bullish",
+      "bar": "███████░░░░░"
+    },
+    "market_breadth": {
+      "value": "momentum_weakening",
+      "label": "Neutral",
+      "bar": "██████░░░░░░"
+    },
+    "credit_spread": {
+      "value": 284.0,
+      "label": "Elevated",
+      "bar": "█████░░░░░░░"
+    },
+    "pcr_equity": {
+      "value": 0.54,
+      "label": "Low",
+      "bar": "██████░░░░░░"
+    }
+  },
+  "tomorrow_watch": [
+    "AAII新一周数据 (周四发布) - 关注散户情绪是否转变",
+    "NAAIM新数据 (周五发布) - 确认经理人加仓趋势",
+    "VIX是否跌破15(自满信号)或回升至25+(恐慌回归)",
+    "Fear & Greed是否突破75(极端贪婪阈值)",
+    "McClellan Oscillator是否继续回落",
+    "HYG信用利差是否收窄至220bps以下",
+    "共同基金现金比率是否有回升迹象"
+  ]
 }

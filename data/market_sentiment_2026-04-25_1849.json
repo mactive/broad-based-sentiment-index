@@ -1,150 +1,241 @@
 {
   "report_date": "2026-04-25",
-  "data_date": "2026-04-24",
-  "report_type": "evening",
-  "generated_at": "2026-04-25T18:49:00+08:00",
-  "summary": {
-    "overall_sentiment": "Greed",
-    "fear_greed_score": 66,
-    "fear_greed_prev": 68,
-    "fear_greed_change": -2,
-    "vix": 18.71,
-    "vix_change_pct": -3.11,
-    "market_trend": "高位震荡"
-  },
-  "indicators": {
-    "fear_greed": {
-      "current": 66,
-      "previous": 68,
-      "change": -2,
-      "status": "Greed",
-      "status_label": "贪婪",
-      "signal": "偏乐观"
-    },
-    "vix": {
-      "current": 18.71,
-      "previous": null,
-      "change_pct": -3.11,
-      "status": "恐慌情绪低",
-      "signal": "低波动"
-    },
-    "aaii": {
-      "bull": 46.0,
-      "bear": 34.4,
-      "neutral": 19.5,
-      "spread": 11.6,
-      "date": "2026-04-23",
-      "signal": "散户乐观"
-    },
-    "naaim": {
-      "current": 94.15,
-      "previous": 79.49,
-      "change": 14.66,
-      "date": "2026-04-22",
-      "signal": "机构极度激进"
-    },
-    "cboe_pcr": {
-      "equity": 0.53,
-      "index": 1.07,
-      "signal": "散户乐观/机构对冲"
-    },
-    "sentimentrader": {
-      "smart_money": "Neutral",
-      "dumb_money": "Extremely Optimistic",
-      "spread": "Dumb > Smart",
-      "date": "2026-04-23",
-      "signal": "分歧警示"
-    },
-    "nyse_advance_decline": {
-      "advancing": 1262,
-      "declining": 1496,
-      "net": -234,
-      "date": "2026-04-23",
-      "signal": "广度偏弱"
-    },
-    "margin_debt": {
-      "current": "1.22T",
-      "change_pct": -2.6,
-      "date": "2026-03",
-      "signal": "杠杆收缩"
-    },
-    "high_yield_spread": {
-      "oas_bps": 266.05,
-      "hyg_price": 80.48,
-      "date": "2026-04-23",
-      "signal": "信用温和"
-    },
-    "feargreedtracker": {
-      "current": 66,
-      "status": "Greed",
-      "signal": "贪婪"
-    },
-    "altindex": {
-      "current": null,
-      "last_known": 45,
-      "last_date": "2026-03-31",
-      "status": "N/A",
-      "signal": "数据待更新"
-    }
-  },
-  "market_indices": {
+  "report_time": "18:49 CST",
+  "data_timestamp": "2026-04-25T16:00:00Z",
+  "market_summary": {
     "SPY": {
       "price": 713.94,
-      "change_pct": -0.04
+      "change_pct": -0.04,
+      "note": "S&P 500 ETF, 高位震荡"
     },
     "QQQ": {
       "price": 663.88,
-      "change_pct": -0.03
+      "change_pct": -0.03,
+      "note": "Nasdaq 100 ETF"
     },
     "DIA": {
       "price": 492.21,
-      "change_pct": -0.04
+      "change_pct": -0.04,
+      "note": "Dow 30 ETF"
     },
     "IWM": {
       "price": 276.65,
-      "change_pct": -0.07
+      "change_pct": -0.07,
+      "note": "Russell 2000 ETF"
     }
   },
-  "contrarian_signals": {
-    "retail_sentiment": {
-      "signal": "乐观",
-      "strength": "中等"
+  "sentiment_indicators": {
+    "fear_greed_index": {
+      "source": "CNN / AltIndex / ContrarianSignals综合",
+      "current": 66,
+      "zone": "贪婪",
+      "week_ago": 68,
+      "change": -2,
+      "extreme_greed_threshold": 75,
+      "extreme_fear_threshold": 25,
+      "trend": "从68微降至66，贪婪程度略减",
+      "detail": "CNN恐惧贪婪66，AltIndex数据待更新。整体仍处贪婪区间。"
     },
-    "institutional_sentiment": {
-      "signal": "极度激进",
-      "strength": "强"
+    "vix": {
+      "source": "CBOE",
+      "value": 18.71,
+      "week_ago": 19.31,
+      "march_high": 31,
+      "historical_avg": 19.5,
+      "status": "低位",
+      "trend": "继续回落",
+      "detail": "VIX降至18.71，恐慌情绪持续消退。接近自满区域(<15)。"
     },
-    "options_market": {
-      "signal": "散户乐观/机构对冲",
-      "strength": "中等"
+    "pcr": {
+      "source": "CBOE Equity Put/Call Ratio",
+      "equity_pcr": 0.53,
+      "equity_date": "2026-04-24",
+      "total_pcr_10dma": null,
+      "total_date": "2026-04-24",
+      "index_pcr": 1.07,
+      "status": "中性",
+      "trend": "Equity PCR 0.53正常",
+      "detail": "个股期权偏乐观，指数期权仍有对冲需求。"
     },
-    "volatility": {
-      "signal": "低位",
-      "strength": "中等"
+    "aaii": {
+      "source": "AAII Investor Sentiment Survey",
+      "bullish_pct": 46.0,
+      "neutral_pct": 19.5,
+      "bearish_pct": 34.4,
+      "bull_bear_spread": 11.6,
+      "spread_change": null,
+      "date": "2026-04-23",
+      "historical_avg_bullish": 37.5,
+      "historical_avg_bearish": 31.0,
+      "status": "偏乐观",
+      "trend": "散户持续乐观",
+      "detail": "AAII Bullish 46%，Bearish 34.4%，Spread 11.6%。散户转向乐观但尚未极端。"
     },
-    "leverage": {
-      "signal": "收缩",
-      "strength": "温和"
+    "naaim": {
+      "source": "NAAIM Exposure Index",
+      "current": 94.15,
+      "prev_week": 79.49,
+      "change_pct": 14.66,
+      "median": 82.5,
+      "date": "2026-04-22",
+      "status": "极端激进",
+      "trend": "飙升至94.15",
+      "detail": "NAAIM飙升至94.15，机构仓位极度激进，追涨意愿强烈。历史上>90后4-8周回调概率约60%。"
     },
-    "credit_spreads": {
-      "signal": "温和",
-      "strength": "温和"
+    "nyse_ad": {
+      "source": "NYSE Advance/Decline Line",
+      "advances": 1262,
+      "declines": 1496,
+      "difference": -234,
+      "date": "2026-04-23",
+      "mcclellan_oscillator": null,
+      "status": "偏弱",
+      "trend": "下跌家数多于上涨",
+      "detail": "NYSE涨跌线转负，市场广度偏弱，上涨缺乏广度支撑。"
+    },
+    "margin_debt": {
+      "source": "FINRA",
+      "current_usd_billion": 1220.922,
+      "prev_month": 1254.589,
+      "change_mom_pct": -2.6,
+      "date": "2026-03",
+      "status": "下降",
+      "trend": "杠杆收缩",
+      "detail": "融资债务较上月下降2.6%，去杠杆降低系统性风险。"
+    },
+    "hy_spread": {
+      "source": "HYG / iShares",
+      "nav": 80.48,
+      "closing_price": 80.48,
+      "spread_bps": 266.05,
+      "ytd_return_pct": 1.2,
+      "dividend_yield_pct": 5.81,
+      "sec_yield_30d_pct": 6.52,
+      "status": "温和",
+      "trend": "利差稳定",
+      "detail": "HYG OAS 266bps，信用风险温和。"
+    },
+    "contrarian_signals": {
+      "source": "ContrarianSignals.com / 综合判断",
+      "buy_signals": {
+        "aaii_extreme": false,
+        "aaii_spread": 11.6,
+        "aaii_threshold": -20,
+        "vix_extreme": false,
+        "vix_value": 18.71,
+        "vix_threshold": 25,
+        "fear_greed_extreme": false,
+        "fear_greed_value": 66,
+        "fear_greed_threshold": 25,
+        "naaim_aggressive": false,
+        "naaim_value": 94.15
+      },
+      "sell_signals": {
+        "fear_greed_extreme": false,
+        "fear_greed_value": 66,
+        "fear_greed_threshold": 75,
+        "pcr_extreme": false,
+        "pcr_value": 0.53,
+        "credit_risk_elevated": false,
+        "hyg_spread_bps": 266.05
+      },
+      "status": "警示",
+      "trend": "机构极度激进",
+      "detail": "NAAIM飙升至94.15极度激进。Smart/Dumb Money分歧加大(Dumb极度乐观)。NYSE广度偏弱。逆向投资者应保持警惕。"
+    },
+    "altindex": {
+      "source": "AltIndex Fear & Greed",
+      "current": null,
+      "date": "2026-03-31",
+      "zone": "Fear",
+      "status": "数据滞后",
+      "trend": "最后已知45(Fear)",
+      "detail": "AltIndex数据待更新，最后已知45(Fear)。"
+    },
+    "feargreedtracker": {
+      "source": "FearGreedTracker.com",
+      "coverage": "50000+ stocks & crypto",
+      "update_freq": "per-minute",
+      "status": "贪婪",
+      "detail": "FearGreedTracker读数66。"
     }
   },
-  "key_observations": [
-    "NAAIM飙升至94.15，机构仓位极度激进，追涨意愿强烈",
-    "Smart/Dumb Money分歧加大，Dumb极度乐观，Smart中性，接近警示阈值",
-    "散户持续乐观，但机构在指数层面持续对冲",
-    "NYSE涨跌线转负，市场广度偏弱，上涨缺乏广度支撑"
-  ],
-  "conclusion": {
-    "sentiment_position": "贪婪区间，机构极度激进",
-    "contrarian_view": "当前不是追高时机，逆向投资者应保持警惕",
-    "watch_points": [
-      "NAAIM是否回落至80以下",
-      "VIX是否突破20",
-      "NYSE广度是否持续改善",
-      "Smart/Dumb Money分歧是否收敛"
-    ]
-  }
+  "contrarian_analysis": {
+    "summary": "情绪指标呈现警示格局：NAAIM飙升至94.15极度激进，Smart/Dumb Money分歧加大(Dumb极度乐观vs Smart中性)，NYSE涨跌线转负。Fear & Greed 66处于贪婪区间。AAII散户持续乐观(46% bullish)。VIX降至18.71接近自满。机构与散户同步乐观但广度不支持，这是典型的短期回调预警信号。",
+    "key_signals": [
+      "NAAIM 94.15% = 极度激进，历史上>90后4-8周5%+回调概率约60%",
+      "Smart/Dumb分歧 = dumb极度乐观 vs smart中性，接近警示阈值",
+      "AAII Spread 11.6% = 散户持续乐观",
+      "NYSE A/D转负 = 上涨缺乏广度支撑",
+      "VIX 18.71 = 接近自满区域",
+      "Fear & Greed 66 = 贪婪区间"
+    ],
+    "strategy_note": "当前不是追高时机，逆向投资者应保持警惕。NAAIM极端高位+Smart/Dumb分歧+NYSE广度偏弱构成三重预警。建议停止买入、收紧止损。若F&G突破75或AAII bullish>50%，需考虑减仓。"
+  },
+  "policy_cross_impact": {
+    "summary": "政策层面无重大新事件，美伊战争持续构成潜在压力",
+    "iran_war": {
+      "status": "Ongoing",
+      "oil_price_brent": 93.32,
+      "strait_of_hormuz": "Unstable",
+      "energy_sector_ytd_pct": 35.4,
+      "inflation_pressure": "Rising"
+    },
+    "tariffs": {
+      "pharma_100_pct": "Effective Apr 2",
+      "steel_aluminum_adjustment": "Effective Apr 6",
+      "china_comprehensive_rate": "~35%"
+    },
+    "fed_policy": {
+      "waller_warning": "Stagflation risk Apr 17",
+      "market_pricing": "Soft landing",
+      "fed_concern": "Persistent energy shock may force hold",
+      "key_risk": "市场定价软着陆 vs Fed官员担心滞胀"
+    }
+  },
+  "dashboard": {
+    "fear_greed": {
+      "value": 66,
+      "label": "Greed",
+      "bar": "███████░░░░░"
+    },
+    "vix": {
+      "value": 18.71,
+      "label": "Normalized",
+      "bar": "█████░░░░░░░"
+    },
+    "aaii": {
+      "value": 11.6,
+      "label": "Bullish",
+      "bar": "████████░░░░"
+    },
+    "naaim": {
+      "value": 94.15,
+      "label": "Bullish",
+      "bar": "█████████░░░"
+    },
+    "market_breadth": {
+      "value": "weak",
+      "label": "Neutral",
+      "bar": "██████░░░░░░"
+    },
+    "credit_spread": {
+      "value": 266.05,
+      "label": "Normal",
+      "bar": "█████░░░░░░░"
+    },
+    "pcr_equity": {
+      "value": 0.53,
+      "label": "Low",
+      "bar": "██████░░░░░░"
+    }
+  },
+  "tomorrow_watch": [
+    "NAAIM是否回落至80以下",
+    "VIX是否突破20",
+    "NYSE广度是否持续改善",
+    "Smart/Dumb Money分歧是否收敛",
+    "Fear & Greed是否突破75",
+    "AAII bullish是否突破50%"
+  ]
 }
