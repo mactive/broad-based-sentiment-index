@@ -1,0 +1,163 @@
+{
+  "report_date": "2026-04-30",
+  "report_time": "16:00 EDT",
+  "report_type": "evening",
+  "analysis_timestamp": "2026-05-02T06:50:00+08:00",
+  "next_update": "2026-05-02T18:49:00+08:00",
+  "indicators": {
+    "fear_greed": {
+      "index": 63,
+      "level": "Greed",
+      "change": -5,
+      "components": {
+        "momentum": "strong",
+        "stock_price_strength": "strong",
+        "stock_price_breadth": "strong",
+        "market_volatility": 17.9,
+        "safe_haven_demand": "neutral",
+        "junk_bond_demand": "neutral"
+      }
+    },
+    "vix": {
+      "value": 17.90,
+      "change_pct": -9.1,
+      "previous": 19.70,
+      "vix9d": 17.40,
+      "vix3m": 20.50,
+      "vix6m": 22.10
+    },
+    "cboe_pcr": {
+      "total_pcr": 1.39,
+      "equity_pcr": 0.74,
+      "index_pcr": 1.85,
+      "signal": "neutral_to_bullish"
+    },
+    "major_indices": {
+      "SPY": {
+        "price": 718.66,
+        "change_pct": 0.99,
+        "52_week_position": "near_high"
+      },
+      "QQQ": {
+        "price": 667.74,
+        "change_pct": 0.93,
+        "52_week_position": "new_high"
+      },
+      "DIA": {
+        "price": 392.00,
+        "change_pct": 0.65,
+        "52_week_position": "near_high"
+      },
+      "IWM": {
+        "price": 277.97,
+        "change_pct": 2.16,
+        "52_week_position": "rebounding"
+      }
+    },
+    "nyse_breadth": {
+      "mcclellan_oscillator": 35,
+      "mcclellan_change": 82,
+      "summation_index": 2254,
+      "summation_change": 69,
+      "advance_decline_ratio": "1.8:1",
+      "signal": "strong_rebound"
+    },
+    "aaii": {
+      "week_ending": "2026-04-23",
+      "bullish": 40.0,
+      "neutral": 32.5,
+      "bearish": 27.5,
+      "bull_bear_spread": 12.5,
+      "signal": "above_average_bullish"
+    },
+    "naaim": {
+      "week_ending": "2026-04-22",
+      "average_exposure": 87.84,
+      "median_exposure": 90.00,
+      "max_exposure": 140.00,
+      "min_exposure": 30.00,
+      "signal": "highly_bullish"
+    },
+    "margin_debt": {
+      "estimate": "850B",
+      "trend": "stable",
+      "signal": "elevated_but_contained"
+    },
+    "hyg_credit_spread": {
+      "oas_bps": 263.46,
+      "ytm": 6.88,
+      "price": 80.38,
+      "signal": "tight_spreads_low_risk_pricing"
+    },
+    "fund_cash_ratio": {
+      "estimate": "3.5-4.0%",
+      "signal": "low_dry_powder_limited"
+    },
+    "investors_intelligence": {
+      "bullish_estimate": "55-60%",
+      "bearish_estimate": "20-25%",
+      "signal": "bullish_not_extreme"
+    },
+    "sentimentrader": {
+      "smart_money_confidence": 55,
+      "dumb_money_confidence": 55,
+      "spread": 0,
+      "signal": "neutral_no_extreme_divergence"
+    },
+    "contrarian_signals": {
+      "fear_index": 45,
+      "signal": "neutral"
+    },
+    "alt_index": {
+      "composite": 55,
+      "social_media": "positive",
+      "search_trends": "stable",
+      "signal": "moderately_positive"
+    },
+    "fear_greed_tracker": {
+      "composite": 58,
+      "volatility_component": 17,
+      "momentum_component": "strong",
+      "signal": "greed_zone"
+    }
+  },
+  "analysis": {
+    "overall_sentiment": "moderate_greed",
+    "sentiment_trend": "cooling_from_high",
+    "breadth_status": "strong_rebound",
+    "key_developments": [
+      "McClellan Oscillator surged from -47 to +35, fully repairing Wednesday's breadth damage",
+      "IWM rallied 2.16%, rejoining the advance and broadening market participation",
+      "Fear & Greed index cooled from 68 to 63, avoiding extreme greed territory",
+      "VIX collapsed 9.1% to 17.90, indicating fear has fully dissipated",
+      "Credit spreads stable at 263bps, no credit market warning signals"
+    ],
+    "contrarian_assessment": {
+      "fear_greed_opportunity": "not_applicable",
+      "greed_fear_warning": "partial",
+      "retail_vs_institutional": "retail_cooling_institutional_high",
+      "breadth_vs_price": "breadth_catching_up_healthy"
+    },
+    "short_term_outlook": "follow_trend",
+    "medium_term_outlook": "stay_alert",
+    "long_term_outlook": "prepare_contrarian"
+  },
+  "risk_flags": [
+    "VIX at 17.90 is historically low, limited downside in complacency",
+    "NAAIM median exposure at 90% is near historical highs",
+    "HYG OAS 263bps is tight, offering limited credit cushion",
+    "Fund cash ratios near historical lows, limited institutional buying power",
+    "Equity PCR 0.74 indicates retail optimism in options market"
+  ],
+  "data_sources": [
+    "CNN Money",
+    "CBOE",
+    "Yahoo Finance",
+    "StockCharts.com",
+    "AAII",
+    "NAAIM",
+    "SentimenTrader",
+    "iShares/BlackRock"
+  ],
+  "disclaimer": "This report is for informational purposes only. Not investment advice."
+}

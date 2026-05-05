@@ -1,0 +1,171 @@
+{
+  "report_meta": {
+    "report_date": "2026-05-04",
+    "report_time": "06:50",
+    "timezone": "Asia/Shanghai",
+    "data_as_of": "2026-05-01",
+    "report_type": "morning",
+    "version": "1.0"
+  },
+  "indicators": {
+    "fear_greed_index": {
+      "name": "CNN Fear & Greed Index",
+      "value": 67,
+      "status": "Greed",
+      "signal": "caution",
+      "source": "feargreedmeter.com"
+    },
+    "vix": {
+      "name": "CBOE Volatility Index",
+      "value": 16.99,
+      "change_pct": 0.59,
+      "prev_value": 16.89,
+      "range_52w_low": 13.38,
+      "range_52w_high": 35.30,
+      "status": "low",
+      "signal": "neutral",
+      "source": "MarketWatch"
+    },
+    "put_call_ratio": {
+      "name": "CBOE Put/Call Ratio",
+      "total_pcr": 0.76,
+      "equity_pcr": 0.46,
+      "status": "low",
+      "signal": "caution",
+      "source": "CBOE"
+    },
+    "aaii_sentiment": {
+      "name": "AAII Investor Sentiment Survey",
+      "bullish_pct": 38.1,
+      "neutral_pct": 31.0,
+      "bearish_pct": 30.9,
+      "historical_avg_bullish": 39.0,
+      "historical_avg_neutral": 31.5,
+      "historical_avg_bearish": 30.5,
+      "bullish_change_pp": -7.9,
+      "data_date": "2026-04-30",
+      "signal": "neutral",
+      "source": "AAII"
+    },
+    "naaim": {
+      "name": "NAAIM Exposure Index",
+      "net_long_pct": 54,
+      "status": "neutral",
+      "signal": "neutral",
+      "source": "NAAIM"
+    },
+    "sentimentrader": {
+      "name": "SentimenTrader Smart/Dumb Money Confidence",
+      "smart_money": "neutral",
+      "dumb_money": "very_optimistic",
+      "divergence": "significant",
+      "data_date": "2026-05-01",
+      "signal": "caution",
+      "source": "SentimenTrader.com"
+    },
+    "major_etfs": {
+      "name": "Major Index ETF Prices",
+      "data_date": "2026-05-01",
+      "prices": {
+        "SPY": { "close": 720.65, "change_pct": -0.05 },
+        "QQQ": { "close": 674.15, "change_pct": 0.03 },
+        "DIA": { "close": 495.02, "change_pct": -0.05 },
+        "IWM": { "close": 279.28, "change_pct": -0.02 }
+      }
+    },
+    "nyse_advance_decline": {
+      "name": "NYSE Advance/Decline Ratio",
+      "value": 0.80,
+      "value_1m_ago": 2.50,
+      "data_date": "2026-05-01",
+      "status": "deteriorated",
+      "signal": "warning",
+      "source": "Barchart"
+    },
+    "margin_debt": {
+      "name": "FINRA Margin Debt",
+      "value_billions": 996.7,
+      "data_date": "2026-03",
+      "status": "record_high",
+      "signal": "warning",
+      "source": "FINRA"
+    },
+    "high_yield_spread": {
+      "name": "BofA US High Yield Spread",
+      "ticker": "BAMLH0A0HYM2",
+      "value_pct": 2.86,
+      "data_date": "2026-04-30",
+      "status": "healthy",
+      "signal": "neutral",
+      "source": "FRED"
+    },
+    "bofa_fms": {
+      "name": "BofA Fund Manager Survey",
+      "overall_sentiment": "very_bearish",
+      "cash_pct": 4.3,
+      "cash_highest_since": "2025-05",
+      "signal": "contrarian_bullish",
+      "source": "BofA Global Research"
+    },
+    "mutual_fund_cash": {
+      "name": "Mutual Fund Cash Ratio",
+      "status": "stale",
+      "note": "ICI data not retrieved this cycle",
+      "signal": "neutral"
+    },
+    "contrarian_signals": {
+      "name": "ContrarianSignals Terminal",
+      "overall": "warming",
+      "retail_sentiment": "optimistic_overbought_edge",
+      "broad_positioning": "neutral",
+      "signal": "caution",
+      "source": "contrariansignals.com"
+    },
+    "altindex": {
+      "name": "AltIndex Market Sentiment",
+      "status": "unavailable",
+      "note": "Subscription data not retrieved",
+      "signal": "neutral"
+    },
+    "fear_greed_tracker": {
+      "name": "FearGreedTracker",
+      "status": "unavailable",
+      "note": "Subscription data not retrieved",
+      "signal": "neutral"
+    },
+    "investors_intelligence": {
+      "name": "Investors Intelligence Bull/Bear Ratio",
+      "status": "stale",
+      "note": "Wednesday release, not yet available",
+      "signal": "neutral"
+    }
+  },
+  "analysis": {
+    "overall_sentiment": "mixed_divergent",
+    "temperature": {
+      "retail": "warm",
+      "institutional": "cold",
+      "options_market": "warm",
+      "volatility": "calm",
+      "credit": "healthy",
+      "market_breadth": "deteriorated"
+    },
+    "core_tension": "Retail/Dumb Money optimistic vs Institutional/Smart Money pessimistic",
+    "contrarian_assessment": "Dumb money is optimistic but not euphoric. Smart money is defensive but not panic. Divergent phase - not a clear buy or sell signal.",
+    "key_risks": [
+      "NYSE A/D ratio collapsed from 2.50 to 0.80 - bad breadth",
+      "Margin debt at record $996.7B - leverage fragility",
+      "Dumb Money very optimistic while Smart Money neutral"
+    ],
+    "key_opportunities": [
+      "BofA FMS cash at 4.3% (1-year high) - institutions have dry powder",
+      "VIX at 16.99 - low hedging cost if concerned",
+      "HY spreads healthy at 2.86% - no credit panic"
+    ]
+  },
+  "action_recommendations": {
+    "long_term_contrarian": "HOLD - Wait for sentiment convergence. Not a clear 'fear' or 'greed' extreme.",
+    "short_term": "AVOID_CHASING - Dumb money optimism makes new longs poor risk/reward. A/D deterioration warns against momentum.",
+    "risk_management": "Monitor A/D ratio and watch for VIX spike above 25 as breadth-weak rallies often end with volatility expansion."
+  }
+}

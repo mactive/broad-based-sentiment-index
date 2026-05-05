@@ -1,0 +1,181 @@
+{
+  "report_metadata": {
+    "report_type": "晚盘分析",
+    "generation_time": "2026-05-02 18:49",
+    "timezone": "Asia/Shanghai",
+    "data_date": "2026-05-01",
+    "data_day": "周五",
+    "market_status": "美股休市 (周六)"
+  },
+  "core_indicators": {
+    "cnn_fear_greed": {
+      "current": 67,
+      "status": "贪婪",
+      "change": "持平",
+      "change_value": 0,
+      "historical": [
+        {"date": "2026-04-14", "value": 35, "status": "恐惧"},
+        {"date": "2026-04-15", "value": 40, "status": "中性偏恐"},
+        {"date": "2026-04-16", "value": 42, "status": "中性"},
+        {"date": "2026-04-17", "value": 48, "status": "中性"},
+        {"date": "2026-04-18", "value": 55, "status": "中性"},
+        {"date": "2026-04-21", "value": 58, "status": "中性"},
+        {"date": "2026-04-22", "value": 60, "status": "中性偏贪"},
+        {"date": "2026-04-23", "value": 63, "status": "贪婪"},
+        {"date": "2026-04-24", "value": 65, "status": "贪婪"},
+        {"date": "2026-04-25", "value": 65, "status": "贪婪"},
+        {"date": "2026-04-28", "value": 67, "status": "贪婪"},
+        {"date": "2026-04-29", "value": 65, "status": "贪婪"},
+        {"date": "2026-04-30", "value": 65, "status": "贪婪"},
+        {"date": "2026-05-01", "value": 67, "status": "贪婪"}
+      ]
+    },
+    "vix": {
+      "current": 16.99,
+      "change": 0.10,
+      "change_percent": 0.59,
+      "status": "极度平静",
+      "historical": [
+        {"date": "2026-04-14", "value": 25.54, "status": "恐慌"},
+        {"date": "2026-04-15", "value": 24.29, "status": "恐慌"},
+        {"date": "2026-04-16", "value": 22.89, "status": "中性"},
+        {"date": "2026-04-17", "value": 20.89, "status": "中性"},
+        {"date": "2026-04-18", "value": 17.37, "status": "平静"},
+        {"date": "2026-04-21", "value": 17.62, "status": "平静"},
+        {"date": "2026-04-22", "value": 17.49, "status": "平静"},
+        {"date": "2026-04-23", "value": 17.50, "status": "平静"},
+        {"date": "2026-04-24", "value": 17.50, "status": "平静"},
+        {"date": "2026-04-25", "value": 16.99, "status": "平静"},
+        {"date": "2026-04-28", "value": 16.89, "status": "极度平静"},
+        {"date": "2026-04-29", "value": 16.99, "status": "极度平静"},
+        {"date": "2026-04-30", "value": 16.89, "status": "极度平静"},
+        {"date": "2026-05-01", "value": 16.99, "status": "极度平静"}
+      ]
+    },
+    "cboe_pcr": {
+      "equity_pcr": {
+        "current": 0.46,
+        "status": "贪婪",
+        "date": "2026-05-01"
+      },
+      "total_pcr": {
+        "current": 0.76,
+        "status": "中性",
+        "date": "2026-05-01"
+      }
+    }
+  },
+  "market_prices": {
+    "spy": {
+      "price": 720.65,
+      "change": 1.98,
+      "change_percent": 0.28,
+      "open": 721.25,
+      "high": 724.87,
+      "low": 720.47,
+      "date": "2026-05-01"
+    },
+    "qqq": {
+      "price": 674.15,
+      "change": 6.38,
+      "change_percent": 0.96,
+      "date": "2026-05-01"
+    },
+    "dia": {
+      "price": 495.02,
+      "change": -1.63,
+      "change_percent": -0.33,
+      "date": "2026-05-01"
+    },
+    "iwm": {
+      "price": 278.04,
+      "change": -0.62,
+      "change_percent": -0.22,
+      "date": "2026-05-01"
+    },
+    "spx": {
+      "price": 7230.12,
+      "change": 20.96,
+      "change_percent": 0.29,
+      "date": "2026-05-01"
+    },
+    "djia": {
+      "price": 49499.27,
+      "change": -152.87,
+      "change_percent": -0.31,
+      "date": "2026-05-01"
+    }
+  },
+  "sentiment_indicators": {
+    "aaii": {
+      "bull": 29.3,
+      "neutral": 26.1,
+      "bear": 44.6,
+      "bull_bear_spread": -15.3,
+      "status": "净看跌",
+      "date": "2026-04-23",
+      "source": "AAII Sentiment Survey"
+    },
+    "naaim": {
+      "mean": 94.15,
+      "median": 100.00,
+      "status": "极高",
+      "date": "2026-04-22",
+      "source": "NAAIM Exposure Index"
+    },
+    "nyse_ad": {
+      "advances": 1335,
+      "declines": 1381,
+      "difference": -46,
+      "mcclellan_oscillator": 21.532,
+      "mcclellan_oscillator_prior": 35.205,
+      "summation_index": 2275.160,
+      "summation_index_prior": 2253.628,
+      "date": "2026-05-01",
+      "source": "stockanalysis.com"
+    },
+    "margin_debt": {
+      "current": 1221,
+      "unit": "Billion USD",
+      "mom_change": -2.58,
+      "yoy_change": 38.69,
+      "credit_balance": -793.5,
+      "credit_balance_unit": "Billion USD",
+      "date": "2026-03-31",
+      "next_release": "2026-05-28",
+      "source": "FINRA"
+    },
+    "hyg_credit": {
+      "price": 80.06,
+      "nav": 79.96,
+      "change": -0.26,
+      "change_percent": -0.33,
+      "oas": 263.46,
+      "oas_unit": "bps",
+      "oas_date": "2026-04-30",
+      "fifty_two_week_range": "78.23 - 81.18",
+      "date": "2026-05-01",
+      "source": "stockanalysis.com / BlackRock"
+    }
+  },
+  "analysis": {
+    "contrarian_score": 6.5,
+    "score_max": 10,
+    "score_interpretation": "中等偏多，但内部分化严重",
+    "key_findings": [
+      "散户 vs 机构的极端分化: AAII散户连续数周极度悲观（44.6%看跌），而NAAIM机构几乎满仓（94.15%暴露度）。这是经典的'聪明钱/愚蠢钱'背离。",
+      "VIX+PCR发出自满警报: VIX在17附近横盘，股票PCR仅0.46，显示市场对下行风险几乎不设防。",
+      "广度动能减弱: McC OSC从+35大幅回落至+21，NYSE涨跌差转负，但SUMM Index仍在上升。",
+      "板块极度分化: 科技股（QQQ +0.96%）独自领跑，道指（-0.31%）和小盘股（-0.22%）下跌，呈现'大型科技股独角戏'格局。"
+    ],
+    "contrarian_signals": {
+      "aaii_extreme_pessimism": {"direction": "看涨", "strength": 4, "note": "散户极端悲观提供中期支撑"},
+      "naaim_extreme_optimism": {"direction": "看跌", "strength": 3, "note": "机构高仓位预示短期回调风险"},
+      "vix_complacency": {"direction": "看跌", "strength": 3, "note": "VIX极度平静显示自满"},
+      "pcr_greed": {"direction": "看跌", "strength": 4, "note": "PCR 0.46为极端贪婪水平"},
+      "breadth_weakening": {"direction": "caution", "strength": 2, "note": "McC OSC回落但SUMM仍上行"},
+      "margin_debt_high": {"direction": "caution", "strength": 2, "note": "融资债务高位回落，仍处极端水平"}
+    },
+    "conclusion": "当前市场呈现高度分化的情绪格局。从逆向投资角度，AAII散户的极端悲观提供了中期看涨的结构性支撑——散户在低位恐慌往往是底部区域特征。但短期来看，VIX和PCR显示的自满、以及机构的高仓位，构成了短期回调风险。此外，市场广度恶化（McC OSC回落、涨跌差转负）和板块分化（仅科技股上涨）表明，当前上涨是动能减弱的、窄基数的反弹，而非健康的全面牛市。综合判断: 短期偏谨慎，中期偏乐观。如果市场出现由广度恶化触发的回调，对逆向投资者可能是加仓机会。但当前位置追高科技股风险收益比不佳。"
+  }
+}

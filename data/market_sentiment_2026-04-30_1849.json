@@ -1,0 +1,234 @@
+{
+  "meta": {
+    "report_type": "evening",
+    "report_date": "2026-04-30",
+    "report_time": "18:49",
+    "timezone": "CST",
+    "market_date": "2026-04-29",
+    "data_source": "Web Search + KimiFinance + KimiFetch",
+    "version": "1.0"
+  },
+  "market_overview": {
+    "spy": {
+      "symbol": "SPY",
+      "price": 711.00,
+      "change_pct": -0.09,
+      "note": "高位窄幅震荡"
+    },
+    "qqq": {
+      "symbol": "QQQ",
+      "price": 661.57,
+      "change_pct": 0.61,
+      "note": "科技领涨，接近前高"
+    },
+    "dia": {
+      "symbol": "DIA",
+      "price": 488.67,
+      "change_pct": 0,
+      "note": "表现最弱"
+    },
+    "iwm": {
+      "symbol": "IWM",
+      "price": 272.08,
+      "change_pct": -0.67,
+      "note": "小盘股承压"
+    }
+  },
+  "indicators": {
+    "cnn_fear_greed": {
+      "name": "CNN Fear & Greed Index",
+      "value": 64,
+      "category": "Greed",
+      "previous": 67,
+      "last_week": 38,
+      "trend": "slight_decline",
+      "signal": "moderate",
+      "contrarian_signal": "neutral"
+    },
+    "vix": {
+      "name": "VIX Volatility Index",
+      "value": 26,
+      "long_term_avg": 19,
+      "previous_high": 53,
+      "previous_high_date": "2026-04-08",
+      "trend": "declining_from_peak",
+      "signal": "moderate_fear",
+      "contrarian_signal": "weak"
+    },
+    "cboe_pcr": {
+      "name": "CBOE Put/Call Ratio",
+      "value": 0.84,
+      "period": "5-day",
+      "previous": 0.67,
+      "previous_date": "2026-04-15",
+      "trend": "rising",
+      "signal": "moderate_bullish",
+      "contrarian_signal": "moderate"
+    },
+    "aaii": {
+      "name": "AAII Investor Sentiment Survey",
+      "period": "Week ending 2026-04-29",
+      "bullish_pct": 38.1,
+      "neutral_pct": 22.2,
+      "bearish_pct": 39.7,
+      "bull_bear_spread": -1.6,
+      "previous": {
+        "bullish_pct": 46.0,
+        "neutral_pct": 19.5,
+        "bearish_pct": 34.4
+      },
+      "historical_avg": {
+        "bullish_pct": 37.5,
+        "neutral_pct": 31.5,
+        "bearish_pct": 31.0
+      },
+      "trend": "bearish_shift",
+      "signal": "bearish",
+      "contrarian_signal": "bullish"
+    },
+    "naaim": {
+      "name": "NAAIM Exposure Index",
+      "value": 94.150,
+      "period": "Week ending 2026-04-22",
+      "previous": 79.490,
+      "trend": "extreme_bullish",
+      "signal": "extreme_bullish",
+      "contrarian_signal": "bearish",
+      "note": "Next update due 2026-04-30"
+    },
+    "mcclellan_oscillator": {
+      "name": "NYSE McClellan Oscillator",
+      "value": -47.31,
+      "date": "2026-04-29",
+      "previous": 19.67,
+      "previous_date": "2026-04-28",
+      "summation_index": 2218.423,
+      "trend": "deteriorating",
+      "signal": "bearish",
+      "contrarian_signal": "bullish"
+    },
+    "sentimentrader_smart_dumb": {
+      "name": "SentimenTrader Smart/Dumb Money Confidence",
+      "dumb_money": "extremely_optimistic",
+      "smart_money": "neutral",
+      "date": "2026-04-28",
+      "trend": "divergence",
+      "signal": "bearish",
+      "contrarian_signal": "bearish",
+      "note": "Historically precedes 2-4 week pullback"
+    },
+    "contrarian_signals": {
+      "name": "ContrarianSignals Market Sentiment",
+      "value": 55.7,
+      "period": "2026-03",
+      "category": "Neutral",
+      "trend": "stable",
+      "signal": "neutral",
+      "contrarian_signal": "neutral"
+    },
+    "high_yield_spreads": {
+      "name": "High Yield Bond Spreads",
+      "hyg_yield": "3.73%",
+      "investment_grade_spread": "350bps+",
+      "date": "2026-04-23",
+      "trend": "narrowing_from_highs",
+      "signal": "moderate",
+      "contrarian_signal": "neutral"
+    },
+    "sp500_oscillator": {
+      "name": "S&P 500 Oscillator",
+      "value": 5.2,
+      "date": "2026-04-28",
+      "previous": -11.0,
+      "previous_date": "2026-04-08",
+      "trend": "strong_recovery",
+      "signal": "moderate_bullish",
+      "contrarian_signal": "neutral"
+    },
+    "bofa_fund_manager": {
+      "name": "BofA Fund Manager Survey",
+      "sentiment_score": 3.7,
+      "cash_level": 4.3,
+      "period": "April 2026",
+      "trend": "extreme_bearish",
+      "signal": "bearish",
+      "contrarian_signal": "bullish",
+      "note": "Most bearish since July 2025"
+    },
+    "margin_debt": {
+      "name": "FINRA Margin Debt",
+      "value": "605B",
+      "period": "February 2026",
+      "trend": "low",
+      "signal": "neutral",
+      "contrarian_signal": "neutral"
+    },
+    "mutual_fund_cash": {
+      "name": "Mutual Fund Cash Ratio",
+      "value": "5.0%",
+      "trend": "moderate",
+      "signal": "neutral",
+      "contrarian_signal": "neutral"
+    },
+    "investment_advisor_sentiment": {
+      "name": "Investment Advisor Sentiment",
+      "value": 53,
+      "trend": "neutral",
+      "signal": "neutral",
+      "contrarian_signal": "neutral"
+    },
+    "nlp_market_sentiment": {
+      "name": "NLP Market Sentiment",
+      "overall": 0.62,
+      "news": 0.58,
+      "social": 0.71,
+      "earnings": 0.64,
+      "fed_macro": 0.44,
+      "social_news_divergence": 0.13,
+      "date": "April 2026",
+      "trend": "moderate_bullish_with_divergence",
+      "signal": "caution",
+      "contrarian_signal": "bearish"
+    }
+  },
+  "historical_comparison": {
+    "april_8_bottom": {
+      "fear_greed": 3,
+      "vix": 53,
+      "sp_oscillator": -11.0,
+      "spy_price": 540,
+      "qqq_price": 555
+    },
+    "current": {
+      "fear_greed": 64,
+      "vix": 26,
+      "sp_oscillator": 5.2,
+      "spy_price": 711,
+      "qqq_price": 661.57
+    },
+    "changes": {
+      "fear_greed_change": 61,
+      "vix_change": -27,
+      "sp_oscillator_change": 16.2,
+      "spy_pct_change": 31.6,
+      "qqq_pct_change": 19.1
+    }
+  },
+  "analysis": {
+    "summary": "谨慎偏多，但内部结构恶化",
+    "short_term": "震荡或回调概率较高。NYSE广度恶化 + Smart/Dumb Money背离 + NAAIM极端持仓构成短期风险",
+    "medium_term": "偏多。AAII散户已转谨慎、BofA基金经理极端悲观、PCR上升均为逆向买入信号",
+    "contrarian_stance": "别人恐惧我贪婪。当前散户已恐惧，但机构持仓仍高。建议维持部分仓位，等待更好的入场点或NAAIM回落至中性区再增配",
+    "key_contradictions": [
+      "表面情绪已恢复至贪婪区（Fear & Greed 64），但市场广度快速恶化（McClellan -47）",
+      "散户情绪已转谨慎（AAII Bearish > Bullish），但机构持仓仍极端（NAAIM 94）",
+      "聪明钱/散户背离为负面信号，但基金经理极端悲观（BofA 3.7）是反向利多"
+    ],
+    "data_gaps": [
+      "NAAIM 4/30将发布新数据，可能显示仓位回落",
+      "高收益债利差数据更新滞后，需关注最新变化",
+      "共同基金现金比数据滞后，参考价值有限"
+    ]
+  },
+  "next_report": "2026-05-01 06:50 CST"
+}

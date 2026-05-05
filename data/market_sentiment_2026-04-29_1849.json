@@ -1,0 +1,188 @@
+{
+  "meta": {
+    "report_date": "2026-04-29",
+    "time_slot": "evening",
+    "period": "1849",
+    "analysis_timestamp": "2026-04-29T18:49:00+08:00",
+    "overall_score": 63,
+    "signal": "中等卖出",
+    "trend_direction": "中性偏空",
+    "strategy": "别人恐惧我贪婪，别人贪婪我恐惧"
+  },
+  "core_indicators": {
+    "fear_greed_index": {
+      "name": "CNN Fear & Greed Index",
+      "value": 67,
+      "range": "贪婪",
+      "contrarian_signal": "卖出",
+      "description": "CNN综合情绪指标"
+    },
+    "vix": {
+      "name": "VIX波动率指数",
+      "value": 16.39,
+      "range": "低波动",
+      "contrarian_signal": "卖出",
+      "description": "市场恐慌/波动率温度计"
+    },
+    "put_call_ratio": {
+      "name": "CBOE Put/Call Ratio",
+      "value": 0.83,
+      "range": "中性偏低",
+      "contrarian_signal": "中性",
+      "description": "期权市场多空比"
+    }
+  },
+  "sentiment_surveys": {
+    "aaii": {
+      "name": "AAII散户情绪调查",
+      "date": "2026-04-22",
+      "bullish": 46.0,
+      "neutral": 19.5,
+      "bearish": 34.4,
+      "spread": 11.6,
+      "range": "看多回暖",
+      "contrarian_signal": "中性"
+    },
+    "naaim": {
+      "name": "NAAIM主动投资经理人风险暴露",
+      "date": "2026-04-22",
+      "value": 94.15,
+      "prev_value": 79.49,
+      "change_pct": 18.44,
+      "range": "极端暴露",
+      "contrarian_signal": "强卖出"
+    }
+  },
+  "index_prices": {
+    "spy": {
+      "name": "SPY (S&P 500)",
+      "price": 711.69,
+      "change_pct": -0.02,
+      "range": "高位震荡"
+    },
+    "qqq": {
+      "name": "QQQ (纳斯达克100)",
+      "price": 657.55,
+      "change_pct": -0.04,
+      "range": "高位震荡"
+    },
+    "dia": {
+      "name": "DIA (道琼斯)",
+      "price": 491.42,
+      "change_pct": -0.03,
+      "range": "高位震荡"
+    },
+    "iwm": {
+      "name": "IWM (罗素2000)",
+      "price": 273.92,
+      "change_pct": 0.0,
+      "range": "高位震荡"
+    }
+  },
+  "market_breadth": {
+    "nyse_ad_line": {
+      "name": "NYSE Advance/Decline Line",
+      "value": 54,
+      "unit": "% upside volume",
+      "range": "中性",
+      "contrarian_signal": "中性",
+      "note": "自4/9的84%显著回落"
+    },
+    "nyse_new_highs_lows": {
+      "name": "NYSE New Highs/Lows",
+      "value": "106/15",
+      "range": "正面",
+      "contrarian_signal": "中性"
+    },
+    "nyse_trin": {
+      "name": "NYSE TRIN",
+      "value": 1.03,
+      "range": "中性",
+      "contrarian_signal": "中性"
+    }
+  },
+  "leverage_credit": {
+    "margin_debt": {
+      "name": "FINRA Margin Debt",
+      "value": 1220000000000,
+      "value_display": "$1.22万亿",
+      "change_mom_pct": -2.6,
+      "range": "高位回落",
+      "contrarian_signal": "中性"
+    },
+    "high_yield_spread": {
+      "name": "高收益债利差 (ICE BofA)",
+      "value": 2.84,
+      "unit": "%",
+      "range": "低位",
+      "contrarian_signal": "卖出",
+      "note": "自3月高点3.5%显著收紧"
+    }
+  },
+  "professional_systems": {
+    "contrarian_signals": {
+      "name": "ContrarianSignals",
+      "value": 55.7,
+      "unit": "%",
+      "date": "2026-03",
+      "range": "中等配置",
+      "contrarian_signal": "中性"
+    },
+    "fear_greed_tracker": {
+      "name": "FearGreedTracker",
+      "value": 64,
+      "date": "2026-04-28",
+      "range": "贪婪",
+      "contrarian_signal": "卖出"
+    },
+    "sentimentrader_smart": {
+      "name": "SentimenTrader Smart Money",
+      "value": "中性",
+      "date": "2026-04-27",
+      "range": "中性",
+      "contrarian_signal": "中性"
+    },
+    "sentimentrader_dumb": {
+      "name": "SentimenTrader Dumb Money",
+      "value": "极度乐观",
+      "date": "2026-04-27",
+      "range": "极端乐观",
+      "contrarian_signal": "卖出"
+    }
+  },
+  "contrarian_analysis": {
+    "heatmap": {
+      "retail_sentiment": {"status": "看多回暖", "score": 65},
+      "institutional_sentiment": {"status": "极端贪婪", "score": 75},
+      "volatility": {"status": "极度压抑", "score": 75},
+      "options_sentiment": {"status": "偏乐观", "score": 55},
+      "market_breadth": {"status": "中性偏弱", "score": 50},
+      "leverage": {"status": "高位回落", "score": 55},
+      "credit_risk": {"status": "宽松", "score": 65},
+      "professional_systems": {"status": "散户热/机构冷", "score": 60}
+    },
+    "raw_score": 62.5,
+    "adjusted_score": 63,
+    "signal": "中等卖出",
+    "interpretation": "情绪偏热但未达极端贪婪(>75)。关键警示: Smart Money未跟进Dumb Money。",
+    "action": "不追高，获利了结，保持现金比例"
+  },
+  "key_observations": [
+    "NAAIM 94.15连续两周极端暴露，机构贪婪显著",
+    "SentimenTrader显示Dumb Money极度乐观但Smart Money中性，divergence警示",
+    "NYSE广度自4/9高点84%回落至54%，动能减弱",
+    "融资债务连续两月下降，杠杆降温",
+    "高收益债利差收紧至2.84%，信用环境宽松"
+  ],
+  "data_sources": [
+    "AAII: https://www.aaii.com/sentimentsurvey",
+    "NAAIM: https://www.naaim.org/",
+    "CNN F&G: https://money.cnn.com/data/fear-and-greed/",
+    "FearGreedTracker: https://feargreedtracker.com/",
+    "VIX: CBOE https://www.cboe.com/tradable_products/vix/",
+    "CBOE PCR: https://www.cboe.com/data/indices/volume-and-volatility-indicators/",
+    "FINRA Margin: https://www.finra.org/rules-guidance/key-topics/margin-accounts/margin-statistics",
+    "SentimenTrader: https://sentimentrader.com/",
+    "ContrarianSignals: https://www.contrariansignals.com/"
+  ]
+}

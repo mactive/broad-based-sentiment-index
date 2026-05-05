@@ -1,0 +1,140 @@
+{
+  "report_date": "2026-04-30",
+  "data_date": "2026-04-29",
+  "report_type": "morning",
+  "timestamp_utc": "2026-04-29T22:50:00Z",
+  "timestamp_cst": "2026-04-30T06:50:00+08:00",
+  "sentiment_summary": {
+    "cnn_fear_greed": 42,
+    "overall_signal": "neutral_to_cautious",
+    "contrarian_signal": "positive"
+  },
+  "indicators": {
+    "fear_greed_index": {
+      "name": "CNN Fear & Greed",
+      "value": 42,
+      "status": "neutral",
+      "trend": "recovered_from_extreme_fear",
+      "source": "CNN"
+    },
+    "vix": {
+      "name": "CBOE Volatility Index",
+      "value": 19.92,
+      "low": 19.18,
+      "high": 20.15,
+      "status": "normal_low",
+      "source": "CBOE"
+    },
+    "pcr": {
+      "name": "CBOE Equity Put/Call Ratio",
+      "value": 0.54,
+      "status": "low_greedy",
+      "source": "CBOE"
+    },
+    "aaii": {
+      "name": "AAII Sentiment Survey",
+      "bullish_pct": 31.7,
+      "bearish_pct": null,
+      "neutral_pct": null,
+      "status": "bearish_retail",
+      "note": "9 consecutive weeks below 37.5% historical avg",
+      "source": "AAII via MarketEdge 04/17"
+    },
+    "naaim": {
+      "name": "NAAIM Exposure Index",
+      "value": 94.15,
+      "prev_value": 79.49,
+      "change_pct": 18.44,
+      "median": 100.0,
+      "q1": 80.0,
+      "q3": 100.0,
+      "most_bearish": 0.0,
+      "status": "extremely_bullish",
+      "source": "NAAIM via YCharts/CEIC 04/22"
+    },
+    "advisors": {
+      "name": "Investment Advisor Sentiment",
+      "bullish_pct": 39.6,
+      "bearish_pct": 22.7,
+      "status": "neutral_to_bullish",
+      "source": "MarketEdge 04/17"
+    },
+    "smart_money": {
+      "name": "SentimenTrader Smart Money Confidence",
+      "value": 0.29,
+      "status": "extreme_low_historic",
+      "signal": "contrarian_buy",
+      "source": "SentimenTrader 2026-04"
+    },
+    "marketedge_si": {
+      "name": "MarketEdge Sentiment Index",
+      "value": 1,
+      "status": "neutral",
+      "source": "MarketEdge 04/17"
+    },
+    "ad_line": {
+      "name": "NYSE Advance-Decline Line",
+      "status": "new_high",
+      "sp500_confirmation": "partial",
+      "note": "NYSE A/D hit new high 04/17; S&P 500 A/D line lagging per Yahoo 04/17",
+      "source": "MarketEdge, Yahoo Finance"
+    },
+    "margin_debt": {
+      "name": "FINRA Margin Debt",
+      "value_trillion": 1.22,
+      "monthly_change_pct": -2.6,
+      "yoy_change_pct": 38.7,
+      "off_peak_pct": -4.5,
+      "status": "elevated_but_declining",
+      "source": "FINRA 03-2026 via AdvisorPerspectives"
+    },
+    "credit_spread": {
+      "name": "High Yield Credit Spread (HYG proxy)",
+      "investment_grade_oas_bp": 89,
+      "high_yield_spread_bp": 365,
+      "status": "narrowing",
+      "signal": "positive",
+      "source": "FRED/Bloomberg proxy"
+    },
+    "crypto_sentiment": {
+      "name": "AltIndex / FearGreedTracker",
+      "alt_index": 40,
+      "status": "neutral_to_fear",
+      "source": "AltIndex"
+    }
+  },
+  "market_indices": {
+    "SPY": {
+      "price_range": "556-560",
+      "status": "near_all_time_high",
+      "note": "Broke to new high 04/15"
+    },
+    "QQQ": {
+      "price_range": "460-466",
+      "status": "leading"
+    },
+    "DIA": {
+      "price_range": "41500-42000",
+      "status": "near_all_time_high"
+    },
+    "IWM": {
+      "price_range": "190-195",
+      "status": "lagging"
+    }
+  },
+  "analysis": {
+    "key_contradiction": "Retail and Smart Money are bearish, while active institutions (NAAIM) are aggressively long at 94% exposure. Severe sentiment split.",
+    "contrarian_signals": [
+      "AAII bullish 9 consecutive weeks below historical average",
+      "Smart Money Confidence at extreme historic lows",
+      "CNN Fear & Greed at 42, not in greed zone",
+      "Market breadth (A/D line) improving"
+    ],
+    "risk_factors": [
+      "NAAIM 94% exposure + median 100% = limited room to add",
+      "Margin debt YoY +38.7%, still historically elevated",
+      "S&P 500 A/D line has not fully confirmed breakout"
+    ],
+    "conclusion": "Neutral to cautious overall, but contrarian signals are positive. Retail fear + Smart Money extreme bearishness + improving breadth suggests the rally has more legs than the crowd expects. However, NAAIM extreme positioning means any shock could trigger forced de-risking. Not a panic-buy moment, but not a sell moment either. Maintain neutral exposure; add on dips if VIX spikes and sentiment worsens."
+  }
+}

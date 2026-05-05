@@ -1,0 +1,259 @@
+{
+  "report_metadata": {
+    "date": "2026-05-04",
+    "day_of_week": "Monday",
+    "report_type": "Evening",
+    "data_time": "2026-05-04 18:49 CST",
+    "report_id": "MS_20260504_EVN",
+    "market_session": "Post-Market (Pre-US Monday Open)",
+    "data_sources": [
+      "CNN Fear & Greed Index",
+      "Yahoo Finance",
+      "CBOE",
+      "AAII",
+      "NAAIM",
+      "Investing.com",
+      "MarketEdge",
+      "StockAnalysis.com",
+      "FINRA",
+      "Morningstar",
+      "SentimenTrader",
+      "FearGreedTracker.com",
+      "iShares"
+    ]
+  },
+  "overall_sentiment": {
+    "composite_score": 65,
+    "interpretation": "Greed",
+    "signal": "中性偏多",
+    "trend": "unchanged",
+    "vs_previous": "unchanged",
+    "narrative": "市场情绪维持贪婪区间，但多项内部指标显示结构分化。机构投资者极端乐观(NAAIM 94.15)与散户谨慎(AAII -7.3)形成对照。广度指标分化，NYSE略显疲软而Nasdaq强势。VIX低位运行显示波动性预期温和，但均值回归风险累积。"
+  },
+  "key_highlights": [
+    "🔴 风险预警: NAAIM Exposure Index 94.15，为极端乐观读数，触发反向警示",
+    "🟢 散户谨慎: AAII Bull-Bear Spread -7.3，零售情绪仍偏悲观，提供反向支撑",
+    "🟢 信用稳定: HYG信用利差255.70bps，收紧趋势延续，杠杆风险未发酵",
+    "🟡 广度分化: NYSE A/D线轻微转负(1335/1381)，McClellan Oscillator从35.20降至21.53",
+    "🟡 波动平静: VIX 17.48，低波动环境持续，但历史经验表明低VIX常伴随均值回归"
+  ],
+  "comprehensive_analysis": {
+    "market_regime": {
+      "current_state": "低波动上行趋势，情绪维持贪婪区间，内部结构分化",
+      "macro_context": "S&P 500于7,230.12逼近历史高位，低波动与历史级机构多头敞口并存，形成'安静泡沫'特征。地缘政治风险(印巴冲突)未显著外溢至美股。美联储政策预期稳定。"
+    },
+    "core_sentiment_indicators": [
+      {
+        "indicator": "CNN Fear & Greed Index",
+        "current": 67,
+        "previous": 67,
+        "change": 0,
+        "frequency": "日度",
+        "signal": "中性偏多",
+        "rationale": "维持贪婪区间但远离极端， momentum与put/call ratio指标走强，vix与junk bond demand指标走弱",
+        "contrarian_read": "中性贪婪，非极端，不构成强烈反向信号"
+      },
+      {
+        "indicator": "VIX (CBOE波动率指数)",
+        "current": 17.48,
+        "previous": 18.07,
+        "change": -0.59,
+        "frequency": "日度",
+        "signal": "中性偏多",
+        "rationale": "维持17-18温和区间，远低于历史平均20。波动率溢价持续压缩，反映市场对下行风险定价不足。VIX3M/Spot比率为1.07，轻微contango。",
+        "contrarian_read": "低VIX非立即卖出信号，但历史数据表明持续低于15常伴随10%修正"
+      },
+      {
+        "indicator": "CBOE Put/Call Ratio (Equity Only)",
+        "current": 0.82,
+        "previous": 0.75,
+        "change": 0.07,
+        "frequency": "日度",
+        "signal": "中性偏多",
+        "rationale": "从0.75回升至0.82，但仍低于0.90中位数。期权市场投机情绪仍偏乐观，看涨期权需求旺盛。5日移动平均0.84，未进入极端区域。",
+        "contrarian_read": "偏低但非极端，中性偏多"
+      },
+      {
+        "indicator": "AAII Investor Sentiment Survey",
+        "current": {
+          "bullish_pct": 35.7,
+          "bearish_pct": 43.0,
+          "neutral_pct": 21.3,
+          "bull_bear_spread": -7.3,
+          "net_neutral": -2.0
+        },
+        "previous": {
+          "bullish_pct": 38.1,
+          "bearish_pct": 39.7,
+          "neutral_pct": 22.2,
+          "bull_bear_spread": -1.6
+        },
+        "frequency": "周度(滞后)",
+        "signal": "中性偏多",
+        "rationale": "散户情绪连续第7周维持谨慎。Bullish 35.7%低于37%历史平均，Bearish 43.0%显著高于均值。散户悲观常与中期底部相关。",
+        "contrarian_read": "散户悲观提供反向支撑，典型逆向买入信号"
+      },
+      {
+        "indicator": "NAAIM Exposure Index",
+        "current": 94.15,
+        "previous": 79.5,
+        "change": 14.65,
+        "frequency": "周度(滞后)",
+        "signal": "中性偏空",
+        "rationale": "历史级读数94.15，接近100上限。主动基金经理平均净敞口极端偏高，仅6%持保护性对冲。上次类似读数出现在2024年1月(随后发生5%回调)。",
+        "contrarian_read": "极端乐观，反向卖出警示信号，历史上80以上读数后续2周回调概率60%"
+      }
+    ],
+    "market_breadth": [
+      {
+        "indicator": "NYSE Advance-Decline Line",
+        "current": "1335 advances / 1381 declines",
+        "previous": "1571 advances / 1195 declines",
+        "signal": "中性偏空",
+        "rationale": "NYSE A/D线轻微转负(净-46)，从前日大幅改善回落。NYSE Composite itself +0.73%，但内部参与广度不匹配指数涨幅。"
+      },
+      {
+        "indicator": "Nasdaq Advance-Decline",
+        "current": "3026 advances / 1766 declines",
+        "previous": "1893 advances / 2445 declines",
+        "signal": "中性偏多",
+        "rationale": "Nasdaq A/D大幅改善，净+1260。科技板块主导市场，但广度改善支撑持续上行。"
+      },
+      {
+        "indicator": "McClellan Oscillator (NYSE)",
+        "current": 21.53,
+        "previous": 35.20,
+        "signal": "中性",
+        "rationale": "仍处正值区间但回落，从35.20降至21.53。动能未逆转但力度减弱。"
+      },
+      {
+        "indicator": "McClellan Summation Index",
+        "current": 2275.16,
+        "previous": 2253.63,
+        "signal": "中性偏多",
+        "rationale": "持续累积上升，从2253升至2275。长期广度趋势健康。"
+      },
+      {
+        "indicator": "NYSE New Highs vs New Lows",
+        "current": "123 new highs / 18 new lows",
+        "previous": "89 new highs / 42 new lows",
+        "signal": "中性偏多",
+        "rationale": "新高/新低比率6.8:1，显著改善。新高数量从89增至123，新低从42降至18。"
+      },
+      {
+        "indicator": "MM Bull/Bear Ratio",
+        "current": "63% / 37%",
+        "previous": "63% / 37%",
+        "signal": "中性偏多",
+        "rationale": "根据FearGreedTracker.com momentum指标读数67维持不变，投资者情绪稳定偏多。"
+      }
+    ],
+    "leverage_risk": [
+      {
+        "indicator": "NYSE Margin Debt (FINRA)",
+        "current": "$1.221T (March 2026)",
+        "previous": "$1.253T (Feb 2026)",
+        "change": "-2.6% MoM",
+        "signal": "中性偏多",
+        "rationale": "连续第二个月下降，从峰值回落4.5%。保证金余额同比仍增38.7%但增速放缓。去杠杆进行中，降低系统性风险。"
+      },
+      {
+        "indicator": "High Yield Credit Spreads (HYG Proxy)",
+        "current": "255.70 bps",
+        "previous": "255.70 bps",
+        "signal": "中性偏多",
+        "rationale": "HYG期权调整利差维持255.70bps，大幅低于历史平均。高收益债需求强劲，信用风险被充分定价为低风险。"
+      },
+      {
+        "indicator": "Speculative Positioning (Retail Activity)",
+        "current": "High",
+        "previous": "High",
+        "signal": "中性偏空",
+        "rationale": "Put/Call比率0.82显示散户仍偏好看涨期权。AAII散户情绪虽偏悲观，但NAAIM机构极端乐观与期权市场投机活跃并存。"
+      }
+    ],
+    "professional_systems": [
+      {
+        "system": "SentimenTrader Smart Money/Dumb Money",
+        "current": "Dumb Money very optimistic / Smart Money neutral",
+        "signal": "中性偏空",
+        "rationale": "散户(Dumb Money)维持极度乐观，而Smart Money维持中性。散户乐观与机构极端敞口(NAAIM)共振。"
+      },
+      {
+        "system": "FearGreedTracker.com",
+        "current": 67,
+        "signal": "Greed",
+        "rationale": "维持贪婪读数，由momentum、put/call ratio与stock price strength驱动，vix与junk bond demand指标偏弱。"
+      },
+      {
+        "system": "ContrarianSignals",
+        "current": "Unconfirmed",
+        "signal": "中性",
+        "rationale": "该指标需深度数据源授权，当前搜索未获最新独立读数，参考NAAIM与AAII作为替代contrarian信号。"
+      }
+    ],
+    "index_performance": {
+      "SPY": {
+        "price": 720.65,
+        "change": -0.35,
+        "change_pct": -0.05,
+        "open": 721.25,
+        "high": 724.87,
+        "low": 720.47,
+        "volume": "53.68M",
+        "52_week_range": "567.23 - 732.15",
+        "notes": "S&P 500高位盘整，收盘价720.65接近52周高点732.15"
+      },
+      "QQQ": {
+        "price": 669.16,
+        "change": 6.38,
+        "change_pct": 0.96,
+        "open": 669.16,
+        "high": 675.97,
+        "low": 669.16,
+        "volume": "39.17M",
+        "52_week_range": "476.78 - 675.97",
+        "notes": "Nasdaq-100刷新52周高点675.97，科技股领涨"
+      },
+      "DIA": {
+        "price": 495.02,
+        "change": -1.63,
+        "change_pct": -0.33,
+        "open": 498.84,
+        "high": 499.93,
+        "low": 494.91,
+        "volume": "4.40M",
+        "52_week_range": "397.41 - 505.30",
+        "notes": "道指相对疲软，未能跟上科技股涨幅"
+      },
+      "IWM": {
+        "price": 279.28,
+        "change": 1.28,
+        "change_pct": 0.46,
+        "open": 278.66,
+        "high": 279.81,
+        "low": 276.57,
+        "volume": "28.94M",
+        "52_week_range": "195.64 - 279.81",
+        "notes": "Russell 2000触及52周高点279.81，小盘股参与反弹"
+      }
+    }
+  },
+  "summary_conclusion": {
+    "overall_signal": "中性偏多 / 结构性分化",
+    "key_risks": [
+      "NAAIM 94.15历史级机构乐观，历史上80以上后续2周回调概率60%",
+      "VIX 17.48持续低于历史均值20，均值回归风险累积",
+      "NYSE A/D线转负，指数上涨但参与广度不足",
+      "S&P 500接近ATH但内部结构分化，科技股独大"
+    ],
+    "key_opportunities": [
+      "AAII散户悲观(-7.3 spread)提供中期反向支撑",
+      "Nasdaq A/D线大幅改善(+1260)，科技股广度健康",
+      "保证金债务连续2月下降，系统性风险降低",
+      "高收益债利差维持低位，信用环境宽松"
+    ],
+    "tactical_outlook": "短期(1-2周): 谨慎偏多但设好止损。机构极端乐观(NAAIM 94)与散户谨慎(AAII -7.3)的背离暗示市场可能继续震荡上行，但NAAIM极端读数需警惕均值回归。中期(1-3月): 若NAAIM回落至70以下且VIX突破20，可能提供更好的加仓机会。长期(3-6月): 在牛市趋势未逆转前提下，保持核心仓位，利用散户悲观作为反向信号增配。",
+    "contrarian_strategy": "当前最优逆向信号来自AAII散户悲观(-7.3 spread)，历史上类似读数后3个月正回报概率较高。NAAIM极端乐观(94.15)提供警示但非立即做空信号。建议维持多头但逐步收紧止损，避免在机构极端乐观区域追涨。"
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "report_date": "2026-05-03",
+  "report_time": "06:50 CST",
+  "data_timestamp": "2026-05-01T16:00:00Z",
+  "market_summary": {
+    "SPY": {"price": 7230.12, "change_pct": 0.29, "note": "S&P 500指数再创新高，连续第五周上涨"},
+    "QQQ": {"price": 674.15, "change_pct": 0.89, "note": "Nasdaq 100 ETF，科技股强劲，首次突破25,000点"},
+    "DIA": {"price": 494.99, "change_pct": -0.31, "note": "Dow 30 ETF，价值股和周期股拖累微跌"},
+    "IWM": {"price": 279.28, "change_pct": 0.47, "note": "Russell 2000 ETF，小盘股反弹，表现优于道指"}
+  },
+  "sentiment_indicators": {
+    "fear_greed_index": {
+      "source": "CNN / AltIndex / ContrarianSignals综合",
+      "current": 67,
+      "zone": "贪婪",
+      "week_ago": 67,
+      "change": 0,
+      "extreme_greed_threshold": 75,
+      "extreme_fear_threshold": 25,
+      "trend": "维持贪婪区间",
+      "detail": "CNN恐惧贪婪指数67，维持在贪婪区间。连续数日处于高位但未达极端(>75)。四月是S&P 500和Nasdaq史上最佳月份之一，市场情绪偏向乐观。"
+    },
+    "vix": {
+      "source": "CBOE",
+      "value": 16.99,
+      "week_ago": 18.15,
+      "march_high": 31,
+      "historical_avg": 19.5,
+      "status": "低于历史均值",
+      "trend": "恐慌情绪持续消退，接近自满区间",
+      "detail": "VIX 16.99，低于长期均值19.5，从4月初伊朗冲突高点31大幅回落。当前水平反映市场自满情绪上升，但未达极端低位(<15)。若跌破15预示过度自满。"
+    },
+    "pcr": {
+      "source": "CBOE Equity Put/Call Ratio",
+      "equity_pcr": 0.53,
+      "equity_date": "2026-04-30",
+      "total_pcr_10dma": 0.79,
+      "total_date": "2026-04-24",
+      "index_pcr": 1.12,
+      "index_date": "2026-04-27",
+      "status": "分化",
+      "trend": "Equity PCR偏低，Index PCR偏高",
+      "detail": "个股期权偏乐观(put需求少)，但指数期权仍有对冲需求。Equity PCR 0.53低于中性水平，显示个股投机乐观；Index PCR 1.12显示机构仍通过指数期权保护。分化格局暗示对个股乐观但对整体市场谨慎。"
+    },
+    "aaii": {
+      "source": "AAII Investor Sentiment Survey",
+      "bullish_pct": 38.1,
+      "neutral_pct": 22.2,
+      "bearish_pct": 39.7,
+      "bull_bear_spread": -1.6,
+      "spread_change": -9.8,
+      "date": "2026-04-30",
+      "historical_avg_bullish": 37.5,
+      "historical_avg_bearish": 31.0,
+      "status": "轻微净看空",
+      "trend": "散户情绪从极端乐观快速回落",
+      "detail": "AAII散户情绪Bullish从46.0%降至38.1%，Bearish升至39.7%。Bull-Bear Spread从+11.6%转为-1.6%。散户在四月大涨后情绪快速冷却，从极端乐观回归中性偏空。这是中等逆向买入信号。"
+    },
+    "naaim": {
+      "source": "NAAIM Exposure Index",
+      "current": 94.15,
+      "prev_week": 94.15,
+      "change_pct": 0,
+      "median": 100.0,
+      "median_change_pct": 0,
+      "date": "2026-04-22",
+      "status": "极端看涨",
+      "trend": "主动管理型基金经理维持满仓",
+      "detail": "NAAIM均值94.15%，中位数100%。主动管理型基金经理几乎完全invested。数据截至4/22，周五将发布新数据。机构与AAII散户的分歧仍在持续。"
+    },
+    "nyse_ad": {
+      "source": "NYSE Advance/Decline Line",
+      "advances": 220,
+      "declines": 122,
+      "difference": 98,
+      "date": "2026-05-01",
+      "mcclellan_oscillator": 2275.16,
+      "status": "正向",
+      "trend": "广度与指数同步创新高",
+      "detail": "NYSE A/D线在5月1日维持正向(220-122)，McClellan Summation Index 2275.16处于高位。S&P 500和Nasdaq同步创新高，但Dow微跌显示价值股和周期股 lag。"
+    },
+    "margin_debt": {
+      "source": "FINRA",
+      "current_usd_billion": 1221,
+      "prev_month": 1253,
+      "change_mom_pct": -2.55,
+      "date": "2026-03",
+      "status": "去杠杆化",
+      "trend": "保证金债务环比下降",
+      "detail": "FINRA 3月数据显示保证金债务1,221B，较2月1,253B减少335亿美元。连续两个月下降，反映散户在3月市场动荡后主动降杠杆。4月数据待发布，需关注是否随市场强劲回升而恢复杠杆。"
+    },
+    "hy_spread": {
+      "source": "ICE BofA US High Yield OAS / HYG",
+      "value_bps": 263,
+      "value_pct": 2.63,
+      "date": "2026-05-01",
+      "status": "偏高但改善",
+      "trend": "利差从3月高点持续回落",
+      "detail": "HYG价格80.06，30天SEC收益率6.44%，OAS 263.46 bps。利差从3月恐慌高点显著回落，但仍高于200bps以下的舒适区间。信用风险持续消退中。"
+    },
+    "contrarian_signals": {
+      "source": "ContrarianSignals.com / 综合判断",
+      "buy_signals": {
+        "aaii_extreme": false,
+        "aaii_spread": -1.6,
+        "aaii_threshold": -20,
+        "vix_extreme": false,
+        "vix_value": 16.99,
+        "vix_threshold": 25,
+        "fear_greed_extreme": false,
+        "fear_greed_value": 67,
+        "fear_greed_threshold": 25,
+        "naaim_aggressive": true,
+        "naaim_value": 94.15
+      },
+      "sell_signals": {
+        "fear_greed_extreme": false,
+        "fear_greed_value": 67,
+        "fear_greed_threshold": 75,
+        "pcr_extreme": false,
+        "pcr_value": 0.53,
+        "credit_risk_elevated": true,
+        "hyg_spread_bps": 263
+      },
+      "status": "轻微买入信号",
+      "trend": "散户冷却 vs 机构贪婪 = 逆向买入",
+      "detail": "核心矛盾：AAII散户从极端乐观(+11.6%)快速回落至轻微看空(-1.6%)，而NAAIM机构94.15%满仓不动。这种分歧历史上常伴随市场趋势延续。无指标达到极端阈值，但AAII的快速冷却提供了轻微逆向买入信号。"
+    },
+    "altindex": {
+      "source": "AltIndex Fear & Greed",
+      "current": null,
+      "date": null,
+      "zone": null,
+      "status": "数据待获取",
+      "trend": "需订阅获取实时读数",
+      "detail": "AltIndex 11信号(含Reddit、LinkedIn、网页流量等)需订阅获取实时读数。"
+    },
+    "feargreedtracker": {
+      "source": "FearGreedTracker.com",
+      "value": 68,
+      "label": "Greed",
+      "status": "贪婪",
+      "detail": "FearGreedTracker 16-indicator AI算法读数68，与CNN一致。"
+    },
+    "sentimentrader": {
+      "source": "SentimenTrader Smart Money / Dumb Money",
+      "smart_money": "neutral",
+      "smart_money_value": 50,
+      "dumb_money": "extremely_optimistic",
+      "dumb_money_value": 70,
+      "spread": -20,
+      "date": "2026-04-28",
+      "status": "顶部警告",
+      "detail": "SentimenTrader显示Dumb Money极度乐观(70) vs Smart Money中性(50)，差距-20。这是经典的短期顶部警告信号。但与AAII散户偏空形成对比——可能反映不同时间窗口或样本差异。"
+    }
+  },
+  "contrarian_analysis": {
+    "summary": "情绪指标呈现复杂分化：AAII散户从4月中旬的极端乐观(46% bullish, +11.6% spread)快速回落至轻微看空(-1.6%)，显示散户在四月史上最强涨幅后迅速冷却。NAAIM机构94.15%满仓不动，中位数100%，显示专业资金毫不担心。Fear & Greed 67维持贪婪区间。SentimenTrader Dumb Money极度乐观 vs Smart Money中性发出短期顶部警告。VIX 16.99降至历史均值以下，自满情绪上升。高收益债利差263bps持续回落但仍偏高。NYSE广度正向。整体格局：散户冷却 + 机构贪婪 = 轻微逆向买入信号，但SentimenTrader顶部警告和VIX接近自满区间需保持警惕。",
+    "key_signals": [
+      "AAII Spread -1.6% = 散户从+11.6%快速回落至-1.6%，冷却速度惊人，轻微逆向买入信号",
+      "NAAIM 94.15% = 机构维持满仓不动，与散户冷却形成强烈分歧",
+      "SentimenTrader Dumb Money 70(极度乐观) vs Smart Money 50(中性) = 短期顶部警告",
+      "Fear & Greed 67 = 维持贪婪但未极端(需>75)",
+      "VIX 16.99 = 低于历史均值19.5，接近自满区间(<15)",
+      "Equity PCR 0.53 vs Index PCR 1.12 = 个股乐观vs指数对冲的分化",
+      "HY Spread 263bps = 信用风险持续消退但仍高于舒适区间"
+    ],
+    "strategy_note": "核心矛盾：AAII散户快速冷却(逆向买入) vs SentimenTrader Dumb Money极度乐观(逆向卖出)。两者信号相反。VIX 16.99接近自满区间值得警惕。四月是史上最强月份之一(S&P +10%, Nasdaq +15%)，五月通常面临'卖在五月'的季节性压力。建议维持现有仓位但不再追高，若AAII Spread跌破-20%则加仓。监控VIX<15和F&G>75作为更强的卖出确认。"
+  },
+  "policy_cross_impact": {
+    "summary": "政策层面：FOMC维持利率不变(3.5-3.75%)，市场降息预期大幅降温。美伊停火谈判出现进展，油价回落。特朗普政府关税政策持续，但市场已部分消化。",
+    "iran_war": {
+      "status": "停火谈判进行中",
+      "oil_price_brent": 108.17,
+      "strait_of_hormuz": "Unstable but improving",
+      "energy_sector_ytd_pct": 35.4,
+      "inflation_pressure": "缓解中"
+    },
+    "tariffs": {
+      "pharma_100_pct": "Effective Apr 2",
+      "steel_aluminum_adjustment": "Effective Apr 6",
+      "china_comprehensive_rate": "~35%",
+      "auto_25_pct": "Ongoing"
+    },
+    "fed_policy": {
+      "fomc_meeting": "Apr 29-30, 2026 - Held steady at 3.5-3.75%",
+      "market_pricing": "仅17%概率年内降息，7%概率加息",
+      "key_risk": "能源通胀缓解但关税通胀持续，Fed维持鹰派",
+      "trump_pressure": "特朗普持续施压要求降息，Kevin Warsh将于5/15接任联储主席"
+    }
+  },
+  "dashboard": {
+    "fear_greed": {"value": 67, "label": "Greed", "bar": "██████████░░"},
+    "vix": {"value": 16.99, "label": "Low/Complacent", "bar": "██████░░░░░░"},
+    "aaii": {"value": -1.6, "label": "Slight Bearish", "bar": "█████░░░░░░░"},
+    "naaim": {"value": 94.15, "label": "Bullish", "bar": "███████████░"},
+    "market_breadth": {"value": "Positive", "label": "Bullish", "bar": "███████████░"},
+    "credit_spread": {"value": 263, "label": "Elevated", "bar": "██████░░░░░░"},
+    "pcr_equity": {"value": 0.53, "label": "Low", "bar": "█████░░░░░░░"}
+  },
+  "tomorrow_watch": [
+    "NAAIM新数据 (周五发布) - 确认机构是否仍满仓",
+    "非农就业数据 (周五) - 影响Fed政策预期",
+    "SentimenTrader Smart Money是否跌破40(极端卖出)",
+    "Fear & Greed是否突破75(极端贪婪)",
+    "VIX是否跌破15(自满信号)",
+    "HY Spread是否收窄至250bps以下(信用风险进一步消退)",
+    "S&P 500能否守住7,200支撑位"
+  ]
+}
