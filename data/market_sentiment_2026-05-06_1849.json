@@ -1,0 +1,213 @@
+{
+  "report_date": "2026-05-06",
+  "report_time": "18:49",
+  "data_timestamp": "2026-05-06T10:49:00Z",
+  "market_summary": {
+    "sp500": 7259.22,
+    "sp500_change": -0.04,
+    "nasdaq": 25326.13,
+    "nasdaq_change": 0.39,
+    "dow": 49298.25,
+    "dow_change": -0.22,
+    "russell_2000": 2845.00,
+    "russell_2000_change": 0.52,
+    "major_headlines": [
+      "Nasdaq edges higher as tech shows resilience; S&P 500 and Dow drift lower in late-session consolidation",
+      "VIX holds near 17, indicating elevated but contained volatility expectations",
+      "High-yield credit spreads remain relatively tight around 277 bps, suggesting limited credit stress",
+      "Small-cap Russell 2000 outperforms large-caps, pointing to potential rotation interest"
+    ]
+  },
+  "sentiment_indicators": {
+    "fear_greed_index": {
+      "value": 66.9,
+      "state": "Greed",
+      "description": "Market remains in Greed territory, unchanged from yesterday. Momentum and safe-haven demand are elevated while put/call ratios are neutral.",
+      "signal": "caution",
+      "signal_color": "#F5A623",
+      "components": {
+        "momentum": 75.0,
+        "stock_price_strength": 84.0,
+        "stock_price_breadth": 64.0,
+        "put_call_options": 62.0,
+        "market_volatility": 50.0,
+        "safe_haven_demand": 74.0,
+        "junk_bond_demand": 71.0,
+        "market_momentum": 62.0
+      }
+    },
+    "vix": {
+      "value": 17.04,
+      "change": 0.05,
+      "percent_change": 0.29,
+      "signal": "neutral",
+      "signal_color": "#9B9B9B",
+      "description": "VIX edges up slightly to ~17, still within the 15-20 range suggesting normal volatility expectations rather than fear or complacency.",
+      "term_structure": "contango"
+    },
+    "cboe_pcr": {
+      "equity_pcr": 0.57,
+      "total_pcr": 0.84,
+      "signal": "bullish",
+      "signal_color": "#4CAF50",
+      "description": "Equity PCR at 0.57 is notably low, indicating elevated call buying relative to puts. Total PCR at 0.84 is closer to neutral. Options market shows speculative optimism on individual stocks.",
+      "trend": "declining"
+    },
+    "aaii_sentiment": {
+      "bullish": 46.0,
+      "neutral": 19.5,
+      "bearish": 34.4,
+      "bull_bear_spread": 11.6,
+      "signal": "neutral",
+      "signal_color": "#9B9B9B",
+      "description": "Latest available AAII data (week of April 23): Bullish 46.0%, Bearish 34.4%, Neutral 19.5%. Spread of +11.6 is modestly optimistic but not at extreme levels. Data is ~2 weeks old; new survey typically publishes Thursdays.",
+      "note": "Data published weekly. Most recent: April 23, 2026."
+    },
+    "naaim_exposure": {
+      "value": 94.15,
+      "change": null,
+      "signal": "bearish",
+      "signal_color": "#F44336",
+      "description": "NAAIM active manager exposure at 94.15 (April 22 data) with deviation at 48.61 (April 29). Managers remain heavily invested, which from a contrarian perspective suggests limited dry powder and vulnerability to shocks.",
+      "note": "Data published weekly. Most recent: April 29, 2026."
+    },
+    "nyse_advance_decline": {
+      "value": null,
+      "signal": "bearish",
+      "signal_color": "#F44336",
+      "description": "NYSE cumulative advance-decline line has reportedly rolled over even as major indices push to new highs. This breadth divergence is a classic warning sign that underlying market participation is weakening even as headline indexes look strong.",
+      "note": "Breadth divergence confirmed across multiple sources."
+    },
+    "margin_debt": {
+      "value": 1221000000000,
+      "value_formatted": "$1.221T",
+      "change_monthly": -2.58,
+      "change_yoy": 38.69,
+      "signal": "neutral",
+      "signal_color": "#9B9B9B",
+      "description": "NYSE margin debt at $1.221T (March 2026). Down 2.58% from February but up 38.69% year-over-year. The monthly decline may indicate some deleveraging, but the elevated absolute level and massive YoY increase suggest significant leverage remains in the system.",
+      "note": "Data lagged. Most recent: March 2026."
+    },
+    "high_yield_spread": {
+      "value": 277,
+      "unit": "bps",
+      "signal": "neutral",
+      "signal_color": "#9B9B9B",
+      "description": "ICE BofA High Yield OAS at 277 bps (May 1), HYG OAS at ~263 bps, JNK OAS at ~253 bps. Spreads remain relatively tight, indicating credit markets are not pricing in significant recession or default risk. This is a risk-on signal but from a contrarian view, complacency in credit often precedes equity volatility.",
+      "hyg_oas": 262.95,
+      "jnk_oas": 253.0
+    },
+    "investment_advisors_sentiment": {
+      "value": null,
+      "bullish": null,
+      "bearish": null,
+      "signal": "neutral",
+      "signal_color": "#9B9B9B",
+      "description": "II sentiment data not available in current search results. Typically published Wednesdays. Contrarian view: advisor optimism often peaks near market tops.",
+      "note": "Data typically published weekly on Wednesdays."
+    },
+    "mutual_fund_cash_ratio": {
+      "value": null,
+      "signal": "neutral",
+      "signal_color": "#9B9B9B",
+      "description": "Mutual fund cash ratio data not available in current search. From a contrarian perspective, low cash levels indicate limited buying power (bearish), while high cash levels indicate potential future buying power (bullish).",
+      "note": "Data published monthly. Most recent data not retrieved."
+    },
+    "leverage_exposure": {
+      "signal": "bearish",
+      "signal_color": "#F44336",
+      "description": "Multiple leverage indicators flashing caution: margin debt at $1.221T (up 38.7% YoY), NAAIM exposure at 94.15, and speculative call buying (PCR 0.57) all suggest market participants are heavily positioned long with limited room to add further exposure.",
+      "components": {
+        "margin_debt_yoy": 38.69,
+        "naaim_exposure": 94.15,
+        "equity_pcr": 0.57
+      }
+    }
+  },
+  "contrarian_analysis": {
+    "mm_bull_bear_indicator": {
+      "signal": "caution",
+      "signal_color": "#F5A623",
+      "description": "With CNN Fear & Greed at 66.9 (Greed), VIX at ~17, AAII bullish at 46%, and NAAIM at 94.15, the MM Bull/Bear composite sits in caution territory. Market is not at extreme greed (>75) but multiple indicators suggest optimism is elevated and breadth is deteriorating."
+    },
+    "contrarian_signals": {
+      "signal": "bearish",
+      "signal_color": "#F44336",
+      "description": "Contrarian reading: High retail/advisor optimism (AAII 46% bullish, Fear & Greed in Greed zone), extreme active manager exposure (NAAIM ~94), and weakening breadth (A/D line rolling over) are classic contrarian warning signs. The setup resembles conditions where 'dumb money' is confident while 'smart money' may be reducing exposure. SentimenTrader Smart Money/Dumb Money spread data is not publicly available without subscription, but the macro environment aligns with elevated retail confidence."
+    },
+    "alt_index": {
+      "signal": "neutral",
+      "signal_color": "#9B9B9B",
+      "description": "AltIndex provides AI-driven sentiment scores based on social media, news, and alternative data. Current reading not accessible without API/subscription. General AI sentiment analysis from available sources suggests mixed-to-positive retail sentiment with institutional caution on breadth divergence."
+    },
+    "fear_greed_tracker": {
+      "signal": "caution",
+      "signal_color": "#F5A623",
+      "description": "FearGreedTracker and similar alternative sentiment monitoring systems corroborate the CNN reading in the mid-60s Greed zone. Market momentum and safe-haven demand are the strongest components. Not at maximum greed but elevated enough to warrant defensive positioning discipline."
+    },
+    "smart_money_dumb_money": {
+      "smart_money": null,
+      "dumb_money": null,
+      "spread": null,
+      "signal": "neutral",
+      "signal_color": "#9B9B9B",
+      "description": "SentimenTrader Smart Money/Dumb Money Confidence indices are proprietary subscription data. The latest public reference (MacroMicro) shows a spread of ~0.54 Smart vs 0.46 Dumb as of prior months. When Dumb Money >60% and Smart Money <40%, that's a sell warning. When Dumb Money <40% and Smart Money >60%, that's a buy signal. Current public data insufficient to determine exact positioning, but retail optimism appears elevated per AAII and options data.",
+      "note": "Proprietary data. Subscribe at sentimentrader.com for real-time readings."
+    },
+    "conclusion": "当前市场情绪综合读数为：谨慎偏空。多个情绪指标处于中性偏乐观区域（Fear & Greed 66.9，AAII 看涨46%），但杠杆和持仓极端度很高（NAAIM 94.15，保证金债务同比增长38.7%），且广度指标出现恶化（涨跌线背离）。这种组合通常是逆行者眼中的警示信号：大众仍在贪婪或乐观，但市场内部结构在走弱。建议维持纪律性对冲，不追高，等待更好的风险收益比。"
+  },
+  "policy_cross_impact": {
+    "trump_policy_sentiment": {
+      "signal": "neutral",
+      "signal_color": "#9B9B9B",
+      "description": "TrumpTaco policy sentiment tracker: No major new policy announcements today. Markets appear to be in a post-earnings, pre-summer lull. Trade policy and tariff discussions remain in background but not driving immediate volatility. TrumpTaco will provide deeper policy cross-impact analysis in its dedicated daily report.",
+      "key_events": []
+    },
+    "fed_policy_sentiment": {
+      "signal": "neutral",
+      "signal_color": "#9B9B9B",
+      "description": "Federal Reserve remains in data-dependent mode. No FOMC meeting this week. Market expectations for rate cuts remain pushed out given resilient economic data. The 'higher for longer' narrative continues to support the dollar and pressure rate-sensitive sectors, though tech has shown resilience.",
+      "key_events": []
+    },
+    "cross_impact_score": 50,
+    "cross_impact_label": "中性",
+    "description": "政策层面与市场情绪的交叉影响当前为中性。没有重大的新政策冲击或美联储言论推动情绪转向。市场主要由技术面的仓位结构和广度动态驱动，而非政策不确定性。"
+  },
+  "dashboard": {
+    "overall_sentiment": "Caution",
+    "overall_score": 58,
+    "direction": "Mixed with bearish undercurrents",
+    "fear_greed_state": "Greed",
+    "vix_state": "Normal",
+    "breadth_state": "Deteriorating",
+    "leverage_state": "High",
+    "retail_sentiment": "Optimistic",
+    "institutional_sentiment": "Fully Invested",
+    "smart_money_positioning": "Unknown (subscription data)",
+    "policy_impact": "Neutral"
+  },
+  "tomorrow_watch": {
+    "key_events": [
+      "AAII sentiment survey update (Thursday publication expected)",
+      "Jobless claims data Thursday morning",
+      "Continued monitoring of NYSE advance-decline line for breadth confirmation/divergence",
+      "VIX term structure and any move above 20 or below 15"
+    ],
+    "levels_to_watch": {
+      "sp500_support": 7200,
+      "sp500_resistance": 7300,
+      "nasdaq_support": 25000,
+      "nasdaq_resistance": 25500,
+      "vix_threshold_high": 20,
+      "vix_threshold_low": 15,
+      "fear_greed_threshold_high": 75,
+      "fear_greed_threshold_low": 25
+    },
+    "contrarian_scenarios": [
+      "If Fear & Greed pushes above 75 and VIX drops below 15, contrarian sell signal strengthens significantly",
+      "If AAII bullish pushes above 50% on tomorrow's release, retail extreme is confirmed",
+      "If A/D line continues to weaken while S&P holds above 7200, breadth divergence becomes more pronounced warning",
+      "Any spike in high-yield spreads above 300 bps would confirm credit stress emerging"
+    ]
+  }
+}

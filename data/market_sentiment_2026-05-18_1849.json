@@ -1,0 +1,124 @@
+{
+  "report_date": "2026-05-18",
+  "report_time": "1849",
+  "timestamp": "2026-05-18T18:49:00+08:00",
+  "market_summary": {
+    "sp500": "SPY $594.41 | S\u0026P 500上周创历史高点后高位震荡，盘前期货下跌0.4%",
+    "nasdaq": "QQQ $506.98 | 纳斯达克承压，芯片股(SOX)回调3%，通胀担忧压制成长股",
+    "dow": "DIA $427.23 | 道指短暂触及50,000点后回落，盘前期货跌0.7%",
+    "russell2000": "IWM $204.04 | 罗素2000表现分化，小盘股相对滞涨",
+    "market_regime": "高位震荡期 | 指数创新高但内部结构分化，广度不足，Smart Money撤退",
+    "key_events": "1)通胀数据超预期(CPI/PPI约2倍于Fed目标); 2)美伊紧张推高油价至$100/桶; 3)10年期国债收益率逼近4.5%; 4)半导体指数一年涨173%后回调3%; 5)法院裁定10%全球关税非法"
+  },
+  "sentiment_indicators": {
+    "fear_greed_index": {
+      "value": "63 (Greed)",
+      "category": "Greed",
+      "trend": "较前周66.77略有回落，5月15日读数63，维持在Greed区间",
+      "contrarian_signal": "贪婪区域但未达极端(\u003e75)。历史上此区间伴随短期回调风险，但非系统性卖出信号"
+    },
+    "vix": {
+      "value": "19.29",
+      "category": "Neutral",
+      "trend": "维持在20以下，但较前期低点回升，近期区间18.97-20.05",
+      "contrarian_signal": "低于20表明恐慌有限，持续高于25将预示更持久动荡。当前中性偏谨慎"
+    },
+    "cboe_pcr": {
+      "value": "0.48",
+      "category": "Low",
+      "trend": "低于0.7中性水平，显示看跌期权买入意愿偏低",
+      "contrarian_signal": "PCR偏低表明市场过度乐观，看跌保护不足。历史上低PCR往往伴随短期顶部风险"
+    },
+    "aaii_sentiment": {
+      "value": "Bullish 38.3% | Bearish 27.8% | Neutral 33.9%",
+      "category": "Neutral-Bullish",
+      "trend": "5月14日当周。Bullish和Bearish均低于历史均值，情绪温和",
+      "contrarian_signal": "散户情绪温和偏多，Bullish-Bearish差值10.5%远低于30%警戒线，未达极端"
+    },
+    "naaim_exposure": {
+      "value": "77.34",
+      "category": "High",
+      "trend": "较前周96.67大幅回落，但仍处于历史偏高水平",
+      "contrarian_signal": "机构持仓从极端高位快速回落，显示专业投资者对风险警觉上升。77仍偏高但下降趋势确认"
+    },
+    "sentimentrader": {
+      "value": "Smart Money 67 | Dumb Money 80",
+      "category": "Bearish-Divergence",
+      "trend": "Smart Money近3个月最低(前值78.49)，Dumb Money近6个月最高(前值68.56)",
+      "contrarian_signal": "Smart/Dumb差值转负(-13)，历史上此配置下3-6个月标普回报为负。最强烈的反向信号之一"
+    },
+    "nyse_advance_decline": {
+      "value": "2,611 advancing / 1,072 declining | New Highs 30 vs New Lows 23",
+      "category": "Positive-Breadth",
+      "trend": "上涨个股显著多于下跌，但新高数量仅略多于新低",
+      "contrarian_signal": "广度正面但强度不足。大盘由少数科技股驱动，广度恶化是高位回调典型前兆"
+    },
+    "margin_debt": {
+      "value": "$1.22T (March 2026)",
+      "category": "High-Declining",
+      "trend": "连续两个月下降(4月-$1.26T)，杠杆率从历史高位回落",
+      "contrarian_signal": "保证金余额回落显示投机情绪降温。去杠杆降低系统性风险但伴随波动加剧"
+    },
+    "mutual_fund_cash_ratio": {
+      "value": "1.8% (March 2026, ICI)",
+      "category": "Extremely-Low",
+      "trend": "处于历史低位附近，机构弹药储备枯竭",
+      "contrarian_signal": "干火药储备极低，极端低位(\u003c3%)往往预示机构追涨情绪浓厚，是反向卖出信号"
+    },
+    "high_yield_spread": {
+      "value": "305 bps (ICE BofA, May 14)",
+      "category": "Normal",
+      "trend": "稳定在300-310区间，z-score: NORMAL",
+      "contrarian_signal": "信用利差正常，未发出衰退预警。HYG/LQD比率正常，风险资产仍获信用市场支持"
+    },
+    "investment_advisor_sentiment": {
+      "value": "Bull-Bear Spread 21.8% (Investors Intelligence, May 14)",
+      "category": "Neutral-Bullish",
+      "trend": "低于50%警戒线，顾问群体未达极端乐观",
+      "contrarian_signal": "低于30%为买入区，高于50%为卖出区。当前21.8%属于中性偏多区域"
+    },
+    "mm_bull_bear": {
+      "value": "SPY/QQQ/DIA/IWM均处历史高位附近",
+      "category": "Bullish-Structure",
+      "trend": "大盘指数上周创新高，但内部结构分化",
+      "contrarian_signal": "指数新高+广度不足+Smart Money离场=典型顶背离结构。历史上3个月内回调概率较高"
+    }
+  },
+  "contrarian_analysis": {
+    "overall_contrarian_signal": "偏空信号累积中。多项指标同步指向情绪过热但尚未极端，是最危险的区间——可以变得更贪婪",
+    "bullish_extremes": "NAAIM 77.34仍处高位; Dumb Money 80为近6个月最高; Mutual Fund Cash仅1.8%; PCR 0.48保护不足",
+    "bearish_extremes": "AAII Bearish 27.8%未达恐慌; VIX 19.29未进入恐惧区间(\u003e25); 高收益债利差305bps无信用恐慌",
+    "divergences": "Smart Money 67 vs Dumb Money 80差值-13（最显著逆向信号）; 指数新高但NYSE New Highs仅30 vs New Lows 23; NAAIM大幅减仓印证专业投资者在出货",
+    "strategic_implications": "短期(1-4周):情绪过热+聪明资金离场=回调风险上升，维持防御姿态。中期(1-3月):关注VIX 25+与PCR 0.7+组合作为买入窗口。长期(6月+):基本面支撑牛市但估值高位，逆向投资者应保持耐心"
+  },
+  "policy_cross_impact": {
+    "trump_policy_events": [
+      "10%全球关税被法院裁定非法，政府准备替代方案; USMCA联合审查7月1日启动",
+      "美伊紧张:25%对伊关税威胁，中东局势推高油价至$100/桶",
+      "对华100%关税原定2026年底实施，延期状态，尾部风险"
+    ],
+    "fed_policy_events": [
+      "利率维持3.50%-3.75%不变，Higher for Longer预期强化; Collins警告通胀持续至2027年",
+      "2026年降息预期大幅降温; Wells Fargo预测两次降息但共识转向全年无降息",
+      "核心CPI 2.9%，消费者通胀预期升至3.4%; 伊朗战争导致的油价上涨是主要担忧"
+    ],
+    "policy_sentiment_correlation": "关税法律裁决的不确定性压制风险偏好; 油价上涨→通胀预期上升→Fed维持鹰派→成长股承压; 市场在高位对政策冲击的脆弱性增加：估值高+利率高+地缘风险=低容错率",
+    "key_policy_risks": "1)伊朗冲突升级若油价突破$120并持续将迫使Fed重新评估; 2)关税替代方案的推出时机与力度; 3)Powell法律纠纷与潜在领导层更替带来的政策不确定性"
+  },
+  "dashboard": {
+    "fear_greed_meter": 63,
+    "vix_gauge": 35,
+    "breadth_health": 45,
+    "credit_stress": 30,
+    "leverage_risk": 55,
+    "contrarian_index": 42,
+    "policy_impact": 60
+  },
+  "tomorrow_watch": {
+    "economic_calendar": "5月19日: NAHB房屋市场指数、纽约州制造业指数; 5月20日: FOMC 4月会议纪要",
+    "earnings_highlights": "本周零售股财报(Target/TJX等)是关键; 英伟达等芯片股走势影响大盘情绪",
+    "policy_events": "5月20日FOMC会议纪要发布，关注内部对通胀与利率的分歧细节; 关注USMCA谈判与对华关税消息",
+    "technical_levels": "SPY支撑位$585/$575，阻力位$600/$605; QQQ支撑位$495/$485，阻力位$515/$525; VIX关注能否突破22并站稳",
+    "sentiment_shifts": "PCR从0.48回升至0.6+表明机构开始购买保护; VIX突破25确认恐惧升温; NAAIM跌破50确认中期顶部; AAII Bullish突破45%为强烈反向信号"
+  }
+}

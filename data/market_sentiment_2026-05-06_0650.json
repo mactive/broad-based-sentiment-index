@@ -1,0 +1,204 @@
+{
+  "report_date": "2026-05-06",
+  "report_time": "07:18 CST",
+  "data_timestamp": "2026-05-05T16:00:00-04:00",
+  "market_summary": {
+    "SPY": {
+      "close": 723.77,
+      "prev_close": 718.01,
+      "change_pct": 0.8,
+      "volume": 31842935,
+      "high": 725.04,
+      "low": 721.49,
+      "note": "S&P 500 ATH-close 7259.22, YTD +6.04%"
+    },
+    "QQQ": {
+      "close": 681.5,
+      "prev_close": 672.88,
+      "change_pct": 1.28,
+      "volume": 35322259,
+      "high": 682.77,
+      "low": 677.51,
+      "note": "科技股领涨，逼近前期阻力"
+    },
+    "DIA": {
+      "close": 492.96,
+      "prev_close": 489.56,
+      "change_pct": 0.69,
+      "volume": 3123105,
+      "high": 493.59,
+      "low": 490.03,
+      "note": "温和回升"
+    },
+    "IWM": {
+      "close": 282.56,
+      "prev_close": 277.88,
+      "change_pct": 1.68,
+      "volume": 24097982,
+      "high": 282.95,
+      "low": 280.0,
+      "note": "小盘股领涨，市场广度良好"
+    }
+  },
+  "sentiment_indicators": {
+    "fear_greed_index": {
+      "current": 62.2,
+      "previous": 66.1,
+      "status": "贪婪区(降温中)",
+      "historical_percentile": 55,
+      "signal": "从极端贪婪回落，但仍处贪婪区间。逆向视角：未到恐惧，不触发买入",
+      "source": "CNN Money"
+    },
+    "vix": {
+      "current": 17.62,
+      "open": 17.95,
+      "high": 18.02,
+      "low": 17.55,
+      "change_pct": -3.66,
+      "long_term_average": 19,
+      "signal": "低于长期均值，恐慌情绪低。逆向视角：非极端恐惧(VIX<25不构成买入)",
+      "source": "CBOE / Investing.com"
+    },
+    "pcr": {
+      "total_pcr": 0.87,
+      "equity_pcr": 0.54,
+      "index_pcr": "待更新",
+      "historical_average_equity": 0.65,
+      "signal": "股票PCR 0.54过低，对冲意愿弱。逆向视角：低PCR常出现在顶部附近",
+      "source": "CBOE Daily Market Stats"
+    },
+    "aaii": {
+      "bullish_pct": 38.1,
+      "bearish_pct": 32.3,
+      "neutral_pct": 29.6,
+      "bull_bear_spread": 5.8,
+      "historical_average_bullish": 37.5,
+      "z_score": -0.1,
+      "signal": "多空差从+25.2%骤降至+5.8%，散户快速撤退。逆向视角：积极信号，但未达恐惧区间",
+      "source": "AAII Sentiment Survey (week ending Apr 29)",
+      "frequency": "周度"
+    },
+    "naaim": {
+      "average_exposure": 94.15,
+      "median_exposure": "待更新",
+      "n_deviation": "极端",
+      "status": "极度满仓",
+      "signal": "94.15%处于历史极端高位。逆向视角：核心卖出信号，加仓空间耗尽",
+      "source": "NAAIM (as of Apr 30, 2026)",
+      "frequency": "周度"
+    },
+    "nyse_ad": {
+      "current_value": "4月中旬创历史新高",
+      "trend": "与价格同步上行",
+      "signal": "市场广度健康，上涨具有广泛参与度",
+      "source": "NYSE",
+      "frequency": "日度"
+    },
+    "margin_debt": {
+      "latest_value": "约$6840亿 (2月数据)",
+      "trend": "历史高位",
+      "signal": "杠杆水平高，但数据滞后6周",
+      "source": "FINRA",
+      "frequency": "月度滞后"
+    },
+    "hy_spread": {
+      "current_oas": 262.95,
+      "hyg_price": 79.8,
+      "sec_yield": 6.46,
+      "signal": "利差中等，信用风险定价温和，未发衰退警报",
+      "source": "iShares HYG",
+      "frequency": "日度"
+    },
+    "contrarian_signals": {
+      "buy_signals": {
+        "count": 0,
+        "triggers": [],
+        "status": "未触发"
+      },
+      "sell_signals": {
+        "count": 1,
+        "triggers": ["NAAIM极端高(94.15%)"],
+        "status": "部分触发"
+      },
+      "status": "中性偏谨慎",
+      "trend": "从极端贪婪回落",
+      "detail": "综合配置建议: 50-60%仓位。多指标同步性中等，NAAIM是唯一极端信号"
+    },
+    "altindex": {
+      "current_estimate": "45-55区间",
+      "key_signals": ["Reddit讨论量", "网页流量", "LinkedIn招聘"],
+      "trend": "从Q1恐惧区间回升",
+      "signal": "另类数据确认情绪修复，但未过热",
+      "source": "AltIndex.com"
+    },
+    "feargreedtracker": {
+      "distance_to_extreme_fear": 37.2,
+      "distance_to_extreme_greed": 12.8,
+      "synchronization": "中等",
+      "signal": "距极端贪婪更近，距极端恐惧更远。非典型逆向买入时机",
+      "source": "FearGreedTracker.com"
+    }
+  },
+  "contrarian_analysis": {
+    "summary": "情绪从极端贪婪(4月中旬F&G=75+)降温至温和贪婪(62.2)，但专业投资者仍极度自满(NAAIM=94.15%)。核心矛盾：散户已撤退，机构仍狂欢。",
+    "key_signals": [
+      "AAII多空差从+25.2%骤降至+5.8%: 散户撤退，逆向积极信号",
+      "NAAIM 94.15%: 专业经理人极端满仓，核心卖出信号",
+      "股票PCR 0.54: 对冲意愿过低，顶部特征",
+      "VIX 17.62: 低恐慌，非买入时机"
+    ],
+    "strategy_note": "维持中等仓位(50-70%)，不追高，等待AAII进入恐惧区间(<-20%)或NAAIM回落至<70%再考虑加仓。历史数据显示NAAIM>90%后3-6个月回调概率>60%。"
+  },
+  "policy_cross_impact": {
+    "summary": "政策不确定性中等偏高。关税和地缘仍是最大变量，但4月8日极端恐惧已将大部分利空定价。当前反弹是对恐慌的修复，非新利好驱动。",
+    "iran_war": {
+      "status": "霍尔木兹海峡通航恢复，油价回落至$100以下",
+      "impact": "正面，能源冲击缓解"
+    },
+    "tariffs": {
+      "status": "药品100%关税生效，钢铝关税调整",
+      "impact": "结构性影响，关注企业盈利传导"
+    },
+    "fed_policy": {
+      "status": "3月FOMC维持3.50-3.75%，通胀预期3.8%",
+      "impact": "降息预期延后，限制估值扩张"
+    }
+  },
+  "dashboard": {
+    "fear_greed": {
+      "value": 62.2,
+      "signal": "贪婪(降温中)"
+    },
+    "vix": {
+      "value": 17.62,
+      "signal": "低恐慌"
+    },
+    "aaii": {
+      "value": 5.8,
+      "signal": "中性(快速回落)"
+    },
+    "naaim": {
+      "value": 94.15,
+      "signal": "极度满仓"
+    },
+    "market_breadth": {
+      "value": "健康",
+      "signal": "A/D Line 4月创新高"
+    },
+    "credit_spread": {
+      "value": 263,
+      "signal": "中性"
+    },
+    "pcr_equity": {
+      "value": 0.54,
+      "signal": "过低(自满)"
+    }
+  },
+  "tomorrow_watch": [
+    "AAII本周数据(周四): 关注多空差是否继续收窄或进入负值",
+    "NAAIM下周更新(周三): 94.15%能否回落是关键变量",
+    "美联储官员讲话: 任何关于利率路径的表态",
+    "伊朗局势: 霍尔木兹海峡通航状态的持续性",
+    "VIX走势: 若回升至20+，表明市场开始定价新的不确定性"
+  ]
+}

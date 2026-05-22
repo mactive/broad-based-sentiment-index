@@ -1,0 +1,104 @@
+{
+  "report_date": "2026-05-21",
+  "report_time": "06:50 CST",
+  "timestamp": "2026-05-21T06:50:00+08:00",
+  "data_time": "2026-05-20 16:00 ET (US Market Close)",
+  "market_summary": {
+    "sp500": "SPY $741.175 (+0.34%)",
+    "nasdaq": "QQQ $712.665 (+0.96%)",
+    "dow": "DIA $500.295 (+0.66%)",
+    "russell": "IWM $279.84 (+2.51%)",
+    "vix": "17.44 (Prev: 18.06, Open: 18.17)",
+    "market_status": "Mixed breadth: headline indices green but NYSE AD ratio collapsed to 0.43"
+  },
+  "sentiment_indicators": {
+    "cnn_fear_greed": {
+      "value": 61,
+      "status": "Greed",
+      "prev_week": 63,
+      "prev_month": 42,
+      "trend": "Stable in greed zone"
+    },
+    "vix": {
+      "current": 17.44,
+      "open": 18.17,
+      "high": 18.18,
+      "low": 17.73,
+      "prev_close": 18.06,
+      "trend": "Declining - complacency risk"
+    },
+    "cboe_pcr": {
+      "equity": 0.56,
+      "index": 1.37,
+      "total": 0.84,
+      "trend": "Low equity PCR suggests call buying dominance"
+    },
+    "aaii": {
+      "bullish": 39.32,
+      "neutral": 24.07,
+      "bearish": 36.61,
+      "spread": 2.71,
+      "sample_date": "2026-05-14",
+      "trend": "Bullish sentiment barely above bearish"
+    },
+    "naaim": {
+      "current": 77.34,
+      "prev_week": 96.67,
+      "change": -19.33,
+      "sample_date": "2026-05-13",
+      "trend": "Sharp drop - active managers cutting exposure aggressively"
+    },
+    "nyse_ad": {
+      "ad_ratio": 0.43,
+      "trend": "Severely negative - massive decliner dominance on 5/19"
+    },
+    "margin_debt": {
+      "value": "Declining from $719.6B peak",
+      "trend": "Deleveraging continues - historically bullish contrarian signal"
+    },
+    "fund_manager_cash": {
+      "value": 3.9,
+      "sample_date": "2026-04",
+      "trend": "Near record lows - FMS contrarian buy signal"
+    },
+    "high_yield_spread": {
+      "value": "~262 bps (HYG OAS)",
+      "trend": "Elevated but stable - credit stress contained"
+    },
+    "advisors_sentiment": {
+      "value": "Pending Wednesday update",
+      "sample_date": "2026-05-07",
+      "trend": "Neutral-bullish range historically"
+    }
+  },
+  "contrarian_analysis": {
+    "signal_summary": "Mixed - multiple divergences warning of underlying weakness",
+    "key_signals": [
+      "NAAIM exposure crashed from 96.67 to 77.34 - institutions de-risking fast",
+      "NYSE AD ratio at 0.43 - worst breadth reading in weeks",
+      "Equity PCR at 0.56 - complacent call buying",
+      "VIX declining to 17.44 despite weak breadth - volatility suppression",
+      "IWM +2.51% rally not confirmed by AD line divergence"
+    ],
+    "contrarian_opportunity": "Moderate - headline greed masks significant internal deterioration. NAAIM crash + AD ratio collapse are leading warnings."
+  },
+  "policy_cross_impact": {
+    "fed_policy": "FOMC minutes confirm divided stance on easing - markets pricing rate hold through summer",
+    "fiscal_risks": "$2 trillion budget deficit concerns rising - long-term inflation/stability risk",
+    "geopolitical": "Potential US-Iran deal optimism supporting risk assets short-term",
+    "tariff_policy": "Ongoing trade negotiations creating sector rotation volatility"
+  },
+  "dashboard": {
+    "overall_sentiment": "Cautiously Greedy (Surface) / Internally Fragile (Underneath)",
+    "risk_level": "Elevated - breadth deterioration not reflected in headline indices",
+    "contrarian_bias": "Mild Bearish - multiple internal divergences",
+    "recommendation": "Watch breadth closely. NAAIM crash + AD ratio suggest smart money exiting. Consider raising cash into strength."
+  },
+  "tomorrow_watch": [
+    "NAAIM trajectory - will active managers continue cutting?",
+    "NYSE AD line - need recovery above 1.0 to confirm health",
+    "VIX - watch for spike above 20 if breadth doesn't improve",
+    "SPY 741 support - hold or break determines near-term direction",
+    "IWM sustainability - small cap rally needs broader participation"
+  ]
+}

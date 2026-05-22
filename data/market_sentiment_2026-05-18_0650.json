@@ -1,0 +1,250 @@
+{
+  "report_date": "2026-05-18",
+  "report_time": "06:50 CST",
+  "data_timestamp": "2026-05-15T16:00:00Z",
+  "market_summary": {
+    "SPY": {
+      "price": 739.17,
+      "change_pct": -1.2,
+      "note": "S&P 500 ETF, 从周四748.17回落，周四曾创历史新高749.53"
+    },
+    "QQQ": {
+      "price": 708.93,
+      "change_pct": -1.51,
+      "note": "Nasdaq 100 ETF, 从周四719.79回落，周四曾创历史新高722.03"
+    },
+    "DIA": {
+      "price": 495.37,
+      "change_pct": -1.08,
+      "note": "Dow 30 ETF, 从周四500.80回落，道指周四首次收于50,000上方"
+    },
+    "IWM": {
+      "price": 277.6,
+      "change_pct": -2.41,
+      "note": "Russell 2000 ETF, 小盘股跌幅最大，30天前高点287.58"
+    }
+  },
+  "sentiment_indicators": {
+    "fear_greed_index": {
+      "source": "CNN / AltIndex / ContrarianSignals综合",
+      "current": 63,
+      "zone": "贪婪",
+      "week_ago": 66,
+      "change": -3,
+      "extreme_greed_threshold": 75,
+      "extreme_fear_threshold": 25,
+      "trend": "从Greed小幅回落至63，未达极端",
+      "detail": "FearGreedTracker读数63(Greed)，下跌3点。主因：国债收益率上升压制估值。距极端贪婪(>75)仍有距离。"
+    },
+    "vix": {
+      "source": "CBOE",
+      "value": 18.43,
+      "week_ago": 17.26,
+      "march_high": 31,
+      "historical_avg": 19.5,
+      "status": "从周四低点反弹",
+      "trend": "周四17.26升至周五18.43(+6.78%)，恐慌情绪小幅回升",
+      "detail": "VIX从周四的17.26反弹至18.43，显示周五抛售伴随恐慌小幅升温。但仍远低于3月伊朗冲突高点31，接近历史平均19.5。未达极端恐惧(>25)。"
+    },
+    "pcr": {
+      "source": "CBOE Equity Put/Call Ratio",
+      "equity_pcr": 0.705,
+      "equity_date": "2026-05-14",
+      "total_pcr_10dma": 0.783,
+      "total_date": "2026-05-14",
+      "index_pcr": null,
+      "index_date": null,
+      "status": "中性偏低",
+      "trend": "Equity PCR 0.705低于10DMA 0.783，个股期权偏乐观",
+      "detail": "个股PCR 0.705低于10日移动平均0.783，显示put需求相对减少。但4月25日曾触及0.855高点，此后持续回落，反映个股投机情绪从恐慌恢复。"
+    },
+    "aaii": {
+      "source": "AAII Investor Sentiment Survey",
+      "bullish_pct": 39.3,
+      "neutral_pct": 24.1,
+      "bearish_pct": 36.6,
+      "bull_bear_spread": 2.7,
+      "spread_change": null,
+      "date": "2026-05-14",
+      "historical_avg_bullish": 37.5,
+      "historical_avg_bearish": 31.0,
+      "status": "连续4周高于历史平均",
+      "trend": "散户情绪改善但仍谨慎，bearish 36.6%高于均值31%",
+      "detail": "Bullish 39.3%连续4周高于历史平均37.5%，但Bearish 36.6%仍显著高于均值31%。Spread仅2.7%，未达极端乐观(>20%)也未达极端悲观(<-20%)。整体散户情绪偏谨慎改善。"
+    },
+    "naaim": {
+      "source": "NAAIM Exposure Index",
+      "current": 77.34,
+      "prev_week": 96.67,
+      "change_pct": -19.99,
+      "median": null,
+      "median_change_pct": null,
+      "date": "2026-05-13",
+      "status": "大幅减仓",
+      "trend": "一周从96.67骤降至77.34，经理人快速降仓位",
+      "detail": "NAAIM从前一周96.67骤降至77.34(-20%)，显示主动管理基金经理人在周四创历史新高后快速降低风险敞口。与AAII散户谨慎改善形成微妙对比。"
+    },
+    "nyse_ad": {
+      "source": "NYSE Advance/Decline Line",
+      "advances": null,
+      "declines": null,
+      "difference": null,
+      "date": "2026-05-14",
+      "mcclellan_oscillator": null,
+      "status": "背离警告",
+      "trend": "SPX A/D线4月20日见顶后下降，与指数走势背离",
+      "detail": "周四5月14日58%股票上涨，但SPX A/D线在4月20日见顶后持续下降，而SPX自那时上涨约4%。NYSE New Highs在NASDAQ扩张但NYSE变化不大。广度背离是潜在风险信号。"
+    },
+    "margin_debt": {
+      "source": "FINRA",
+      "current_usd_billion": 1221.0,
+      "prev_month": null,
+      "change_mom_pct": -2.58,
+      "date": "2026-03-31",
+      "status": "数据滞后",
+      "trend": "3月保证金债务1.221T，环比-2.58%，同比+38.69%",
+      "detail": "FINRA 3月保证金债务$1.221T，环比下降2.58%，但同比仍暴涨38.69%。投资者信贷余额-$793.5B显示高杠杆。月度数据滞后，需关注4月是否回升。"
+    },
+    "hy_spread": {
+      "source": "HYG / iShares / FRED",
+      "nav": 79.51,
+      "closing_price": 79.51,
+      "spread_bps": 257.48,
+      "ytd_return_pct": null,
+      "dividend_yield_pct": null,
+      "sec_yield_30d_pct": 6.45,
+      "status": "利差中等",
+      "trend": "OAS 257.48bps，HYG/US10Y spread 374.16bps",
+      "detail": "HYG NAV $79.51(5/15)，OAS 257.48bps(5/14)，30-day SEC Yield 6.45%。高收益债利差从3月高点回落但仍高于舒适区间(<200bps)。信用风险未完全消退，但已改善。"
+    },
+    "contrarian_signals": {
+      "source": "ContrarianSignals.com / 综合判断",
+      "buy_signals": {
+        "aaii_extreme": false,
+        "aaii_spread": 2.7,
+        "aaii_threshold": -20,
+        "vix_extreme": false,
+        "vix_value": 18.43,
+        "vix_threshold": 25,
+        "fear_greed_extreme": false,
+        "fear_greed_value": 63,
+        "fear_greed_threshold": 25,
+        "naaim_aggressive": false,
+        "naaim_value": 77.34
+      },
+      "sell_signals": {
+        "fear_greed_extreme": false,
+        "fear_greed_value": 63,
+        "fear_greed_threshold": 75,
+        "pcr_extreme": false,
+        "pcr_value": 0.705,
+        "credit_risk_elevated": true,
+        "hyg_spread_bps": 257
+      },
+      "status": "无极端信号",
+      "trend": "中性偏谨慎",
+      "detail": "无任何指标达到极端阈值。AAII spread 2.7%不极端，VIX 18.43正常化，F&G 63在贪婪但未极端(<75)。NAAIM 77.34从高位回落。唯一风险信号是HYG利差257bps仍偏高，以及NYSE A/D线与指数背离。"
+    },
+    "altindex": {
+      "source": "AltIndex / Reddit情绪",
+      "current": null,
+      "date": null,
+      "zone": null,
+      "status": "Reddit偏中性到看涨",
+      "trend": "NVIDIA/GameStop/Tesla提及最多",
+      "detail": "AltIndex Reddit情绪分析显示整体偏中性到看涨。NVIDIA、GameStop、Tesla是讨论最多的股票。未显示散户狂热或恐慌迹象。"
+    },
+    "feargreedtracker": {
+      "source": "FearGreedTracker.com / 综合",
+      "coverage": "50000+ stocks & crypto",
+      "update_freq": "per-minute",
+      "status": "63 (Greed, -3)",
+      "detail": "FearGreedTracker读数63(Greed)，较前下跌3点。下跌主因：国债收益率上升压制估值。16-indicator AI算法，整合RSI/ADX/SMA/EMA/波动率/社交情绪。"
+    }
+  },
+  "contrarian_analysis": {
+    "summary": "情绪指标呈现复杂分化格局：周四三大指数创历史新高后，周五全线下挫。NAAIM经理人从96.67骤降至77.34(-20%)，显示专业资金在高点快速降仓位。AAII散户连续4周bullish高于均值但bearish仍偏高，spread仅2.7%不极端。CNN F&G 63在贪婪区间但距极端(>75)有距离。VIX从17.26反弹至18.43，恐慌小幅升温但仍正常。SentimenTrader Smart Money/Dumb Money Spread从+0.25反转至-0.27以下，且发生在历史高点附近，历史上这种模式常预示困难结果。NYSE A/D线与指数背离(SPX涨4%而A/D线降)是警告信号。HYG利差257bps偏高。整体处于'中性偏谨慎'区间，无极端逆向信号，但多个边缘信号同时闪烁。",
+    "key_signals": [
+      "NAAIM 77.34 (-20% WoW) = 经理人从贪婪快速撤退，高点降仓位",
+      "AAII Spread 2.7% = 散户情绪改善但不极端，既非狂热也非恐慌",
+      "VIX 18.43 = 从周四17.26反弹，恐慌小幅升温但仍正常化",
+      "Fear & Greed 63 = 贪婪区间但下跌3点，距极端75有缓冲",
+      "SentimenTrader Smart/Dumb Spread反转 = 从+0.25到-0.27以下，历史高点附近快速反转常预示困难",
+      "NYSE A/D线背离 = SPX涨4%而A/D线从4/20见顶后下降，广度不支持",
+      "Equity PCR 0.705 = 低于10DMA 0.783，个股期权偏乐观",
+      "HYG OAS 257bps = 信用利差仍高于舒适区间，3月历史性保护买盘后风险未完全消退"
+    ],
+    "strategy_note": "当前情绪面支持'持有但警惕'策略。核心矛盾：NAAIM经理人快速降仓位+Smart/Dumb Spread反转=专业资金在撤退；AAII散户改善+F&G 63=情绪未崩溃。历史高点附近的SentimenTrader快速反转周期(31交易日以内)往往导致困难结果。周五抛售可能只是开始。关键监控点：NAAIM是否继续下降、VIX是否突破25、F&G是否跌破50、A/D线背离是否修复。若专业资金持续撤退而散户仍乐观，是经典头部信号。"
+  },
+  "policy_cross_impact": {
+    "summary": "政策层面多重压力叠加：Trump-Xi峰会进行中但市场已回吐周四乐观涨幅，伊朗战争持续，美联储加息概率飙升至45%",
+    "iran_war": {
+      "status": "Ongoing",
+      "oil_price_brent": 100.0,
+      "strait_of_hormuz": "Blockade risk",
+      "energy_sector_ytd_pct": 35.4,
+      "inflation_pressure": "Rising"
+    },
+    "tariffs": {
+      "trump_xi_summit": "May 15-16 Beijing, discussed trade/tariffs/AI/Taiwan/Iran",
+      "china_comprehensive_rate": "~35% effective",
+      "us_china_trade_war": "Entering legal arms race phase"
+    },
+    "fed_policy": {
+      "rate_hike_odds_2026": 45,
+      "rate_hike_prev_month": 1,
+      "inflation_cpi_april": 3.8,
+      "10y_yield": 4.55,
+      "key_risk": "市场一个月前定价2026年加息概率仅1%，现已飙升至45%。PPI创2022年初以来最大月度涨幅。CPI 3.8%为2023年5月以来最高。油>100+10Y 4.55%重燃通胀恐惧。"
+    }
+  },
+  "dashboard": {
+    "fear_greed": {
+      "value": 63,
+      "label": "Greed",
+      "bar": "████████░░░░"
+    },
+    "vix": {
+      "value": 18.43,
+      "label": "Normalized",
+      "bar": "███████░░░░░"
+    },
+    "aaii": {
+      "value": 2.7,
+      "label": "Neutral",
+      "bar": "██████░░░░░░"
+    },
+    "naaim": {
+      "value": 77.34,
+      "label": "Caution",
+      "bar": "█████████░░░"
+    },
+    "market_breadth": {
+      "value": "Divergence",
+      "label": "Warning",
+      "bar": "██████░░░░░░"
+    },
+    "credit_spread": {
+      "value": 257,
+      "label": "Elevated",
+      "bar": "███████░░░░░"
+    },
+    "pcr_equity": {
+      "value": 0.705,
+      "label": "Low",
+      "bar": "█████░░░░░░░"
+    }
+  },
+  "tomorrow_watch": [
+    "AAII新一周数据 (周四发布) - 关注散户在周五抛售后的情绪转变",
+    "NAAIM新数据 (周五发布) - 确认经理人是否继续降仓位",
+    "VIX是否突破25(恐慌回归)或回落至15以下(自满)",
+    "Fear & Greed是否跌破50(中性)或突破75(极端贪婪)",
+    "HYG信用利差是否扩大至300bps+(信用风险恶化)",
+    "NYSE A/D Line背离是否修复或加剧",
+    "SentimenTrader Smart/Dumb Spread是否持续为负",
+    "Trump-Xi峰会最终声明对关税/AI/台湾的影响",
+    "美联储官员讲话 - 关注对45%加息概率的回应",
+    "周一美股开盘对周五抛售的承接力度"
+  ]
+}

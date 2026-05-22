@@ -1,0 +1,145 @@
+{
+  "report_date": "2026-05-17",
+  "time": "06:50",
+  "timestamp": "2026-05-17T06:50:00+08:00",
+  "market_summary": {
+    "spy": {
+      "price": 739.17,
+      "change": "-1.20%",
+      "signal": "大盘回调，脱离前高"
+    },
+    "qqq": {
+      "price": 708.93,
+      "change": "-1.51%",
+      "signal": "科技股领跌，估值承压"
+    },
+    "dia": {
+      "price": 495.37,
+      "change": "-1.08%",
+      "signal": "蓝筹同步下行"
+    },
+    "iwm": {
+      "price": 277.60,
+      "change": "-2.41%",
+      "signal": "小盘股跌幅最大"
+    },
+    "vix": {
+      "value": 18.38,
+      "change": "+6.78%",
+      "signal": "恐慌温和上升，仍属正常区间"
+    },
+    "fear_greed": {
+      "value": 63,
+      "status": "Greed",
+      "signal": "贪婪区间回落，尚未触及中性"
+    }
+  },
+  "sentiment_indicators": [
+    {
+      "indicator": "AAII 散户情绪",
+      "data": {
+        "bullish_pct": 39.3,
+        "neutral_pct": 24.1,
+        "bearish_pct": 36.6,
+        "spread": 2.7,
+        "data_date": "2026-05-14"
+      },
+      "interpretation": "看涨略高于看跌，散户尚未恐慌",
+      "signal": "中性偏多"
+    },
+    {
+      "indicator": "NAAIM 主动经理持仓",
+      "data": {
+        "exposure_index": 77.34,
+        "previous": 96.67,
+        "change": "-20.0%",
+        "data_date": "2026-05-13"
+      },
+      "interpretation": "机构大幅减仓——聪明钱在撤退",
+      "signal": "看空信号"
+    },
+    {
+      "indicator": "CBOE 期权 PCR",
+      "data": {
+        "equity_pcr": 0.50,
+        "total_pcr": 0.74,
+        "data_date": "2026-05-08"
+      },
+      "interpretation": "极端贪婪——PUT极少，强烈逆向看跌信号",
+      "signal": "看跌信号"
+    },
+    {
+      "indicator": "融资债务 (Margin Debt)",
+      "data": {
+        "level": "$1.304T",
+        "previous": "$1.221T",
+        "change": "+6.8%",
+        "data_date": "2026-04"
+      },
+      "interpretation": "杠杆持续攀升，市场脆弱性增加",
+      "signal": "风险提示"
+    },
+    {
+      "indicator": "高收益债利差",
+      "data": {
+        "hyg_oas": 257.48,
+        "jnk_oas": 252.82,
+        "historical_avg": 500,
+        "data_date": "2026-05-14"
+      },
+      "interpretation": "利差处于历史低位——风险偏好仍然过高",
+      "signal": "中性偏乐观"
+    }
+  ],
+  "contrarian_analysis": {
+    "buffet_indicator": "别人贪婪我恐惧",
+    "signal_summary": "市场回调但情绪指标未充分降温，恐慌尚未释放",
+    "key_observations": [
+      "CNN Fear & Greed 63仍处贪婪区间，周五大跌后情绪未恐慌",
+      "CBOE PCR 0.50处于极端贪婪——强烈逆向看跌信号",
+      "NAAIM从96.67骤降至77.34，主动基金经理大幅减仓",
+      "高收益债利差仅257bps，历史低位——风险胃口仍大",
+      "IWM期权PUT占比73.79%，小盘股已被极度看空"
+    ],
+    "investment_implication": "当前更接近别人贪婪阶段。周五大跌是警告，但情绪降温不充分，回调可能继续。建议持有现金等待更恐慌的买入点。"
+  },
+  "policy_cross_impact": {
+    "trump_policy_effects": [
+      {
+        "policy": "中美会谈未达芯片协议预期",
+        "market_impact": "半导体板块暴跌 (AMD -5.7%, MU -6.6%)",
+        "sentiment_transmission": "科技股估值逻辑受质疑"
+      },
+      {
+        "policy": "Trump关税言论持续",
+        "market_impact": "工业板块承压 (Caterpillar领跌)",
+        "sentiment_transmission": "企业盈利预期下调"
+      },
+      {
+        "policy": "通胀重燃 (油价>$100, 10Y 4.55%)",
+        "market_impact": "Fed加息预期从1%飙升至45%",
+        "sentiment_transmission": "利率敏感资产承压"
+      }
+    ],
+    "cross_signals": [
+      "政策不确定性从预期管理转向现实冲击",
+      "此前乐观情绪(Trump政策利好)正在被证伪",
+      "三重压力共振：地缘政治失望 + 通胀重燃 + 利率预期逆转"
+    ]
+  },
+  "dashboard": {
+    "current_phase": "情绪降温初期",
+    "primary_risk": "三重压力共振导致回调加速，但情绪未充分恐慌",
+    "opportunity_level": "等待更恐慌的买入点",
+    "cash_position_suggestion": "推荐持有现金，等待CNN Fear & Greed跌破40或VIX突破25"
+  },
+  "tomorrow_watch": [
+    "CNN Fear & Greed跌破40（恐惧区间）→ 开始分批建仓",
+    "VIX突破25 → 恐慌确认，加大买入力度",
+    "CBOE PCR回升至0.8以上 → PUT需求增加 = 恐慌信号",
+    "NAAIM继续下降至50以下 → 机构极度悲观 = 底部接近",
+    "SPY跌破720关键支撑 → 技术破位，恐慌加速",
+    "QQQ跌破690 → 科技股进入深度回调",
+    "中美贸易新闻任何缓和信号 → 可能触发反弹"
+  ]
+}

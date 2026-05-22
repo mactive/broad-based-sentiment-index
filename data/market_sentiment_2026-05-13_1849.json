@@ -1,0 +1,172 @@
+{
+  "report_date": "2026-05-13",
+  "report_time": "18:49",
+  "report_type": "evening",
+  "timestamp": "2026-05-13T10:49:00Z",
+  "market_summary": {
+    "spy": {
+      "price": 575.99,
+      "change": 0.06,
+      "change_pct": 0.06
+    },
+    "qqq": {
+      "price": 506.76,
+      "change": -0.05,
+      "change_pct": -0.05
+    },
+    "dia": {
+      "price": 431.28,
+      "change": 0.37,
+      "change_pct": 0.37
+    },
+    "iwm": {
+      "price": 282.57,
+      "change": -0.97,
+      "change_pct": -0.97
+    },
+    "market_trend": "大盘股与科技股主导，小盘股分化。市场情绪处于贪婪区间，广度指标健康。"
+  },
+  "sentiment_indicators": {
+    "fear_greed": {
+      "value": 66,
+      "label": "Greed",
+      "interpretation": "情绪从4月恐慌快速修复至贪婪区间，修复速度惊人。",
+      "source": "CNN"
+    },
+    "vix": {
+      "value": 17.75,
+      "trend": "falling",
+      "interpretation": "VIX回归舒适区，恐慌消退，但经典反向信号显现。",
+      "source": "CBOE"
+    },
+    "pcr": {
+      "value": 0.49,
+      "label": "极度乐观",
+      "interpretation": "每1个Put对应2个Call，保护需求极低，贪婪显著。",
+      "source": "CBOE"
+    },
+    "aaii": {
+      "bullish": 38.31,
+      "neutral": 28.74,
+      "bearish": 32.95,
+      "spread": 5.36,
+      "interpretation": "散户情绪从极度悲观修复至中性偏乐观，尚未狂热。",
+      "source": "AAII"
+    },
+    "naaim": {
+      "value": 96.67,
+      "interpretation": "主动型经理人近乎全仓，边际买家枯竭风险。",
+      "source": "NAAIM"
+    },
+    "sentimentrader": {
+      "dumb_money": "Very Optimistic",
+      "smart_money": "Neutral",
+      "divergence": "显著",
+      "interpretation": "散户狂热 vs 机构冷静，经典中期顶部信号。",
+      "source": "SentimenTrader"
+    },
+    "ii_survey": {
+      "bull_bear_spread": 5.36,
+      "interpretation": "参考AAII替代，顾问情绪滞后但趋势一致。",
+      "source": "II/AAII"
+    },
+    "nyse_advance_decline": {
+      "mcclellan_oscillator": "52-week high",
+      "interpretation": "NYSE涨跌线创新高，上涨广度健康，系统性风险可控。",
+      "source": "NYSE"
+    },
+    "margin_debt": {
+      "value": 9759,
+      "unit": "Billion USD",
+      "trend": "rising",
+      "interpretation": "融资债务攀升至近万亿，杠杆温和加速。",
+      "source": "FINRA"
+    },
+    "high_yield_spreads": {
+      "ice_bofa": 323,
+      "unit": "basis points",
+      "interpretation": "高收益债利差处于低位，信用市场无恐慌，不支持硬着陆。",
+      "source": "ICE BofA"
+    },
+    "altindex": {
+      "spy": 75,
+      "qqq": 78,
+      "dia": 75,
+      "iwm": 58,
+      "interpretation": "AI模型对大盘股乐观，对小盘股谨慎，与市场表现一致。",
+      "source": "AltIndex"
+    },
+    "feargreedtracker": {
+      "value": "Extreme Fear",
+      "interpretation": "与CNN截然相反，可能捕捉深层不安，需保持警觉。",
+      "source": "FearGreedTracker"
+    },
+    "contrarian_signals": {
+      "value": "N/A",
+      "interpretation": "数据未获取，建议后续关注。",
+      "source": "ContrarianSignals"
+    }
+  },
+  "contrarian_analysis": {
+    "summary": "贪婪但尚未疯狂。广度与信用健康支撑牛市，但情绪指标发出多重警示。",
+    "risk_level": "中高风险",
+    "signal_matrix": {
+      "fear_greed": {"reading": "66 (Greed)", "signal": "警惕", "strength": 3},
+      "vix": {"reading": "17.75", "signal": "反向买入点已过", "strength": 2},
+      "pcr": {"reading": "0.49", "signal": "强烈警示", "strength": 4},
+      "aaii": {"reading": "+5.36%", "signal": "尚未极端", "strength": 2},
+      "naaim": {"reading": "96.67", "signal": "强烈警示", "strength": 4},
+      "smart_dumb_money": {"reading": "乐观/中性", "signal": "中度警示", "strength": 3},
+      "breadth": {"reading": "扩张", "signal": "无反向信号", "strength": 0},
+      "margin_debt": {"reading": "9759B", "signal": "轻度警示", "strength": 2},
+      "hy_spreads": {"reading": "323bp", "signal": "无反向信号", "strength": 0}
+    },
+    "greed_fear_score": 65,
+    "recommendation": "标准仓位，停止加仓。持有并设置止盈，不追高开新仓。"
+  },
+  "policy_cross_impact": {
+    "summary": "关税缓和与降息预期双轮驱动当前贪婪情绪，政策意外将放大下行波动。",
+    "policy_items": [
+      {"area": "关税政策", "status": "中美谈判关键阶段，部分关税可能回调", "impact": "正面，不确定性仍高"},
+      {"area": "美联储", "status": "利率维持不变，市场定价2026年2次降息", "impact": "正面，但已充分定价"},
+      {"area": "财政刺激", "status": "基础设施与减税议程推进", "impact": "正面，支撑大盘股盈利"}
+    ]
+  },
+  "dashboard": {
+    "heatmap": {
+      "current_zone": "贪婪",
+      "position": "56-75区间"
+    },
+    "key_metrics": {
+      "fear_greed": {"current": 66, "normal": "45-55", "status": "偏高"},
+      "vix": {"current": 17.75, "normal": "15-25", "status": "正常"},
+      "pcr": {"current": 0.49, "normal": "0.6-0.8", "status": "过低"},
+      "naaim": {"current": 96.67, "normal": "50-80", "status": "过高"},
+      "aaii_spread": {"current": 5.36, "normal": "-10~+15", "status": "正常"},
+      "hy_spreads": {"current": 323, "normal": "300-500", "status": "正常"}
+    },
+    "changes": {
+      "fear_greed": {"previous": 60, "current": 66, "change": 6},
+      "vix": {"previous": 19.41, "current": 17.75, "change": -1.66},
+      "pcr": {"previous": 0.56, "current": 0.49, "change": -0.07},
+      "naaim": {"previous": 93.79, "current": 96.67, "change": 2.88},
+      "aaii_spread": {"previous": -1.56, "current": 5.36, "change": 6.92}
+    }
+  },
+  "tomorrow_watch": {
+    "events": [
+      {"time": "周四", "event": "AAII新一周调查发布", "impact": "AAII"},
+      {"time": "周四", "event": "NAAIM更新", "impact": "NAAIM"},
+      {"time": "持续", "event": "中美关税谈判进展", "impact": "大盘波动率"},
+      {"time": "持续", "event": "美联储官员讲话", "impact": "VIX, PCR"}
+    ],
+    "thresholds": [
+      {"indicator": "Fear & Greed", "threshold": ">75", "implication": "进入极度贪婪——强烈反向信号"},
+      {"indicator": "VIX", "threshold": ">22", "implication": "恐慌回归——中期顶部确认"},
+      {"indicator": "PCR", "threshold": "<0.45", "implication": "极端贪婪——历史性反向做空点"},
+      {"indicator": "NAAIM", "threshold": ">98", "implication": "极端敞口——理论上极限"},
+      {"indicator": "AAII Bullish", "threshold": ">45%", "implication": "散户过热"},
+      {"indicator": "IWM", "threshold": "<275", "implication": "小盘股跌破关键支撑——广度恶化"}
+    ]
+  }
+}

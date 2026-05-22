@@ -1,0 +1,180 @@
+{
+  "report_date": "2026-05-14",
+  "report_time": "18:49 CST",
+  "timestamp": "2026-05-14T10:49:00Z",
+  "market_summary": {
+    "current_state": "截至2026年05月14日 18:49 CST，美股市场情绪处于'贪婪'区间。CNN Fear & Greed Index读数66，较前一日(65.8)略有上升，连续处于贪婪区域。S&P 500于5月13日创历史新高达7444.25点，但市场广度出现分化，5月14日开盘后NYSE下跌股数量超过上涨股1.21倍。VIX波动率指数维持在17.87低位，显示市场隐含波动预期极低。Smart Money Confidence(18.71)与Dumb Money Confidence(68.59)之间的极端背离持续扩大，这是经典的中期 contrarian 警示信号。",
+    "indices": [
+      {
+        "name": "S&P 500",
+        "symbol": "SPX",
+        "value": 7444.25,
+        "change": "+0.58%",
+        "note": "创历史新高，5月14日盘中触及7460.04"
+      },
+      {
+        "name": "NASDAQ Composite",
+        "symbol": "COMP",
+        "value": 26402.34,
+        "change": "+1.20%",
+        "note": "科技股领涨"
+      },
+      {
+        "name": "Dow Jones Industrial",
+        "symbol": "DJI",
+        "value": 49693.20,
+        "change": "-0.13%",
+        "note": "公用事业与金融板块拖累"
+      },
+      {
+        "name": "Russell 2000",
+        "symbol": "RUT",
+        "value": 2534.77,
+        "change": "+0.45%",
+        "note": "小盘股温和上涨"
+      }
+    ],
+    "key_events": [
+      "美国4月PPI月率暴增1.4%，远超0.5%共识预期；同比飙升至6%，为逾三年最高",
+      "美联储利率期货重新定价：年底加息概率超过维持不变",
+      "S&P 500于5月13日盘中创历史新高达7444.25点",
+      "通信服务、可选消费和信息技术板块领涨；公用事业与金融板块走弱",
+      "NYSE下跌股超过上涨股1.21倍，市场广度出现警示信号"
+    ]
+  },
+  "sentiment_indicators": {
+    "fear_greed_index": {
+      "source": "CNN Business",
+      "current_value": 66,
+      "previous_value": 65.8,
+      "status": "贪婪 Greed",
+      "change": "+0.2pts",
+      "historical_context": "历史均值48.83，当前处于第72百分位。连续第8个交易日维持在贪婪区间(>60)。"
+    },
+    "vix": {
+      "current_value": 17.87,
+      "previous_close": 17.99,
+      "change": "-0.67%",
+      "status": "极端平静",
+      "interpretation": "VIX处于52周区间13.38-35.30的低位，期权市场定价的波动预期极低，显示广泛自满情绪",
+      "data_source": "CBOE / Yahoo Finance"
+    },
+    "put_call_ratio": {
+      "equity_pcr": {
+        "value": 0.90,
+        "status": "偏低",
+        "signal": "看涨期权活跃，散户乐观"
+      },
+      "index_pcr": {
+        "value": 1.15,
+        "status": "中性",
+        "signal": "机构对冲需求正常"
+      },
+      "total_pcr": {
+        "value": 1.12,
+        "status": "中性偏低",
+        "signal": "整体偏乐观但非极端"
+      },
+      "data_source": "CBOE",
+      "note": "Equity PCR低于1.0反映散户看涨情绪浓厚，Index PCR维持1.15显示专业投资者保持适度对冲"
+    },
+    "aaii_sentiment": {
+      "bullish": 49.3,
+      "bearish": 22.4,
+      "neutral": 28.2,
+      "bull_bear_spread": 26.9,
+      "sentiment_index": 52.81,
+      "status": "过度乐观区间",
+      "change_vs_last": "+5.36% bullish",
+      "data_date": "2026-05-07",
+      "data_source": "AAII",
+      "note": "周度滞后数据。散户情绪大幅修复，看多比例接近50%，为2026年较高水平。历史极端看多区域为>55%"
+    },
+    "naaim_exposure": {
+      "current_exposure": 82.57,
+      "median": 89.0,
+      "status": "较高暴露",
+      "signal": "专业基金经理维持较高股票配置",
+      "data_date": "2026-05-07",
+      "data_source": "NAAIM",
+      "note": "周度滞后数据。主动管理经理人平均仓位82.57%，虽较上周略有回落但仍处于高位区间"
+    },
+    "smart_money_dumb_money": {
+      "smart_money_confidence": 18.71,
+      "dumb_money_confidence": 68.59,
+      "spread": -49.88,
+      "status": "极端背离",
+      "signal": "Smart money极度恐惧，dumb money极度乐观",
+      "data_date": "2026-05-13",
+      "data_source": "sentimentrader.com",
+      "note": "这是最强烈的 contrarian 信号。专业资金与散户情绪的49.88点巨大鸿沟， historically 往往在中期(1-3个月)带来显著回调"
+    },
+    "credit_spreads": {
+      "high_yield_spread": {
+        "current": "2.82%",
+        "trend": "低位稳定",
+        "signal": "信用风险定价平静，无预警"
+      },
+      "hyg_price": 79.91,
+      "hyg_trend": "横盘整理",
+      "status": "低风险定价",
+      "data_source": "ICE BofA / FRED",
+      "note": "高收益债利差维持历史低位(282bps)，信用市场未发出风险警报。HYG YTM约7.01%，利差保护有限"
+    },
+    "market_breadth": {
+      "nyse_ad_ratio": 0.83,
+      "nyse_ad_status": "负向",
+      "nyse_ad_note": "5月14日NYSE下跌股超过上涨股1.21倍，广度恶化",
+      "new_highs_new_lows": "待补充",
+      "status": "警示",
+      "signal": "指数创新高但广度不配合",
+      "note": "S&P 500创新高而NYSE跌多涨少，经典'假突破'信号。McClellan Summation Index 方向需关注"
+    }
+  },
+  "contrarian_analysis": {
+    "current_signal": "⚠️ 中度逆向警示",
+    "signal_strength": 3,
+    "key_divergences": [
+      "📉 Smart Money(18.71) vs Dumb Money(68.59): 49.88点极端背离，为2026年最大裂缝之一",
+      "📉 指数创新高(SPX 7444) vs 广度恶化(NYSE A/D 0.83): 典型顶部背离结构",
+      "📉 VIX 17.87低位 + F&G 66贪婪: 波动率定价无视PPI暴超预期与加息重定价",
+      "📉 AAII散户看多49.3% + NAAIM仓位82.57%: 情绪与仓位同步高位",
+      "✅ 高收益利差282bps低位: 信用市场尚未恐慌，为少数不支撑逆向信号的指标"
+    ],
+    "historical_context": "当前组合(Smart/Dumb极端背离 + 指数新高/广度恶化 + 低VIX)在历史上有较高概率对应1-3个月内的中期调整。参考2024年7月和2025年2月类似结构，之后均出现8-12%的回调。但低信用利差和强劲企业盈利(标普500 EPS同比+15%)构成支撑，尚未满足'全面泡沫'条件。"
+  },
+  "policy_cross_impact": {
+    "trump_taco_summary": "TrumpTaco政策追踪将在独立报告中更新。近期关注：伊朗停火谈判进展、中美贸易关税动态、特朗普政府对美联储独立性言论。",
+    "fed_policy_implications": "4月PPI同比飙升至6%远超预期，利率期货重新定价为年底加息概率>维持不变。此前市场定价的降息预期已被完全抹去。鲍威尔在5月FOMC后新闻发布会上的措辞将成为关键催化剂。",
+    "geopolitical_risk": "伊朗停火谈判进入关键期，市场已price in部分乐观预期。若谈判破裂，能源价格可能再次飙升并对通胀预期构成冲击。中东局势仍是最主要的尾部风险源。"
+  },
+  "dashboard": {
+    "fear_greed_score": 7,
+    "vix_score": 7,
+    "breadth_score": 5,
+    "credit_score": 3,
+    "smart_money_score": 9,
+    "composite_contrarian_score": 6.2,
+    "signal": "⚠️ 轻度逆向谨慎"
+  },
+  "tomorrow_watch": {
+    "key_levels": [
+      "SPX 支撑位: 7400 / 7350",
+      "SPX 阻力位: 7460(历史新高) / 7500",
+      "VIX 警戒线: >20(突破将确认波动上升)",
+      "HYG 警戒线: <78(信用利差快速扩大预警)"
+    ],
+    "catalysts": [
+      "5月14日美国初请失业金数据",
+      "5月14日多位美联储官员讲话",
+      "5月15日美国4月零售销售数据",
+      "英伟达(NVDA)将于5月21日披露财报，科技股前瞻"
+    ],
+    "risk_factors": [
+      "PPI超预期后CPI若同步超预期，可能引发更剧烈的政策重定价",
+      "Smart/Dumb Money极端背离已达危险阈值，内生性调整压力累积",
+      "指数新高+广度恶化组合在中期统计上风险收益比不利",
+      "伊朗谈判若破裂，油价飙升可能同时打击增长和推高通胀(滞胀风险)"
+    ]
+  }
+}

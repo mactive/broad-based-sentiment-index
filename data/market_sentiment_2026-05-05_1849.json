@@ -1,0 +1,152 @@
+{
+  "report_date": "2026-05-05",
+  "report_time": "18:49",
+  "timestamp": "2026-05-05T10:49:00Z",
+  "market_summary": {
+    "spy_price": "718.01",
+    "qqq_price": "672.88",
+    "dia_price": "489.56",
+    "iwm_price": "277.88",
+    "sp500_level": "7200.75",
+    "nasdaq_level": "25067.80",
+    "dow_level": "48941.90",
+    "russell2000_level": "2796.00",
+    "vix_level": "18.29",
+    "sp500_change": "-0.40%",
+    "nasdaq_change": "-0.20%",
+    "dow_change": "-1.10%",
+    "russell2000_change": "-0.60%",
+    "market_breadth": "Mixed. S&P and Nasdaq near record highs but Dow led decline. 1.1% Dow drop on geopolitical risk (Iran/UAE ceasefire tension) while tech held ground.",
+    "advance_decline_line": "NYSE McClellan Oscillator +59.22 (May 2), down from +65.48 (Apr 30). Still positive but moderating breadth thrust.",
+    "new_highs_lows": "S&P 500, Nasdaq Composite, Nasdaq 100, Russell 2000 all hit record closing highs on May 1. May 4 saw modest pullback from peaks."
+  },
+  "sentiment_indicators": {
+    "fear_greed_index": {
+      "current_value": "66",
+      "previous_value": "67",
+      "zone": "Greed",
+      "change": "-1",
+      "components": {
+        "market_momentum": "Extreme Greed",
+        "stock_price_strength": "Fear (only component in fear)",
+        "stock_price_breadth": "Greed",
+        "put_call_options": "Extreme Greed",
+        "market_volatility": "Neutral (VIX ~18)",
+        "safe_haven_demand": "Extreme Greed",
+        "junk_bond_demand": "Neutral"
+      },
+      "assessment": "Index holding in upper Greed zone. 5 of 7 components at Greed/Extreme Greed. Stock price strength alone in Fear, suggesting some internal dispersion despite headline index records."
+    },
+    "vix": {
+      "current_value": "18.29",
+      "previous_close": "17.00",
+      "change": "+7.65%",
+      "premarket": "17.95 (-3.28% from previous close)",
+      "zone": "Neutral",
+      "assessment": "VIX popped +7.65% Monday on Iran/UAE geopolitical escalation. 18.29 is still historically low-moderate (long-term avg ~20). Premarket Tuesday shows slight easing to ~17.65. No panic priced in.",
+      "term_structure": "VIX futures curve remains in contango. VXK26 at 20.00 vs spot 18.29. Steepening front-month spread.",
+      "realized_vol_30d": "13.75"
+    },
+    "put_call_ratio": {
+      "equity_pcr": "0.54",
+      "total_pcr": "0.76",
+      "index_pcr": "1.05",
+      "previous_equity_pcr": "0.46",
+      "previous_total_pcr": "0.76",
+      "assessment": "Equity PCR jumped from 0.46 to 0.54 Monday - still firmly in complacency zone (<0.70). Some hedging picked up on geopolitical news but not extreme. Index PCR at 1.05 shows institutional index hedging more active.",
+      "signal": "Greedy / Complacent"
+    },
+    "aaii_sentiment": {
+      "survey_date": "2026-04-23",
+      "bullish": "46.0%",
+      "neutral": "19.5%",
+      "bearish": "34.4%",
+      "bull_bear_spread": "+11.6%",
+      "historical_context": "Bullish above 37.5% historical average. Bearish slightly elevated. Spread +11.6% is moderately bullish but not euphoric.",
+      "contrarian_reading": "Neutral-bullish. Retail not yet at extreme greed levels. The +11.6 spread leaves room before contrarian sell signals trigger (>20%).",
+      "last_update": "April 23, 2026 (weekly, Thursday release)",
+      "note": "Next survey update due Thursday May 7. Current reading reflects pre-May Day holiday sentiment."
+    },
+    "naaim_exposure": {
+      "current_exposure": "94.15",
+      "previous_exposure": "94.15",
+      "median": "94.15",
+      "top_quartile": "100.0",
+      "bottom_quartile": "81.25",
+      "historical_context": "NAAIM exposure at 94.15 is near historical highs. Active managers are almost fully invested - a classic late-cycle warning flag.",
+      "contrarian_reading": "Bearish warning. Managers at 94%+ exposure have historically preceded corrections. This is one of the most reliable contrarian sell signals in the dataset.",
+      "last_update": "April 22, 2026 (weekly, Wednesday release)"
+    },
+    "smart_money_dumb_money": {
+      "smart_money": "Moderately cautious",
+      "dumb_money": "Optimistic / complacent",
+      "divergence": "Widening. Smart money has been reducing risk into record highs while retail flows remain strong.",
+      "assessment": "Classic late-cycle divergence. Retail buying euphoria vs institutional caution. Dumb money confidence elevated on AI earnings momentum (Apple, Magnificent Seven).",
+      "source": "SentimenTrader composite model"
+    },
+    "margin_debt": {
+      "latest_value": "$696B (estimated March 2026)",
+      "previous_value": "$691B (February 2026)",
+      "change": "+0.7% MoM",
+      "assessment": "Margin debt near record highs. Increased leverage amplifies downside risk. March data from NYSE due for April update.",
+      "contrarian_reading": "Bearish warning. High margin debt + record prices = vulnerability to deleveraging cascade.",
+      "last_update": "March 2026 (monthly lag)"
+    },
+    "hyg_credit_spread": {
+      "hyg_price": "75.84",
+      "credit_spread": "2.85%",
+      "previous_spread": "2.95%",
+      "change": "-10bps",
+      "assessment": "High yield spreads tightened 10bps to 2.85% - extremely tight by historical standards. Market pricing minimal credit risk despite geopolitical tensions.",
+      "contrarian_reading": "Complacency signal. Sub-3% spreads with Middle East conflict ongoing suggests risk mispricing.",
+      "last_update": "May 1, 2026"
+    },
+    "investor_advisors": {
+      "bull_ratio": "56.0%",
+      "bear_ratio": "20.0%",
+      "spread": "+36.0%",
+      "assessment": "Investment advisors remain bullish. 56% bulls vs 20% bears is a +36 spread - elevated but not yet at 2018/2021 extremes.",
+      "contrarian_reading": "Caution warranted above +40. Current +36 is yellow zone."
+    },
+    "contrarian_indicators": {
+      "nyse_breadth": "McClellan +59 (positive but fading from +65)",
+      "vix_term_structure": "Contango - no inversion",
+      "mm_bull_bear_spread": "+11.6 (AAII)",
+      "naaim_risk": "94.15 - extreme exposure",
+      "overall": "3 of 5 primary contrarian flags flashing caution (NAAIM extreme, margin debt highs, tight credit spreads). AAII and VIX remain neutral."
+    }
+  },
+  "contrarian_analysis": {
+    "fear_greed_assessment": "Fear & Greed at 66 is in upper Greed zone but not Extreme Greed. 5 of 7 components greedy. However, 'stock price strength' in Fear suggests market rally is narrow - fewer stocks participating in new highs. This internal dispersion is a warning. Contrarian stance: mild caution, not yet extreme.",
+    "vix_assessment": "VIX at 18.29 with premarket at ~17.65 is low. Realized vol (13.75) even lower. Market pricing calm despite Iran/UAE escalation. Contrarians note: low VIX + geopolitical risk = potential surprise catalyst. VIX under 20 with active conflict is unusual. Risk: complacency.",
+    "aaii_assessment": "AAII bull-bear spread at +11.6 is moderately bullish. Historical extremes are +25 to +30. Retail not yet at euphoria. Contrarian read: room for retail to get more bullish before exhaustion. Neutral-bullish for timing.",
+    "naaim_assessment": "CRITICAL CONTRARIAN SIGNAL. NAAIM at 94.15 is near all-time highs. Active managers are fully invested with minimal cash. This indicator has one of the best track records for predicting corrections when above 90. Historical precedent: 2007, 2018, 2021 peaks all saw NAAIM >90 before 10%+ drawdowns. Contrarian stance: bearish warning.",
+    "overall_contrarian_signal": "CAUTIOUS / DEFENSIVE BIAS",
+    "buy_opportunity_level": "3/10 (not favorable)",
+    "risk_warning_level": "7/10 (elevated)"
+  },
+  "policy_cross_impact": {
+    "trump_taco_summary": "Trump announced 25% car/truck tariffs on EU last week, threatening escalation. Iran/UAE ceasefire under strain after UAE reported Iranian attacks - first since early April truce. Trump maintaining Hormuz blockade. Oil held above $103 (WTI), Brent >$111. Buffett inflation concerns circulating. Fed speakers this week: Williams (Mon), Bowman (Tue).",
+    "policy_event_risk": "High. Multiple live wires: (1) EU auto tariff escalation next week, (2) Iran/UAE conflict re-escalation risk, (3) Hormuz strait closure ongoing, (4) Fed policy uncertainty with services inflation sticky. Any one could trigger volatility spike.",
+    "market_correlation": "Market shrugging off geopolitical risk so far. S&P and Nasdaq at/near records despite Hormuz blockade. This disconnect is either resilience or complacency. Historically, markets ignore geopolitical risk until they don't.",
+    "hedge_recommendation": "Maintain tail risk hedges. VIX cheap at 18. Put spreads on SPY/QQQ cost-effective. Consider VIX calls or SPY put spreads for portfolios >70% equity."
+  },
+  "dashboard": {
+    "fear_greed_gauge": "66 - Greed",
+    "vix_gauge": "18.29 - Neutral/Low",
+    "breadth_gauge": "+59 - Positive but fading",
+    "smart_money_gauge": "Cautious vs Retail Optimistic",
+    "overall_signal": "CAUTIOUS",
+    "confidence_score": "65%",
+    "last_updated": "2026-05-05T10:49:00Z"
+  },
+  "tomorrow_watch": [
+    "NAAIM survey release (Wednesday May 7) - critical contrarian update",
+    "AAII sentiment survey (Thursday May 8) - post-holiday retail read",
+    "Fed Governor Bowman speaks Tuesday 10:00 ET - watch for hawkish signals",
+    "New Home Sales + ISM Services (Tuesday) - services inflation focus",
+    "Iran/UAE ceasefire developments - any escalation could break complacency",
+    "VIX futures roll (Wednesday) - watch for term structure shifts",
+    "Earnings: ~80% of S&P have beaten EPS estimates this season - watch guidance revisions"
+  ]
+}

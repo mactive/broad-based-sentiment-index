@@ -1,0 +1,268 @@
+{
+  "report_date": "2026-05-19",
+  "time": "18:49 CST",
+  "timestamp": "2026-05-19T10:49:00Z",
+  "market_summary": {
+    "spy": {
+      "price": 738.65,
+      "change_pct": 0.58,
+      "trend": "🟢 接近历史高点"
+    },
+    "qqq": {
+      "price": 705.88,
+      "change_pct": 1.20,
+      "trend": "🟢 强势"
+    },
+    "dia": {
+      "price": 497.01,
+      "change_pct": 0.33,
+      "trend": "🟢 接近505阻力"
+    },
+    "iwm": {
+      "price": 275.97,
+      "change_pct": 0.04,
+      "trend": "🟡 小型股偏弱"
+    },
+    "premarket_note": "SPY ~741.78, QQQ ~704.43, DIA ~497.35, IWM ~274.83 (6:49 AM EDT)",
+    "vix": {
+      "value": 17.88,
+      "status": "🟢 正常"
+    },
+    "nyse_ad": {
+      "advances": 1614,
+      "declines": 1159,
+      "ratio": 1.39,
+      "mcclellan_oscillator": -88.718,
+      "mcclellan_summation": 1867.904
+    }
+  },
+  "sentiment_indicators": {
+    "fear_greed_index": {
+      "source": "CNN Business / macromicro.me",
+      "current": 63,
+      "status": "🟡 贪婪",
+      "trend": "从4月20日高点70回落，边际降温",
+      "level": "Greed",
+      "interpretation": "市场情绪维持贪婪但边际降温。当前63属于温和贪婪，尚未达到危险区。",
+      "frequency": "日度"
+    },
+    "vix": {
+      "source": "CBOE / Investing.com",
+      "current": 17.88,
+      "status": "🟢 正常区间 (15-20)",
+      "trend": "从3月底高点31+大幅回落，处于年内低位",
+      "level": "Normal",
+      "interpretation": "VIX处于舒适区间，但低VIX本身是一种风险——市场习惯了低波动，任何意外冲击都会被放大。",
+      "frequency": "日度"
+    },
+    "put_call_ratio": {
+      "source": "CBOE",
+      "current": 0.51,
+      "status": "🟡 低于0.65中位，看涨期权占优",
+      "trend": "持续低于均值，反映看涨情绪浓厚",
+      "level": "Low",
+      "interpretation": "PCR 0.51说明期权市场看涨情绪浓厚。历史均值约0.65-0.75，当前读数属于偏乐观区域。",
+      "frequency": "日度"
+    },
+    "aaii_sentiment": {
+      "source": "AAII Investor Sentiment Survey (截至May 14)",
+      "bullish_pct": 38.2,
+      "neutral_pct": 27.9,
+      "bearish_pct": 33.9,
+      "bull_bear_spread": 4.3,
+      "status": "🟡 中性偏多",
+      "trend": "从之前极端乐观大幅回落，接近中性",
+      "level": "Neutral-Bullish",
+      "interpretation": "散户情绪从之前的极端乐观(60%+看多)大幅回落，目前接近中性。是一个健康信号。",
+      "frequency": "周度"
+    },
+    "naaim_exposure": {
+      "source": "NAAIM Exposure Index (截至May 14)",
+      "current": 87.95,
+      "status": "🔴 历史极端高位",
+      "trend": "连续多周维持85+水平",
+      "level": "Extreme Bullish",
+      "interpretation": "专业主动管理基金经理几乎全部满仓股票。这是当前体系中最强烈的反向信号之一。",
+      "frequency": "周度"
+    },
+    "smart_dumb_money": {
+      "source": "SentimenTrader",
+      "smart_money": 0.31,
+      "dumb_money": 0.62,
+      "spread": -0.31,
+      "status": "🔴 Smart Money极度悲观 vs Dumb Money偏乐观",
+      "trend": "聪明资金持续悲观，散户相对乐观",
+      "level": "Contrarian Signal",
+      "interpretation": "聪明资金极度悲观(0.31)，散户资金相对乐观(0.62)。-0.31的spread是强烈的反向指标。",
+      "frequency": "日度"
+    },
+    "margin_debt": {
+      "source": "NYSE / FINRA",
+      "latest_value_billions": 685.0,
+      "mom_change_pct": 0.50,
+      "yoy_change_pct": 9.41,
+      "status": "🟡 绝对值高位，但增速温和",
+      "trend": "高位运行但环比增速放缓",
+      "level": "High but Stable",
+      "interpretation": "融资余额6850亿美元处于历史高位区间，但环比增速仅0.5%，未出现加速加杠杆迹象。风险存在但未失控。",
+      "frequency": "月度(滞后)"
+    },
+    "high_yield_spread": {
+      "source": "Credit Suisse / 各券商",
+      "effective_yield_pct": 8.01,
+      "treasury_10y_pct": 4.3,
+      "implied_spread_pct": 3.7,
+      "status": "🟡 信用市场承压",
+      "trend": "高收益债收益率维持高位",
+      "level": "Elevated",
+      "interpretation": "高收益债8%的有效收益率反映信用风险定价。利差扩大通常领先股市调整3-6个月。",
+      "frequency": "日度(代理)"
+    },
+    "contrarian_signals": {
+      "source": "ContrarianSignals.com",
+      "current_reading": "N/A",
+      "status": "⚪ 数据暂不可用",
+      "trend": "未获取到最新读数",
+      "level": "N/A",
+      "interpretation": "未能获取ContrarianSignals最新读数，已用其他指标交叉验证。",
+      "frequency": "日度"
+    },
+    "alt_index": {
+      "source": "AltIndex (Crypto)",
+      "current_reading": 25,
+      "status": "🔴 加密极端恐惧",
+      "trend": "加密市场持续恐慌",
+      "level": "Extreme Fear",
+      "interpretation": "加密市场处于极端恐惧(25)，与美股贪婪(63)形成严重分化。",
+      "frequency": "日度"
+    },
+    "fear_greed_tracker": {
+      "source": "FearGreedTracker.com",
+      "current_reading": 63,
+      "status": "🟡 贪婪",
+      "trend": "与CNN F&G一致",
+      "level": "Greed",
+      "interpretation": "FearGreedTracker读数63与CNN Fear & Greed一致，验证情绪处于贪婪区间。",
+      "frequency": "日度"
+    }
+  },
+  "contrarian_analysis": {
+    "fear_checklist": {
+      "fear_greed_below_20": {"threshold": "< 20", "current": 63, "triggered": false},
+      "vix_above_30": {"threshold": "> 30", "current": 17.88, "triggered": false},
+      "aaii_bearish_above_50": {"threshold": "> 50%", "current": 33.9, "triggered": false},
+      "naaim_below_20": {"threshold": "< 20", "current": 87.95, "triggered": false},
+      "smart_money_above_0_6": {"threshold": "> 0.6", "current": 0.31, "triggered": false},
+      "pcr_above_1_0": {"threshold": "> 1.0", "current": 0.51, "triggered": false},
+      "market_breadth_severely_negative": {"threshold": "严重负值", "current": -88.718, "triggered": "⚠️ 接近"}
+    },
+    "fear_conclusion": "当前不满足'别人恐惧我贪婪'的极端条件。没有一个核心指标处于极端恐惧区。",
+    "greed_checklist": {
+      "fear_greed_above_75": {"threshold": "> 75", "current": 63, "triggered": "⚠️ 接近"},
+      "vix_below_15": {"threshold": "< 15", "current": 17.88, "triggered": "⚠️ 接近"},
+      "aaii_bullish_above_60": {"threshold": "> 60%", "current": 38.2, "triggered": false},
+      "naaim_above_90": {"threshold": "> 90", "current": 87.95, "triggered": "⚠️ 接近"},
+      "dumb_money_above_0_7": {"threshold": "> 0.7", "current": 0.62, "triggered": "⚠️ 接近"},
+      "pcr_below_0_45": {"threshold": "< 0.45", "current": 0.51, "triggered": "⚠️ 接近"},
+      "index_new_high_breadth_deterioration": {"threshold": "指数新高+宽度恶化", "current": "SPY新高+McClellan -88.7", "triggered": true}
+    },
+    "greed_conclusion": "部分指标接近'别人贪婪'阈值。NAAIM 87.95、指数新高但宽度恶化、Dumb Money 0.62——构成轻度警示信号组合。",
+    "overall_contrarian_signal": "🟡 轻度警示 (2/7指标接近阈值)",
+    "suggested_position": "60-70% (中性偏高，不建议满仓，不建议追高)"
+  },
+  "policy_cross_impact": {
+    "events": [
+      {
+        "event": "CPI爆表3.8% YoY",
+        "date": "May 12, 2026",
+        "impact": "通胀重燃，Fed降息预期延后至2027",
+        "sentiment_direction": "🔴 偏空"
+      },
+      {
+        "event": "核心CPI 2.8%",
+        "date": "May 12, 2026",
+        "impact": "仍超Fed 2%目标，利率higher-for-longer",
+        "sentiment_direction": "🔴 偏空"
+      },
+      {
+        "event": "Trump拒绝伊朗停火",
+        "date": "Ongoing",
+        "impact": "地缘风险升级，军事冲突扩大化",
+        "sentiment_direction": "🔴 偏空"
+      },
+      {
+        "event": "油价>100美元",
+        "date": "Ongoing",
+        "impact": "能源通胀压力， Brent crude ~120",
+        "sentiment_direction": "🔴 偏空"
+      },
+      {
+        "event": "Home Depot预警2026营收持平",
+        "date": "May 2026",
+        "impact": "消费前景疑虑，经济放缓信号",
+        "sentiment_direction": "🟡 偏空"
+      },
+      {
+        "event": "NVIDIA CEO台北演讲",
+        "date": "May 19, 2026",
+        "impact": "AI叙事持续支撑科技股情绪",
+        "sentiment_direction": "🟢 偏多"
+      }
+    ],
+    "policy_overall": "宏观面逆风增多——通胀反弹、地缘紧张、企业盈利预警。但市场尚未充分定价这些风险，情绪仍维持贪婪区间。这种'基本面恶化但情绪乐观'的背离是中期风险所在。",
+    "fed_policy_implication": "CPI 3.8%与核心CPI 2.8%基本宣告2026年降息无望。市场此前定价的降息预期需要修正。",
+    "geopolitical_risk": "美伊冲突升级是最大尾部风险。若霍尔木兹海峡航运受阻，油价可能飙升至130+，引发新一轮通胀冲击。"
+  },
+  "dashboard": {
+    "composite_sentiment_score": 63,
+    "vix_status": "Normal",
+    "retail_heat": 38,
+    "institutional_position": 88,
+    "smart_money_confidence": 31,
+    "options_sentiment": "Bullish Crowded",
+    "market_breadth": "Weak",
+    "credit_risk": "Elevated",
+    "contrarian_signal_strength": "🟡 轻度警示",
+    "recommended_position": "60-70%"
+  },
+  "tomorrow_watch": [
+    {
+      "date": "May 19",
+      "event": "NVIDIA CEO台北演讲",
+      "impact": "QQQ / 半导体情绪",
+      "priority": "高"
+    },
+    {
+      "date": "May 20",
+      "event": "FOMC会议纪要",
+      "impact": "VIX / 利率预期 / 美元",
+      "priority": "高"
+    },
+    {
+      "date": "May 21",
+      "event": "失业金申领数据",
+      "impact": "劳动力市场 / 衰退预期",
+      "priority": "中"
+    },
+    {
+      "date": "Ongoing",
+      "event": "中东局势进展",
+      "impact": "VIX / 油价 / SPY",
+      "priority": "高"
+    },
+    {
+      "date": "Ongoing",
+      "event": "美债收益率走势",
+      "impact": "成长股估值 / QQQ",
+      "priority": "中"
+    }
+  ],
+  "report_metadata": {
+    "generated_by": "MarketSentiment-Tracker Agent",
+    "generation_time": "2026-05-19T10:49:00Z",
+    "data_cutoff": "2026-05-18 US Market Close / 2026-05-19 Pre-Market",
+    "next_report": "2026-05-20 06:50 CST",
+    "report_version": "2026-05-19_1849",
+    "template_reference": "market_sentiment_2026-04-23_evening.json"
+  }
+}

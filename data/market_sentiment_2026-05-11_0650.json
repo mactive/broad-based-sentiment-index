@@ -1,0 +1,205 @@
+{
+  "report_date": "2026-05-11",
+  "report_time": "06:50 CST",
+  "data_timestamp": "2026-05-08T16:00:00Z",
+  "market_summary": {
+    "SPY": {"price": 591.50, "change_pct": -0.16, "note": "S&P 500 ETF. 标的指数周五收报7398.93(+0.84%)创纪录新高，ETF与指数出现显著价差，数据需复核"},
+    "QQQ": {"price": 517.29, "change_pct": -0.01, "note": "Nasdaq 100 ETF. 标的指数周五收报26247.08(+1.71%)创纪录新高，ETF与指数出现显著价差，数据需复核"},
+    "DIA": {"price": 440.57, "change_pct": -0.07, "note": "Dow 30 ETF. 道指周五收报49609.16(+0.02%)基本持平，ETF与指数出现价差"},
+    "IWM": {"price": 234.72, "change_pct": 0.36, "note": "Russell 2000 ETF. 小盘指数周五收报2861.21(+0.76%)，ETF涨幅低于指数"}
+  },
+  "sentiment_indicators": {
+    "fear_greed_index": {
+      "source": "CNN / FearGreedTracker / AltIndex综合",
+      "current": 67,
+      "zone": "贪婪",
+      "week_ago": 65,
+      "change": 2,
+      "extreme_greed_threshold": 75,
+      "extreme_fear_threshold": 25,
+      "trend": "维持在Greed区间，距极端贪婪尚有距离",
+      "detail": "CNN F&G 67分(Greed)，FearGreedTracker同步报67(-1点)。市场连续第六周上涨后情绪保持高涨，但未达极端贪婪(>75)。MM F&G指数报70.02。AltIndex此前3月底曾报45(Fear)，当前读数待确认。"
+    },
+    "vix": {
+      "source": "CBOE",
+      "value": 17.19,
+      "week_ago": 18.5,
+      "march_high": 31,
+      "historical_avg": 19.5,
+      "status": "历史低位",
+      "trend": "持续低于20阈值，接近自满区间",
+      "detail": "VIX 17.19处于第18历史百分位，显著低于20恐惧阈值。从伊朗冲突高点31大幅回落后持续低位运行，显示市场恐慌情绪基本消退。跌破15将标志极端自满。"
+    },
+    "pcr": {
+      "source": "CBOE Equity Put/Call Ratio",
+      "equity_pcr": 0.53,
+      "equity_date": "2026-05-08",
+      "total_pcr_10dma": null,
+      "total_date": null,
+      "index_pcr": null,
+      "index_date": null,
+      "status": "偏低",
+      "trend": "从0.71降至0.53，看跌保护需求大幅下降",
+      "detail": "Equity PCR 0.53处于偏低水平，较前期0.71显著下降。说明个股期权市场put需求减少，投资者乐观情绪高涨，对冲意愿下降。"
+    },
+    "aaii": {
+      "source": "AAII Investor Sentiment Survey",
+      "bullish_pct": 39.7,
+      "neutral_pct": 28.7,
+      "bearish_pct": 33.0,
+      "bull_bear_spread": 6.7,
+      "spread_change": -3.0,
+      "date": "2026-05-07",
+      "historical_avg_bullish": 37.5,
+      "historical_avg_bearish": 31.0,
+      "status": "偏多但未极端",
+      "trend": "散户看多比例从42%+回落至39.7%，但仍高于历史均值",
+      "detail": "AAII散户情绪偏多但未达极端。Bull-Bear spread +6.7%较前期收窄，反映散户热情边际降温。历史上>30%为强风险区，当前距离尚远。"
+    },
+    "naaim": {
+      "source": "NAAIM Exposure Index",
+      "current": 96.67,
+      "prev_week": 93.79,
+      "change_pct": 2.88,
+      "median": null,
+      "median_change_pct": null,
+      "date": "2026-05-06",
+      "status": "历史极端",
+      "trend": "连续攀升至96.67，近乎全仓操作",
+      "detail": "NAAIM敞口指数96.67创历史极端高位，主动基金经理近乎全仓。这是教科书级的逆向警示信号——历史上此类极端读数往往出现在短期顶部附近。"
+    },
+    "nyse_ad": {
+      "source": "NYSE Advance/Decline Line",
+      "advances": null,
+      "declines": null,
+      "difference": null,
+      "date": "2026-05-08",
+      "mcclellan_oscillator": 14.923,
+      "status": "背离隐忧",
+      "trend": "McClellan Oscillator +14.9显示短期动能温和，但与指数新高出现广度背离",
+      "detail": "S&P 500与Nasdaq创纪录新高，但NYSE涨跌线未同步确认。约40%个股参与上涨，资金集中于少数科技巨头。McClellan Oscillator +14.9较前期大幅回落(前期约+85)，短期动能衰减。Summation Index 2294.9维持高位。"
+    },
+    "margin_debt": {
+      "source": "FINRA",
+      "current_usd_billion": 1221.0,
+      "prev_month": 1253.0,
+      "change_mom_pct": -2.58,
+      "date": "2026-03-31",
+      "status": "高位回落",
+      "trend": "3月保证金债务环比下降2.58%，但同比仍增38.69%",
+      "detail": "FINRA 3月数据：保证金债务1.221万亿美元，较2月减少320亿美元(-2.58%)。同比仍激增38.69%，显示散户杠杆处于历史高位区间。4-5月数据待发布，需关注是否持续收缩。"
+    },
+    "hy_spread": {
+      "source": "HYG / ICE BofA / ContrarianSignals",
+      "nav": null,
+      "closing_price": null,
+      "spread_bps": 262.0,
+      "ytd_return_pct": null,
+      "dividend_yield_pct": null,
+      "sec_yield_30d_pct": null,
+      "status": "收窄但仍偏高",
+      "trend": "从275bps收窄至262bps，信用环境改善但未完全正常化",
+      "detail": "ICE BofA高收益债利差2.79%(约279bps)，HYG OAS约262bps。较前期275bps收窄，显示信用风险溢价回落。但3月机构历史性买入put保护(1.73M合约，95% puts)后，信用市场尚未完全放松至220bps以下的舒适区间。"
+    },
+    "contrarian_signals": {
+      "source": "ContrarianSignals.com / 综合判断",
+      "buy_signals": {
+        "aaii_extreme": false,
+        "aaii_spread": 6.7,
+        "aaii_threshold": -20,
+        "vix_extreme": false,
+        "vix_value": 17.19,
+        "vix_threshold": 25,
+        "fear_greed_extreme": false,
+        "fear_greed_value": 67,
+        "fear_greed_threshold": 25,
+        "naaim_aggressive": true,
+        "naaim_value": 96.67
+      },
+      "sell_signals": {
+        "fear_greed_extreme": false,
+        "fear_greed_value": 67,
+        "fear_greed_threshold": 75,
+        "pcr_extreme": false,
+        "pcr_value": 0.53,
+        "credit_risk_elevated": true,
+        "hyg_spread_bps": 262
+      },
+      "status": "强弩之末的乐观",
+      "trend": "无单一极端信号，但多项指标同步逼近警戒线",
+      "detail": "无指标达到极端阈值，但危险信号正在积聚：NAAIM 96.67为历史极端；NYSE广度与指数背离；VIX 17接近自满区间(<15)； mutual fund现金比例据传1.8%历史低位。AAII +6.7%未达极端，PCR 0.53偏低但未崩溃。整体处于'强弩之末'阶段——情绪高涨但广度不足，专业资金极端满仓。"
+    },
+    "altindex": {
+      "source": "AltIndex Fear & Greed",
+      "current": null,
+      "date": null,
+      "zone": null,
+      "status": "需订阅获取",
+      "trend": "3月底曾报45(Fear)，当前读数待确认",
+      "detail": "AltIndex 11信号(含Reddit、LinkedIn、网页流量等)此前3月31日报45(Fear)。与CNN 67(Greed)形成显著差异，反映传统市场指标与另类数据之间的分歧。当前读数待订阅获取。"
+    },
+    "feargreedtracker": {
+      "source": "FearGreedTracker.com",
+      "coverage": "50000+ stocks & crypto",
+      "update_freq": "per-minute",
+      "status": "67 (Greed), -1 points",
+      "detail": "16-indicator AI算法实时读数67(Greed)，较前期下降1点。整合RSI/ADX/SMA/EMA/波动率/社交情绪，与CNN F&G高度一致。"
+    }
+  },
+  "contrarian_analysis": {
+    "summary": "情绪指标呈现'强弩之末'格局：NAAIM 96.67创历史极端，主动基金经理近乎全仓，这是教科书级的逆向顶部信号。NYSE广度与指数新高出现显著背离——S&P 500与Nasdaq创纪录但仅约40%个股参与，资金集中于半导体等少数科技巨头。VIX 17.19持续低位运行，市场自满情绪累积。AAII散户+Bull-Bear spread +6.7%仍偏多但边际降温，未达极端。Fear & Greed 67维持贪婪但距极端(>75)有缓冲。高收益债利差262bps从高位回落，信用环境改善。整体判断：情绪处于高位 but not yet extreme——这是最容易误判的阶段，表面强势但内在脆弱性上升。",
+    "key_signals": [
+      "NAAIM 96.67 = 历史极端敞口，主动基金经理近乎全仓，教科书级逆向顶部信号",
+      "NYSE A/D Line与指数新高背离 = 约40%个股参与上涨，广度严重不足",
+      "McClellan Oscillator +14.9 = 从+85大幅回落，短期动能显著衰减",
+      "VIX 17.19 = 历史第18百分位，接近自满区间(<15)，恐慌情绪完全消退",
+      "AAII Spread +6.7% = 散户偏多但边际降温，未达+30%极端风险区",
+      "Fear & Greed 67 = 维持贪婪但距75极端阈值尚有8点缓冲",
+      "Equity PCR 0.53 = 看跌保护需求低，市场乐观但尚未崩溃",
+      "HYG OAS 262bps = 从275收窄，信用风险回落但未到220bps舒适区",
+      "Margin Debt 1.221T YoY +38.69% = 散户杠杆处于历史高位区间"
+    ],
+    "strategy_note": "当前情绪面处于'强弩之末'——表面强势但内在脆弱。核心矛盾：NAAIM极端满仓(96.67) + 指数新高 + VIX低位 = 经典顶部组合信号；但AAII未极端、F&G未极端、HYG利差回落 = 尚未达到传统逆向卖出阈值。策略建议：1) 不追高，尤其是半导体等已大幅上涨的板块；2) 持有现有仓位但设置 tighter stops；3) 密切关注NAAIM、NYSE广度、VIX三大指标——任一指标恶化都可能触发连锁反应；4) 若F&G突破75且AAII同步升至>45%，则进入极端贪婪卖出区。"
+  },
+  "policy_cross_impact": {
+    "summary": "政策面多空交织。关税推进构成中期逆风，但4月就业数据超预期(115K vs 55K预期)与AI产业景气度提供短期支撑。美伊潜在和谈进展缓解地缘风险，油价回落。美联储对'过热'的警告可能限制鸽派预期。",
+    "iran_war": {
+      "status": "和谈窗口期",
+      "oil_price_brent": 101.29,
+      "strait_of_hormuz": "Unstable but hopes for peace deal",
+      "energy_sector_ytd_pct": 35.4,
+      "inflation_pressure": "Moderating"
+    },
+    "tariffs": {
+      "pharma_100_pct": "Effective Apr 2",
+      "steel_aluminum_adjustment": "Effective Apr 6",
+      "china_comprehensive_rate": "~35%",
+      "ustr_hearing": "14国+欧盟'过剩产能'听证启动"
+    },
+    "fed_policy": {
+      "waller_warning": "Stagflation risk Apr 17",
+      "market_pricing": "Soft landing",
+      "fed_concern": "AI驱动生产力增长可能使经济过热(Goolsbee)",
+      "key_risk": "市场定价软着陆 vs 4月就业强劲(115K)可能使Fed维持鹰派 = 若通胀数据超预期可能面临紧缩预期重估"
+    }
+  },
+  "dashboard": {
+    "fear_greed": {"value": 67, "label": "Greed", "bar": "██████████░░"},
+    "vix": {"value": 17.19, "label": "Low/Complacent", "bar": "██████░░░░░░"},
+    "aaii": {"value": 6.7, "label": "Bullish", "bar": "█████░░░░░░░"},
+    "naaim": {"value": 96.67, "label": "Extreme Bullish", "bar": "████████████"},
+    "market_breadth": {"value": "Divergence", "label": "Warning", "bar": "████░░░░░░░░"},
+    "credit_spread": {"value": 262, "label": "Elevated", "bar": "███████░░░░░"},
+    "pcr_equity": {"value": 0.53, "label": "Low", "bar": "█████░░░░░░░"}
+  },
+  "tomorrow_watch": [
+    "周二美股早盘观察科技股(尤其半导体)是否出现获利回吐——AMD上周+19%后回调风险",
+    "NYSE涨跌线能否随指数一起走高以确认广度改善，否则顶背离信号强化",
+    "VIX是否从低位反弹(>20)作为风险预警，或继续下行至<15进入极端自满",
+    "AAII周三公布最新一周数据，关注散户Bull-Bear spread是否继续收窄或反转",
+    "NAAIM下周数据(周五发布)——确认96.67是否继续攀升或开始回落",
+    "高收益债利差是否持续收窄至220bps以下，或逆转扩大",
+    "特朗普USTR关税听证进展及伊朗和谈后续",
+    "美联储官员讲话(尤其是Goolsbee)对'过热'的进一步表态"
+  ]
+}

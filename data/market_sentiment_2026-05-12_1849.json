@@ -1,0 +1,226 @@
+{
+  "report_date": "2026-05-12",
+  "time": "1849",
+  "timestamp": "2026-05-12T18:49:00+08:00",
+  "timezone": "Asia/Shanghai",
+  "report_type": "evening",
+  "data_sources": [
+    "CNN Fear & Greed Index",
+    "Yahoo Finance",
+    "CBOE",
+    "AAII Investor Sentiment Survey",
+    "NAAIM Exposure Index",
+    "MarketEdge",
+    "Investment Company Institute",
+    "SentimenTrader",
+    "Federal Reserve Economic Data (FRED)",
+    "ContrarianSignals",
+    "FearGreedTracker"
+  ],
+  "market_summary": {
+    "sp500": {
+      "value": 5620.65,
+      "change": "+15.30",
+      "change_percent": "+0.27%",
+      "notes": "Market near all-time highs, grinding higher amid mixed earnings"
+    },
+    "nasdaq": {
+      "value": 17100.25,
+      "change": "+51.80",
+      "change_percent": "+0.30%",
+      "notes": "Tech-heavy index continuing rally"
+    },
+    "dow": {
+      "value": 49704.47,
+      "change": "+94.52",
+      "change_percent": "+0.19%",
+      "notes": "Dow Jones at record high territory"
+    },
+    "russell2000": {
+      "value": 2325.18,
+      "change": "+9.48",
+      "change_percent": "+0.41%",
+      "notes": "Small caps outperforming"
+    },
+    "volume": "Below average - participation waning despite new highs",
+    "vix": {
+      "value": 18.93,
+      "change": "+0.55",
+      "change_percent": "+2.99%",
+      "signal": "Neutral - volatility low but ticking up from extreme lows"
+    }
+  },
+  "sentiment_indicators": {
+    "cnn_fear_greed": {
+      "current": 66,
+      "previous": 64,
+      "status": "greed",
+      "trend": "stable",
+      "analysis": "Greed territory but not extreme. Market has room to run but approaching levels where caution is warranted."
+    },
+    "aaii_sentiment": {
+      "bullish": 38.3,
+      "neutral": 28.7,
+      "bearish": 33.0,
+      "bull_bear_spread": 5.3,
+      "status": "neutral",
+      "trend": "slightly_bullish",
+      "analysis": "Retail sentiment improved from extreme bearish readings. Bullish now above historical average (37.5%) for first time in months."
+    },
+    "naaim_exposure": {
+      "current": 96.67,
+      "previous": 93.79,
+      "status": "extremely_high",
+      "trend": "increasing",
+      "analysis": "NAAIM at 96.67% - active managers fully invested. Extremely high reading often acts as contrarian warning signal. Little dry powder left for further buying."
+    },
+    "cboe_pcr": {
+      "equity_pcr": 0.85,
+      "index_pcr": 1.25,
+      "total_pcr": 1.02,
+      "status": "neutral",
+      "trend": "mixed",
+      "analysis": "Equity PCR below 1.0 indicates call buying dominance. Index PCR elevated at 1.25 suggests institutional hedging activity. Mixed signal."
+    },
+    "put_call_ratio": {
+      "current": 1.02,
+      "historical_avg": 0.85,
+      "status": "neutral",
+      "trend": "mixed",
+      "analysis": "Overall PCR near long-term average. No extreme fear or greed in options market."
+    },
+    "nyse_advance_decline": {
+      "current": "Hit new high May 7",
+      "status": "strong",
+      "trend": "improving",
+      "analysis": "NYSE A/D line hit new high Wednesday, confirming market breadth. However, note that progress has been narrow since mid-April."
+    },
+    "margin_debt": {
+      "current": "$750.8B (March 2026)",
+      "previous": "$754.0B (Feb 2026)",
+      "change": -0.42,
+      "status": "neutral",
+      "trend": "decreasing",
+      "analysis": "Margin debt declining for 3 months. Deleveraging trend continues - historically positive for reducing systemic risk."
+    },
+    "leverage_ratio": {
+      "current": 2.42,
+      "historical_avg": 2.1,
+      "status": "elevated",
+      "trend": "decreasing",
+      "analysis": "Leverage ratio declining from extremes but still above historical average. De-risking ongoing but not complete."
+    },
+    "high_yield_spread": {
+      "current": 415,
+      "previous": 425,
+      "status": "neutral",
+      "trend": "narrowing",
+      "analysis": "HY spreads at 415 bps, down from 425. Credit markets not flashing warning signals. Risk appetite intact."
+    },
+    "mutual_fund_cash": {
+      "current": "3.2% (March 2026)",
+      "historical_avg": "4.5%",
+      "status": "low",
+      "trend": "decreasing",
+      "analysis": "Cash levels at 3.2% - below historical average. Low cash = less buying power but also reflects confidence."
+    },
+    "investment_advisor": {
+      "current": "55% bullish (Wednesday)",
+      "status": "neutral",
+      "trend": "mixed",
+      "analysis": "Investment advisors moderately bullish. Not at extreme levels."
+    },
+    "ici_fund_flows": {
+      "money_market": "Inflows slowing",
+      "equity": "Mixed - international outflows in March",
+      "status": "neutral",
+      "trend": "mixed",
+      "analysis": "Money market inflows slowing but still positive. Some rotation from international to US equities."
+    },
+    "mm_bull_bear": {
+      "current": "Bullish",
+      "status": "bullish",
+      "trend": "stable",
+      "analysis": "SentimenTrader MM Bull/Bear indicator remains in bullish territory."
+    }
+  },
+  "contrarian_analysis": {
+    "overall_contrarian_signal": "cautiously_bullish",
+    "retail_sentiment": {
+      "signal": "neutral",
+      "strength": "moderate",
+      "analysis": "AAII improved from extreme bearishness. Bullish above historical average for first time in months. No longer a strong contrarian buy signal."
+    },
+    "institutional_sentiment": {
+      "signal": "warning",
+      "strength": "strong",
+      "analysis": "NAAIM at 96.67% - extreme exposure. Active managers all-in. This is a caution flag - when they are all in, who is left to buy?"
+    },
+    "options_sentiment": {
+      "signal": "neutral",
+      "strength": "weak",
+      "analysis": "PCR near average. Options market not showing extremes."
+    },
+    "fear_greed_assessment": {
+      "signal": "neutral",
+      "strength": "moderate",
+      "analysis": "Fear & Greed at 66 - greed territory but not extreme (76+). Market can continue higher but upside may be limited."
+    },
+    "key_divergences": [
+      "NAAIM extremely high (96.67%) while AAII only moderately bullish (38.3%) - professional vs retail disconnect",
+      "NYSE A/D line at new highs but volume declining - breadth/volume divergence",
+      "Market at record highs but VIX ticking up - potential early warning"
+    ]
+  },
+  "policy_cross_impact": {
+    "trump_policy": {
+      "current": "Trade negotiations ongoing with China, India, Japan. Market appears to have priced in tariff resolution optimism.",
+      "market_impact": "Positive - markets rallying on trade deal hopes",
+      "sentiment_impact": "Improved from tariff panic in early 2025"
+    },
+    "fed_policy": {
+      "current": "Fed holding rates. Market pricing in potential rate cuts later in 2026 if economic data weakens.",
+      "market_impact": "Neutral to positive - stable rates support valuations",
+      "sentiment_impact": "No panic about Fed policy currently"
+    },
+    "geopolitical": {
+      "current": "Iran war continues but market has largely moved past initial shock. Oil prices elevated but stable.",
+      "market_impact": "Contained - market resilient despite ongoing conflict",
+      "sentiment_impact": "Less fear than in March 2026"
+    },
+    "trade_war": {
+      "current": "US-China talks continue. Some progress reported but no comprehensive deal yet.",
+      "market_impact": "Cautiously optimistic pricing",
+      "sentiment_impact": "Improving"
+    }
+  },
+  "dashboard": {
+    "overall_sentiment_score": 58,
+    "overall_status": "Moderately Bullish",
+    "fear_level": "Low",
+    "greed_level": "Moderate",
+    "contrarian_opportunity": "Limited - not at extremes",
+    "risk_level": "Moderate - NAAIM extreme reading is primary concern",
+    "recommendation": "Neutral weight. Market can continue higher but NAAIM extreme + greed territory suggest limiting new longs. Contrarian opportunity has passed - AAII no longer at extreme bearishness."
+  },
+  "tomorrow_watch": {
+    "key_events": [
+      "CPI data release later this week",
+      "Retail sales data",
+      "Fed speakers on Thursday",
+      "Ongoing trade negotiation headlines"
+    ],
+    "technical_levels": {
+      "sp500_support": 5580,
+      "sp500_resistance": 5680,
+      "nasdaq_support": 16900,
+      "nasdaq_resistance": 17300
+    },
+    "sentiment_watch": [
+      "Monitor if CNN F&G pushes into extreme greed (76+)",
+      "Watch VIX for breakout above 20",
+      "Track AAII for reversal back below 37.5% bullish",
+      "NAAIM >95% for 2+ weeks is unsustainable - watch for first pullback"
+    ]
+  }
+}

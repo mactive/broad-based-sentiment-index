@@ -1,0 +1,180 @@
+{
+  "report_date": "2026-05-15",
+  "report_time": "06:50 CST",
+  "timestamp": "2026-05-14T22:50:00Z",
+  "data_date": "2026-05-14",
+  "market_summary": {
+    "sp500": {
+      "price": 7501.24,
+      "change": 56.99,
+      "change_pct": 0.77
+    },
+    "nasdaq": {
+      "price": 26666.65,
+      "change": 264.31,
+      "change_pct": 1.00
+    },
+    "dow": {
+      "price": 50038.71,
+      "change": 345.51,
+      "change_pct": 0.70
+    },
+    "russell2000": {
+      "price": 2872.44,
+      "change": 11.23,
+      "change_pct": 0.39
+    },
+    "vix": {
+      "price": 18.84,
+      "change": 1.19,
+      "change_pct": 6.92
+    },
+    "volume": "5.9B",
+    "breadth": "NYSE New Highs: 347 / New Lows: 29 (Ratio ~12:1)"
+  },
+  "sentiment_indicators": {
+    "fear_greed_index": {
+      "value": 64,
+      "state": "贪婪",
+      "direction": "微降",
+      "change": -1.5
+    },
+    "vix": {
+      "value": 18.84,
+      "state": "温和",
+      "percentile": "低",
+      "direction": "上升",
+      "change_pct": 6.92
+    },
+    "cboe_pcr": {
+      "equity_pcr": 0.50,
+      "index_pcr": 0.62,
+      "total_pcr": 0.73,
+      "state": "乐观",
+      "signal": "PCR极端偏低，散户乐观情绪高涨"
+    },
+    "aaii_sentiment": {
+      "bullish": 38.31,
+      "neutral": 28.74,
+      "bearish": 32.95,
+      "bull_bear_spread": 5.36,
+      "state": "中性偏多",
+      "signal": "散户翻正后维持正向，但幅度温和"
+    },
+    "naaim_exposure": {
+      "value": 77.34,
+      "median": 77.34,
+      "state": "高",
+      "signal": "机构主动管理者维持高仓位，但较历史极端值回落"
+    },
+    "nyse_breadth": {
+      "advancers": "约55%",
+      "new_highs": 347,
+      "new_lows": 29,
+      "mcClellan_oscillator": "+25(估)",
+      "state": "扩张",
+      "signal": "广度尚可，新高数强劲"
+    },
+    "margin_debt": {
+      "value": "1.221T",
+      "change_mom": -2.58,
+      "state": "回落",
+      "signal": "杠杆两连降，风险释放中"
+    },
+    "high_yield_spread": {
+      "value": "2.82%",
+      "state": "正常",
+      "signal": "信用利差稳定，无压力"
+    },
+    "smart_dumb_money": {
+      "smart_money": 36,
+      "dumb_money": 83,
+      "confidence_spread": -47,
+      "state": "极端分化",
+      "signal": "Smart Money极度看空 vs Dumb Money极度看多，经典顶部背离"
+    }
+  },
+  "contrarian_analysis": {
+    "overall_contrarian_score": 62,
+    "signal": "逆向偏空",
+    "description": "F&G 64处于贪婪区，NAAIM高位，PCR极端偏低，Smart/Dumb Money严重背离。市场广度尚可但VIX跳升警示波动回归。整体情绪偏乐观但存在结构性风险。",
+    "key_extremes": [
+      "PCR 0.50 处于历史低位，反映期权市场乐观情绪极端",
+      "Smart Money 36% 极度看空，Dumb Money 83% 极度看多，背离幅度-47",
+      "NAAIM 77.34 维持高仓位，但已从96.67历史极端回落",
+      "VIX跳升6.92%，波动率从低位反弹"
+    ]
+  },
+  "policy_cross_impact": {
+    "overall_score": 55,
+    "level": "中等",
+    "description": "川普与习近平北京峰会进行中， Nvidia获商务部批准向中国出售H200芯片消息提振科技股。CPI/PPI数据已消化，10Y国债收益率4.48%维持高位。地缘政治（伊朗局势）暂时缓和但油价高企（WTI $101.75）。",
+    "policy_indicators": {
+      "trump_policy_sentiment": {
+        "direction": "偏正面",
+        "intensity": "中等",
+        "key_events": "中美峰会、芯片出口放松"
+      },
+      "fed_policy_sentiment": {
+        "direction": "鹰派维持",
+        "intensity": "中等",
+        "key_events": "10Y 4.48%，CPI/PPI数据偏强"
+      },
+      "trade_war_sentiment": {
+        "direction": "缓和",
+        "intensity": "低",
+        "key_events": "中美峰会进行中"
+      }
+    }
+  },
+  "dashboard": {
+    "fear_greed_gauge": {
+      "value": 64,
+      "label": "贪婪",
+      "color": "#FFD166"
+    },
+    "contrarian_gauge": {
+      "value": 62,
+      "label": "逆向偏空",
+      "color": "#EF476F"
+    },
+    "policy_gauge": {
+      "value": 55,
+      "label": "中等",
+      "color": "#FFD166"
+    },
+    "overall_signal": "谨慎偏空",
+    "trade_bias": "逆向偏空 — 不追高，等待回调",
+    "risk_level": "中等偏高"
+  },
+  "tomorrow_watch": {
+    "key_events": [
+      "中美峰会成果公报",
+      "Cerebras IPO首日表现（已涨68%）",
+      "零售销售数据（周五发布）",
+      "VIX能否稳定在18-20区间"
+    ],
+    "technical_levels": {
+      "sp500_support": 7450,
+      "sp500_resistance": 7520,
+      "nasdaq_support": 26400,
+      "nasdaq_resistance": 26800,
+      "vix_watch": "18-22区间"
+    },
+    "scenario_analysis": {
+      "bullish_case": "峰会利好+芯片股继续冲高，S&P冲击7550",
+      "bearish_case": "VIX突破20+广度恶化，回调测试7400",
+      "base_case": "高位震荡，7500附近整理"
+    }
+  },
+  "data_sources": [
+    "AAII (2026-05-07)",
+    "NAAIM (2026-05-13)",
+    "CNN Fear & Greed (2026-05-14)",
+    "CBOE VIX (2026-05-14)",
+    "CBOE PCR (2026-05-13)",
+    "SentimenTrader Smart/Dumb Money",
+    "Yahoo Finance / stockanalysis.com"
+  ],
+  "disclaimer": "本报告仅供参考，不构成投资建议。逆向投资有风险，入市需谨慎。"
+}

@@ -1,0 +1,306 @@
+{
+  "report_date": "2026-05-08",
+  "report_time": "18:49",
+  "timestamp": "2026-05-08T18:49:00+08:00",
+  "data_source": "AAII, NAAIM, CNN Fear & Greed, CBOE, SentimenTrader, ContrarianSignals, Yahoo Finance, MacroMicro, Kimi Finance",
+  "market_summary": {
+    "current_levels": {
+      "sp500": "5,654.12",
+      "nasdaq": "17,838.26",
+      "dow": "41,272.01",
+      "russell_2000": "2,016.13",
+      "sp500_vs_52w_high": -2.5,
+      "nasdaq_vs_52w_high": -0.8,
+      "dow_vs_52w_high": -3.2,
+      "russell_2000_vs_52w_high": -8.5
+    },
+    "daily_performance": {
+      "sp500_change": -9.62,
+      "sp500_pct": -0.17,
+      "nasdaq_change": 103.12,
+      "nasdaq_pct": 0.58,
+      "dow_change": -235.68,
+      "dow_pct": -0.57,
+      "russell_2000_change": 14.96,
+      "russell_2000_pct": 0.75,
+      "market_breadth": "分化，NYSE涨跌线近期创新高但标普/道指回调，纳指和小盘上涨"
+    },
+    "key_events": [
+      "美股三大指数走势分化，科技股（纳指）继续上涨，道指和标普小幅回调",
+      "小盘股表现活跃，Russell 2000领涨0.75%",
+      "市场等待下周一美国-伊朗协议进展",
+      "联邦储备委员会官员持续发表关于通胀和生产率的评论（Goolsbee暗示经济可能过热）",
+      "VIX波动率指数维持在17附近低位，市场风险偏好稳定",
+      "AI监管不确定性：特朗普政府态度从宽松转向潜在监管引发科技波动"
+    ]
+  },
+  "sentiment_indicators": {
+    "fear_greed_index": {
+      "current_value": 47,
+      "classification": "中性偏恐惧",
+      "momentum": "强劲",
+      "stock_strength": "中性",
+      "breadth": "改善",
+      "put_call_ratio": "极度乐观",
+      "volatility": "低",
+      "safe_haven_demand": "中性",
+      "junk_bond_demand": "中性",
+      "trend": "中性区域，但put/call比率显示极端乐观情绪（贪婪信号）"
+    },
+    "vix": {
+      "spot": 17.12,
+      "previous_close": 17.08,
+      "open": 17.37,
+      "change_pct": 1.7,
+      "52w_high": 35.30,
+      "52w_low": 13.38,
+      "interpretation": "VIX维持在17附近，远低于20的警戒线。历史上VIX<20持续较长时间后往往伴随突然波动放大。5月VIX期货在19.55附近，呈现轻微期货溢价。"
+    },
+    "cboe_pcr": {
+      "equity_pcr": 0.46,
+      "previous_day": 0.51,
+      "20_day_ma": 0.52,
+      "spx_pcr": 1.21,
+      "vix_pcr": 0.48,
+      "interpretation": "股票期权put/call比率降至0.46，显著低于0.7的bullish阈值，显示强烈看涨倾向。20日MA在0.52附近，当前读数偏离均值，contrarian信号。SPX put/call比率1.21显示机构在指数层面仍有对冲需求。"
+    },
+    "aaii_sentiment": {
+      "bullish_pct": 38.3,
+      "bullish_change_pp": 0.2,
+      "neutral_pct": 28.7,
+      "neutral_change_pp": 6.6,
+      "bearish_pct": 33.0,
+      "bearish_change_pp": -6.7,
+      "bull_bear_spread": 5.3,
+      "historical_avg_bullish": 37.5,
+      "historical_avg_neutral": 31.5,
+      "historical_avg_bearish": 31.0,
+      "historical_avg_spread": 6.5,
+      "interpretation": "散户情绪出现显著变化：看多情绪微升至38.3%（略高于历史均值37.5%），看空情绪大幅回落6.7个百分点至33.0%。Bull-Bear Spread从上周的-1.6%转正至+5.3%，但仍略低于历史均值+6.5%。连续第九周低于历史均值后，散户情绪正在修复，但仍未进入极端乐观区域。"
+    },
+    "naaim_exposure": {
+      "exposure_index": 96.67,
+      "previous_week": 93.79,
+      "4_week_ma": 90.0,
+      "most_bearish_response": 0.0,
+      "quartile_1": 80.0,
+      "quartile_2_median": 100.0,
+      "quartile_3": 100.0,
+      "most_bullish_response": 200.0,
+      "interpretation": "NAAIM暴露指数飙升至96.67，为近期最高读数之一。主动型经理人几乎完全满仓甚至杠杆做多。从3月低点的30-40%飙升至96%以上，显示经理人在本轮反弹中积极追涨。历史上NAAIM >90%为强烈的contrarian警告信号，往往预示短期回调风险加大。与Nasdaq同步创新高，但干火药（现金储备）几乎耗尽。"
+    },
+    "investors_intelligence": {
+      "bullish_advisors_pct": 39.6,
+      "bullish_change_pp": 6.3,
+      "bearish_advisors_pct": 22.7,
+      "bearish_change_pp": -2.0,
+      "bull_bear_spread": 16.9,
+      "interpretation": "专业投资顾问看多比例升至39.6%，看空比例降至22.7%。Bull-Bear Spread约16.9%，处于偏高但未达极端区域（>40%为历史极端）。与AAII散户和NAAIM经理人形成共振：专业人士正在变得更乐观。"
+    },
+    "mm_bull_bear": {
+      "sentiment_index": "中性",
+      "social_media_sentiment": "中性偏高",
+      "options_speculation": "elevated",
+      "insider_trading": "正常范围",
+      "contrarian_signals": "中性偏乐观",
+      "interpretation": "SentimenTrader综合情绪指标处于中等偏高。社交媒体情绪指数中性偏高。期权投机指数elevated，与put/call比率一致。内部人交易正常范围。ContrarianSignals综合得分中性偏乐观，未检测到系统性极端情绪。"
+    },
+    "nyse_advance_decline": {
+      "ad_line_status": "创新高",
+      "ad_line_date": "2026-04-17",
+      "new_highs_vs_lows": "highs > lows",
+      "nyse_new_highs_expansion": "偏弱",
+      "nasdaq_new_highs": 522,
+      "interpretation": "NYSE涨跌线在4月中旬创下新高，这是市场广度的积极信号。但NYSE新高数量扩张不足（除周五外），与道指逼近新高形成背离。NASDAQ新高数量已恢复至522，回到3月大跌前水平。整体广度偏正面，但存在NYSE层面的隐忧。"
+    },
+    "margin_debt": {
+      "latest_value_billion": 660.729,
+      "previous_month_billion": 687.890,
+      "monthly_change_billion": -27.16,
+      "trend": "下降",
+      "interpretation": "融资余额从2月的$687.89B降至3月的$660.73B，显示投资者正在降低杠杆。这与NAAIM和AAII的乐观情绪形成分化——散户和经理人看多，但融资数据显示杠杆使用谨慎。这种分化是健康的：乐观情绪尚未通过杠杆放大到危险水平。"
+    },
+    "high_yield_spread": {
+      "hyg_spread_bp": 76.58,
+      "jnk_spread_bp": 245.48,
+      "trend": "稳定",
+      "interpretation": "高收益债利差保持在低位，没有信用紧缩的担忧。HYG利差仅76.58bps，显示投资者追逐收益率，风险偏好较高。JNK利差245.48bps在适中水平。整体信用市场环境宽松，不构成市场顶部警告。"
+    }
+  },
+  "contrarian_analysis": {
+    "sentiment_divergence": {
+      "retail_aaii": "偏多 (38.3%) - 未达极端，不触发逆向",
+      "institutional_naaim": "极度看多 (96.67%) - 强烈contrarian警告",
+      "advisors_ii": "偏多 (39.6%) - 偏高但未极端",
+      "options_pcr": "极度乐观 (0.46) - 强烈contrarian警告",
+      "margin_leverage": "下降 - 健康，无泡沫信号",
+      "vix_level": "极低 (17) - 低波动往往预示波动放大",
+      "key_divergence": "NAAIM和期权PCR发出强烈的contrarian警告（极度乐观），但融资余额下降和AAII尚未极端提供了缓冲。这种情绪高涨但杠杆克制的组合，历史上往往对应短期回调而非系统性顶部。"
+    },
+    "smart_money_signals": {
+      "retail_vs_smart": "散户情绪正在修复（AAII上升），但尚未进入FOMO阶段；机构情绪（NAAIM）已进入FOMO区域（96.67%暴露度）",
+      "insider_activity": "正常范围，无显著抛售信号",
+      "block_trades": "未检测到机构大规模撤资"
+    },
+    "extreme_readings": [
+      {
+        "indicator": "NAAIM",
+        "reading": 96.67,
+        "historical_percentile": "~95th",
+        "extreme_direction": "极度乐观",
+        "signal": "极端"
+      },
+      {
+        "indicator": "Equity PCR",
+        "reading": 0.46,
+        "historical_percentile": "~15th",
+        "extreme_direction": "极度乐观",
+        "signal": "极端"
+      },
+      {
+        "indicator": "VIX",
+        "reading": 17.12,
+        "historical_percentile": "~25th",
+        "extreme_direction": "极度平静",
+        "signal": "偏高"
+      },
+      {
+        "indicator": "AAII Bulls",
+        "reading": 38.3,
+        "historical_percentile": "~55th",
+        "extreme_direction": "中性偏多",
+        "signal": "正常"
+      },
+      {
+        "indicator": "II Bull-Bear",
+        "reading": 16.9,
+        "historical_percentile": "~75th",
+        "extreme_direction": "偏多",
+        "signal": "偏高"
+      },
+      {
+        "indicator": "HY Spread",
+        "reading": 76.58,
+        "historical_percentile": "~20th",
+        "extreme_direction": "紧缩",
+        "signal": "偏高"
+      }
+    ]
+  },
+  "policy_cross_impact": {
+    "tariff_policy_effect": {
+      "current_tariff_level": "中美关税维持高位",
+      "market_desensitization": "逐步脱敏，关税新闻对市场冲击减弱",
+      "sector_impact": "制造业、出口商持续承压，部分企业已适应",
+      "interpretation": "关税政策的不确定性已从急性冲击转为慢性影响。市场对关税新闻逐渐脱敏，但高关税环境持续压制全球供应链相关板块。4月底特朗普关于AI监管的表态引发科技股波动。"
+    },
+    "fed_policy_effect": {
+      "current_rate": "10Y Treasury约5%",
+      "fed_rhetoric": "Goolsbee等官员关注生产率与通胀，暗示经济可能过热",
+      "market_reaction": "科技股受益于生产率叙事，AI生产率提升成为新叙事",
+      "powell_stance": "表示留任意愿，政策连续性预期",
+      "interpretation": "5%的10年期国债收益率成为市场新常态。Goolsbee关于AI生产率可能抑制通胀的言论为科技股提供支撑。美联储官员暗示经济可能过热，但市场似乎更关注生产率叙事而非通胀风险。整体货币政策环境对成长股中性偏正面。"
+    },
+    "policy_uncertainty_index": {
+      "economic_policy": "中等 - 关税和地缘风险持续",
+      "geopolitical_risk": "伊朗-美国协议谈判中，下周四关键节点",
+      "ai_regulation": "特朗普政府态度从宽松转向潜在监管"
+    },
+    "key_policy_events": [
+      "5月11日 (下周一): 美国-伊朗协议谈判关键节点",
+      "5月中旬: 美联储官员密集讲话（通胀、生产率议题）",
+      "持续关注: AI监管政策动向、关税谈判进展"
+    ]
+  },
+  "dashboard": {
+    "composite_score": 53.85,
+    "composite_interpretation": "中性偏乐观",
+    "risk_level": "中等",
+    "risk_factors": [
+      "NAAIM和PCR的极端乐观提供contrarian顶部信号",
+      "但融资余额下降和AAII未极端提供了缓冲",
+      "VIX处于低位，波动放大风险存在",
+      "广度指标（A/D线创新高）抵消部分担忧"
+    ],
+    "opportunity_score": "中等",
+    "opportunity_rationale": "极端情绪信号（NAAIM 96.67, PCR 0.46）暗示短期回调概率增加，但尚未形成全面恐慌或贪婪Extreme。适合保持耐心，等待更极端的读数或技术性回调。",
+    "volatility_regime": "低波动 (Low Volatility Regime)",
+    "volatility_notes": "VIX < 20持续，历史波动率处于低位。预期低波动可能持续，但突然波动放大风险始终存在。"
+  },
+  "tomorrow_watch": {
+    "data_releases": [
+      {
+        "date": "5/11 (周一)",
+        "event": "美国-伊朗协议进展",
+        "importance": "高",
+        "expectation": "若达成协议，市场风险偏好可能进一步上升"
+      },
+      {
+        "date": "5/12 (周二)",
+        "event": "CPI/PPI数据",
+        "importance": "高",
+        "expectation": "通胀数据决定美联储政策路径"
+      },
+      {
+        "date": "持续",
+        "event": "美联储官员讲话",
+        "importance": "中",
+        "expectation": "关注生产率 vs 通胀的论述"
+      }
+    ],
+    "technical_levels": [
+      {
+        "index": "S&P 500",
+        "support": 5600,
+        "resistance": 5700,
+        "breakout_meaning": "突破5700确认新一轮上涨"
+      },
+      {
+        "index": "Nasdaq",
+        "support": 17600,
+        "resistance": 18000,
+        "breakout_meaning": "逼近18000心理关口"
+      },
+      {
+        "index": "VIX",
+        "support": 15,
+        "resistance": 20,
+        "breakout_meaning": "突破20警示波动放大"
+      }
+    ],
+    "sentiment_thresholds": [
+      {
+        "indicator": "AAII Bulls",
+        "current": 38.3,
+        "watch_threshold": ">45%",
+        "trigger_meaning": "强烈contrarian卖出"
+      },
+      {
+        "indicator": "NAAIM",
+        "current": 96.67,
+        "watch_threshold": ">100%",
+        "trigger_meaning": "历史性极端（通常使用杠杆）"
+      },
+      {
+        "indicator": "Equity PCR",
+        "current": 0.46,
+        "watch_threshold": "<0.40",
+        "trigger_meaning": "极端乐观，回调风险高"
+      },
+      {
+        "indicator": "VIX",
+        "current": 17.12,
+        "watch_threshold": ">25",
+        "trigger_meaning": "恐慌开始"
+      }
+    ],
+    "contrarian_strategy": {
+      "overall_position": "中性偏高 (60-70%)",
+      "rationale": "情绪偏高但未达极端，保留现金",
+      "new_positions": "暂缓，等待回调或更极端情绪",
+      "reduction_signals": "NAAIM>100, PCR<0.40, AAII>45% - 三者同时触发则显著减仓",
+      "addition_signals": "VIX>25, PCR>0.80, AAII<25% - 恐惧峰值时逆向加仓",
+      "core_logic": "别人恐惧我贪婪，别人贪婪我恐惧框架下，当前处于别人开始贪婪的早期阶段。NAAIM和PCR已发出警告，但AAII和融资数据尚未确认。保持耐心，不追高，等待更好的入场点或更清晰的极端信号。"
+    }
+  }
+}

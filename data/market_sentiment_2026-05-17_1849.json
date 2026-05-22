@@ -1,0 +1,352 @@
+{
+  "report_date": "2026-05-17",
+  "report_time": "18:49",
+  "timestamp": "2026-05-17T18:49:00+08:00",
+  "market_summary": {
+    "spx_level": 7408.5,
+    "spx_change": -0.7,
+    "spx_change_pct": -0.01,
+    "major_index_levels": {
+      "SPY": {
+        "price": 739.17,
+        "change": -0.2,
+        "change_pct": -0.03
+      },
+      "QQQ": {
+        "price": 562.18,
+        "change": -0.73,
+        "change_pct": -0.13
+      },
+      "DIA": {
+        "price": 319.0,
+        "change": 1.29,
+        "change_pct": 0.41
+      },
+      "IWM": {
+        "price": 209.72,
+        "change": -0.73,
+        "change_pct": -0.35
+      }
+    },
+    "market_breadth": {
+      "nyse_advance_decline": "Hit new high on May 7; narrow leadership since mid-April",
+      "nyse_advance": null,
+      "nyse_decline": null,
+      "nyse_new_highs": "Expanding on NASDAQ; little changed on NYSE",
+      "nyse_new_lows": null,
+      "advance_decline_ratio": null,
+      "spx_stocks_above_50d": null,
+      "spx_stocks_above_200d": null,
+      "market_edge_sentiment_index": -3,
+      "market_posture": "Bullish"
+    },
+    "volume": {
+      "nyse_composite_volume": "Moderate",
+      "nyse_composite_vs_avg": null,
+      "nasdaq_volume": null,
+      "nasdaq_vs_avg": null
+    },
+    "vix": {
+      "current": 21.07,
+      "change": -0.27,
+      "change_pct": -1.26,
+      "vix9d": null,
+      "vix3m": null,
+      "vix6m": null,
+      "term_structure": "Contango"
+    }
+  },
+  "sentiment_indicators": {
+    "cnn_fear_greed": {
+      "current_value": 64,
+      "previous_day": 63,
+      "classification": "Greed",
+      "sub_indices": {
+        "momentum": null,
+        "stock_price_strength": null,
+        "stock_price_breadth": null,
+        "put_call_options": null,
+        "junk_bond_demand": null,
+        "market_volatility": null,
+        "safe_haven_demand": null,
+        "market_momentum": null
+      },
+      "historical_context": "Near neutral-to-greedy boundary; index ticked down from 67 to 64 this week",
+      "notes": "Sentiment has moderated from extreme optimism"
+    },
+    "fear_greed_history": [
+      {"date": "2026-05-15", "value": 64, "label": "Greed"},
+      {"date": "2026-05-14", "value": 63, "label": "Greed"},
+      {"date": "2026-05-13", "value": 64, "label": "Greed"},
+      {"date": "2026-05-12", "value": 65, "label": "Greed"},
+      {"date": "2026-05-11", "value": 63, "label": "Greed"}
+    ],
+    "vix_analysis": {
+      "current": 21.07,
+      "vwap": null,
+      "30day_high": null,
+      "30day_low": null,
+      "percentile_rank": "Moderate",
+      "vix_spot_vs_futures": "Contango",
+      "skew_index": null,
+      "notes": "VIX has contracted from mid-20s highs; complacency rising but not extreme"
+    },
+    "aaii_sentiment": {
+      "survey_week": "2026-05-14",
+      "bullish_pct": 39.3,
+      "neutral_pct": 24.1,
+      "bearish_pct": 36.6,
+      "bull_bear_spread": 2.7,
+      "bullish_4wk_avg": 38.1,
+      "bullish_8wk_avg": null,
+      "historical_avg_bullish": 37.5,
+      "vs_historical_avg": "Above average",
+      "contrarian_signal": "Neutral-Bullish; bulls above historical average but not extreme",
+      "notes": "Retail bulls remain above 37.5% historical average; inching up to 39.3%"
+    },
+    "naaim_exposure": {
+      "current_index": 77.34,
+      "previous_week": 96.67,
+      "median_exposure": 99.0,
+      "most_bullish": 200.0,
+      "most_bearish": -200.0,
+      "quartile_1": 78.75,
+      "quartile_3": 100.0,
+      "standard_deviation": 68.17,
+      "week_ending": "2026-05-13",
+      "interpretation": "Active managers pulled back sharply from 96.67% to 77.34%; rapid de-risking",
+      "contrarian_reading": "Bullish reversal signal - managers reduced exposure at all-time highs",
+      "notes": "NAAIM dropped 19+ points in one week. Most bearish response hit -200%. Median remains 99%."
+    },
+    "cboe_put_call": {
+      "equity_only": {
+        "current": 0.59,
+        "5day_avg": null,
+        "10day_avg": null,
+        "20day_avg": null,
+        "classification": "Low - speculative bullishness",
+        "notes": "Extremely low equity P/C signals excessive call buying / speculative euphoria"
+      },
+      "total_put_call": {
+        "current": 0.93,
+        "5day_avg": null,
+        "10day_avg": null,
+        "20day_avg": null,
+        "classification": "Neutral"
+      },
+      "index_put_call": {
+        "current": 1.03,
+        "classification": "Elevated hedging"
+      },
+      "notes": "Equity-only PCR at 0.59 is contrarian bearish warning. Index PCR at 1.03 shows institutional hedging."
+    },
+    "margin_debt": {
+      "current_level_trillions": 1.221,
+      "previous_month": 1.253,
+      "change_billions": -32.0,
+      "change_pct": -2.55,
+      "nyse_margin_debt": 1.221,
+      "vs_spx_12mo_change": null,
+      "leverage_trend": "Declining",
+      "contrarian_reading": "Margin contraction reduces systemic risk; some deleveraging underway",
+      "notes": "FINRA margin debt fell to $1.221T in March from $1.253T; second consecutive monthly decline"
+    },
+    "high_yield_spread": {
+      "current_spread_pct": 2.82,
+      "current_spread_bps": 282,
+      "previous_day": 2.80,
+      "change_bps": 2,
+      "spread_12mo_low": null,
+      "spread_12mo_high": null,
+      "hyg_price": 79.64,
+      "hyg_change": -0.09,
+      "hyg_change_pct": -0.11,
+      "classification": "Elevated but stable",
+      "notes": "HYG OAS at 282 bps; elevated relative to bull market norms but not crisis level"
+    },
+    "investment_advisors": {
+      "ii_bull_pct": null,
+      "ii_bear_pct": null,
+      "ii_bull_bear_spread": null,
+      "historical_extreme": null,
+      "notes": "II survey data not available for current week"
+    },
+    "institutional_fund_flows": {
+      "weekly_equity_flows_billions": 35.4,
+      "weekly_bond_flows_billions": null,
+      "ytd_equity_flows_billions": null,
+      "ytd_bond_flows_billions": null,
+      "money_market_flows_billions": null,
+      "bofa_fms_cash_level": 4.3,
+      "bofa_fms_equity_underweight": -59,
+      "bofa_fms_growth_expectations": "Lowest since August 2025",
+      "epfr_global_equity_flows": null,
+      "notes": "BofA FMS shows highest cash since May 2025 and least equity OW since July 2025"
+    },
+    "sentimen_trader": {
+      "smart_money_confidence": null,
+      "dumb_money_confidence": null,
+      "smart_dumb_spread": -0.27,
+      "smart_dumb_classification": "Below -0.25 - Dumb Money more bearish than Smart Money",
+      "notes": "Spread rapidly cycled from +0.25 (extreme optimism) to -0.27 in ~31 trading days. Rapid reversals at record peaks historically precede difficult outcomes. S&P 500 at all-time highs."
+    },
+    "yield_curve": {
+      "ten_year_yield": 4.59,
+      "two_year_yield": 4.09,
+      "spread_10y_2y": 0.50,
+      "spread_10y_3m": 0.90,
+      "curve_classification": "Positively sloped",
+      "notes": "10Y-2Y at +50 bps; curve re-steepened. TYFI fragility index at 52/100 (HIGH)."
+    },
+    "feargreedtracker": {
+      "current": 63,
+      "previous": 62,
+      "change": 1,
+      "status": "Greed",
+      "notes": "Aligned with CNN index"
+    },
+    "contrarian_signals": {
+      "current": 55.6,
+      "previous": null,
+      "change": -0.5,
+      "status": "Moderate allocation",
+      "notes": "Balanced sentiment per contrariansignals.com; watch for extreme readings"
+    },
+    "altindex": {
+      "current": null,
+      "notes": "No current reading available"
+    }
+  },
+  "contrarian_analysis": {
+    "overall_contrarian_reading": "Caution - Rapid sentiment reversal at all-time highs with low equity hedging",
+    "individual_signals": {
+      "vix": {
+        "signal": "Neutral",
+        "reading": "VIX at 21 is elevated relative to SPX at all-time highs; suggests some underlying anxiety despite record prices",
+        "strength": "Medium"
+      },
+      "cboe_pcr": {
+        "signal": "Bearish Warning",
+        "reading": "Equity-only PCR at 0.59 is extremely low, indicating speculative call buying euphoria. Index PCR at 1.03 shows smart money is hedging.",
+        "strength": "High"
+      },
+      "aaii": {
+        "signal": "Neutral",
+        "reading": "Bulls at 39.3% above historical average of 37.5%. Not extreme but elevated. Bears at 36.6% are relatively high, creating a narrow spread.",
+        "strength": "Low"
+      },
+      "naaim": {
+        "signal": "Bullish Contrarian (for active manager pullback)",
+        "reading": "NAAIM plunged from 96.67 to 77.34 in one week. Most bearish response hit -200%. Active managers aggressively reduced equity exposure at all-time highs. Historically, such rapid de-risking after peak exposure has created short-term volatility but medium-term buying opportunities.",
+        "strength": "High"
+      },
+      "margin_debt": {
+        "signal": "Neutral-Bullish",
+        "reading": "Margin debt declined 2.55% to $1.221T. Deleveraging reduces systemic vulnerability and creates future buying power.",
+        "strength": "Medium"
+      },
+      "fear_greed": {
+        "signal": "Neutral",
+        "reading": "Fear & Greed at 64 is in 'Greed' territory but well below extreme levels (>75). Index has moderated from 67 to 64 this week.",
+        "strength": "Low"
+      },
+      "smart_dumb_spread": {
+        "signal": "Bearish Warning",
+        "reading": "Spread cycled from +0.25 extreme optimism to -0.27 in just 31 trading days. Rapid sentiment reversals at record peaks historically led to difficult outcomes. S&P 500 at all-time highs with dumb money now more bearish than smart money.",
+        "strength": "High"
+      },
+      "bofa_fms": {
+        "signal": "Bullish Contrarian",
+        "reading": "Fund managers at most bearish sentiment since June 2025. Cash at 4.3% (highest since May 2025). Underweight equities -59% (least since July 2025). Stagflation fears dominate. BofA itself notes these are contrarian buy signals if oil falls below $84.",
+        "strength": "High"
+      }
+    },
+    "composite_contrarian_score": -35,
+    "composite_signal": "Caution - Mixed signals with high warning readings from PCR and Smart/Dumb spread, offset by bearish institutional sentiment creating contrarian buy setup",
+    "notes": "The most notable development is the rapid sentiment cycle: NAAIM collapsed 19 points in one week, and Smart/Dumb spread reversed from extreme optimism to pessimism in just 31 days while SPX sits at all-time highs. Historically this pattern preceded tactical pullbacks."
+  },
+  "policy_cross_impact": {
+    "relevant_policies": [
+      {
+        "policy": "Tariff uncertainty",
+        "impact": "Moderate - ongoing trade negotiations create headline risk",
+        "market_reaction": "Markets pricing in partial resolution",
+        "risk_level": "Medium"
+      },
+      {
+        "policy": "Federal Reserve policy",
+        "impact": "FOMC on hold; 10Y at 4.59% reflects elevated rate expectations",
+        "market_reaction": "Bond market pricing higher-for-longer",
+        "risk_level": "Medium"
+      },
+      {
+        "policy": "Stagflation fears",
+        "impact": "High - 76% of fund managers expect stagflation per BofA FMS",
+        "market_reaction": "Flight to quality vs cyclical rotation ongoing",
+        "risk_level": "High"
+      },
+      {
+        "policy": "Oil geopolitics",
+        "impact": "High - Iran ceasefire hopes could send oil below $84",
+        "market_reaction": "Energy sector volatile; $100/bbl Brent creating inflation anxiety",
+        "risk_level": "Medium"
+      }
+    ],
+    "policy_sentiment_score": -40,
+    "policy_risk_level": "Medium-High",
+    "policy_notes": "Stagflation is the dominant macro fear. Fund managers extremely bearish on growth and inflation simultaneously. This is a classic late-cycle setup."
+  },
+  "dashboard": {
+    "spx_fair_value_estimate": null,
+    "spx_vs_fair_value": null,
+    "spx_12m_forward_pe": null,
+    "spx_historical_pe_percentile": null,
+    "spx_vs_200dma_pct": null,
+    "spx_vs_50dma_pct": null,
+    "vix_percentile": 35,
+    "vix_vs_realized_vol": null,
+    "credit_spread_percentile": 65,
+    "equity_pcr_percentile": 15,
+    "total_pcr_percentile": 45,
+    "margin_debt_trend": "Declining",
+    "aaii_bullish_percentile": 55,
+    "naaim_percentile": 60,
+    "bofa_fms_sentiment_percentile": 20,
+    "fear_greed_percentile": 60,
+    "smart_dumb_spread_percentile": 25,
+    "notes": "Dashboard shows mixed extremes: equity PCR at 15th percentile (speculative), BofA FMS at 20th percentile (bearish institutions), Smart/Dumb at 25th percentile (rapid reversal)."
+  },
+  "tomorrow_watch": {
+    "key_events": [
+      {
+        "date": "2026-05-18",
+        "event": "Market reopens after weekend",
+        "impact": "Watch for follow-through on Friday's late-week price action"
+      },
+      {
+        "date": "2026-05-19",
+        "event": "Housing Starts / Building Permits",
+        "impact": "Housing data will inform growth/stagflation narrative"
+      },
+      {
+        "date": "2026-05-20",
+        "event": "FOMC Minutes (May 7 meeting)",
+        "impact": "Key insight into Fed thinking on tariff-inflation tradeoff"
+      }
+    ],
+    "technical_levels": {
+      "spx_support": [7300, 7200, 7000],
+      "spx_resistance": [7500, 7600, 7700],
+      "vix_support": [19, 18],
+      "vix_resistance": [24, 28]
+    },
+    "sentiment_thresholds": {
+      "vix_watch": "Watch for VIX breakout above 24 to confirm anxiety",
+      "pcr_watch": "Equity PCR below 0.55 would be extreme speculation",
+      "fear_greed_watch": "Break below 55 would signal sentiment shift",
+      "naaim_watch": "Further drop below 70 would confirm manager de-risking"
+    },
+    "contrarian_setup": "Rapid sentiment reversal at all-time highs creates elevated tactical pullback risk. However, extremely bearish institutional positioning (BofA FMS) and margin deleveraging create contrarian buy-the-dip support. Watch for VIX spike above 24 + PCR collapse below 0.55 as confirmation of near-term top. Target support 7300-7200 on any pullback.",
+    "notes": "The week ahead is dominated by FOMC minutes (Wed) and ongoing tariff/trade headlines. The rapid sentiment reversal is the key watch item."
+  }
+}

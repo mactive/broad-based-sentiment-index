@@ -1,0 +1,289 @@
+{
+  "report_date": "2026-05-12",
+  "time": "0650",
+  "timestamp": "2026-05-13T06:50:00+08:00",
+  "market_summary": {
+    "indices": {
+      "sp500": {
+        "value": 7412.87,
+        "change": 13.94,
+        "change_pct": 0.19
+      },
+      "dow_jones": {
+        "value": 49704.34,
+        "change": 95.18,
+        "change_pct": 0.19
+      },
+      "nasdaq": {
+        "value": 26274.13,
+        "change": 27.05,
+        "change_pct": 0.1
+      },
+      "russell_2000": {
+        "value": 2872.44,
+        "change": 11.23,
+        "change_pct": 0.39
+      }
+    },
+    "prices": {
+      "spy": {
+        "price": 738.18,
+        "change": -1.12,
+        "change_pct": -0.15,
+        "volume": "49.45M"
+      },
+      "qqq": {
+        "price": 707.24,
+        "change": -6.05,
+        "change_pct": -0.85,
+        "volume": "43.96M"
+      },
+      "dia": {
+        "price": 497.25,
+        "change": 0.54,
+        "change_pct": 0.11,
+        "volume": "4.25M"
+      },
+      "iwm": {
+        "price": 281.4,
+        "change": -3.93,
+        "change_pct": -1.38,
+        "volume": "21.90M"
+      }
+    },
+    "market_breadth": {
+      "nyse_advance_decline": "3-4月持续创新高，市场参与度高",
+      "nyse_new_highs_lows": "待更新",
+      "notes": "指数收涨但ETF收跌，出现显著分化"
+    }
+  },
+  "sentiment_indicators": {
+    "fear_greed_index": {
+      "value": 66,
+      "status": "贪婪",
+      "source": "CNN",
+      "components": {
+        "market_momentum": "待更新",
+        "stock_price_strength": "待更新",
+        "stock_price_breadth": "待更新",
+        "put_call_options": "待更新",
+        "market_volatility": "待更新",
+        "safe_haven_demand": "待更新",
+        "junk_bond_demand": "待更新"
+      }
+    },
+    "vix": {
+      "value": 18.38,
+      "change": 1.19,
+      "change_pct": 6.92,
+      "status": "正常偏高",
+      "source": "CBOE",
+      "term_structure": "待更新"
+    },
+    "put_call_ratio": {
+      "cboe_equity_pcr": 0.53,
+      "status": "中性",
+      "source": "CBOE",
+      "date": "2026-05-08"
+    },
+    "aaii": {
+      "bullish": 38.3,
+      "neutral": 31.7,
+      "bearish": 30.0,
+      "bull_bear_spread": 8.3,
+      "status": "中性偏多",
+      "source": "AAII / Market Edge",
+      "date": "2026-05-07"
+    },
+    "naaim": {
+      "value": 96.67,
+      "median": 96.67,
+      "top_quartile": 100.0,
+      "bottom_quartile": 85.0,
+      "status": "极度多头",
+      "source": "NAAIM",
+      "date": "2026-05-06"
+    },
+    "nyse_advance_decline": {
+      "current_value": "近期新高",
+      "trend": "上升",
+      "status": "广度良好",
+      "notes": "3-4月持续创新高，确认上涨广度"
+    },
+    "margin_debt": {
+      "value": "1.221T",
+      "change_pct": -2.58,
+      "status": "下降",
+      "source": "FINRA",
+      "date": "2026-03"
+    },
+    "high_yield_spread": {
+      "oas_bps": 261,
+      "ice_bofa_pct": 2.79,
+      "status": "正常",
+      "source": "iShares HYG / ICE BofA",
+      "date": "2026-05-11"
+    },
+    "contrarian_signals": {
+      "value": 55.6,
+      "status": "中性偏多头",
+      "source": "ContrarianSignals",
+      "date": "2026-04"
+    },
+    "alt_fear_greed_index": {
+      "crypto": 49,
+      "stock": "加载中",
+      "status": "中性",
+      "source": "Alternative.me / FearGreedTracker"
+    },
+    "investment_advisor_sentiment": {
+      "bullish_pct": "待更新",
+      "bearish_pct": "待更新",
+      "status": "滞后指标",
+      "source": "Investors Intelligence",
+      "note": "周三更新"
+    },
+    "mutual_fund_cash_ratio": {
+      "value": "待更新",
+      "status": "滞后指标",
+      "source": "ICI",
+      "note": "月度更新"
+    },
+    "sentimentrader": {
+      "smart_money": "N/A",
+      "dumb_money": "N/A",
+      "status": "需会员",
+      "note": "SentimenTrader数据需付费订阅"
+    }
+  },
+  "contrarian_analysis": {
+    "overall_contrarian_signal": "中性偏空",
+    "signal_strength": "中等",
+    "key_divergences": [
+      {
+        "type": "机构vs散户",
+        "description": "NAAIM 96.67%(极度多头) vs AAII 38.3%(中性偏多)",
+        "significance": "高",
+        "historical_context": "历史上NAAIM >95%后1-3个月往往出现回调"
+      },
+      {
+        "type": "指数vsETF",
+        "description": "S&P500指数涨+0.19%但SPY跌-0.15%",
+        "significance": "中高",
+        "historical_context": "ETF相对于NAV出现折价，通常出现在顶部附近"
+      },
+      {
+        "type": "大盘vs小盘",
+        "description": "道琼斯涨+0.19%但IWM跌-1.38%",
+        "significance": "高",
+        "historical_context": "小盘股大幅跑输是风险偏好下降的经典信号"
+      },
+      {
+        "type": "VIX与指数",
+        "description": "VIX跳升+6.92%但三大指数仍收涨",
+        "significance": "中",
+        "historical_context": "波动率上升而市场不跌，暗示避险情绪积累"
+      }
+    ],
+    "risk_assessment": {
+      "overheating_risk": "中高",
+      "structural_risk": "中",
+      "liquidity_risk": "低",
+      "credit_risk": "低",
+      "summary": "情绪过热风险来自NAAIM极端读数和贪婪指数；结构性风险来自大小盘分化；流动性和信用风险可控"
+    },
+    "opportunity_zones": {
+      "long_contrarian": {
+        "trigger": "尚未出现",
+        "conditions": "恐惧贪婪指数<30 或 VIX>25",
+        "current_status": "不满足"
+      },
+      "short_contrarian": {
+        "trigger": "部分满足",
+        "conditions": "NAAIM极端 + 指数/ETF背离 + 大小盘分化",
+        "current_status": "早期信号"
+      },
+      "wait_and_see": {
+        "rationale": "当前处于贪婪但未到极端的阶段",
+        "suggestion": "不宜重仓追涨，保持中性仓位"
+      }
+    }
+  },
+  "policy_cross_impact": {
+    "trump_taco_summary": {
+      "latest_policy": "4月CPI 3.8%高于预期3.7%，通胀粘性持续",
+      "tariff_impact": "关税政策影响已部分price in，后续谈判仍有变数",
+      "geopolitical": "中东/俄乌地缘风险对能源和供应链有扰动",
+      "note": "详见 policy_tracker 目录独立报告"
+    },
+    "fed_policy_influence": {
+      "latest": "CPI超预期推高更长时间高利率预期",
+      "rate_expectations": "2026年降息次数预期下调",
+      "market_impact": "对成长股(QQQ)构成压力，解释了QQQ跑输大盘"
+    }
+  },
+  "dashboard": {
+    "market_phase": "晚期上涨 (Late-Stage Rally)",
+    "sentiment_score": 66,
+    "sentiment_label": "贪婪",
+    "risk_level": "中高",
+    "position_suggestion": "中性偏防御 (60-70%权益)",
+    "core_strategy": "别人贪婪我恐惧：不宜追涨，警惕顶部信号"
+  },
+  "tomorrow_watch": {
+    "key_events": [
+      {
+        "date": "2026-05-13",
+        "time": "08:30 ET",
+        "event": "PPI数据发布",
+        "importance": "高",
+        "watch_for": "通胀传导情况"
+      },
+      {
+        "date": "2026-05-13",
+        "time": "10:00 ET",
+        "event": "4月零售销售数据",
+        "importance": "中",
+        "watch_for": "消费韧性"
+      },
+      {
+        "date": "2026-05-14",
+        "time": "08:30 ET",
+        "event": "CPI后续市场反应",
+        "importance": "高",
+        "watch_for": "市场对通胀数据的二次定价"
+      },
+      {
+        "date": "2026-05-14",
+        "time": "—",
+        "event": "AAII新一周数据发布",
+        "importance": "中",
+        "watch_for": "散户情绪变化"
+      }
+    ],
+    "technical_levels": {
+      "spy": {
+        "support": 731.83,
+        "resistance": 739.3,
+        "watch": "跌破731转弱"
+      },
+      "qqq": {
+        "support": 696.64,
+        "resistance": 714.59,
+        "watch": "已跌破710支撑"
+      },
+      "iwm": {
+        "support": 278.28,
+        "resistance": 287.05,
+        "watch": "小盘股弱势持续"
+      }
+    },
+    "volatility_expectation": {
+      "vix_trend": "上升",
+      "current": 18.38,
+      "threshold": 20,
+      "note": "VIX较前几日明显上升，短期波动加大。若突破20需警惕",
+      "options_flow": "QQQ put/call比50.28%，科技股避险情绪上升"
+    }
+  }
+}

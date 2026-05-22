@@ -1,0 +1,176 @@
+{
+  "report_date": "2026-05-19",
+  "report_time": "06:50",
+  "report_timestamp": "2026-05-18T22:50:00Z",
+  "report_type": "morning_analysis",
+  "market_summary": {
+    "sp500": {
+      "price": 7403.05,
+      "change": -97.95,
+      "change_pct": -1.31,
+      "technical_assessment": "S&P 500 fell 1.31% to 7,403.05, breaking below the 7,500 psychological level. The index is now testing key support near the 50-day moving average (~7,380). Price action remains above the March correction lows (~7,100), suggesting the broader uptrend structure is intact, but near-term momentum has shifted bearish. Volume was above average on the decline, indicating institutional distribution."
+    },
+    "nasdaq": {
+      "price": 24000.0,
+      "change": -450.0,
+      "change_pct": -1.84,
+      "technical_assessment": "NASDAQ dropped 1.84%, led by weakness in mega-cap tech. QQQ closed at $705.88, testing the 20-day EMA. The Tech sector's relative strength has deteriorated, with several high-beta names breaking below recent consolidation ranges."
+    },
+    "dow": {
+      "price": 49526.0,
+      "change": -537.0,
+      "change_pct": -1.07,
+      "technical_assessment": "Dow Jones declined 1.07% to 49,526. The decline was more measured than the NASDAQ, suggesting some rotation into defensive names. DIA held above the $490 support level."
+    },
+    "russell_2000": {
+      "price": 275.84,
+      "change": -3.16,
+      "change_pct": -1.13,
+      "technical_assessment": "IWM declined 1.13% to $275.84. Small-caps underperformed large-caps on the session, with breadth notably weak. The Russell 2000 is approaching the lower end of its recent trading range ($270-$285)."
+    }
+  },
+  "sentiment_indicators": {
+    "fear_greed_index": {
+      "value": 63,
+      "status": "Greed",
+      "change": -4,
+      "analysis": "CNN Fear & Greed Index at 63 (Greed), down from 67 last week. The pullback from near-extreme-greed territory reduces short-term contrarian bearishness, but sentiment remains elevated historically. This is still a zone where corrections are more likely to occur."
+    },
+    "vix": {
+      "value": 18.43,
+      "status": "Normal",
+      "change": +1.82,
+      "analysis": "VIX surged 11% to 18.43, breaking above the 17-18 complacency zone. While still below the 20 fear threshold, the sharp single-day spike suggests options markets are repricing volatility risk. Watch if VIX holds above 20—sustained elevation would confirm a regime shift."
+    },
+    "cboe_pcr": {
+      "equity_pcr": 0.59,
+      "total_pcr": 0.93,
+      "status": "Neutral-Bullish",
+      "analysis": "Equity PCR at 0.59 and Total PCR at 0.93. The equity PCR remains below 0.70, indicating call-heavy positioning persists among equity traders. Index PCR elevated at 1.15 (SPX) suggests institutional hedging is increasing—a typical divergence that appears before volatility expansions."
+    },
+    "aaii": {
+      "bullish": 39.3,
+      "neutral": 24.1,
+      "bearish": 36.6,
+      "status": "Neutral",
+      "analysis": "AAII weekly sentiment (May 13): Bullish 39.3% | Neutral 24.1% | Bearish 36.6%. Bull-Bear spread at +2.7%, the narrowest since March. Retail sentiment has cooled meaningfully from the euphoric readings in early April. This is constructive for contrarians—fear is building, but not yet at extremes."
+    },
+    "naaim": {
+      "value": 77.34,
+      "status": "Moderate Bullish",
+      "change": -19.33,
+      "analysis": "NAAIM Exposure Index collapsed to 77.34 from 96.67 (May 13 vs May 6). Active managers cut equity exposure aggressively—a 20-point weekly drop is significant. This indicates professional money is de-risking. Not yet at the fearful sub-50 readings that mark bottoms, but the directional shift is notable."
+    },
+    "investors_intelligence": {
+      "bulls": 50.5,
+      "bears": 19.9,
+      "spread": 30.6,
+      "status": "Moderate Risk",
+      "analysis": "Investors Intelligence (April 14): Bull-Bear spread at +30.6%. Advisory newsletters remain stubbornly bullish despite recent weakness. This is the highest-risk zone for contrarian positioning (>30 spread historically correlates with sub-5% forward 3-month returns)."
+    },
+    "nyse_ad_line": {
+      "value": -1519,
+      "status": "Bearish",
+      "analysis": "NYSE internals were terrible on May 15: 629 advances vs 2,148 declines. McClellan Oscillator plunged to -124.8 from -50.8, and Summation Index fell to 1,956.6 from 2,081.4. Breadth deterioration confirms the S&P 500 breakout to new highs in April was not confirmed—narrow leadership remains the structural risk."
+    },
+    "margin_debt": {
+      "value": 1304000,
+      "status": "Neutral-High",
+      "change": +83000,
+      "analysis": "NYSE Margin Debt surged to $1.304T in April (up from $1.221T in March). This is the highest level since the October 2025 crash. Rising margin debt amplifies volatility—if the market continues lower, forced liquidations could accelerate declines."
+    },
+    "high_yield_spread": {
+      "value": 2.76,
+      "status": "Neutral",
+      "change": -0.14,
+      "analysis": "ICE BofA High Yield Spread at 2.76% (as of May 14). The spread has remained stable around 2.5-3.0% for weeks, indicating credit markets are not yet pricing in recession risk. This is a risk-on signal that conflicts with the equity market's recent nervousness."
+    },
+    "investment_advisors": {
+      "value": 30.6,
+      "status": "Moderate Risk",
+      "analysis": "Advisory sentiment spread at +30.6% remains in the danger zone (>25). This indicator has the longest track record of predicting market tops—readings above 30 have preceded every major correction since 1987."
+    }
+  },
+  "contrarian_analysis": {
+    "overall_contrarian_signal": "Cautious - Contrarian Bearish Bias Building",
+    "retail_sentiment": {
+      "signal": "Mixed - Cooling but not fearful",
+      "description": "AAII bullishness dropped from 44.9% to 39.3%. Retail is getting nervous but not panicked. Contrarian bullish signal requires bearish AAII > 45%."
+    },
+    "institutional_sentiment": {
+      "signal": "Bearish - Active managers de-risking",
+      "description": "NAAIM collapsed 20 points in one week. This is the most reliable institutional fear gauge, and it's flashing yellow."
+    },
+    "options_sentiment": {
+      "signal": "Neutral - Call speculation persists",
+      "description": "Equity PCR at 0.59 shows retail still buying calls. Index PCR at 1.15 shows pros buying protection. This divergence typically resolves with a volatility spike."
+    },
+    "breadth_health": {
+      "signal": "Bearish - Deteriorating internals",
+      "description": "McClellan Oscillator at -124.8 and A-D line at -1,519. Breadth is collapsing—this is not a healthy correction."
+    },
+    "leverage_risk": {
+      "signal": "High Risk - Margin debt at cycle highs",
+      "description": "$1.304T margin debt is the highest since the October 2025 crash. Leverage amplifies downside."
+    },
+    "professional_systems": {
+      "contrariansignals": "55.6% (Moderate allocation, balanced)",
+      "altindex": "45 (Fear) - from March data, likely lower now",
+      "feargreedtracker": "~60-65 (Greed), trending lower"
+    }
+  },
+  "policy_cross_impact": {
+    "federal_reserve": {
+      "current_stance": "Hawkish Pause",
+      "impact": "Fed Chair Powell's May 14 testimony maintained the 'higher for longer' stance. The FOMC minutes revealed concerns about inflation persistence. Market pricing for rate cuts has shifted from July to September. Treasury yields rising (10Y ~4.42%) is pressuring equity multiples."
+    },
+    "trump_administration": {
+      "current_stance": "Trade Tensions Escalating",
+      "impact": "Trump's May 15 statement about 'no China deal without substantial concessions' renewed trade war fears. Mexico tariff deadline (May 31) approaching. This policy uncertainty is the primary driver of the recent VIX spike and de-risking by active managers."
+    },
+    "congress": {
+      "current_stance": "Fiscal Gridlock",
+      "impact": "Debt ceiling negotiations remain stalled. Treasury Secretary Bessent's May 16 letter warned of X-date approaching in August. Fiscal uncertainty adds to market anxiety."
+    },
+    "cross_market_correlation": {
+      "description": "Policy risk is now the dominant driver of sentiment. Trade policy uncertainty has pushed the correlation between VIX and policy news to cycle highs. The NAAIM collapse coincides with the tariff escalation timeline."
+    }
+  },
+  "dashboard": {
+    "overall_sentiment_score": 58,
+    "fear_level": "Moderate",
+    "contrarian_opportunity": "Building - Not Yet Extreme",
+    "market_regime": "Late-Cycle Distribution Phase",
+    "risk_assessment": "Elevated - Breadth deterioration + leverage + policy uncertainty",
+    "key_divergences": [
+      "Credit markets (HY spreads calm) vs Equity markets (selling pressure)",
+      "Retail sentiment (cooling) vs Advisory newsletters (stubbornly bullish)",
+      "Index-level prices (near highs) vs Breadth (collapsing)"
+    ]
+  },
+  "tomorrow_watch": {
+    "key_events": [
+      "May 19: No major economic data",
+      "May 20: Retail Sales data (critical for consumer health)",
+      "May 21: FOMC minutes detailed breakdown"
+    ],
+    "technical_levels": {
+      "sp500_support": [7380, 7300, 7200],
+      "sp500_resistance": [7500, 7600],
+      "vix_watch": "20 - breakout above confirms fear regime",
+      "qqq_support": [700, 690],
+      "iwm_support": [270, 265]
+    },
+    "sentiment_thresholds": {
+      "fear_greed": "Watch for drop below 50 (Neutral) - would improve contrarian bullish case",
+      "vix": "Sustained close above 20 increases probability of 5%+ correction",
+      "naaim": "Drop below 50 would signal extreme institutional fear (buy signal)",
+      "aaii": "Bearish > 45% or Bullish < 25% would trigger contrarian buy"
+    },
+    "policy_monitoring": [
+      "Trump administration statements on China trade",
+      "Mexico tariff deadline (May 31) updates",
+      "Debt ceiling negotiation progress"
+    ]
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "report_date": "2026-05-15",
+  "report_time": "1849",
+  "report_type": "evening",
+  "timestamp": "2026-05-15T18:49:00+08:00",
+  "market_summary": {
+    "sp500": {
+      "value": 7409.8,
+      "change": 0.15,
+      "change_pct": 0.15
+    },
+    "nasdaq": {
+      "value": 26264.68,
+      "change": 0.07,
+      "change_pct": 0.07
+    },
+    "dow": {
+      "value": 49677.18,
+      "change": 0.12,
+      "change_pct": 0.12
+    },
+    "russell": {
+      "value": 2547.92,
+      "change": 1.58,
+      "change_pct": 1.58
+    },
+    "market_status": "贪婪区间",
+    "market_trend": "上涨",
+    "market_breadth": "普涨"
+  },
+  "sentiment_indicators": {
+    "fear_greed_index": {
+      "current": 66,
+      "previous": 66,
+      "status": "贪婪",
+      "trend": "持平"
+    },
+    "vix": {
+      "current": 15.56,
+      "previous": 15.01,
+      "status": "低位",
+      "trend": "上升"
+    },
+    "put_call_ratio": {
+      "current": 0.86,
+      "previous": 0.85,
+      "status": "中性偏低",
+      "trend": "持平"
+    },
+    "aaii": {
+      "bullish": 47.8,
+      "neutral": 23.4,
+      "bearish": 28.8,
+      "bull_bear_spread": 19.0,
+      "status": "看涨偏多",
+      "trend": "上升",
+      "lag_weeks": 2
+    },
+    "naaim": {
+      "current": 67.6,
+      "previous": 75.1,
+      "status": "中高仓位",
+      "trend": "下降",
+      "lag_weeks": 4
+    },
+    "sentimentrader_smart_money": {
+      "current": 0.42,
+      "status": "极端恐惧",
+      "trend": "持平"
+    },
+    "sentimentrader_dumb_money": {
+      "current": 0.65,
+      "status": "中度贪婪",
+      "trend": "上升"
+    },
+    "contrarian_signals": {
+      "current": 55.6,
+      "status": "中性偏多",
+      "trend": "持平",
+      "lag_weeks": 4
+    },
+    "altindex": {
+      "current": 63,
+      "status": "贪婪",
+      "trend": "上升"
+    },
+    "feargreedtracker": {
+      "current": 66,
+      "status": "贪婪",
+      "trend": "持平"
+    },
+    "margin_debt": {
+      "current": 1220000000000,
+      "change_pct": -2.6,
+      "status": "下降",
+      "trend": "下降",
+      "lag_weeks": 6
+    },
+    "high_yield_spread": {
+      "current": 325,
+      "status": "低位",
+      "trend": "收窄"
+    }
+  },
+  "contrarian_analysis": {
+    "key_divergence": "Smart Money 0.42（极端恐惧） vs Dumb Money 0.65（中度贪婪），差值 -0.23",
+    "smart_money_positioning": "极端恐惧，机构在买保护",
+    "dumb_money_positioning": "中度贪婪，散户看涨",
+    "retail_vs_leverage": "散户嘴上看涨（AAII 47.8%），实际降杠杆（融资债务-2.6%）",
+    "contrarian_signal": "中等偏强",
+    "historical_context": "当前Smart Money恐惧+Dumb Money贪婪的背离模式，历史上4-8周后Smart Money方向往往得到验证"
+  },
+  "policy_cross_impact": {
+    "tariff_policy": {
+      "status": "持续",
+      "impact": "部分定价，若缓和则+贪婪"
+    },
+    "fed_policy": {
+      "status": "维持不变",
+      "impact": "中性，若通胀超预期则+恐惧"
+    },
+    "debt_ceiling": {
+      "status": "谈判中",
+      "impact": "低风险"
+    },
+    "geopolitical": {
+      "status": "稳定",
+      "impact": "低风险"
+    }
+  },
+  "dashboard": {
+    "composite_score": 48,
+    "composite_rating": "中性",
+    "contrarian_adjusted_score": 48,
+    "fear_greed_balance": "贪婪主导，但Smart Money反向",
+    "market_risk_level": "中低",
+    "recommendation": "不追高，等待回调后的更好入场点"
+  },
+  "tomorrow_watch": [
+    "AAII新数据本周四发布，关注看涨比例是否突破50%",
+    "VIX若突破18并持续，贪婪叙事将受挑战",
+    "SPY距52周高点约1%，突破需观察量能",
+    "TrumpTaco政策面突发消息对情绪的冲击",
+    "融资债务4月数据5月底发布，若继续下降则逆向信号增强"
+  ],
+  "etf_prices": {
+    "SPY": {
+      "price": 742.31,
+      "change": 5.86,
+      "change_pct": 0.79
+    },
+    "QQQ": {
+      "price": 711.2,
+      "change": 5.08,
+      "change_pct": 0.71
+    },
+    "DIA": {
+      "price": 497.74,
+      "change": 3.66,
+      "change_pct": 0.74
+    },
+    "IWM": {
+      "price": 282.18,
+      "change": 1.78,
+      "change_pct": 0.63
+    }
+  }
+}

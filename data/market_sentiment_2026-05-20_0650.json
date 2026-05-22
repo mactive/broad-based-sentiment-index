@@ -1,0 +1,266 @@
+{
+  "report_date": "2026-05-20",
+  "report_time": "06:50 CST",
+  "report_type": "morning",
+  "timestamp": "2026-05-19T22:50:00Z",
+  "market_summary": {
+    "sp500": {
+      "value": 733.73,
+      "change": -4.92,
+      "change_percent": -0.67,
+      "previous_close": 738.65,
+      "day_high": 737.65,
+      "day_low": 731.53,
+      "volume": 54186099
+    },
+    "nasdaq": {
+      "value": 701.53,
+      "change": -4.35,
+      "change_percent": -0.62,
+      "previous_close": 705.88,
+      "day_high": 706.49,
+      "day_low": 695.25,
+      "volume": 46743131
+    },
+    "dow": {
+      "value": 493.98,
+      "change": -3.03,
+      "change_percent": -0.61,
+      "previous_close": 497.01,
+      "day_high": 496.34,
+      "day_low": 492.58,
+      "volume": 5347076
+    },
+    "russell2000": {
+      "value": 273.00,
+      "change": -2.97,
+      "change_percent": -1.08,
+      "previous_close": 275.97,
+      "day_high": 275.08,
+      "day_low": 270.63,
+      "volume": 30417439
+    },
+    "market_breadth": {
+      "advance_decline_line": "S\u0026P 500 advance-decline line has not confirmed the April breakout; breadth peaked Feb 27, 2026 while price peaked Jan 27, 2026. Fewer than half of index members were up on at least 8 of the last 12 sessions.",
+      "new_highs_new_lows": "Data not available for May 19, 2026",
+      "volume_trend": "SPY volume 54.18M (above average); IWM volume 30.42M (elevated, suggesting rotation concerns)"
+    },
+    "market_environment": "Markets pulled back moderately across all major indices on May 19, 2026. S\u0026P 500 and Nasdaq both declined ~0.6-0.7%, while Russell 2000 underperformed with -1.08%. Breadth remains a concern: the S\u0026P 500 had broken to new highs in mid-April but the cumulative advance-decline line has not confirmed, indicating the rally has been driven by a narrowing set of leaders rather than broad participation.",
+    "key_events": [
+      "S\u0026P 500 and major indices declined for the session, with small-caps (IWM) leading weakness",
+      "VIX spiked +6.78% intraday to 18.43 before settling at 18.06, indicating modest fear increase",
+      "Breadth divergence persists: S\u0026P 500 near highs but AD line has not broken to new highs since Feb 27 peak",
+      "High yield bonds (HYG) declined to ~79.31, with OAS at 257.48 bps as of May 14"
+    ]
+  },
+  "sentiment_indicators": {
+    "fear_greed_index": {
+      "value": 60,
+      "category": "Greed",
+      "previous": 52,
+      "change": 8,
+      "analysis": "CNN Fear \u0026 Greed rose to 60 (Greed) from 52, indicating increasing optimism. However, with VIX simultaneously spiking and breadth diverging, this reading may reflect retail complacency rather than genuine risk appetite. The VIX-Fear\u0026Greed divergence is a yellow flag."
+    },
+    "vix": {
+      "value": 18.06,
+      "change": 1.35,
+      "change_percent": 6.78,
+      "term_structure": "VIX settled at 18.06 after intraday high of 18.43. The +6.78% single-day spike while markets only fell ~0.6% suggests option traders are pricing in elevated near-term uncertainty. This is inconsistent with the Fear \u0026 Greed 'Greed' reading and points to institutional hedging activity.",
+      "vix3m": "Not available",
+      "vix9d": "Not available"
+    },
+    "put_call_ratio": {
+      "equity_pcr": {
+        "value": 0.51,
+        "date": "2026-05-18",
+        "analysis": "Equity-only put/call ratio at 0.51 remains near historic lows, indicating heavy call buying relative to puts. This is consistent with greed/complacency and supports the Fear \u0026 Greed reading. However, with VIX spiking, the low PCR may also reflect a crowded long position vulnerable to reversal."
+      },
+      "index_pcr": {
+        "value": "Not available",
+        "date": "2026-05-19"
+      },
+      "total_pcr": {
+        "value": "Not available",
+        "date": "2026-05-19"
+      }
+    },
+    "aaii_sentiment": {
+      "bullish": 39.32,
+      "neutral": 24.07,
+      "bearish": 36.61,
+      "bull_bear_spread": 2.71,
+      "date": "2026-05-14",
+      "analysis": "AAII sentiment (week ended May 14) shows bullish rising to 39.32% from 38.31%, bearish rising sharply to 36.61% from 32.95%, and neutral collapsing to 24.07% from 28.74%. Investors are taking sides: the 'undecided' middle is disappearing as both bulls and bears grow conviction. The bull-bear spread is only +2.71%, a very thin margin that suggests the market lacks strong consensus direction."
+    },
+    "naaim_exposure": {
+      "value": 96.67,
+      "median": "Not available",
+      "date": "2026-05-06",
+      "analysis": "NAAIM active manager exposure surged to 96.67% (from 93.79%), indicating active managers are nearly fully invested. This is a contrarian warning signal: when professionals are at maximum long exposure, there's little incremental buying power left. Combined with the low put/call ratio and 'Greed' reading, this creates a clustering of optimism signals."
+    },
+    "sentimentrader": {
+      "smart_money_confidence": "Not available (subscription required)",
+      "dumb_money_confidence": "Not available (subscription required)",
+      "smart_dumb_spread": "Last update 2026-05-15. SentimenTrader notes sentiment has 'fully reversed at new highs' with Smart Money/Dumb Money Confidence spread rapidly cycling from extreme optimism to pessimism while S\u0026P traded near highs.",
+      "date": "2026-05-15"
+    },
+    "nyse_advance_decline": {
+      "value": "Not available (daily NYSE A-D data not publicly reported in real-time)",
+      "cumulative_trend": "S\u0026P 500 cumulative advance-decline line peaked Feb 27, 2026, one month after the S\u0026P 500's Jan 27 peak. Despite the S\u0026P 500 breaking to new closing highs in mid-April 2026, the AD line has NOT confirmed with a breakout of its own. This is a classic bearish breadth divergence.",
+      "analysis": "The breadth divergence is the most important technical story right now. When a cap-weighted index makes new highs but the equal-weight advance-decline line does not, it signals the rally is being carried by a shrinking number of large-cap names. Leadership has been concentrated in technology, financials, and services, while energy, consumer staples, and utilities lag. This is not a healthy foundation for a sustained advance."
+    },
+    "margin_debt": {
+      "value": 1304281000000,
+      "change": 83559000000,
+      "change_percent": 6.85,
+      "date": "2026-04-30",
+      "analysis": "FINRA margin debt rose to $1.304T in April 2026, up 6.85% from March's $1.221T. This is a sharp acceleration and pushes margin debt to near-record levels. High margin debt amplifies both upside and downside: in a correction, forced liquidations can accelerate declines. The rapid month-over-month increase suggests speculative leverage is building."
+    },
+    "high_yield_spread": {
+      "value": 3.04,
+      "unit": "%",
+      "date": "2026-05-14",
+      "hyg_price": 79.31,
+      "hyg_change": -0.29,
+      "hyg_date": "2026-05-19",
+      "analysis": "ICE BofA US High Yield Option-Adjusted Spread at 3.04% as of May 14, 2026. HYG closed at $79.31 on May 19 (-0.29%). The OAS of 257.48 bps is relatively tight by historical standards, indicating credit markets are not pricing significant stress. However, with HYG declining alongside equities, watch for any spread widening above 3.50% as an early risk-off signal."
+    },
+    "contrarian_signals": {
+      "value": "Composite: Neutral-to-Bearish",
+      "components": {
+        "smart_money_dumb_money": "Smart Money/Dumb Money spread has cycled from extreme optimism to pessimism per SentimenTrader (May 15). This rapid reversal while price sits near highs is unusual and has historically preceded weaker 1-3 month returns.",
+        "insider_buying_selling": "Not available",
+        "institutional_flows": "NAAIM at 96.67% exposure (May 6) - near maximum long positioning"
+      },
+      "analysis": "Contrarian composite reads Neutral-to-Bearish. The clustering of greed signals (Fear\u0026Greed 60, NAAIM 96.67%, PCR 0.51) combined with the Smart Money/Dumb Money rapid reversal creates a setup where the crowd is positioned for further gains, but 'smart' positioning has turned cautious. This asymmetry typically favors patience over aggression on the long side."
+    },
+    "alt_index": {
+      "value": "Not available",
+      "analysis": "AltIndex social media sentiment data not available for May 19, 2026"
+    },
+    "fear_greed_tracker": {
+      "value": "Not available",
+      "analysis": "FearGreedTracker proprietary data not available for May 19, 2026"
+    }
+  },
+  "contrarian_analysis": {
+    "current_contrarian_signal": "Moderate Caution",
+    "signal_strength": 6,
+    "signal_direction": "Bearish Divergence Building",
+    "key_observations": [
+      "Breadth divergence: S\u0026P 500 new highs unconfirmed by cumulative AD line since Feb 27",
+      "Optimism cluster: Fear\u0026Greed 60 + NAAIM 96.67% + PCR 0.51 + margin debt spike = crowded long",
+      "Smart Money/Dumb Money spread reversed from extreme optimism to pessimism (SentimenTrader May 15)",
+      "VIX spiked +6.78% despite only modest equity declines, suggesting option traders are hedging",
+      "Russell 2000 underperformed (-1.08% vs -0.6-0.7% for large-caps), confirming risk-off undertone"
+    ],
+    "historical_context": "The current setup mirrors several historical episodes where breadth divergences preceded corrections of 5-10%. The combination of (1) new highs in price without AD line confirmation, (2) extreme manager exposure, and (3) smart money rotating defensive has a reliable track record of resolving lower within 1-3 months. The 2024 February episode showed similar clustering before a ~8% drawdown.",
+    "timeframe": "Contrarian signals typically take 1-4 weeks to resolve. With VIX already twitching and breadth diverging since February, the window for a tactical correction may be narrowing.",
+    "risk_assessment": "Medium-High. The market is not in immediate crash territory, but the reward/risk for new long positions at these levels is poor. The contrarian playbook here is: (1) reduce exposure if over-leveraged, (2) avoid chasing momentum in narrow leaders, (3) consider VIX calls or index puts as portfolio insurance given the low absolute VIX level (18)."
+  },
+  "policy_cross_impact": {
+    "fed_policy": {
+      "current_stance": "Federal Reserve policy remains a key overhang. Recent commentary suggests the Fed is in a data-dependent holding pattern. The market has been pricing in expectations for rate stability, but any hawkish surprise in upcoming Fed communications could trigger volatility given the stretched positioning.",
+      "market_implication": "With NAAIM at 96.67% and margin debt spiking, the market is vulnerable to any Fed pushback on easing expectations. The VIX spike on a modest down day may reflect this latent fear."
+    },
+    "tariff_trade_policy": {
+      "current_stance": "Trade policy uncertainty remains elevated. The 'Liberation Day' sell-off aftermath (referenced in Apr 17 breadth analysis) showed how quickly sentiment can shift on tariff headlines.",
+      "market_implication": "IWM's underperformance (-1.08%) may reflect small-cap sensitivity to trade policy. If tariff rhetoric escalates, the already-weak breadth could deteriorate further, hitting small-caps hardest."
+    },
+    "fiscal_policy": {
+      "current_stance": "Fiscal policy debates continue in Washington. The market appears to be assuming a benign outcome, which is consistent with the greed/optimism clustering.",
+      "market_implication": "Any fiscal hawkishness or debt ceiling friction could disproportionately impact risk assets given current leverage and positioning."
+    },
+    "cross_policy_risk": "The intersection of Fed patience + trade uncertainty + fiscal debates creates a policy risk backdrop that is not fully priced. With sentiment and positioning stretched, the market is effectively betting that all three policy fronts remain benign. This is a concentrated bet with asymmetric downside."
+  },
+  "dashboard": {
+    "overall_sentiment_score": 55,
+    "sentiment_label": "Greed with Caution",
+    "directional_bias": "Neutral-to-Bearish (contrarian view)",
+    "confidence_level": 65,
+    "urgency_level": 5,
+    "risk_reward": "Poor for new longs; attractive for risk reduction/hedging",
+    "key_divergences": [
+      "Fear\u0026Greed (60/Greed) vs VIX (+6.78% spike) = complacency vs fear",
+      "Price new highs (Apr) vs AD Line non-confirmation (Feb peak) = breadth divergence",
+      "Dumb Money optimism vs Smart Money reversal (SentimenTrader) = positioning asymmetry"
+    ],
+    "indicator_summary": [
+      {
+        "indicator": "Fear \u0026 Greed",
+        "value": "60 / Greed",
+        "signal": "Caution",
+        "weight": 15
+      },
+      {
+        "indicator": "VIX",
+        "value": "18.06 (+6.78%)",
+        "signal": "Elevated hedging",
+        "weight": 15
+      },
+      {
+        "indicator": "Put/Call Ratio",
+        "value": "0.51 (very low)",
+        "signal": "Complacency",
+        "weight": 10
+      },
+      {
+        "indicator": "AAII",
+        "value": "Bull-Bear +2.71%",
+        "signal": "Neutral",
+        "weight": 10
+      },
+      {
+        "indicator": "NAAIM",
+        "value": "96.67% (extreme)",
+        "signal": "Contrarian warning",
+        "weight": 10
+      },
+      {
+        "indicator": "SentimenTrader",
+        "value": "Smart/Dumb reversal",
+        "signal": "Caution",
+        "weight": 10
+      },
+      {
+        "indicator": "NYSE A/D",
+        "value": "Non-confirmation",
+        "signal": "Bearish divergence",
+        "weight": 10
+      },
+      {
+        "indicator": "Margin Debt",
+        "value": "$1.304T (+6.85% MoM)",
+        "signal": "Leverage high",
+        "weight": 5
+      },
+      {
+        "indicator": "HY Spread",
+        "value": "3.04% (tight)",
+        "signal": "No stress",
+        "weight": 5
+      },
+      {
+        "indicator": "Contrarian",
+        "value": "Moderate Caution",
+        "signal": "Defensive",
+        "weight": 10
+      }
+    ]
+  },
+  "tomorrow_watch": {
+    "key_levels": [
+      "S\u0026P 500: Support at ~730 (May 19 low 731.53); Resistance at 738-740 (previous highs)",
+      "VIX: A sustained move above 19 would confirm fear is building; below 17 would suggest complacency return",
+      "IWM: Watch 270 as key support; small-caps leading weakness is a risk-off tell",
+      "HYG: Watch $78.50; any breakdown would signal credit stress amplifying equity risk"
+    ],
+    "events_to_watch": [
+      "Fed speaker calendar: any hawkish commentary could stress the stretched positioning",
+      "Earnings season wind-down: with most S\u0026P 500 companies reported, macro/technical factors take over",
+      "Treasury yields: watch 10-year yield direction as a proxy for growth/risk appetite",
+      "Breadth: monitor if AD line can finally confirm the S\u0026P 500 highs, or if divergence deepens"
+    ],
+    "trading_implications": "With a cluster of greed/optimism signals, stretched positioning, and building breadth divergence, the contrarian playbook favors patience over aggression. Consider: (1) trimming winners if over-exposed, (2) avoiding new momentum entries in narrow large-cap leaders, (3) using VIX 18-19 level to add cheap portfolio hedges, (4) watching IWM and HYG as early warning indicators. The 'fear' side of 'fear and greed' is not yet pricing any bad news, which means there is room for surprise."
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "report_date": "2026-05-08",
+  "report_time": "0650",
+  "timestamp": "2026-05-08T06:50:00+08:00",
+  "market_summary": {
+    "spy": {
+      "price": 731.59,
+      "change_pct": -0.47,
+      "volume": 43824240,
+      "fifty_two_week_low": 556.04,
+      "fifty_two_week_high": 736.13,
+      "fifty_two_week_position_pct": 99.2
+    },
+    "qqq": {
+      "price": 489.04,
+      "change_pct": -0.61,
+      "fifty_two_week_low": 384.45,
+      "fifty_two_week_high": 501.64
+    },
+    "dia": {
+      "price": 499.19,
+      "change_pct": -0.18,
+      "fifty_two_week_low": 408.15,
+      "fifty_two_week_high": 505.30
+    },
+    "iwm": {
+      "price": 204.12,
+      "change_pct": -0.29,
+      "fifty_two_week_low": 153.42,
+      "fifty_two_week_high": 233.00
+    },
+    "vix": {
+      "value": 17.39,
+      "change": 0.31,
+      "historical_median": 24,
+      "percentile": 18
+    }
+  },
+  "sentiment_indicators": {
+    "fear_greed_index": {
+      "current": 68.5,
+      "previous": 66.9,
+      "signal": "贪婪",
+      "components": {
+        "market_momentum": "贪婪",
+        "stock_price_strength": "极度贪婪",
+        "stock_price_breadth": "中性偏多",
+        "put_call_ratio": "中性",
+        "market_volatility": "中性",
+        "safe_haven_demand": "中性",
+        "junk_bond_demand": "贪婪"
+      }
+    },
+    "aaii_sentiment": {
+      "bullish_pct": 38.3,
+      "neutral_pct": 28.7,
+      "bearish_pct": 33.0,
+      "bull_bear_spread": 5.3,
+      "previous": {
+        "bullish_pct": 38.1,
+        "neutral_pct": 22.2,
+        "bearish_pct": 39.7
+      },
+      "historical_avg_bullish": 37.5,
+      "signal": "中性偏多"
+    },
+    "naaim_exposure": {
+      "current": 93.79,
+      "previous": 94.15,
+      "three_month_avg": 95.0,
+      "signal": "极度贪婪",
+      "note": "截至4月29日，存在滞后"
+    },
+    "put_call_ratio": {
+      "equity_pcr": 0.51,
+      "total_pcr": 0.67,
+      "previous_equity": 0.57,
+      "previous_total": 0.84,
+      "historical_median": 0.65,
+      "signal": "偏多"
+    },
+    "nyse_advance_decline": {
+      "status": "积极",
+      "signal": "偏多",
+      "note": "NYSE上涨家数多于下跌，但纳斯达克偏弱"
+    },
+    "margin_debt": {
+      "status": "高位",
+      "yoy_change_pct": 8,
+      "signal": "风险",
+      "note": "融资余额处于历史高位区间"
+    },
+    "mutual_fund_cash": {
+      "estimated_pct": 3.5,
+      "historical_median": 5.0,
+      "signal": "偏低"
+    },
+    "high_yield_spread": {
+      "current_bps": 283,
+      "historical_median_bps": 453,
+      "percentile": 18,
+      "monthly_change_bps": -42,
+      "signal": "正常偏低",
+      "regime": "Calm"
+    },
+    "advisor_sentiment": {
+      "bull_bear_ratio": 2.0,
+      "bearish_pct": 25.0,
+      "signal": "偏多"
+    },
+    "investment_grade_spread": {
+      "current_bps": 113,
+      "note": "参考数据"
+    }
+  },
+  "contrarian_analysis": {
+    "overall_score": 65,
+    "smart_dumb_money_diff": -47,
+    "smart_money_confidence": 36,
+    "dumb_money_confidence": 83,
+    "signals": [
+      {
+        "source": "SentimenTrader Smart/Dumb差值",
+        "strength": "极强",
+        "signal": "反向看跌"
+      },
+      {
+        "source": "NAAIM 持仓93.79%",
+        "strength": "强",
+        "signal": "机构满仓=潜在顶部区域"
+      },
+      {
+        "source": "恐惧贪婪指数 68.5",
+        "strength": "中等",
+        "signal": "贪婪但非极端"
+      },
+      {
+        "source": "PCR 0.51",
+        "strength": "中等",
+        "signal": "偏低但未达极端"
+      },
+      {
+        "source": "AAII 净看多 +5.3%",
+        "strength": "中等",
+        "signal": "偏乐观但未极端"
+      },
+      {
+        "source": "VIX 17.39",
+        "strength": "无",
+        "signal": "平静，非极端"
+      }
+    ],
+    "risk_factors": [
+      "散户从看空快速转为看多(看空比例骤降6.7个百分点)",
+      "主动型基金几乎满仓(93.79%)",
+      "期权市场强烈偏多(PCR 0.51)",
+      "聪明钱与散户信心差达47个百分点"
+    ],
+    "key_observations": [
+      "市场处于'贪婪但未疯狂'状态",
+      "SentimenTrader极端分化是最强反向信号",
+      "短期(1-4周)回调概率上升",
+      "但深度调整(>10%)证据尚不充分",
+      "恐惧贪婪指数68.5距离极度贪婪(75+)仍有空间"
+    ]
+  },
+  "policy_cross_impact": {
+    "events": [
+      {
+        "policy": "美联储5月FOMC",
+        "status": "维持3.75%不变",
+        "impact": "偏多",
+        "detail": "鲍威尔强调关税对通胀影响可能是暂时性的，被市场解读为鸽派"
+      },
+      {
+        "policy": "伊朗-以色列局势",
+        "status": "停火但未解决",
+        "impact": "谨慎偏多",
+        "detail": "特朗普政府寻求谈判，油价从高位回落"
+      },
+      {
+        "policy": "Q1 GDP",
+        "status": "2.0%增长",
+        "impact": "偏多",
+        "detail": "企业投资10.4%增长，国内最终销售2.5%"
+      },
+      {
+        "policy": "关税90天暂停",
+        "status": "持续中",
+        "impact": "偏多",
+        "detail": "企业获得喘息期，支撑风险情绪"
+      }
+    ],
+    "upcoming_risks": [
+      "4月非农就业数据(周五)——若强于预期可能强化不降息叙事",
+      "伊朗局势可能再次恶化",
+      "关税谈判90天期限临近"
+    ]
+  },
+  "dashboard": {
+    "overall_sentiment_score": 68,
+    "sentiment_state": "贪婪",
+    "trend_direction": "看多",
+    "contrarian_alert": "⚠️ 中高",
+    "credit_regime": "Calm",
+    "market_breadth": "头重脚轻——大盘强、小盘弱",
+    "key_divergence": "Smart Money(36%) vs Dumb Money(83%)信心极端分化",
+    "composite_signal": "趋势强劲但情绪过热，短期谨慎",
+    "color_code": "#FF9F1C"
+  },
+  "tomorrow_watch": {
+    "key_data": [
+      {
+        "time_et": "8:30",
+        "event": "4月非农就业",
+        "expectation": "+18万",
+        "importance": "极高"
+      },
+      {
+        "time_et": "8:30",
+        "event": "失业率",
+        "expectation": "4.2%",
+        "importance": "高"
+      }
+    ],
+    "technical_levels": {
+      "spy_resistance": 736.13,
+      "spy_support": [725.0, 710.0],
+      "vix_threshold": 22
+    },
+    "strategy_notes": [
+      "短线(1-2周): 获利了结/减仓——情绪过热+极端分化信号",
+      "中线(1-3月): 持有核心仓位——基本面支撑+政策友好",
+      "长线(6-12月): 逢低加仓——历史统计利好+AI趋势"
+    ],
+    "friday_effect": "周五通常有'周末效应'，市场可能提前调整仓位"
+  }
+}

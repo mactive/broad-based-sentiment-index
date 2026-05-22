@@ -1,0 +1,418 @@
+{
+  "report_date": "2026-05-07",
+  "time": "18:49",
+  "timestamp": "2026-05-07T18:49:00+08:00",
+  "market_summary": {
+    "sp500": {
+      "price": 7365.12,
+      "change_percent": 1.46,
+      "vix": 17.39,
+      "notes": "强势反弹，创52周新高，动能强劲"
+    },
+    "nasdaq": {
+      "price": 25838.94,
+      "change_percent": 2.02,
+      "notes": "科技领涨，情绪乐观，半导体引领"
+    },
+    "dow": {
+      "price": 49910.59,
+      "change_percent": 1.24,
+      "notes": "道指稳健，逼近50000关口"
+    },
+    "russell2000": {
+      "price": 2886.77,
+      "change_percent": 1.47,
+      "notes": "小盘补涨，广度改善"
+    }
+  },
+  "sentiment_indicators": {
+    "fear_greed_index": {
+      "value": 68.31,
+      "signal": "贪婪区域",
+      "prev_value": 70,
+      "change": -1.69,
+      "category": "情绪综合",
+      "notes": "从5/6的70微降，但仍处于贪婪区间。Safe Haven Demand和Junk Bond Demand的温和读数限制了极端贪婪的形成"
+    },
+    "vix": {
+      "value": 17.39,
+      "signal": "历史低位",
+      "prev_value": 17.38,
+      "change": 0.01,
+      "category": "波动率/恐慌",
+      "notes": "维持历史低位区间，市场极度漠视风险。5/6大涨但VIX几乎持平，显示无忧型上涨"
+    },
+    "cboe_pcr": {
+      "value": 0.51,
+      "signal": "看涨主导",
+      "prev_value": 0.49,
+      "change": 0.02,
+      "category": "期权情绪",
+      "notes": "PCR处于极低水平(<0.55为贪婪区)，看涨期权远超看跌期权，短期投机情绪过热"
+    },
+    "aaii_sentiment": {
+      "value": "46.0% / 34.4%",
+      "signal": "偏乐观",
+      "prev_value": "38.1% / 39.7%",
+      "change": "+7.9% / -5.3%",
+      "category": "散户情绪(滞后)",
+      "notes": "4/23周数据：散户从4月中恐惧快速转为乐观，Bull-Bear Spread +11.6%，未达+20%极端阈值"
+    },
+    "naaim_exposure": {
+      "value": 93.79,
+      "signal": "极端乐观",
+      "prev_value": 93.79,
+      "change": 0,
+      "category": "机构行为(滞后)",
+      "notes": "主动基金经理敞口维持极端高位93.79%，接近95%警戒线。Deviation 48.61显示机构对趋势偏离容忍度极高"
+    },
+    "nyse_ad_line": {
+      "value": "2.33",
+      "signal": "正向",
+      "prev_value": "1.35",
+      "change": 0.98,
+      "category": "市场广度",
+      "notes": "McClellan Oscillator +43.46，SUMM Index 2281.4，市场广度非常健康"
+    },
+    "hy_credit_spread": {
+      "value": 259,
+      "signal": "收窄",
+      "prev_value": 280,
+      "change": -21,
+      "category": "信用风险",
+      "notes": "HYG OAS 259bps，JNK 251bps，均从高位回落。信用利差收窄支持风险情绪，但仍高于2024年低点"
+    },
+    "margin_debt": {
+      "value": "793.85B",
+      "signal": "高位回落",
+      "prev_value": "826.13B",
+      "change": "-32.28B",
+      "category": "杠杆水平",
+      "notes": "FINRA融资余额3月793.85B，较2月下降32.28B。去杠杆进行中，但绝对值仍处历史高位"
+    },
+    "fund_cash_ratio": {
+      "value": "参考解读",
+      "signal": "-",
+      "prev_value": "-",
+      "change": "-",
+      "category": "机构现金(滞后)",
+      "notes": "共同基金现金比例数据滞后，建议参考ICI月度报告"
+    },
+    "advisor_sentiment": {
+      "value": "参考解读",
+      "signal": "-",
+      "prev_value": "-",
+      "change": "-",
+      "category": "顾问情绪(滞后)",
+      "notes": "投资顾问多空比数据周三更新，当前无最新读数"
+    }
+  },
+  "contrarian_analysis": {
+    "summary": "当前市场情绪处于'贪婪-乐观'区间，但尚未达'极端贪婪'。散户从恐惧快速转为乐观(AAII 46%)，机构极端乐观未变(NAAIM 93.79)，波动率极低(VIX 17.39)，期权投机过热(PCR 0.51)。市场广度健康(AD 2.33)为趋势延续提供支撑。",
+    "key_signals": [
+      {
+        "indicator": "NAAIM敞口指数",
+        "reading": "93.79",
+        "extreme_level": "95",
+        "distance_to_extreme": "1.3%",
+        "signal": "强反向信号",
+        "notes": "机构接近满仓，历史上此类读数后1-3个月回调概率增加"
+      },
+      {
+        "indicator": "AAII Bull-Bear",
+        "reading": "+11.6%",
+        "extreme_level": "+20%",
+        "distance_to_extreme": "42%",
+        "signal": "弱反向信号",
+        "notes": "散户乐观但未达极端，不触发明确反向卖出"
+      },
+      {
+        "indicator": "VIX",
+        "reading": "17.39",
+        "extreme_level": "15",
+        "distance_to_extreme": "16%",
+        "signal": "中性",
+        "notes": "波动率历史低位，警惕低波动陷阱，但未达极端"
+      },
+      {
+        "indicator": "CBOE PCR",
+        "reading": "0.51",
+        "extreme_level": "0.55",
+        "distance_to_extreme": "7%",
+        "signal": "中等反向",
+        "notes": "接近贪婪阈值，等待PCR<0.50再触发卖出信号"
+      },
+      {
+        "indicator": "高收益债利差",
+        "reading": "259bps",
+        "extreme_level": "250bps",
+        "distance_to_extreme": "4%",
+        "signal": "中性",
+        "notes": "利差从高位回落但仍处舒适区，信用市场无警报"
+      }
+    ],
+    "professional_systems": [
+      {
+        "name": "SentimenTrader Smart Money",
+        "signal": "偏乐观",
+        "reading": "随反弹回升",
+        "notes": "聪明资金信心指数随反弹回升，未达极端"
+      },
+      {
+        "name": "AltIndex",
+        "signal": "中性偏乐观",
+        "reading": "-",
+        "notes": "Reddit等社交平台情绪从4月恐慌中恢复，散户讨论热度回升"
+      },
+      {
+        "name": "ContrarianSignals",
+        "signal": "中性",
+        "reading": "-",
+        "notes": "无极端情绪信号，系统保持观望"
+      },
+      {
+        "name": "FearGreedTracker",
+        "signal": "贪婪区域",
+        "reading": "68.31",
+        "notes": "从恐惧快速穿越至贪婪，历史上此类快速转换后常有短期整固"
+      }
+    ],
+    "strategy_recommendations": [
+      {
+        "strategy": "贪婪-恐惧择时",
+        "signal": "中等贪婪",
+        "recommendation": "维持中性仓位，逐步获利了结",
+        "priority": "高"
+      },
+      {
+        "strategy": "VIX择时",
+        "signal": "历史低位",
+        "recommendation": "警惕波动率突变，可考虑配置VIX CALL",
+        "priority": "高"
+      },
+      {
+        "strategy": "AAII反向",
+        "signal": "未达极端",
+        "recommendation": "等待Bull-Bear突破+20%再触发反向卖出",
+        "priority": "低"
+      },
+      {
+        "strategy": "NAAIM反向",
+        "signal": "极端乐观",
+        "recommendation": "警惕机构拥挤，保留20-30%现金",
+        "priority": "高"
+      },
+      {
+        "strategy": "PCR择时",
+        "signal": "接近极端",
+        "recommendation": "等待PCR<0.50或>0.80再行动",
+        "priority": "中"
+      }
+    ]
+  },
+  "policy_cross_impact": {
+    "summary": "美联储5月7日利率决议即将公布，市场普遍预期维持不变。关税政策不确定性持续，但市场已部分计价。政策环境对情绪的影响从4月的强烈负面转为中性。",
+    "events": [
+      {
+        "date": "2026-05-07",
+        "event": "美联储利率决议，预期维持不变",
+        "source": "FOMC",
+        "sentiment_impact": "中性",
+        "market_reaction": "关注鲍威尔对通胀和降息的措辞"
+      },
+      {
+        "date": "近期",
+        "event": "特朗普关税政策持续发酵",
+        "source": "白宫",
+        "sentiment_impact": "负面但已计价",
+        "market_reaction": "小企业信心受压，但大盘已部分消化"
+      }
+    ],
+    "policy_dashboard": [
+      {
+        "area": "美联储货币政策",
+        "current_stance": "维持利率不变(预期)",
+        "sentiment_trend": "中性",
+        "market_implication": "降息预期降温，但利率已处限制性区间"
+      },
+      {
+        "area": "特朗普贸易政策",
+        "current_stance": "关税持续",
+        "sentiment_trend": "负面但已计价",
+        "market_implication": "不确定性压制capex，但Q1财报超预期"
+      },
+      {
+        "area": "财政政策",
+        "current_stance": "赤字扩大",
+        "sentiment_trend": "中性",
+        "market_implication": "长期国债供给压力，但短期未冲击市场"
+      },
+      {
+        "area": "监管环境",
+        "current_stance": "对大型科技趋严",
+        "sentiment_trend": "轻微负面",
+        "market_implication": "科技板块估值承压，但未扭转趋势"
+      }
+    ]
+  },
+  "dashboard": {
+    "overall_sentiment": "贪婪-乐观",
+    "fear_greed_score": 68.31,
+    "contrarian_opportunity_score": 45,
+    "policy_risk_score": 40,
+    "composite_signal": "中性偏多",
+    "key_metrics_table": [
+      {
+        "indicator": "恐惧贪婪指数",
+        "value": "68.31",
+        "status": "贪婪区域",
+        "trend": "→",
+        "alert": "中等"
+      },
+      {
+        "indicator": "VIX",
+        "value": "17.39",
+        "status": "历史低位",
+        "trend": "→",
+        "alert": "中等"
+      },
+      {
+        "indicator": "CBOE PCR",
+        "value": "0.51",
+        "status": "看涨主导",
+        "trend": "↑",
+        "alert": "中等"
+      },
+      {
+        "indicator": "AAII 散户",
+        "value": "46.0% bullish",
+        "status": "偏乐观",
+        "trend": "↑",
+        "alert": "低"
+      },
+      {
+        "indicator": "NAAIM 机构",
+        "value": "93.79",
+        "status": "极端乐观",
+        "trend": "→",
+        "alert": "高"
+      },
+      {
+        "indicator": "NYSE 涨跌线",
+        "value": "2.33",
+        "status": "正向",
+        "trend": "↑",
+        "alert": "低"
+      },
+      {
+        "indicator": "高收益债利差",
+        "value": "259bps",
+        "status": "收窄",
+        "trend": "↓",
+        "alert": "低"
+      },
+      {
+        "indicator": "融资债务",
+        "value": "793.85B",
+        "status": "高位回落",
+        "trend": "↓",
+        "alert": "中等"
+      },
+      {
+        "indicator": "共同基金现金比",
+        "value": "滞后",
+        "status": "参考解读",
+        "trend": "-",
+        "alert": "低"
+      },
+      {
+        "indicator": "投资顾问多空比",
+        "value": "滞后",
+        "status": "参考解读",
+        "trend": "-",
+        "alert": "低"
+      }
+    ],
+    "source_citations": {
+      "fear_greed": "CNN Business Fear & Greed Index",
+      "vix": "CBOE Volatility Index",
+      "cboe_pcr": "CBOE Equity Put/Call Ratio",
+      "aaii": "American Association of Individual Investors (AAII) Sentiment Survey, 4/23/2026",
+      "naaim": "NAAIM Exposure Index, 4/22/2026",
+      "nyse_ad": "NYSE McClellan Oscillator, 5/5/2026",
+      "hy_spread": "ICE BofA US High Yield Option-Adjusted Spread, 5/5/2026",
+      "margin_debt": "FINRA Margin Statistics, 3/2026",
+      "fund_cash": "Investment Company Institute (ICI) - 月度滞后数据",
+      "advisor_sentiment": "Investors Intelligence Advisor Sentiment - 周三更新"
+    }
+  },
+  "tomorrow_watch": {
+    "key_events": [
+      {
+        "time_beijing": "20:30",
+        "event": "美国初请失业金数据",
+        "expected_impact": "劳动力市场韧性验证",
+        "sentiment_bias": "若数据恶化将逆转乐观情绪"
+      },
+      {
+        "time_beijing": "22:00",
+        "event": "美联储官员讲话",
+        "expected_impact": "货币政策预期微调",
+        "sentiment_bias": "关注对通胀和降息的措辞"
+      }
+    ],
+    "key_levels": [
+      {
+        "asset": "SPY",
+        "level": 740,
+        "trigger": "突破确认",
+        "strategy": "追涨需谨慎，NAAIM极端乐观时突破可靠性下降"
+      },
+      {
+        "asset": "SPY",
+        "level": 720,
+        "trigger": "跌破警戒",
+        "strategy": "减仓信号，可能开启短期回调"
+      },
+      {
+        "asset": "VIX",
+        "level": 30,
+        "trigger": "回升确认",
+        "strategy": "避险信号，增配防御资产"
+      },
+      {
+        "asset": "VIX",
+        "level": 20,
+        "trigger": "跌破低位",
+        "strategy": "风险情绪确认，可考虑增配"
+      }
+    ],
+    "watchlist": [
+      "NAAIM下周更新——若仍维持93+高位，机构拥挤风险进一步累积",
+      "AAII本周更新（周四）——若散户看涨突破50%，将触发反向卖出信号",
+      "初请失业金数据——劳动力市场是当前乐观叙事的关键支撑",
+      "高收益债利差——若突破300bps，信用市场警报响起",
+      "美联储利率决议措辞——关注对通胀和就业的描述"
+    ]
+  },
+  "metadata": {
+    "report_version": "2.0",
+    "template_reference": "market_sentiment_2026-04-23_evening.json",
+    "data_sources": [
+      "CNN Fear & Greed Index",
+      "CBOE (VIX, PCR)",
+      "AAII Sentiment Survey",
+      "NAAIM Exposure Index",
+      "NYSE Market Data (McClellan Oscillator)",
+      "ICE BofA (High Yield Spreads)",
+      "FINRA (Margin Statistics)",
+      "SentimenTrader",
+      "AltIndex",
+      "ContrarianSignals",
+      "FearGreedTracker"
+    ],
+    "generation_timestamp": "2026-05-07T18:49:00+08:00",
+    "us_market_date": "2026-05-06",
+    "disclaimer": "本报告仅供研究参考，不构成投资建议。逆向投资需结合个人风险承受能力。"
+  }
+}

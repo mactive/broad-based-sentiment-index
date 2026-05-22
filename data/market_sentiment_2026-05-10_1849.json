@@ -1,0 +1,151 @@
+{
+  "report_date": "2026-05-10",
+  "report_time": "18:49",
+  "timestamp": "2026-05-10T18:49:00+08:00",
+  "report_type": "evening",
+  "market_summary": {
+    "spx_current_price": 7398.93,
+    "spx_daily_change": "+61.82",
+    "spx_intraday_high": 7401.87,
+    "spx_intraday_low": 7350.21,
+    "spx_volume": "47.8亿",
+    "key_events": [
+      "周日休市，数据基于周五(05-09)收盘。S&P 500报7398.93点(+0.84%)，纳指大涨1.71%",
+      "道指平收(+0.02%)，罗素2000小盘股+0.76%，大盘科技股主导",
+      "AMD财报超预期(+19%)，Nvidia与Corning合作涨5.7%，半导体板块强势",
+      "VIX降至17.19历史低位，市场恐慌情绪基本消退",
+      "高收益债利差收窄至约262bps，信用环境宽松",
+      "美伊潜在和谈进展推动风险偏好回升，油价回落",
+      "NAAIM敞口96.67创历史极端，主动基金经理近乎全仓"
+    ]
+  },
+  "sentiment_indicators": {
+    "fear_greed_index": {
+      "value": 67,
+      "category": "贪婪",
+      "previous": 68,
+      "change": -1,
+      "interpretation": "较周五微降1点但仍处贪婪区间，市场追涨情绪保持高涨"
+    },
+    "vix": {
+      "current_value": 17.19,
+      "previous_close": 17.08,
+      "change": 0.11,
+      "historical_percentile": "第18百分位",
+      "interpretation": "VIX持续低位运行，低于20恐惧阈值，市场恐慌情绪基本消退"
+    },
+    "cboe_put_call_ratio": {
+      "current_value": 0.53,
+      "previous": 0.71,
+      "change": -0.18,
+      "interpretation": "PCR从0.71降至0.53，看跌保护需求大幅下降，市场极度乐观"
+    },
+    "aaii_sentiment": {
+      "bullish": 38.3,
+      "bearish": 28.7,
+      "neutral": 33.0,
+      "bull_bear_spread": 9.6,
+      "previous_bullish": 40.2,
+      "previous_bearish": 27.5,
+      "interpretation": "散户情绪小幅回落，但看多者仍高于看空者近10个百分点。牛市差值从12.7收窄至9.6，散户热情略有降温但仍偏多"
+    },
+    "iib_sentiment": {
+      "bulls": 52.7,
+      "bears": 47.3,
+      "bull_bear_spread": 5.36,
+      "interpretation": "投资顾问看多比例略占上风但优势收窄，从+6.87%降至+5.36%，专业顾问情绪仍偏多但边际降温"
+    },
+    "naaim_exposure": {
+      "current_value": 96.67,
+      "previous": 93.79,
+      "change": 2.88,
+      "interpretation": "主动基金经理敞口从93.79%升至96.67%，创历史极端高位，近乎全仓操作。这是强烈的逆向警示信号"
+    },
+    "nyse_advance_decline": {
+      "value": 40.0,
+      "status": "偏弱",
+      "previous": 35.0,
+      "change": 5.0,
+      "interpretation": "S&P 500创新高但涨跌线未确认，市场广度存在隐忧。约40%个股参与上涨，资金集中于少数科技股"
+    },
+    "margin_debt_trend": {
+      "trend": "flat",
+      "previous_month": "持平",
+      "interpretation": "3月FINRA数据尚未更新，近期杠杆水平维持平稳。需警惕后续高位杠杆收缩对流动性的冲击"
+    },
+    "high_yield_spread": {
+      "current_value": 262.0,
+      "unit": "bps",
+      "previous": 275.0,
+      "change": -13.0,
+      "interpretation": "高收益债利差从275收窄至262bps，信用环境宽松，风险偏好回升"
+    },
+    "mutual_fund_cash": {
+      "current_value": 1.8,
+      "unit": "%",
+      "previous": 1.8,
+      "status": "极低",
+      "interpretation": "现金比例维持1.8%历史极低水平，机构弹药接近耗尽。历史上现金比例低于2%往往伴随市场短期见顶风险"
+    },
+    "fund_manager_position": {
+      "current_value": "87.5%",
+      "status": "偏高",
+      "change": "+1.2%",
+      "interpretation": "基金经理股票仓位维持高位，但边际小幅加仓动力减弱。极端高配仓位限制后续买盘空间"
+    }
+  },
+  "contrarian_analysis": {
+    "extreme_fear_opportunities": [
+      "NYSE涨跌线与指数新高出现显著背离，历史上此类背离后3-6个月内平均回调8-12%",
+      "散户牛市差值从+12.7%收窄至+9.6%，虽仍偏多但边际降温，尚未达到历史极值（>30%为强风险区）",
+      "共同基金现金1.8%处于历史低位，一旦市场转向将缺乏承接资金"
+    ],
+    "extreme_greed_cautions": [
+      "NAAIM敞口96.67创历史极端，主动基金经理近乎全仓，这是教科书级的逆向顶部信号",
+      "FearGreedTracker 67分连续处于贪婪区间，市场追涨动能可能接近短期饱和",
+      "AAII看多38.3%与历史牛市极值45%+仍有距离，但已处偏高水平",
+      "市场广度严重不足：仅约40%个股参与上涨，科技巨头贡献指数大部分涨幅",
+      "VIX 17.19与指数高位并存，波动率未配合新高，显示投资者过度自满"
+    ],
+    "divergences": [
+      "S&P 500价格新高 vs NYSE涨跌线未确认——经典顶背离信号",
+      "VIX低位（~17）vs 指数高位——波动率未配合新高，显示投资者过度自满",
+      "高收益债利差收窄 vs 地缘政治风险——信用市场与宏观风险定价存在脱节",
+      "NAAIM极端敞口（96.67）vs 散户情绪边际降温——聪明钱与散户出现分歧"
+    ]
+  },
+  "policy_cross_impact": {
+    "current_policy_events": [
+      "特朗普政府推进关税替代方案：USTR启动14国+欧盟'过剩产能'听证",
+      "美伊潜在和谈：国防部长Hegseth称停火仍有效，油价回落",
+      "美联储Goolsbee：AI驱动生产力增长可能使经济过热",
+      "加密货币Clarity Act立法进展：Polymarket预测2026年通过概率超60%",
+      "SpaceX IPO传闻提振科技板块情绪"
+    ],
+    "policy_market_correlation": "政策面多空交织。关税推进构成中期逆风，但AI产业景气度与地缘缓和提供短期支撑。美联储对'过热'的警告可能限制鸽派预期。",
+    "policy_sentiment_score": 52
+  },
+  "dashboard": {
+    "next_day_forecast": {
+      "direction": "高位震荡",
+      "confidence": "中等偏低",
+      "key_factors": [
+        "周一美股早盘观察科技股是否出现获利回吐",
+        "S&P 500创新高但广度不足，缺乏广泛参与度的突破往往脆弱",
+        "NAAIM极端敞口96.67为强逆向信号，需警惕高位回调",
+        "周一无重大宏观事件，技术形态主导"
+      ]
+    },
+    "overall_market_status": "强弩之末的乐观",
+    "risk_reward_assessment": "风险收益比趋于不利",
+    "contrarian_signal_strength": "强（NAAIM极端值+广度背离）"
+  },
+  "tomorrow_watch": [
+    "周一美股早盘观察科技股是否出现获利回吐",
+    "NYSE涨跌线能否随指数一起走高以确认广度改善",
+    "VIX是否从低位反弹（>20）作为风险预警",
+    "AAII周三公布最新一周数据，关注散户情绪是否继续降温",
+    "高收益债利差是否持续收窄或逆转",
+    "特朗普关税听证进展及伊朗局势后续"
+  ]
+}

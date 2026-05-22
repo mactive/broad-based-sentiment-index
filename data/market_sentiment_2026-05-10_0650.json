@@ -1,0 +1,137 @@
+{
+  "report_date": "2026-05-10",
+  "time": "06:50",
+  "timestamp": "2026-05-10T06:50:00",
+  "market_summary": {
+    "major_indices": {
+      "SPY": {
+        "price": 736.76,
+        "change": 4.47,
+        "change_pct": "+0.61%",
+        "volume": "49.3M",
+        "timestamp": "2026-05-09T16:00:00-04:00"
+      },
+      "QQQ": {
+        "price": 721.08,
+        "change": 9.88,
+        "change_pct": "+1.39%",
+        "volume": "41.1M",
+        "timestamp": "2026-05-09T16:00:00-04:00"
+      },
+      "DIA": {
+        "price": 504.96,
+        "change": 8.84,
+        "change_pct": "+1.78%",
+        "volume": "3.6M",
+        "timestamp": "2026-05-09T16:00:00-04:00"
+      },
+      "IWM": {
+        "price": 284.93,
+        "change": 0.77,
+        "change_pct": "+0.27%",
+        "volume": "20.6M",
+        "timestamp": "2026-05-09T16:00:00-04:00"
+      }
+    },
+    "vix": {
+      "current": 17.19,
+      "change": 0.11,
+      "change_pct": "+0.64%",
+      "interpretation": "历史低位，市场恐慌情绪极低",
+      "timestamp": "2026-05-09T16:00:00-04:00"
+    },
+    "market_breadth": {
+      "nyse_advances": 1589,
+      "nyse_declines": 1138,
+      "nyse_ratio": "1.40:1",
+      "nasdaq_advances": "N/A",
+      "nasdaq_declines": "N/A",
+      "nasdaq_ratio": "N/A"
+    }
+  },
+  "sentiment_indicators": {
+    "fear_greed_index": {
+      "current_value": 67,
+      "previous": 61,
+      "change": "+6",
+      "signal": "Greed → Greed (贪婪情绪升温)",
+      "source": "FearGreedMeter (composite)",
+      "url": "https://feargreedmeter.com/fear-and-greed-index"
+    },
+    "put_call_ratio": {
+      "current_value": 0.53,
+      "previous": "N/A",
+      "change": "N/A",
+      "signal": "中性偏低，期权市场乐观情绪占优",
+      "source": "CBOE",
+      "url": "https://ycharts.com/indicators/cboe_equity_put_call_ratio"
+    },
+    "aaii_sentiment": {
+      "bullish": 42.6,
+      "bearish": 37.2,
+      "neutral": 20.2,
+      "bull_bear_spread": 5.36,
+      "signal": "中性偏乐观，散户情绪温和看涨",
+      "source": "AAII",
+      "url": "https://www.aaii.com/sentiment-survey"
+    },
+    "naaim_exposure": {
+      "current_value": 96.67,
+      "previous": "N/A",
+      "change": "N/A",
+      "signal": "极度乐观，主动基金经理几乎全仓",
+      "source": "NAAIM",
+      "url": "https://www.naaim.org/naaim-exposure-index/"
+    },
+    "nyse_advance_decline": {
+      "current_value": 2294.889,
+      "previous": 2279.966,
+      "change": "+14.923",
+      "signal": "McClellan Summation Index持续上升，广度健康",
+      "source": "McClellan Oscillator",
+      "url": "https://www.mcoscillator.com/"
+    },
+    "margin_debt": {
+      "current_value": 1220,
+      "previous": 1252,
+      "change": "-2.6%",
+      "signal": "两连降，杠杆水平边际收缩",
+      "source": "FINRA",
+      "url": "https://www.finra.org/investors/insights/margin-statistics"
+    },
+    "high_yield_spread": {
+      "current_value": 262,
+      "previous": 258,
+      "change": "+4 bps",
+      "signal": "利差处于历史低位，风险偏好极强",
+      "source": "ICE BofA / iShares HYG",
+      "url": "https://www.ishares.com/us/products/239565/ishares-iboxx-high-yield-corporate-bond-etf"
+    },
+    "investment_advisors": {
+      "bull_bear_ratio": 2.4,
+      "bullish_pct": 50.0,
+      "bearish_pct": 21.1,
+      "signal": "投资顾问极度乐观，newsletters看多人占比过高",
+      "source": "Investors Intelligence / MarketEdge",
+      "url": "https://www.mcoscillator.com/learn/market-interpretation/ii_bull_bear_ratio/"
+    }
+  },
+  "contrarian_analysis": {
+    "fear_and_greed_assessment": "FearGreed读数67处于Greed区间，距Extreme Greed(75)仅8点。7项子指标中：Market Momentum与Stock Price Breadth均呈强 positivity，Safe Haven Demand显示Stocks outperforming Bonds，Junk Bond Demand与Put/Call Ratio均指向风险偏好高企。综合判断：情绪处于贪婪升温阶段，但未达极端。",
+    "vix_analysis": "VIX 17.19处于历史低位，1个月变化-18.30%，周五日内波动区间16.82-17.53。低VIX本身不是卖出信号，但持续低于20意味着市场对下行风险定价不足。结合NAAIM 96.67与II Ratio 2.4，波动率与仓位出现经典顶背离结构。",
+    "smart_money_dumb_money": "AAII Bull-Bear Spread 5.36%显示散户温和乐观，未达极端。NAAIM 96.67显示机构几乎满仓，构成强烈反向信号。II Bull-Bear Ratio 2.4(5/1数据)亦处于历史高位。SentimenTrader未更新具体读数，但前期Smart Money/Dumb Money分化模式(5/8报告)仍在持续。ContrarianSignals/AltIndex等专业系统读数受限，但综合PCR 0.53与融资债务两连降，Smart Money整体呈谨慎态度。",
+    "summary": "情绪指标呈现典型顶背离：指数新高(周五S&P500约7399)+VIX新低+NAAIM极端高+II Ratio高位，但融资债务连续两个月下降、AAII仅温和乐观。广度指标(McClellan +14.9)尚未恶化。Contrarian综合评分：中度逆向警示，非极端。"
+  },
+  "policy_cross_impact": {
+    "trump_policy": "特朗普本周密集出招：拟对欧盟征收50%关税(7月9日生效)，对好莱坞进口电影50%关税，威胁对未达成贸易协议国家加征更高关税。同时与中国在瑞士进行高层贸易谈判，试图取消145%关税。政策不确定性极高，但市场似乎已price in部分乐观预期(谈判进展)。",
+    "fed_policy": "5月7日FOMC维持利率不变(4.25%-4.50%)，鲍威尔重申关税影响可能transitory，暗示不急于降息。市场定价6月不降息概率高，9月首次降息概率约60%。鸽派暂停叠加关税谈判乐观预期，支撑风险偏好。",
+    "trade_war": "中美瑞士谈判被视为关键转折点。若达成协议取消部分关税，将显著提振市场情绪。但特朗普对欧盟50%关税威胁显示贸易战并未结束，只是战场转移。短期风险：谈判破裂或欧盟反制。",
+    "economic_data": "4月非农新增23.8万超预期，失业率4.2%。4月ISM Services PMI 52.7超预期。经济数据韧性支撑软着陆叙事，但也意味着美联储有更大空间维持利率不变。GDP Now(Q2)约+2.3%，经济尚未显现明显下行压力。"
+  },
+  "dashboard": {
+    "overall_sentiment": "贪婪 (Greed)",
+    "contrarian_signal": "中度逆向警示：情绪过热，短期谨慎",
+    "risk_level": "中等偏高"
+  },
+  "tomorrow_watch": "周一重点关注：中美瑞士谈判进展、以色列-伊朗局势升级风险、欧盟对50%关税威胁的回应。技术面上，S&P 500 前高 7398 是否确认突破，以及NYSE涨跌线能否继续确认。情绪面关键阈值：FearGreed 75(极端贪婪)、VIX 15(极度自满)、NAAIM 98(历史极值)。"
+}

@@ -1,0 +1,166 @@
+{
+  "report_date": "2026-05-20",
+  "report_time": "18:49 CST",
+  "data_timestamp": "2026-05-20T20:00:00Z",
+  "market_summary": {
+    "SPY": {
+      "price": 742.45,
+      "change_pct": 1.02,
+      "note": "S&P 500 ETF, 突破历史新高区域"
+    },
+    "QQQ": {
+      "price": 713.15,
+      "change_pct": 1.54,
+      "note": "Nasdaq 100 ETF, 科技股领涨"
+    },
+    "DIA": {
+      "price": 500.24,
+      "change_pct": 1.31,
+      "note": "Dow 30 ETF, 道指突破50000点"
+    },
+    "IWM": {
+      "price": 279.87,
+      "change_pct": 2.56,
+      "note": "Russell 2000 ETF, 小盘股表现强劲"
+    }
+  },
+  "sentiment_indicators": {
+    "fear_greed_index": {
+      "source": "CNN / FearGreedTracker / AltIndex综合",
+      "current": 61,
+      "classification": "贪婪 (Greed)",
+      "trend_vs_last_week": "+3 点 (从58上升至61)",
+      "key_drivers": [
+        "S&P 500突破4月15日新高",
+        "科技股(NASDAQ +1.54%)领涨",
+        "小盘股(Russell 2000 +2.56%)强势反弹",
+        "VIX维持低位17.35，恐慌情绪不足"
+      ]
+    },
+    "vix": {
+      "source": "CBOE",
+      "current": 17.35,
+      "change_pct": -0.52,
+      "interpretation": "恐慌情绪维持低位，市场波动性低",
+      "percentile_rank": "低分位 (近一年低位区间)"
+    },
+    "cboe_pcr": {
+      "source": "CBOE Equity Put/Call Ratio",
+      "current": 0.53,
+      "previous": 0.49,
+      "trend": "小幅回升但仍低于中性水平(0.75)",
+      "interpretation": "看涨期权活跃，投机情绪偏乐观"
+    },
+    "aaii": {
+      "source": "AAII Sentiment Survey (截至2026-05-15)",
+      "bullish_pct": 39.3,
+      "neutral_pct": 24.1,
+      "bearish_pct": 36.6,
+      "bull_bear_spread": 2.7,
+      "interpretation": "散户情绪基本平衡，略偏乐观但不及历史极端水平"
+    },
+    "naaim": {
+      "source": "NAAIM Exposure Index (截至2026-04-30)",
+      "current": 94.15,
+      "interpretation": "主动基金经理股票配置极高，接近历史高位",
+      "warning_flag": "🚨 极端暴露预警 - 历史上此水平常伴随短期回调"
+    },
+    "nyse_ad_line": {
+      "source": "NYSE Advance-Decline Line / Fidelity",
+      "trend": "上升",
+      "interpretation": "市场广度 bullish，上涨股票数量多于下跌",
+      "divergence_alert": "S&P 500 advance-decline line peaked Feb 27, price broke out Apr 15但A-D line尚未确认突破"
+    },
+    "margin_debt": {
+      "source": "FINRA (截至2026-03-31)",
+      "current_trillion": 1.221,
+      "mom_change_pct": -2.58,
+      "yoy_change_pct": 38.69,
+      "interpretation": "融资余额环比下降，但同比仍处高位，杠杆水平偏高"
+    },
+    "high_yield_spread": {
+      "source": "FRED BAMLH0A0HYM2 (截至2026-05-15)",
+      "current_bps": 352,
+      "interpretation": "高收益债利差352基点，低于400bps警戒线，信用风险可控",
+      "trend": "credit spreads below 400 basis points"
+    }
+  },
+  "contrarian_analysis": {
+    "smart_vs_dumb_money": {
+      "source": "SentimenTrader",
+      "smart_money_confidence": 43,
+      "dumb_money_confidence": 54,
+      "gap": "Dumb Money > Smart Money by 11 points",
+      "interpretation": "聪明资金相对谨慎，散户更乐观 - 典型逆向信号"
+    },
+    "contrarian_signals_index": {
+      "source": "ContrarianSignals",
+      "current": 55.6,
+      "classification": "中性偏多",
+      "interpretation": "中等配置建议，未达极端水平"
+    },
+    "mm_fear_greed": {
+      "source": "MacroMicro",
+      "current": 48.26,
+      "previous": 54.97,
+      "trend": "下降",
+      "interpretation": "机构级情绪指标从贪婪区间回落到中性，与CNN指数形成分化"
+    },
+    "naaim_extreme_warning": {
+      "alert_level": "HIGH",
+      "current": 94.15,
+      "historical_context": "NAAIM处于历史极端高位(>90%)",
+      "typical_outcome": "过去此水平后2-4周内常出现3-8%的短期回调",
+      "date": "2026-04-30"
+    }
+  },
+  "policy_cross_impact": {
+    "trump_policy_tracker": {
+      "recent_developments": [
+        "中美贸易谈判进展积极，关税担忧缓和",
+        "美国与主要贸易伙伴达成框架性协议"
+      ],
+      "market_sentiment_impact": "正面 - 贸易风险溢价下降"
+    },
+    "fed_policy": {
+      "current_stance": "维持利率不变，关注通胀数据",
+      "market_expectation": "2026年下半年可能启动降息周期",
+      "impact": "鸽派预期支撑风险偏好"
+    }
+  },
+  "dashboard": {
+    "overall_sentiment": "中性偏贪婪 (61/100)",
+    "bullish_indicators": [
+      "S&P 500突破历史新高",
+      "NASDAQ领涨(+1.54%)，科技股强势",
+      "Russell 2000大涨(+2.56%)，小盘股参与度高",
+      "NYSE A-D Line trending higher，市场广度健康",
+      "高收益债利差352bps，信用风险可控"
+    ],
+    "bearish_indicators": [
+      "NAAIM 94.15% 极端暴露 - 历史高位",
+      "VIX 17.35 过低，恐慌情绪不足可能预示自满",
+      "融资债务同比+38.69%，杠杆水平偏高",
+      "CNN Fear & Greed 61进入贪婪区间",
+      "S&P 500 A-D Line尚未确认价格突破"
+    ],
+    "contrarian_opportunity": "NAAIM极端高位+散户乐观+低VIX = 短期回调风险积聚，但中期趋势仍偏多"
+  },
+  "tomorrow_watch": {
+    "key_events": [
+      "美联储FOMC会议纪要发布",
+      "初请失业金数据",
+      "费城联储制造业指数"
+    ],
+    "technical_levels": {
+      "SPY_support": 735.00,
+      "SPY_resistance": 745.00,
+      "VIX_watch": "若VIX突破20，警惕波动性上升"
+    },
+    "sentiment_watch": [
+      "观察NAAIM下周是否更新(当前数据滞后至4/30)",
+      "监控AAII下周三更新",
+      "注意若Fear & Greed突破70进入极度贪婪区间"
+    ]
+  }
+}
