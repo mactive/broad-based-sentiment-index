@@ -1,0 +1,189 @@
+{
+  "report_date": "2026-05-27",
+  "report_time": "22:50 UTC / 06:50+1 CST",
+  "data_timestamp": "2026-05-27T16:00:00Z",
+  "market_summary": {
+    "SPY": {"price": 750.46, "change_pct": 0.65, "note": "S&P 500 ETF, 收涨0.65%至750.46"},
+    "QQQ": {"price": 729.56, "change_pct": 1.67, "note": "Nasdaq 100 ETF, 科技股领涨, +1.67%"},
+    "DIA": {"price": 506.90, "change_pct": 0.15, "note": "Dow 30 ETF, 微涨0.15%"},
+    "IWM": {"price": 290.36, "change_pct": 1.84, "note": "Russell 2000 ETF, 小盘股强势反弹, +1.84%领涨四大指数"}
+  },
+  "sentiment_indicators": {
+    "fear_greed_index": {
+      "source": "CNN / AltIndex / ContrarianSignals综合",
+      "current": 58,
+      "last_week": 58,
+      "classification": "中性偏贪婪",
+      "classification_en": "Neutral leaning Greed",
+      "direction": "flat",
+      "note": "CNN最新可用读数58.57(5/22), 较前期维持中性偏贪婪区间"
+    },
+    "vix": {
+      "current": 16.45,
+      "previous_close": 16.70,
+      "week_ago": 17.58,
+      "trend": "declining",
+      "note": "VIX连续5日走低: 18.17→17.44→16.76→16.70→16.45, 恐惧指标持续消退, 隐含波动率压缩"
+    },
+    "put_call_ratio": {
+      "equity_only": null,
+      "index": null,
+      "total": null,
+      "signal": "数据待补充",
+      "note": "CBOE PCR数据搜索受限, 建议直接访问cboe.com获取最新读数"
+    },
+    "nyse_breadth": {
+      "advance_decline_line": null,
+      "new_highs_new_lows": null,
+      "mcclellan_oscillator": null,
+      "signal": "数据待补充",
+      "note": "SentimenTrader显示SmCap/S&P 500比率排名在21个交易日内从95+暴跌至15以下, 宽度极度恶化; McClellan Oscillator数值待补充"
+    },
+    "margin_debt": {
+      "current_billion": null,
+      "yoy_change": null,
+      "signal": "数据待补充",
+      "note": "FINRA数据显示2026年4月margin debt增长6.8%, 4月水平为-$871B(此口径为free credit cash accounts, margin debt本身具体数值待确认)"
+    },
+    "aaii": {
+      "bullish_pct": 34.8,
+      "bearish_pct": 38.5,
+      "neutral_pct": 26.7,
+      "bull_bear_spread": -3.7,
+      "8wma_bullish": 35.2,
+      "signal": "逆向看涨信号",
+      "note": "Bullish 34.8%低于38.5%历史平均, Bearish 38.5%高于30.5%历史平均, 8周移动平均35.2%, 散户情绪偏悲观, 构成逆向看涨条件"
+    },
+    "naaim": {
+      "current": null,
+      "median": null,
+      "signal": "数据待补充",
+      "note": "NAAIM Exposure Index最新报告数值搜索受限, 建议访问naaim.org获取"
+    },
+    "smart_money_dumb_money": {
+      "smart_money": null,
+      "dumb_money": null,
+      "signal": "数据待补充",
+      "note": "SentimenTrader Smart Money/Dumb Money Confidence具体数值待补充"
+    },
+    "hy_credit_spread": {
+      "current_bps": 274,
+      "median_bps": null,
+      "direction": "declining",
+      "note": "HY OAS 274bps(5/25), 1周-2.14%, 1月-3.52%, 持续收窄, 风险情绪良好, 违约风险补偿有限, 利差低于中位数"
+    },
+    "sentimentrader_signals": {
+      "current": "SmCap宽度崩溃后快速恢复",
+      "signal": "中性偏多",
+      "note": "等权S&P 500在42个交易日内从8%回撤快速恢复, 历史上此类快速恢复后6-12个月通常表现强劲; SmCap/S&P 500比率排名从95+暴跌至15以下, 反映小盘股近期极度弱势后反弹"
+    },
+    "contrarian_signals": {
+      "current": "数据不可用",
+      "signal": "数据待补充",
+      "note": "ContrarianSignals.com网站加载中, 最新聚合读数无法获取"
+    },
+    "alt_index": {
+      "current": null,
+      "signal": "数据待补充",
+      "note": "AltIndex股票市场情绪指标具体数值搜索受限"
+    },
+    "fear_greed_tracker": {
+      "current": null,
+      "signal": "数据待补充",
+      "note": "FearGreedTracker具体读数搜索受限"
+    }
+  },
+  "contrarian_analysis": {
+    "overall_contrarian_signal": "轻度逆向看涨",
+    "signal_strength": 3,
+    "aaii_signal": {
+      "status": "contrarian_bullish",
+      "trigger": "散户情绪悲观, Bullish低于均值",
+      "rationale": "Bullish 34.8%低于38.5%历史平均, Bearish 38.5%高于30.5%平均, 8WMA 35.2%处于中性偏悲观区间, 历史显示低于36%时中期回报偏高"
+    },
+    "naaim_signal": {
+      "status": "data_unavailable",
+      "trigger": null,
+      "rationale": "NAAIM数据缺失, 无法评估机构逆向信号"
+    },
+    "breadth_signal": {
+      "status": "neutral",
+      "trigger": "宽度指标待补充",
+      "rationale": "McClellan Oscillator和A/D Line具体数值缺失; SentimenTrader显示SmCap/S&P比率排名极端恶化, 但等权指数已从回撤中快速恢复"
+    },
+    "signal1": {
+      "name": "AAII散户悲观",
+      "value": "Bullish 34.8%, Bearish 38.5%, Spread -3.7%",
+      "signal": "逆向看涨",
+      "confidence": "中"
+    },
+    "signal2": {
+      "name": "VIX压缩",
+      "value": "16.45, 连续5日下降",
+      "signal": "中性偏多(波动率压缩后可能反弹)",
+      "confidence": "低"
+    },
+    "signal3": {
+      "name": "高收益债利差收窄",
+      "value": "274bps, 持续下行",
+      "signal": "中性偏空(利差过窄, 风险补偿不足)",
+      "confidence": "中"
+    },
+    "signal4": {
+      "name": "小盘股宽度极端分化",
+      "value": "SmCap/S&P比率排名21天从95+跌至15以下",
+      "signal": "逆向看涨(极端分化后均值回归)",
+      "confidence": "中"
+    },
+    "signal5": {
+      "name": "等权指数快速恢复",
+      "value": "8%回撤42天内完全恢复",
+      "signal": "看多(历史快速恢复后6-12月表现强劲)",
+      "confidence": "高"
+    }
+  },
+  "policy_cross_impact": {
+    "trump_taco_policy": {
+      "recent_events": ["5/9 特朗普Truth Social关税相关发帖", "全球钢铁关税50%报道持续发酵", "关税政策不确定性抑制贸易流动"],
+      "market_impact": "关税不确定性仍存, 但市场逐渐脱敏; 钢铁关税消息对材料板块构成压力, 整体风险情绪未显著恶化",
+      "sentiment_correlation": "特朗普政策噪音与VIX走势呈弱负相关, 市场对关税消息的敏感度下降"
+    },
+    "trade_deficit": {
+      "latest_data": "数据待补充",
+      "trend": "数据待补充",
+      "impact": "贸易逆差扩大通常利空美元, 利好大型出口企业, 关税政策试图收窄逆差但效果待观察"
+    },
+    "fed_rate_policy": {
+      "current_expectation": "鸽派预期持续",
+      "recent_statement": "市场对2026年降息预期维持",
+      "impact": " dovish Fed支撑成长股估值, QQQ领涨与利率敏感属性一致"
+    },
+    "cross_market_analysis": {
+      "usdcny": "汇率影响出口企业盈利, 人民币走势待确认",
+      "commodities": "钢铁关税推高原材料成本预期, 材料板块承压",
+      "bonds": "HY利差274bps持续收窄, 信用市场risk-on, 但补偿水平偏低"
+    }
+  },
+  "dashboard": {
+    "overall_fear_greed_score": 58,
+    "score_label": "中性偏贪婪",
+    "risk_level": "中等",
+    "opportunity_zone": "轻度逆向看涨",
+    "risk_factors": ["关税政策不确定性", "高收益债利差过窄(274bps风险补偿不足)", "小盘股宽度极端分化", "VIX压缩至低位(16.45)"],
+    "opportunities": ["AAII散户情绪悲观(逆向信号)", "等权指数快速恢复的历史强势信号", "科技股和小盘股领涨显示风险偏好回升", "债券利差收窄但尚未极端"]
+  },
+  "tomorrow_watch": {
+    "key_events": ["关注NAAIM和AAII最新周度更新", "CBOE PCR和NYSE Breadth数据确认", "关税政策相关新闻跟踪", "VIX能否维持低位或反弹"],
+    "levels_to_watch": {
+      "SPY": "750支撑/755阻力",
+      "QQQ": "730心理关口",
+      "VIX": "16关口, 若跌破15则确认极端低波动",
+      "HY_Spread": "270bps, 若跌破260则进入历史极端低位"
+    },
+    "sentiment_scenarios": {
+      "bullish": "VIX维持低位, PCR下降, 宽度改善, AAII Bullish回升至40%以上",
+      "bearish": "VIX反弹至20+, 宽度恶化, 关税消息升级, 高收益债利差走阔",
+      "neutral": "当前状态维持, 指标区间震荡, 等待催化剂"
+    }
+  }
+}

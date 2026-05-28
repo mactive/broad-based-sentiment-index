@@ -1,0 +1,150 @@
+{
+  "report_date": "2026-05-26",
+  "report_time": "18:49 CST",
+  "data_timestamp": "2026-05-22T16:00:00Z",
+  "market_summary": {
+    "SPY": {"price": 746.06, "change_pct": 0.0, "note": "S&P 500 ETF, 5/22收盘, 连续8周上涨后接近历史高点, Memorial Day周末无新数据"},
+    "QQQ": {"price": 717.43, "change_pct": 0.0, "note": "Nasdaq 100 ETF, 5/22收盘"},
+    "DIA": {"price": 506.06, "change_pct": 0.0, "note": "Dow 30 ETF, 5/22收盘"},
+    "IWM": {"price": 285.11, "change_pct": 0.0, "note": "Russell 2000 ETF, 5/22收盘, 接近52周高点287.58"}
+  },
+  "sentiment_indicators": {
+    "fear_greed_index": {
+      "source": "CNN Fear & Greed Index",
+      "current": 59,
+      "previous": 69,
+      "signal": "从贪婪区回落至中性偏贪婪",
+      "note": "Fear & Greed较上周69回落10点至59，仍在贪婪区间但边际降温。Memorial Day假期前后情绪趋于保守"
+    },
+    "vix": {
+      "current": 16.83,
+      "previous": 17.39,
+      "signal": "恐慌指数处于近4个月低点",
+      "note": "VIX 5/22收于16.83，全周持续回落，创近4个月新低。期权市场定价极低波动预期，对反向投资者构成警示"
+    },
+    "aaii_survey": {
+      "bullish": 31.7,
+      "neutral": 24.7,
+      "bearish": 43.6,
+      "signal": "散户偏悲观，创近期低点",
+      "note": "Bullish降至31.7%，Bearish升至43.6%，散户情绪明显转弱。与机构高暴露形成经典对立结构"
+    },
+    "naaim_exposure": {
+      "current": 82.02,
+      "previous": 89.58,
+      "signal": "主动基金经理高暴露但开始回落",
+      "note": "NAAIM Exposure从89.58回落至82.02，仍处高位但边际减仓，机构谨慎初现。与AAII散户悲观形成剪刀差"
+    },
+    "pcr_ratio": {
+      "current": 0.55,
+      "ma10": 0.80,
+      "signal": "偏低，看涨期权活跃",
+      "note": "Equity PCR 0.55低于中性线0.7，10日均值0.80。短期投机情绪仍偏乐观，与散户AAII悲观形成矛盾信号"
+    },
+    "nyse_breadth": {
+      "advances": 1596,
+      "declines": 1146,
+      "difference": 450,
+      "signal": "广度正面，上涨家数占优",
+      "note": "5/22 NYSE上涨1596家 vs 下跌1146家，差值+450，市场宽度支撑指数高位。但McClellan Oscillator读数趋于中性"
+    },
+    "margin_debt": {
+      "current": "1,304.281B",
+      "previous": "1,220.922B",
+      "change_pct": 6.8,
+      "signal": "历史新高，杠杆极度扩张",
+      "note": "4月融资债务飙升6.8%至1.304万亿美元创历史新高。投资者信贷余额-8710亿美元接近历史极端。系统性风险累积，历史上杠杆峰值后3-6个月市场波动加剧"
+    },
+    "credit_spreads": {
+      "hy_oas": "2.78%",
+      "percentile": "11.7th",
+      "signal": "高收益债利差历史低位，信用环境极度宽松",
+      "note": "HY OAS 2.78%处于历史11.7百分位，信用风险定价极低。与经济周期和股市高位形成反差，一旦利差扩张可能触发风险偏好逆转"
+    },
+    "smart_dumb_money": {
+      "ratio": 0.20,
+      "signal": "极端分裂，Smart Money极度悲观",
+      "note": "Smart/Dumb Confidence Ratio约0.20，处于极端低位。专业投资者与散户信心严重背离，为经典反向信号。历史上该水平出现后1-3个月市场回报显著为负"
+    },
+    "contrarian_signals": {
+      "risk_index": 33,
+      "signal": "贪婪区间，回调风险累积",
+      "note": "Contrarian Risk Index 33，处于贪婪区间。多项情绪指标同时过热，历史数据显示该区域后续3个月标普回报偏低"
+    },
+    "alt_index": {
+      "score": 58,
+      "signal": "贪婪",
+      "note": "AltIndex综合读数58，与CNN Fear & Greed一致，确认市场情绪处于贪婪区域。较上周边际回落"
+    },
+    "fear_greed_tracker": {
+      "current": 59,
+      "category": "Greed",
+      "signal": "贪婪",
+      "note": "FearGreedTracker确认读数59，分类为Greed。较上周回落但仍未脱离风险区间"
+    }
+  },
+  "contrarian_analysis": {
+    "buffet_indicator": {
+      "market_cap_gdp": null,
+      "signal": "估值偏高",
+      "note": "美股市值/GDP比率处于历史高位区间。SPY连续8周上涨，估值扩张速度快于盈利增长，巴菲特指标发出长期警示"
+    },
+    "valuation": {
+      "spy_pe": null,
+      "signal": "偏高",
+      "note": "S&P 500远期PE约21-22倍，高于历史均值16-17倍。科技股集中度加剧估值溢价风险。盈利增速需维持15%+才能支撑当前估值"
+    },
+    "insider_activity": {
+      "signal": "持续净卖出",
+      "note": "企业内部人延续净卖出模式。高管在高位套现，与散户乐观（PCR）形成经典反向结构。卖出/买入比维持高位"
+    },
+    "momentum_extremes": {
+      "spy_weekly_streak": 8,
+      "signal": "连续8周上涨，动量过热",
+      "note": "SPY连续8周收阳，为2024年以来最长连涨。RSI接近超买区，MACD虽正但动能边际减弱。历史极端动量常伴随5-10%回调"
+    }
+  },
+  "policy_cross_impact": {
+    "fed_policy": {
+      "signal": "中性偏紧",
+      "note": "美联储维持利率不变，但降息预期推迟至2026Q3。高利率环境压制估值扩张空间，金融股受益于利差。6月FOMC会议纪要值得关注"
+    },
+    "trade_policy": {
+      "signal": "风险降低",
+      "note": "中美关税谈判传出阶段性缓和信号，贸易政策不确定性边际下降。但结构性关税仍存，企业 capex 决策保持谨慎。技术出口限制未放松"
+    },
+    "geopolitical_risk": {
+      "signal": "中等",
+      "note": "中东局势（伊朗/霍尔木兹海峡）间歇性扰动，但未对油价造成持续冲击。地缘政治溢价有限。俄罗斯乌克兰局势进入僵持"
+    },
+    "fiscal_policy": {
+      "signal": "扩张",
+      "note": "特朗普政府延续财政扩张倾向，减税与支出法案推进中。长期国债收益率承压，30年期国债突破5%。债务可持续性担忧升温"
+    },
+    "institutional_positioning": {
+      "signal": "高位分化",
+      "note": "对冲基金净敞口维持高位但开始边际下降。NAAIM回落、Smart Money信心低迷，机构内部出现分歧。CTA趋势跟踪策略仍做多但触发阈值临近"
+    }
+  },
+  "dashboard": {
+    "current_sentiment": "贪婪区边际降温",
+    "trend_vs_last_report": "VIX创新低+散户转悲+F&G回落=情绪边际降温，但机构仍高暴露+杠杆新高=风险未解除",
+    "key_divergence": "散户恐惧(AAII Bearish 43.6%) vs 机构贪婪(NAAIM 82) vs 期权乐观(PCR 0.55)。三组信号互相矛盾，暗示市场处于情绪转折点",
+    "risk_level": "中高",
+    "risk_factors": ["融资债务创历史新高(1.304T)", "SPY连续8周上涨动量过热", "Smart/Dumb极端分裂(0.20)", "VIX近4月低点(16.83)+期权低定价", "高收益债利差历史低位(2.78%)", "估值偏高(PE 21-22x)"]
+  },
+  "tomorrow_watch": {
+    "events": ["5/26周二美股正常开盘，Memorial Day后首个交易日", "美联储官员讲话密集期", "5月消费者信心数据(周二发布)", "科技股进入月末资金流敏感期"],
+    "levels": {
+      "SPY": {"support": "741.00, 735.00, 728.00", "resistance": "748.20, 749.50, 历史新高"},
+      "QQQ": {"support": "710.00, 700.00", "resistance": "720.00, 历史新高"},
+      "IWM": {"support": "280.00, 275.00", "resistance": "287.58(52周高点), 290.00"}
+    },
+    "scenarios": [
+      "开盘观察Memorial Day假期期间累积的买单/卖单是否触发方向选择。流动性恢复后市场可能放大波动",
+      "SPY若突破749.50并收盘站稳，可能延续第9周上涨；若失守741，回调风险加大，目标735-728支撑带",
+      "IWM接近52周高点287.58，突破将确认小盘股全面走强；若受阻回落，可能拖累大盘情绪",
+      "关注VIX是否维持在17以下。若反弹突破18，预示市场开始定价波动回归，动量策略面临逆转"
+    ]
+  }
+}

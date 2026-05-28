@@ -1,0 +1,144 @@
+{
+  "report_date": "2026-05-27",
+  "report_time": "06:50 CST",
+  "data_timestamp": "2026-05-26T22:50:00Z",
+  "market_summary": {
+    "SPY": {"price": 748.14, "change_pct": 0.32, "note": "S&P 500 ETF, 收盘于历史高位附近"},
+    "QQQ": {"price": 827.18, "change_pct": 0.14, "note": "Nasdaq 100 ETF"},
+    "DIA": {"price": 505.77, "change_pct": 0.01, "note": "Dow 30 ETF"},
+    "IWM": {"price": 210.85, "change_pct": 0.56, "note": "Russell 2000 ETF, 小盘股领涨, 表现强于大盘"}
+  },
+  "sentiment_indicators": {
+    "fear_greed_index": {
+      "source": "CNN / AltIndex / ContrarianSignals综合",
+      "current": 58.57,
+      "status": "贪婪区间",
+      "trend": "从上周64回落，仍处贪婪区间但有所降温",
+      "note": "非极端贪婪，自满情绪中等"
+    },
+    "aaii_sentiment": {
+      "source": "AAII Weekly Sentiment Survey",
+      "bullish": 31.7,
+      "neutral": 24.7,
+      "bearish": 43.6,
+      "bull_bear_spread": -11.9,
+      "bullish_change": -7.6,
+      "bearish_change": 7.0,
+      "historical_avg_bullish": 37.5,
+      "historical_avg_bearish": 31.0,
+      "status": "散户极度悲观，反向买入信号",
+      "note": "看跌比例43.6%为异常高水平，连续15周高于均值。牛熊差-11.9%异常偏低。"
+    },
+    "naaim_exposure": {
+      "source": "NAAIM Exposure Index",
+      "current": 82.02,
+      "previous": 77.34,
+      "change": 4.68,
+      "median": 96.0,
+      "quartile_3": 100.0,
+      "status": "机构仍重仓，从极度贪婪回落至贪婪",
+      "note": "中位数仍高达96%，多数经理重仓。5月6日曾达96.67%极端高位。"
+    },
+    "vix": {
+      "source": "CBOE Volatility Index",
+      "current": 16.92,
+      "status": "自满区间",
+      "note": "维持在17以下低位，反映市场极度平静。低VIX是风险累积信号而非安全信号。"
+    },
+    "put_call_ratio": {
+      "source": "CBOE Equity Put/Call Ratio",
+      "current": 0.55,
+      "status": "异常偏低，看涨情绪过热",
+      "note": "处于历史低位区间，低于0.6通常被视为反向卖出信号"
+    },
+    "nyse_advance_decline": {
+      "source": "NYSE Advance-Decline Line",
+      "ad_difference": 397,
+      "ad_difference_change": 145,
+      "ad_ratio_april": 1.56,
+      "status": "短期积极，但广度改善有限",
+      "note": "5月初创新高后A/D线停滞，上涨由少数权重股主导。IWM今日跑赢是积极信号。"
+    },
+    "margin_debt": {
+      "source": "FINRA Margin Debt",
+      "current_billion": 654,
+      "change_pct": 6.8,
+      "status": "历史新高（名义值）",
+      "note": "实际值距1月峰值仅-0.4%。融资债务历史高位是经典反向指标，高杠杆意味着脆弱性。"
+    },
+    "high_yield_spread": {
+      "source": "ICE BofA US High Yield Index OAS",
+      "current_pct": 2.78,
+      "current_bps": 278,
+      "previous_dates": {"2026-05-20": 2.80, "2026-05-19": 2.86, "2026-05-18": 2.83, "2026-05-15": 2.80, "2026-05-14": 2.76},
+      "status": "极端收窄，历史低位区间",
+      "note": "信用市场风险偏好极高。历史上此类水平往往出现在周期顶部附近。"
+    }
+  },
+  "contrarian_analysis": {
+    "smart_money_dumb_money": {
+      "smart_money_confidence": 64,
+      "dumb_money_confidence": 72,
+      "divergence": "轻度反向",
+      "note": "聪明钱比散户更谨慎。分歧扩大时市场面临调整风险。"
+    },
+    "sentiment_divergence": {
+      "market_price_trend": "S&P 500创新高",
+      "retail_sentiment_trend": "极度悲观",
+      "institutional_sentiment_trend": "仍重仓",
+      "divergence_type": "散户恐惧vs机构贪婪",
+      "signal": "经典反向买入信号，但多重风险预警并存"
+    },
+    "overbought_oversold": {
+      "spx_rsi": "延伸区间（超买）",
+      "ndx_rsi": "延伸区间（超买）",
+      "gamma_level": "正gamma在7400-7425区间",
+      "gamma_flip": "~6636",
+      "note": "正gamma可能稳定价格，跌破flip位将改变动态"
+    },
+    "contrarian_conclusion": "综合逆向信号轻度偏空。散户悲观=反向利多，但机构仍重仓+杠杆新高+波动率过低+信用利差过窄=多重风险预警。当前逆向投资者应保持谨慎，而非积极建仓。"
+  },
+  "policy_cross_impact": {
+    "trump_policy": {
+      "current": "美伊冲突缓和谈判进行中，特朗普不可预测性高。美印关键矿产协议已签署。",
+      "market_impact": "风险资产对谈判进展高度敏感"
+    },
+    "fed_policy": {
+      "current": "本周关注消费者信心、达拉斯联储制造业、ADP就业、GDP终值、PCE。多位美联储官员讲话。",
+      "market_impact": "市场对降息预期定价积极"
+    },
+    "geopolitical": {
+      "current": "美伊冲突主要障碍是解冻伊朗海外资产。伊朗称美国在中东不再有安全避风港。",
+      "market_impact": "突发冲击可能"
+    }
+  },
+  "dashboard": {
+    "overall_sentiment": {"score": 6.5, "label": "贪婪偏自满", "max": 10},
+    "risk_level": {"score": 7.0, "label": "偏高", "max": 10},
+    "contrarian_signal": {"score": 5.5, "label": "中性偏空", "max": 10},
+    "retail_fear": {"score": 7.5, "label": "偏高（反向利多）", "max": 10},
+    "institutional_greed": {"score": 7.0, "label": "偏高", "max": 10},
+    "leverage_credit_risk": {"score": 8.0, "label": "高", "max": 10},
+    "key_levels": {
+      "spx_support": "7,400 / 7,425 (gamma密集区)",
+      "spx_resistance": "7,550 (心理关口)",
+      "vix_threshold_low": "14 (自满警戒)",
+      "vix_threshold_high": "20 (恐慌警戒)"
+    }
+  },
+  "tomorrow_watch": {
+    "events": ["美国消费者信心指数（5月）", "达拉斯联储制造业指数", "多位美联储官员讲话"],
+    "key_observations": [
+      "VIX是否跌破15：若进一步走低，自满情绪将加剧",
+      "IWM能否持续跑赢：小盘股广度改善是否持续",
+      "AAII下周数据：散户悲观是否进一步加深或出现逆转",
+      "美伊谈判进展：任何实质性突破/破裂都将影响风险资产",
+      "PCE数据（周五）：通胀路径仍是美联储政策核心变量"
+    ],
+    "action_advice": {
+      "short_term": "观望为主，不追高。若标普500回踩7400-7425区间可小仓位试探",
+      "medium_term": "等待更明确的风险释放信号（VIX spike >20、P/C ratio >0.8、散户转向极度乐观）",
+      "long_term": "当前处于周期偏晚期，维持防御性仓位配置，关注高股息和质量因子"
+    }
+  }
+}

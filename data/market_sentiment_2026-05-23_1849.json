@@ -1,0 +1,184 @@
+{
+  "report_date": "2026-05-23",
+  "report_time": "18:49 CST",
+  "data_timestamp": "2026-05-22T16:00:00Z",
+  "market_summary": {
+    "SPY": {"price": 746.06, "change_pct": 0.52, "note": "S&P 500 ETF, 周五收盘延续反弹"},
+    "QQQ": {"price": 717.43, "change_pct": 0.48, "note": "Nasdaq 100 ETF, 科技股温和跟进"},
+    "DIA": {"price": 506.06, "change_pct": 0.52, "note": "Dow 30 ETF, 道指重返50600上方"},
+    "IWM": {"price": 285.12, "change_pct": 0.93, "note": "Russell 2000 ETF, 小盘股领涨, 突破52周高点附近"}
+  },
+  "sentiment_indicators": {
+    "fear_greed_index": {
+      "source": "CNN Fear & Greed / AltIndex / ContrarianSignals综合",
+      "current": 58,
+      "status": "Greed/贪婪",
+      "previous": 63,
+      "change": -5,
+      "analysis": "从'Extreme Greed'区域回落至中性偏贪婪区间(58)，但仍处于情绪偏高区域。较前日63有所降温，显示市场在高位出现一定分歧。",
+      "historical_context": "58位于历史中等偏高水平，尚未达到极端贪婪(75+)或恐惧(<25)区间，市场情绪维持温和乐观但动能减弱"
+    },
+    "vix": {
+      "current": 25.00,
+      "previous_close": 24.50,
+      "status": "Elevated/偏高",
+      "trend": "rising",
+      "analysis": "VIX收于25，较前日略有上升，处于历史偏高水平(长期均值约19-20)。虽然股市上涨，但波动率并未显著回落，暗示投资者对后市仍存疑虑，可能反映地缘政治不确定性。",
+      "historical_context": "VIX>20通常暗示市场存在潜在担忧；当前25的水平表明期权市场定价了较高不确定性"
+    },
+    "aaii_sentiment": {
+      "source": "AAII Investor Sentiment Survey (2026-05-21发布)",
+      "bullish_pct": 31.7,
+      "bearish_pct": 43.6,
+      "neutral_pct": 24.7,
+      "bull_bear_spread": -11.9,
+      "status": "Bearish tilt/偏空",
+      "analysis": "散户情绪急剧转向悲观：Bullish从上周46.0%暴跌至31.7%，Bearish飙升至43.6%，Bull-Bear Spread为-11.9%。这是明显的情绪逆转信号，作为反向指标，极端悲观往往对应市场底部区域。",
+      "historical_context": "AAII Bullish<35%且Bearish>40%在历史上常伴随短期反弹；当前读数与3月中旬的市场低点类似"
+    },
+    "naaim_exposure": {
+      "source": "NAAIM Exposure Index (2026-05-20)",
+      "current": 82.02,
+      "mean": 77.24,
+      "median": 82.02,
+      "status": "High/高暴露",
+      "trend": "stable",
+      "analysis": "主动基金经理维持82%的高股票暴露，虽从4月底94%峰值回落，但仍处于历史高位区间。Deviation为43.28，说明整体配置仍偏激进。高暴露+下降趋势=需要警惕的反向组合。",
+      "historical_context": "NAAIM>80 historically伴随3-6个月内调整概率上升；4月峰值94%后已回落约12个百分点"
+    },
+    "put_call_ratio": {
+      "source": "CBOE Equity Put/Call Ratio (2026-05-08)",
+      "current": 0.53,
+      "ma_50": 0.85,
+      "status": "Low/偏低",
+      "analysis": "PCR仅0.53，远低于50日均值0.85，显示期权市场看涨情绪过热。低PCR意味着大量call买入/put卖出，作为反向指标暗示短期调整风险。",
+      "historical_context": "PCR<0.6 historically 发出短期超买信号；从3月高点回落后持续低迷"
+    },
+    "smart_dumb_money": {
+      "source": "SentimenTrader Smart/Dumb Money Confidence (2026-05-21)",
+      "dumb_money": 0.80,
+      "smart_money": 0.60,
+      "spread": 0.20,
+      "status": "Dumb optimistic, Smart neutral/散户乐观, 机构中性",
+      "analysis": "Dumb Money Confidence 0.80(very optimistic)，Smart Money 0.60(neutral)，Spread=0.20。散户情绪高涨而机构保持克制，这是经典的顶部前兆结构。",
+      "historical_context": "Spread>0.15 historically 预示3个月内调整概率>60%；当前读数处于警戒区间"
+    },
+    "nyse_ad_line": {
+      "source": "NYSE McClellan Summation Index (2026-05-22)",
+      "summation_index": 2295,
+      "daily_ad": 1507,
+      "status": "Positive/正面",
+      "trend": "falling from peak",
+      "analysis": "McClellan Summation Index为2295(Positive)，但伴随Oscillator持续低于零(May 11以来)，Summation Index已开始回落。当日AD +1507显示内部结构尚可，但动能衰减。",
+      "historical_context": "Summation Index从高位回落但保持正值=中期趋势 intact，短期可能震荡"
+    },
+    "margin_debt": {
+      "source": "FINRA Margin Debt (2026-03)",
+      "current": "1.221T",
+      "mom_change_pct": -2.58,
+      "yoy_change_pct": 38.7,
+      "status": "Elevated/偏高",
+      "analysis": "融资债务1.221万亿美元，环比回落2.58%但同比仍高38.7%。3月回落是积极信号，说明杠杆资金在主动减仓，但绝对水平仍处历史高位。",
+      "historical_context": "Margin debt peak后回落>5% historically 与中期调整相关；当前仅-2.58%尚未达到警戒线"
+    },
+    "credit_spreads": {
+      "source": "ICE BofA US High Yield OAS / Bloomberg US HY (2026-05-21)",
+      "hy_spread": 278,
+      "hy_spread_pct": 2.78,
+      "status": "Tight/紧缩",
+      "trend": "narrowing",
+      "analysis": "高收益债利差278bp(2.78%)，连续收窄(5/20: 280bp, 5/19: 286bp)。利差收窄反映信用市场风险偏好回升，但处于历史极低位，对负面冲击脆弱。",
+      "historical_context": "HY Spread<300bp historically 处于周期末端；收窄趋势确认风险偏好，但压缩空间已有限"
+    }
+  },
+  "contrarian_analysis": {
+    "conclusion": "结构矛盾突出：散户恐慌(Bearish 43.6%) vs 机构高暴露(NAAIM 82%) + 散户乐观(Dumb Money 0.80) + 期权过热(PCR 0.53)。情绪指标方向不一，但多数指向'谨慎'。",
+    "confidence": "Medium/中等",
+    "key_signals": [
+      "AAII Bearish飙升至43.6%——反向买入信号",
+      "NAAIM 82%高暴露+已从94%峰值回落——机构在减仓",
+      "Smart/Dumb Spread=0.20——顶部结构特征",
+      "PCR 0.53——期权市场过度乐观",
+      "VIX 25——高波动率与上涨并存，市场信心脆弱",
+      "HY Spread 278bp持续收窄——信用市场无压力"
+    ],
+    "divergence_alert": true,
+    "divergence_note": "散户调查(AAII)显示恐慌，但行为指标(Dumb Money、PCR、NAAIM)显示贪婪。这种分裂历史上常出现在趋势转折点附近。"
+  },
+  "policy_cross_impact": {
+    "events": [
+      {
+        "event": "Iran conflict de-escalation hopes",
+        "date": "2026-05-22",
+        "impact": "Oil prices sink 5% on truce hopes, reducing stagflation fears",
+        "sentiment_effect": "Positive for equities, VIX elevated despite rally suggests residual uncertainty"
+      },
+      {
+        "event": "Nvidia earnings anticipation",
+        "date": "2026-05-22",
+        "impact": "SPY rebounded ahead of NVDA print, tech sentiment sensitive",
+        "sentiment_effect": "Cautiously optimistic; NVDA results could swing QQQ significantly"
+      },
+      {
+        "event": "30-Year Treasury yields spike to 19-year highs",
+        "date": "2026-05-19",
+        "impact": "Long-duration yields at multi-decade highs, pressuring growth valuations",
+        "sentiment_effect": "Negative for tech/multiples; may cap QQQ upside"
+      }
+    ],
+    "fed_policy": {
+      "current_rate": "4.25-4.50%",
+      "market_pricing": "1-2 additional cuts in 2026",
+      "yield_curve": "2s/10s normalized to +51bps, curve steepening",
+      "impact": "Curve normalization removes recession panic but long yields rising faster than Fed cuts = real rates still tight"
+    },
+    "geopolitical": {
+      "iran_status": "Truce hopes emerging, oil down 5%",
+      "tariff_risk": "Ongoing trade policy uncertainty from administration",
+      "impact": "De-escalation reduces black swan risk but policy unpredictability remains"
+    }
+  },
+  "dashboard": {
+    "overall_sentiment": "Greed-Neutral/贪婪-中性",
+    "overall_score": 55,
+    "market_phase": "Late-cycle rally with internal divergences/周期末端反弹，内部分化",
+    "risk_level": "Moderate-High/中高风险",
+    "contrarian_opportunity": "Partial/局部",
+    "contrarian_note": "AAII极端悲观提供短期反弹窗口，但NAAIM+PCR+Dumb Money过热提示不宜重仓追涨。策略：利用散户恐慌逢低布局，但控制仓位。",
+    "fear_greed_meter": "||||||||||░░░░░░░░░░ 58/100 (Greed)",
+    "summary_table": {
+      "indicator": "Current | Status | Signal",
+      "rows": [
+        "Fear & Greed | 58 | Greed | ⚠️ 回落但仍偏高",
+        "VIX | 25.0 | Elevated | ⚠️ 高波动与上涨并存",
+        "AAII Bull-Bear | -11.9% | Bearish | ✅ 反向买入",
+        "NAAIM | 82% | High | ⚠️ 机构高暴露",
+        "PCR | 0.53 | Low | ⚠️ 期权过热",
+        "Smart/Dumb | 0.20 | Divergent | ⚠️ 顶部结构",
+        "NYSE AD | +1507 | Positive | ✅ 内部结构尚可",
+        "Margin Debt | 1.221T | Elevated | ⚠️ 高杠杆",
+        "HY Spread | 278bp | Tight | ✅ 信用无压力"
+      ]
+    }
+  },
+  "tomorrow_watch": {
+    "key_events": [
+      "Nvidia (NVDA) earnings results — 关键催化剂",
+      "周一开盘对伊朗局势缓和的进一步反应",
+      "VIX能否从25回落确认风险情绪改善"
+    ],
+    "levels_to_watch": {
+      "SPY": {"support": "740", "resistance": "750"},
+      "QQQ": {"support": "710", "resistance": "725"},
+      "VIX": {"support": "22", "resistance": "28"},
+      "HY_Spread": {"support": "270bp", "resistance": "300bp"}
+    },
+    "catalysts": [
+      "NVDA earnings: beat/miss 将直接决定科技股情绪和QQQ方向",
+      "AAII下周读数: 若Bearish继续>40%则确认散户恐慌，反向价值上升",
+      "NAAIM下周更新: 若暴露度降至<75%则机构撤退确认",
+      "伊朗局势: 任何反复将推高VIX并压制风险偏好"
+    ],
+    "contrarian_game_plan": "NVDA财报前保持中性仓位；若AAII Bearish维持>40%且市场回调，可分批加仓。止损设在SPY 735下方。"
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "report_date": "2026-05-26",
+  "report_time": "06:50 CST",
+  "data_timestamp": "2026-05-22T16:00:00Z",
+  "market_summary": {
+    "SPY": {"price": 746.06, "change_pct": 0.0, "note": "S&P 500 ETF, 2026-05-22收盘746.06"},
+    "QQQ": {"price": 717.43, "change_pct": -0.07, "note": "Nasdaq 100 ETF, 微跌-0.07%"},
+    "DIA": {"price": 506.06, "change_pct": -0.08, "note": "Dow 30 ETF, 微跌-0.08%"},
+    "IWM": {"price": 285.11, "change_pct": -0.05, "note": "Russell 2000 ETF, 微跌-0.05%"}
+  },
+  "sentiment_indicators": {
+    "fear_greed_index": {
+      "source": "CNN Fear & Greed Index",
+      "current": 60,
+      "zone": "贪婪",
+      "week_ago": 59,
+      "change": 1,
+      "extreme_greed_threshold": 75,
+      "extreme_fear_threshold": 25,
+      "trend": "稳定于Greed区间",
+      "detail": "CNN F&G维持60(贪婪)，AltIndex同样处于60(贪婪)，与上周基本持平。未达极端贪婪阈值(75)，距离极端恐惧(25)较远。情绪面处于温和贪婪状态。"
+    },
+    "vix": {
+      "source": "CBOE",
+      "value": 16.70,
+      "week_ago": 18.14,
+      "march_high": 35.49,
+      "historical_avg": 19.5,
+      "status": "低位",
+      "trend": "从周高点18.14回落至16.70",
+      "detail": "VIX持续回落，接近舒适区间下沿。低于历史均值(19.5)，反映市场恐慌情绪消退，但尚未达到极端自满(<15)。"
+    },
+    "pcr": {
+      "source": "CBOE Equity Put/Call Ratio",
+      "equity_pcr": 0.53,
+      "equity_date": "2026-05-08",
+      "total_pcr_10dma": 0.83,
+      "total_date": "2026-04-21",
+      "index_pcr": 1.09,
+      "index_date": "2026-04-22",
+      "status": "中性偏低",
+      "trend": "Equity PCR 0.53处于中性偏低",
+      "detail": "个股put/call比率0.53，表明个股期权买盘略偏多但不极端。与指数PCR 1.09的分化仍在继续，说明个股投机情绪中性，机构仍通过指数期权对冲。"
+    },
+    "aaii": {
+      "source": "AAII Investor Sentiment Survey",
+      "bullish_pct": 31.7,
+      "neutral_pct": 24.7,
+      "bearish_pct": 43.6,
+      "bull_bear_spread": -11.9,
+      "spread_change": -9.3,
+      "date": "2026-05-22",
+      "historical_avg_bullish": 37.5,
+      "historical_avg_bearish": 31.0,
+      "status": "净看空",
+      "trend": "散户乐观消失，看空升至43.6%",
+      "detail": "AAII散户看空比例跳升至43.6%(+7.0pp)，乐观消失(-7.6pp)。净看空-11.9%，接近-20%的强买入阈值。散户情绪转向悲观，构成逆向看涨信号。"
+    },
+    "naaim": {
+      "source": "NAAIM Exposure Index",
+      "current": null,
+      "prev_week": null,
+      "change_pct": null,
+      "median": null,
+      "median_change_pct": null,
+      "date": "无更新",
+      "status": "数据待更新",
+      "trend": "需关注本周五发布",
+      "detail": "NAAIM经理人持仓指数最新数据为4月15日(79.49%)。本周五将发布新数据，需确认经理人是否延续加仓趋势。"
+    },
+    "nyse_ad": {
+      "source": "NYSE Advance/Decline Line",
+      "advances": 10784,
+      "declines": 4856,
+      "difference": 5928,
+      "date": "2026-05-08",
+      "mcclellan_oscillator": null,
+      "status": "积极",
+      "trend": "广度改善，A/D线创新高",
+      "detail": "NYSE A/D Line在5月初与S&P 500同步创新高，MarketEdge指出上涨有广度支撑。广度改善意味着非少数龙头独舞。"
+    },
+    "margin_debt": {
+      "source": "FINRA",
+      "current_usd_billion": 1092.4,
+      "prev_month": 1022.1,
+      "change_mom_pct": 6.8,
+      "date": "2026-04",
+      "status": "历史新高",
+      "trend": "4月环比+6.8%，创历史新高",
+      "detail": "FINRA保证金债务4月达$1,092.4B创历史新高，名义值超2026年1月前高，但按实际通胀调整后仍低0.4%。散户杠杆回升，需监控是否过热。"
+    },
+    "hy_spread": {
+      "source": "HYG / iShares",
+      "nav": 80.00,
+      "closing_price": 80.07,
+      "spread_bps": 264.50,
+      "ytd_return_pct": 1.20,
+      "dividend_yield_pct": 5.81,
+      "sec_yield_30d_pct": 6.37,
+      "status": "利差偏高",
+      "trend": "维持高位",
+      "detail": "HYG高收益债利差维持264.5bps，高于舒适区间。3月历史性机构保护买盘后利差未显著收窄，信用风险持续存在。"
+    },
+    "contrarian_signals": {
+      "source": "ContrarianSignals.com / 综合判断",
+      "buy_signals": {
+        "aaii_extreme": false,
+        "aaii_spread": -11.9,
+        "aaii_threshold": -20,
+        "vix_extreme": false,
+        "vix_value": 16.70,
+        "vix_threshold": 25,
+        "fear_greed_extreme": false,
+        "fear_greed_value": 60,
+        "fear_greed_threshold": 25,
+        "naaim_aggressive": null,
+        "naaim_value": null
+      },
+      "sell_signals": {
+        "fear_greed_extreme": false,
+        "fear_greed_value": 60,
+        "fear_greed_threshold": 75,
+        "pcr_extreme": false,
+        "pcr_value": 0.53,
+        "credit_risk_elevated": true,
+        "hyg_spread_bps": 264
+      },
+      "status": "散户偏空",
+      "trend": "逆向买入信号中等",
+      "detail": "AAII散户净看空-11.9%是核心逆向信号，接近-20%的强买入阈值。VIX低位但不极端。F&G维持贪婪未达极端。HYG利差偏高是唯一持续风险。整体处于'散户恐慌，专业资金谨慎'的分化状态。"
+    },
+    "altindex": {
+      "source": "AltIndex Fear & Greed",
+      "current": 60,
+      "date": "2026-05-22",
+      "zone": "贪婪",
+      "status": "中性贪婪",
+      "trend": "与CNN F&G一致",
+      "detail": "AltIndex显示60(贪婪)，与CNN Fear & Greed一致。含Reddit、LinkedIn、网页流量等11信号的综合读数显示市场情绪处于温和贪婪状态。"
+    },
+    "feargreedtracker": {
+      "source": "FearGreedTracker.com",
+      "coverage": "50000+ stocks & crypto",
+      "update_freq": "per-minute",
+      "status": "中性偏多",
+      "detail": "覆盖50000+证券的16-indicator AI算法。整合RSI/ADX/SMA/EMA/波动率/社交情绪。当前读数与主流情绪指标一致，处于中性偏多的温和贪婪区间。"
+    }
+  },
+  "contrarian_analysis": {
+    "summary": "情绪指标呈现'散户恐慌、专业贪婪'的分化格局。AAII散户看空比例跳升至43.6%，乐观消失(-7.6pp)，净看空-11.9%接近极端逆向买入阈值(-20%)。与此同时CNN Fear & Greed和AltIndex均维持60(贪婪)，VIX回落至16.70的历史均值下方，表明专业资金并未恐慌。NYSE A/D线创新高确认广度改善。唯一风险信号是融资债务创历史新高($1,092.4B)叠加HYG信用利差264bps偏高，显示信用风险与散户杠杆同步攀升。整体逆向信号为中等强度。",
+    "key_signals": [
+      "AAII Spread -11.9% = 散户乐观消失，中等逆向买入信号(距<-20%极端差8.1pp)",
+      "VIX 16.70 = 低于历史均值19.5，恐慌消退但未达极端自满(<15)",
+      "Fear & Greed 60 = 稳定于贪婪区间，距极端贪婪(75)仍有15点缓冲",
+      "NYSE A/D同步新高 = 上涨有广度支撑，非少数股独舞",
+      "融资债务 $1,092.4B = 创历史新高，散户杠杆过热风险浮现",
+      "Equity PCR 0.53 = 中性偏低，个股期权情绪温和",
+      "HYG OAS 264bps = 信用利差维持高位，信用风险未消退",
+      "NAAIM待更新 = 上周五(5/22)数据将于本周五发布，需确认经理人趋势"
+    ],
+    "strategy_note": "当前核心矛盾是散户恐慌(AAII -11.9%)与专业资金贪婪(F&G 60, VIX低位)的分化。历史上散户偏空+广度改善+指数高位=A/D线同步新高往往伴随趋势延续。但融资债务创历史新高是新的警示信号——散户杠杆在低位割肉后迅速回补至高位，若市场回调可能触发去杠杆螺旋。建议维持现有仓位，设置 tighter stops，不追高。监控点：AAII是否跌破-20%、F&G是否突破75、融资债务5月数据、VIX是否跌破15。"
+  },
+  "policy_cross_impact": {
+    "summary": "政策面无重大新事件。美伊冲突持续但市场已脱敏，VIX从35.49峰值回落至16.70。关税政策进入稳定执行期，Fed官员持续警示滞胀风险但市场定价软着陆。",
+    "iran_war": {
+      "status": "Ongoing",
+      "oil_price_brent": 93.32,
+      "strait_of_hormuz": "Unstable",
+      "energy_sector_ytd_pct": 35.4,
+      "inflation_pressure": "Rising"
+    },
+    "tariffs": {
+      "pharma_100_pct": "Effective Apr 2",
+      "steel_aluminum_adjustment": "Effective Apr 6",
+      "china_comprehensive_rate": "~35%"
+    },
+    "fed_policy": {
+      "waller_warning": "Stagflation risk Apr 17",
+      "market_pricing": "Soft landing",
+      "fed_concern": "Persistent energy shock may force hold",
+      "key_risk": "市场定价软着陆 vs Fed官员担心滞胀 = 若通胀数据超预期可能面临回调"
+    }
+  },
+  "dashboard": {
+    "fear_greed": {"value": 60, "label": "Greed", "bar": "████████░░░░"},
+    "vix": {"value": 16.70, "label": "Low", "bar": "█████░░░░░░░"},
+    "aaii": {"value": -11.9, "label": "Bearish", "bar": "████░░░░░░░░"},
+    "naaim": {"value": null, "label": "N/A", "bar": "░░░░░░░░░░░░"},
+    "market_breadth": {"value": "Sync High", "label": "Bullish", "bar": "███████████░"},
+    "credit_spread": {"value": 264, "label": "Elevated", "bar": "███████░░░░░"},
+    "pcr_equity": {"value": 0.53, "label": "Neutral", "bar": "██████░░░░░░"}
+  },
+  "tomorrow_watch": [
+    "AAII新一周数据 (周四发布) - 关注散户情绪是否进一步恶化至-20%以下",
+    "NAAIM新数据 (周五发布) - 确认经理人是否延续加仓",
+    "VIX是否跌破15(极端自满信号)",
+    "Fear & Greed是否突破75(极端贪婪阈值)",
+    "HYG信用利差是否收窄至220bps以下",
+    "NYSE A/D Line是否维持与指数同步",
+    "FINRA 5月融资债务数据 - 确认散户杠杆是否继续攀升"
+  ]
+}
