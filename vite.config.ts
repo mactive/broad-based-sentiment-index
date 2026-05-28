@@ -4,6 +4,8 @@ import type { ServerResponse } from "node:http";
 import path from "node:path";
 import { defineConfig, type Plugin } from "vite";
 
+import { cloudflare } from "@cloudflare/vite-plugin";
+
 const dataDir = path.resolve(process.cwd(), "data");
 
 type RawReport = {
@@ -203,7 +205,7 @@ function sentimentDataPlugin(): Plugin {
 }
 
 export default defineConfig({
-  plugins: [sentimentDataPlugin()],
+  plugins: [sentimentDataPlugin(), cloudflare()],
   build: {
     outDir: "dist",
     emptyOutDir: true
