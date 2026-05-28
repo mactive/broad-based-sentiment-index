@@ -39,7 +39,7 @@
     "vix": {
       "value": 18.43,
       "status": "Normal",
-      "change": +1.82,
+      "change": \1.82,
       "analysis": "VIX surged 11% to 18.43, breaking above the 17-18 complacency zone. While still below the 20 fear threshold, the sharp single-day spike suggests options markets are repricing volatility risk. Watch if VIX holds above 20—sustained elevation would confirm a regime shift."
     },
     "cboe_pcr": {
@@ -76,7 +76,7 @@
     "margin_debt": {
       "value": 1304000,
       "status": "Neutral-High",
-      "change": +83000,
+      "change": \13000,
       "analysis": "NYSE Margin Debt surged to $1.304T in April (up from $1.221T in March). This is the highest level since the October 2025 crash. Rising margin debt amplifies volatility—if the market continues lower, forced liquidations could accelerate declines."
     },
     "high_yield_spread": {
